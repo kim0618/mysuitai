@@ -70,12 +70,13 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   const layout = await page.evaluate(() => ({ sidebar: document.querySelector('.ai-sidebar').getBoundingClientRect().width, panel: document.querySelector('main>aside').getBoundingClientRect().width, viewer: document.querySelector('.viewer-pane').getBoundingClientRect().width, iframe: document.querySelector('#viewer').tagName, iframeSrc: document.querySelector('#viewer').getAttribute('src'), tabs: [...document.querySelectorAll('.builder-tab')].map(x => x.textContent), active: document.querySelector('.builder-tab[aria-selected=true]').textContent, topbar: document.querySelector('body>header').getBoundingClientRect().height, topbarControls: [...document.querySelectorAll('body>header button, body>header .builder-save-state')].filter(x => x.offsetParent).map(x => x.getAttribute('aria-label') || x.textContent.trim()), pageScroll: document.scrollingElement.scrollHeight - innerHeight, viewerToolbarsOutside: [...document.querySelectorAll('.viewer-pane>nav')].filter(x => getComputedStyle(x).display !== 'none').length, rawCodeVisible: /[A-Z_]{6,}:/.test(document.body.innerText) }));
   result.layout1440 = layout;
   check('layout1440', layout.sidebar === 184 && layout.panel === 380 && layout.viewer === 1440 - 184 - 380 && layout.iframe === 'IFRAME' && layout.topbar >= 48 && layout.topbar <= 52 && layout.pageScroll <= 0 && layout.viewerToolbarsOutside === 0, layout);
-  check('tabOrder', layout.tabs.join('|') === '채팅|직접 편집|데이터 연결' && layout.active === '채팅', layout.tabs);
-  check('topbarControls', JSON.stringify(layout.topbarControls) === JSON.stringify(['실행 취소', '다시 실행', layout.topbarControls[2], '저장']) && !/도움말|MS/.test(layout.topbarControls.join()), layout.topbarControls);
+  check('tabOrder', layout.tabs.join('|') === '속성|데이터' && layout.active === '속성', layout.tabs);
+  check('topbarControls', JSON.stringify(layout.topbarControls) === JSON.stringify(['실행 취소', '다시 실행', layout.topbarControls[2], '✦ AI 도우미', '미리보기', '저장']) && !/도움말|MS/.test(layout.topbarControls.join()), layout.topbarControls);
   check('noRawErrorCode', !layout.rawCodeVisible);
   const editSidebar = await sidebarMetrics(page);
 
-  // ---- Chat ----------------------------------------------------------------------------------------
+  // ---- AI 도우미 (drawer) ----------------------------------------------------------------------------
+  await page.click('[data-action=ai-assistant]');
   const chat = await page.evaluate(() => ({ composer: Boolean(document.querySelector('.ai-composer input')?.offsetParent), send: document.querySelector('.chat-send').disabled, suggestions: [...document.querySelectorAll('.chat-suggestions button')].map(x => x.textContent), placeholder: /준비 중/.test(document.querySelector('.builder-chat').innerText), empty: document.querySelector('.chat-row.assistant .chat-message')?.innerText || '' }));
   await page.click('.chat-suggestions button:nth-child(3)');
   const suggested = await page.inputValue('.ai-composer input');
@@ -85,7 +86,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   await until(page, () => [...document.querySelectorAll('.chat-message.assistant')].at(-1)?.textContent.includes('AI 연결이 아직 설정되지 않았습니다.'));
   const chatAfter = await page.evaluate(() => ({ user: document.querySelector('.chat-message.user p')?.textContent, time: Boolean(document.querySelector('.chat-message.user time')?.textContent), inputEnabled: !document.querySelector('.ai-composer input').disabled }));
   await shot(page, 'editing-v2-chat.png');
-  check('chatProductUi', chat.composer && chat.send && chat.suggestions.length === 4 && !chat.placeholder && chat.empty.includes('안녕하세요') && chat.empty.includes('추천 작업') && suggested.includes('행') && sendEnabled && chatAfter.user?.includes('2026') && chatAfter.time && chatAfter.inputEnabled, { chat, suggested, chatAfter });
+  check('chatProductUi', chat.composer && chat.send && chat.suggestions.length === 4 && !chat.placeholder && chat.empty.includes('안녕하세요') && chat.empty.includes('추천 작업') && suggested.includes('제목') && sendEnabled && chatAfter.user?.includes('2026') && chatAfter.time && chatAfter.inputEnabled, { chat, suggested, chatAfter });
 
   // ---- Direct: text ----------------------------------------------------------------------------------
   await page.click('[data-tab=direct]');
@@ -122,8 +123,12 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   const heightAfter = (await layoutOf(page, 'IMPTB0003')).rowHeights[3];
   await clickIn(page, 'IMPCL0078', 'ROW');
   await page.click('#builder-inspector [data-structure=row] [data-control=row-hide]'); cursor = await waitCursor(page, cursor);
+  // The layout applies after the history cursor moves; wait for the Viewer object itself.
+  await until(page, v => document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().find(o => o.id === 'IMPCL0078')?.visible === v, false);
   const hidden = await objectState(page, 'IMPCL0078');
   await page.click('#builder-inspector [data-structure=row] [data-control=row-hide]'); cursor = await waitCursor(page, cursor);
+  // The layout applies after the history cursor moves; wait for the Viewer object itself.
+  await until(page, v => document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().find(o => o.id === 'IMPCL0078')?.visible === v, true);
   const restored = await objectState(page, 'IMPCL0078');
   await shot(page, 'editing-v2-direct-row.png');
   check('rowHeight', heightAfter === 30, { heightAfter });
@@ -166,7 +171,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   await clickObject(page, 'IMPIMG0001');
   const imageUi = await page.evaluate(() => ({ card: document.querySelector('.selected-element')?.innerText, sections: [...document.querySelectorAll('#builder-inspector h3')].map(x => x.textContent), ratio: document.querySelector('[data-control=ratio-lock]')?.checked, align: Boolean(document.querySelector('[data-control=image-align]')), fit: Boolean(document.querySelector('[data-control=image-fit]')), replace: Boolean(document.querySelector('[data-control=image-replace]')) }));
   const imgBefore = await objectState(page, 'IMPIMG0001');
-  await page.fill('#builder-inspector .inspector-section:first-of-type input[data-key=width]', '296'); await page.press('#builder-inspector input[data-key=width]', 'Enter');
+  await page.fill('#builder-inspector input[data-key=width]', '296'); await page.press('#builder-inspector input[data-key=width]', 'Enter');
   await until(page, () => { const o = document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().find(x => x.id === 'IMPIMG0001'); return o.width === 296 && o.height === 78; });
   cursor = await historyCursor(page);
   await page.click('[data-control=image-align] [data-value=center]'); cursor = await waitCursor(page, cursor);

@@ -4,11 +4,12 @@
   const SURFACE={'/ai-builder':'developer','/ai-builder/user':'user'}[location.pathname];
   if (!SURFACE) return;
   const PROFILE={
-    developer:{route:'edit',title:'편집하기',tabs:[['ai','채팅'],['direct','직접 편집'],['binding','데이터 연결']],tableModes:true,advanced:true,dataAttach:true,cellLabel:'표 셀',cellSection:'셀 편집',
-      intro:'문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.',placeholder:'서식 수정 요청을 입력하세요',
-      suggestions:{'제목 수정':'문서 제목을 수정해줘','표 열 너비 조정':'두 번째 표의 열 너비를 조정해줘','행 이동':'선택한 행을 아래로 이동해줘','데이터 연결':'JSON 데이터를 연결해줘'},empty:'문서에서 편집할 항목을 선택하세요.'},
+    // Developer / template designer: 속성 and 데이터 are the main panels; the AI assistant is a drawer beside them.
+    developer:{route:'edit',title:'편집하기',tabs:[['direct','속성'],['binding','데이터']],defaultTab:'direct',designer:true,assistant:true,tableModes:true,advanced:true,dataAttach:true,cellLabel:'표 셀',cellSection:'셀 편집',
+      intro:'서식 구조, 데이터 연결, 문구 수정을 요청할 수 있습니다.',placeholder:'서식 작업을 요청하세요',
+      suggestions:{'표 데이터 연결':'이 표를 items 데이터에 연결해줘','반복 데이터':'이 영역을 반복 데이터로 바꿔줘','제목 수정':'문서 제목을 수정해줘','열 너비 조정':'두 번째 표의 열 너비를 조정해줘'},empty:'캔버스에서 요소를 선택하면 속성이 표시됩니다.'},
     // The user screen hides data binding, table-structure modes and internal identifiers.
-    user:{route:'user',title:'사용자 편집',tabs:[['ai','채팅'],['direct','직접 편집']],tableModes:false,advanced:false,dataAttach:false,cellLabel:'문구',cellSection:'문구 편집',
+    user:{route:'user',title:'사용자 편집',tabs:[['ai','채팅'],['direct','직접 편집']],defaultTab:'ai',designer:false,assistant:false,tableModes:false,advanced:false,dataAttach:false,cellLabel:'문구',cellSection:'문구 편집',
       intro:'원하는 수정 내용을 말씀해 주세요.',placeholder:'수정할 내용을 입력하세요',
       suggestions:{'제목 수정':'문서 제목을 수정해줘','이미지 교체':'로고 이미지를 교체해줘','표 정리':'표를 보기 좋게 정리해줘','문구 수정':'문구를 자연스럽게 다듬어줘'},empty:'문서에서 수정할 문구나 이미지를 선택하세요.'},
   }[SURFACE];
@@ -41,7 +42,7 @@
   header.classList.add('ai-topbar');
   brand.innerHTML=`<span class="ai-breadcrumb">AI Studio<span class="ai-breadcrumb-divider">/</span><b>${PROFILE.title}</b></span><strong id="builder-document-name">문서 불러오는 중</strong>`;
   const headerActions=header.querySelector('.header-actions'), legacyActions=[...headerActions.children], historyToolbar=header.querySelector('.history-toolbar');
-  headerActions.innerHTML='<span class="builder-save-state" id="builder-save-state">저장됨</span><button id="builder-save" class="studio-primary-button">저장</button>';
+  headerActions.innerHTML='<span class="builder-save-state" id="builder-save-state">저장됨</span>'+(PROFILE.designer?'<button id="studio-assistant-toggle" class="studio-secondary-button" type="button" data-action="ai-assistant" aria-pressed="false">✦ AI 도우미</button><button id="studio-preview" class="studio-secondary-button" type="button" data-action="preview" aria-pressed="false">미리보기</button>':'')+'<button id="builder-save" class="studio-primary-button">저장</button>';
   headerActions.prepend(historyToolbar);
   $('history-undo').innerHTML='<span aria-hidden="true">↶</span>'; $('history-redo').innerHTML='<span aria-hidden="true">↷</span>';
   $('history-undo').setAttribute('aria-label','실행 취소'); $('history-redo').setAttribute('aria-label','다시 실행');
@@ -49,17 +50,47 @@
   // ---- Right panel: 채팅 | 직접 편집 | 데이터 연결 --------------------------------------------------
   const aside=document.querySelector('main > aside'), legacySections=[...aside.children];
   const tabs=element('div',{class:'builder-tabs',role:'tablist'}), direct=element('div',{class:'builder-panel builder-direct',role:'tabpanel'}), bindingPanel=element('div',{class:'builder-panel builder-data',role:'tabpanel'}), ai=element('div',{class:'builder-panel builder-chat',role:'tabpanel'});
-  const panels={ai,direct,binding:bindingPanel};
+  const panels=PROFILE.assistant?{direct,binding:bindingPanel}:{ai,direct,binding:bindingPanel};
   for (const [key,label] of PROFILE.tabs) { const tab=button(label,()=>selectTab(key),{class:'builder-tab',role:'tab','data-tab':key,'aria-selected':String(key==='ai')}); tabs.append(tab); }
   // The legacy editor stays mounted (hidden): its inputs, change set and history bridge remain the single write path.
   const legacy=element('div',{class:'builder-legacy',hidden:''}); legacy.append(...legacySections,...legacyActions);
   const inspector=element('div',{id:'builder-inspector'}); direct.append(inspector);
   bindingPanel.innerHTML='<div id="builder-binding-body"></div>';
-  aside.replaceChildren(tabs,ai,direct,bindingPanel,legacy);
+  aside.replaceChildren(tabs,...(PROFILE.assistant?[]:[ai]),direct,bindingPanel,legacy);
+  // AI 도우미 drawer (developer): opens beside the 속성/데이터 panel and never replaces it or changes the edit mode.
+  const assistant=element('section',{class:'studio-assistant',role:'complementary','aria-label':'AI 도우미',hidden:''});
+  if (PROFILE.assistant) {
+    const head=element('div',{class:'studio-assistant-head'}),title=element('div');title.append(element('strong',{},'AI 도우미'),element('small',{},'AI 연결 전에는 요청 내용만 기록됩니다.'));
+    head.append(title,button('×',()=>toggleAssistant(false),{class:'studio-assistant-close','aria-label':'AI 도우미 닫기'}));
+    ai.hidden=false; assistant.append(head,ai); document.querySelector('main').append(assistant);
+  }
+  function toggleAssistant(open=assistant.hidden){ assistant.hidden=!open; $('studio-assistant-toggle')?.setAttribute('aria-pressed',String(open)); if(open) setTimeout(()=>ai.querySelector('.ai-composer input')?.focus(),0); }
+  $('studio-assistant-toggle')?.addEventListener('click',()=>toggleAssistant());
+  // 미리보기: the same Viewer and UBJF without designer overlays or editing; the panel returns with the previous tab.
+  let previewing=false,currentTab=PROFILE.defaultTab;
+  function setPreview(on){
+    previewing=Boolean(on); document.body.classList.toggle('studio-preview',previewing);
+    const toggle=$('studio-preview'); if(toggle){toggle.setAttribute('aria-pressed',String(previewing)); toggle.textContent=previewing?'편집으로 돌아가기':'미리보기';}
+    if (previewing) { clearViewerSelection({forget:true}); toggleAssistant(false); MvpWorkspaceMode.set('preview'); }
+    else selectTab(currentTab);
+  }
+  $('studio-preview')?.addEventListener('click',()=>setPreview(!previewing));
+  // Designer tools beside the canvas: only what the engine supports is active.
+  if (PROFILE.designer) {
+    const tools=element('div',{class:'studio-tools',role:'toolbar','aria-label':'디자이너 도구'});
+    tools.append(button('↖',()=>{},{class:'studio-tool','aria-label':'선택',title:'선택','aria-pressed':'true','data-tool':'select'}));
+    const bandsTool=button('▤',()=>{const next=!window.MvpDesignerBands?.visible;window.MvpDesignerBands?.setVisible(next);bandsTool.setAttribute('aria-pressed',String(next))},{class:'studio-tool','aria-label':'밴드 보기',title:'밴드 보기','aria-pressed':'true','data-tool':'bands'});
+    const add=button('+',()=>{},{class:'studio-tool','aria-label':'추가 (준비 중)',title:'텍스트·이미지·표 추가는 준비 중입니다.','data-tool':'add'});add.disabled=true;
+    tools.append(bandsTool,element('span',{class:'studio-tool-divider','aria-hidden':'true'}),add);
+    (document.querySelector('main > section')||document.querySelector('main')).append(tools);
+    window.addEventListener('studio-bands-loaded',event=>{const has=Boolean(event.detail?.bands?.length);bandsTool.disabled=!has;bandsTool.title=has?'밴드 보기':'이 문서는 밴드 없이 자유 배치된 서식입니다.';if(!state.selection&&!state.staticSelection)renderInspector()});
+  }
   const errorBox=element('div',{id:'builder-error',class:'builder-error',role:'alert',hidden:''}); document.body.append(errorBox);
 
   function selectTab(key) {
     if (!PROFILE.tabs.some(([name])=>name===key)) return;
+    if (previewing) { previewing=false; document.body.classList.remove('studio-preview'); const toggle=$('studio-preview'); if(toggle){toggle.setAttribute('aria-pressed','false');toggle.textContent='미리보기';} }
+    currentTab=key;
     for (const [name,panel] of Object.entries(panels)) panel.hidden=name!==key;
     tabs.querySelectorAll('[role=tab]').forEach(tab=>tab.setAttribute('aria-selected',String(tab.dataset.tab===key)));
     // The tab decides the workspace mode; only 직접 편집 enables Viewer editing interaction.
@@ -133,9 +164,10 @@
   function modeSwitch(){return segmented([['cell','셀'],['row','행'],['column','열']],tableMode,setTableMode,{class:'segmented table-mode','aria-label':'표 선택 방식','data-control':'table-mode'})}
   // Single active selection: every transition clears all selection layers first - the object/cell selection and its
   // text toolbar and Fabric handles (Viewer inspector), the row/column band (table controller) and the panel state.
-  function clearViewerSelection({forget=false}={}){
+  function clearViewerSelection({forget=false,keepBand=false}={}){
     window.dispatchEvent(new CustomEvent('mvp:clear-object-selection'));
     window.__mvp12?.clearSelection?.(forget);
+    if(!keepBand){window.MvpDesignerBands?.clear?.();state.bandSelection=null;}
     state.selection=null;state.source=null;state.staticSelection=null;
   }
   // Focus-out keeps the current 셀/행/열 mode and shows that mode's empty state.
@@ -154,16 +186,18 @@
     inspector.replaceChildren();
     const selection=state.selection, source=state.source;
     const kind=source?.sourceClassName, isCell=Boolean(selection&&source&&(kind==='Cell'||/^IMPCL/.test(selection.sourceObjectId||'')));
+    if (PROFILE.designer && state.bandSelection && !selection && !state.staticSelection) return renderBand(state.bandSelection);
     if (hasTables()) inspector.append(modeSwitch());
     if (state.staticSelection && !selection) return renderStructureOnly();
-    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},hasTables()?MODE_EMPTY[tableMode]:PROFILE.empty)); return; }
+    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},hasTables()?MODE_EMPTY[tableMode]:PROFILE.empty)); if (PROFILE.designer) inspector.append(documentSections()); return; }
     const [icon,type]=TYPE[kind]||['◻','요소'], isImage=kind==='UBImage';
     const cellInfo=isCell?window.__mvp12?.selectCell?.(selection.sourceObjectId):null;
-    const name=isImage?(PROFILE.advanced?selection.sourceObjectId:'문서 이미지'):(current('text')||selection.currentText||'').trim()||(PROFILE.advanced?selection.sourceObjectId:PROFILE.cellLabel);
+    // Internal identifiers stay in 고급 설정; the card shows what the user sees.
+    const name=isImage?(PROFILE.designer?'이미지':'문서 이미지'):(current('text')||selection.currentText||'').trim()||PROFILE.cellLabel;
     inspector.append(selectedCard(cellInfo&&!PROFILE.tableModes?'T':icon,cellInfo?PROFILE.cellLabel:type,name));
     if (isImage) inspector.append(...imageSections());
-    else if (cellInfo) inspector.append(...cellSections());
-    else inspector.append(...textSections());
+    else if (cellInfo) inspector.append(...cellSections(),...(PROFILE.designer?[tableSection(cellInfo)]:[]));
+    else inspector.append(...(PROFILE.designer?designerTextSections():textSections()));
     if (supports('visible')) inspector.append(section('표시',toggle(isImage?'이미지 표시':'표시',current('visible')!==false,value=>setProperty('visible',value),{'data-control':'visible'})));
     const reset=button('이 요소의 변경 되돌리기',()=>mvpDirectBridge.action('resetAll').then(renderInspector),{class:'link-button'});
     // Source identifiers are developer information; the user screen keeps only the reset action.
@@ -185,6 +219,57 @@
     if (supports('textAlign')) toolbar.append(segmented([['left','왼쪽'],['center','가운데'],['right','오른쪽']],current('textAlign'),value=>setProperty('textAlign',value),{'aria-label':'가로 정렬'}));
     if (toolbar.children.length) node.append(toolbar);
     return [node];
+  }
+  // ---- Designer property cards (developer) -------------------------------------------------------------
+  // Text: 텍스트 / 글꼴 / 위치 및 크기 (collapsed); visibility and advanced settings follow in renderInspector.
+  function designerTextSections(){
+    const nodes=[];
+    if (supports('text')) { const area=element('textarea',{rows:'2','aria-label':'문구','data-key':'text'});area.value=current('text')??'';area.onkeydown=event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();area.blur()}};area.onchange=()=>setProperty('text',area.value);nodes.push(section('텍스트',area)); }
+    const font=[]; if (supports('fontSize')) font.push(numberField('글꼴 크기','fontSize',{min:6,max:96}));
+    const toolbar=element('div',{class:'text-tools'});
+    if (supports('fontWeight')) toolbar.append(button('B',()=>setProperty('fontWeight',current('fontWeight')==='bold'?'normal':'bold'),{class:'bold-toggle','aria-pressed':String(current('fontWeight')==='bold'),'aria-label':'굵게'}));
+    if (supports('textAlign')) toolbar.append(segmented([['left','왼쪽'],['center','가운데'],['right','오른쪽']],current('textAlign'),value=>setProperty('textAlign',value),{'aria-label':'가로 정렬'}));
+    if (toolbar.children.length) font.push(toolbar);
+    if (font.length) nodes.push(section('글꼴',...font));
+    const geometry=element('div',{class:'field-grid'});
+    if (supports('width')) geometry.append(numberField('너비','width')); if (supports('height')) geometry.append(numberField('높이','height'));
+    if (supports('left')) geometry.append(numberField('X','left',{min:0,max:2000})); if (supports('top')) geometry.append(numberField('Y','top',{min:0,max:3000}));
+    if (geometry.children.length) { const more=element('details',{class:'inspector-collapsible','data-section':'geometry'});more.append(element('summary',{},'위치 및 크기'),geometry);nodes.push(more); }
+    return nodes;
+  }
+  // Table: the table the cell belongs to, and the way into its row/column editors (Direct Edit 3.2 structure tools).
+  function tableSection(info){
+    const node=section('표'),layout=window.__mvp12?.layouts?.[info.table.sourceTableId]||info.table;
+    node.classList.add('table-section');
+    node.append(element('p',{class:'structure-meta'},`행 ${info.rowCount} · 열 ${info.columnCount}${info.table.merged?' · 병합 셀 포함':''}`));
+    const actions=element('div',{class:'structure-actions'});
+    actions.append(button('이 행 편집',()=>setTableMode('row'),{'data-action':'cell-to-row'}),button('이 열 편집',()=>setTableMode('column'),{'data-action':'cell-to-column'}));
+    const geometry=element('details',{class:'inspector-collapsible','data-section':'table-geometry'});
+    geometry.append(element('summary',{},'표 위치 및 크기'),element('p',{class:'structure-meta'},`X ${Math.round(layout.x)} · Y ${Math.round(layout.y)} · ${Math.round(layout.width)} × ${Math.round(layout.height)}`));
+    node.append(actions,element('p',{class:'structure-hint'},'행·열 단위로 이동, 크기, 숨김을 편집할 수 있습니다.'),geometry);
+    return node;
+  }
+  // Nothing selected: the document and its structure (bands, or free form for imported documents).
+  function documentSections(){
+    const info=window.MvpDesignerBands?.info,tables=window.__mvp12?.tables||[],nodes=element('div',{class:'document-properties'});
+    const page=info?.page||{width:794,height:1123};
+    const summary=section('문서');summary.append(element('p',{class:'structure-meta'},`${state.document?.title||'문서'} · ${page.width} × ${page.height}`),element('p',{class:'structure-meta'},`표 ${tables.length}개${info?.datasets?.length?` · Dataset ${info.datasets.length}개`:''}`));
+    const structure=section('구조');structure.dataset.section='bands';
+    if (info?.bands?.length) { const list=element('div',{class:'band-list'});for(const band of info.bands){const item=button('',()=>window.MvpDesignerBands.select(band.id),{class:'band-list-item','data-band-id':band.id});item.append(element('b',{},band.label),element('small',{},band.dataSet?`${band.engine} · ${band.dataSet}`:band.engine));list.append(item)}structure.append(list); }
+    else structure.append(element('p',{class:'structure-hint'},info?'밴드가 없는 자유 배치 서식입니다. 요소는 페이지 위의 절대 위치로 배치되어 있습니다.':'문서 구조를 불러오는 중입니다.'));
+    nodes.append(summary,structure);return nodes;
+  }
+  // Band: human name first, engine name small; band settings are shown as they are (editing arrives later).
+  function renderBand(band){
+    inspector.append(selectedCard('▭',band.engine,band.label));
+    const data=section('데이터'),rows=element('dl',{class:'property-list'});
+    for (const [k,v] of [['Dataset',band.dataSet||'연결 없음'],['포함 항목',`${band.itemCount}개`]]) rows.append(element('dt',{},k),element('dd',{},v));
+    data.append(rows,button('데이터 패널에서 연결',()=>selectTab('binding'),{class:'link-button','data-action':'band-to-data'}));
+    const size=section('크기'),geometry=element('dl',{class:'property-list'});
+    for (const [k,v] of [['높이',`${Math.round(band.height)}`],['위치 Y',`${Math.round(band.y)}`],['너비',`${Math.round(band.width)}`]]) geometry.append(element('dt',{},k),element('dd',{},v));
+    size.append(geometry,element('p',{class:'structure-hint'},'밴드 설정 편집은 다음 단계에서 지원됩니다.'));
+    const advanced=element('details',{class:'inspector-advanced'});advanced.append(element('summary',{},'고급 설정'),element('p',{},`${band.className} · ${band.id}`));
+    inspector.append(data,size,advanced);
   }
   function textSections(){
     const nodes=[];
@@ -231,7 +316,7 @@
       file.onchange=async()=>{const chosen=file.files[0];if(!chosen)return;try{status.textContent='이미지를 확인하고 있습니다.';const base64=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]||'');reader.onerror=reject;reader.readAsDataURL(chosen)});const asset=await api('/api/image-assets',{method:'POST',body:JSON.stringify({fileName:chosen.name,base64})});await setProperty('data',asset.ref)}catch(error){status.textContent=error.message}};
       image.push(pick,status);
     }
-    if (image.length) nodes.push(section('이미지',...image));
+    if (image.length) { const media=section('이미지',...image); if (PROFILE.designer) nodes.unshift(media); else nodes.push(media); }
     return nodes;
   }
 
@@ -298,14 +383,20 @@
     }
   }
 
+  window.addEventListener('studio-band-selected',event=>{
+    if (!PROFILE.designer) return;
+    clearViewerSelection({keepBand:true}); state.bandSelection=event.detail?.band||null; renderInspector();
+  });
   window.addEventListener('mysuit-object-selection-resolved',event=>{
     const {render,source}=event.detail;
+    if (state.bandSelection) { window.MvpDesignerBands?.clear?.(); state.bandSelection=null; }
     if (state.staticSelection) window.__mvp12?.clearSelection?.();
     state.selection=render; state.source=source; state.staticSelection=null; state.bindingTarget=render.sourceObjectId;
     renderInspector(); renderDataIfVisible();
     window.dispatchEvent(new CustomEvent('ai-builder:selection-changed',{detail:{type:'selectionChanged',targetType:source.targetType||source.sourceClassName,sourceId:source.templateSourceId||source.sourceObjectId,runtimeId:render.viewerObjectId,runtimeInstanceKey:render.renderInstanceKey,rowIndex:render.rowIndex,bandId:render.bandId,page:render.pageIndex||0}}));
   });
   window.addEventListener('mysuit-static-selection',event=>{
+    if (event.detail && state.bandSelection) { window.MvpDesignerBands?.clear?.(); state.bandSelection=null; }
     state.selection=null; state.source=null; state.staticSelection=event.detail; renderInspector();
     if (!event.detail) return;
     window.dispatchEvent(new CustomEvent('ai-builder:selection-changed',{detail:{type:'selectionChanged',targetType:event.detail.type,sourceId:event.detail.key,page:0}}));
@@ -333,11 +424,12 @@
     renderDataEmpty();
   }
   async function renderObjectBinding(){
-    const body=dataBody(); body.className=''; body.replaceChildren(element('h2',{class:'data-title'},'데이터 연결'));
+    const body=dataBody(); body.className=''; body.replaceChildren(element('h2',{class:'data-title'},PROFILE.designer?'데이터':'데이터 연결'));
     const objectId=state.bindingTarget;
-    if (!objectId) { body.append(element('div',{class:'inspector-empty'},'문서에서 연결할 요소를 선택하세요.')); return; }
+    if (!objectId) { if (PROFILE.designer) body.append(datasetSection()); body.append(element('div',{class:'inspector-empty'},'문서에서 연결할 요소를 선택하세요.')); return; }
     const data=await api(`/api/ai-builder/context?${new URLSearchParams({...scope,objectId})}`);
     state.datasets=data.datasets||[]; state.currentBinding=data.binding||null;
+    if (PROFILE.designer) body.append(datasetSection());
     const binding=state.currentBinding, summary=element('dl',{class:'binding-summary'});
     for (const [label,value] of [['현재 선택',objectId],['연결 상태',binding?(binding.dataType==='1'?`${binding.dataSet}.${binding.column}`:`parameter.${binding.parameter}`):'데이터 연결 없음'],['상태',binding?'연결됨':'연결 안 됨']]) summary.append(element('dt',{},label),element('dd',{},value));
     body.append(summary);
@@ -371,8 +463,9 @@
   function renderDataEmpty(){
     const body=dataBody(); body.className=''; body.replaceChildren();
     const empty=element('section',{class:'data-empty'});
-    empty.append(element('h2',{},'데이터 연결'),element('strong',{},'연결된 데이터가 없습니다.'),element('p',{},'JSON 데이터를 추가하면 문서 항목과 자동으로 연결할 수 있습니다.'),jsonInputs(()=>{}));
+    empty.append(element('h2',{},PROFILE.designer?'데이터':'데이터 연결'),element('strong',{},'연결된 데이터가 없습니다.'),element('p',{},'JSON 데이터를 추가하면 문서 항목과 자동으로 연결할 수 있습니다.'),jsonInputs(()=>{}));
     body.append(empty);
+    if (PROFILE.designer && window.MvpDesignerBands?.info?.datasets?.length) body.append(datasetSection());
   }
   // Registration reuses the Import Context contract: validator → Schema Analyzer → Scalar/Array Proposal.
   async function registerJson(raw,fileName,status){
@@ -402,13 +495,36 @@
     card.append(element('span',{class:'data-source-icon'},'{ }'),meta,change);
     return card;
   }
+  // Designer data overview: the datasets as a tree (JSON schema, or the form's own datasets) and the auto-binding entry.
+  function datasetSection(){
+    const node=element('section',{class:'dataset-tree','data-section':'datasets'});node.append(element('h3',{},'Datasets'));
+    const schema=state.importContext?.jsonSchema||[],list=element('ul',{});
+    if (schema.length) {
+      for (const item of schema.filter(x=>x.path!=='$'&&!(x.isArrayItem&&!x.isLeaf)).slice(0,60)) {
+        const depth=item.path.replace(/\[\]/g,'').split('.').length-2,li=element('li',{class:item.isLeaf?'leaf':'group','data-path':item.path});
+        li.style.paddingLeft=`${depth*14}px`;li.append(element('span',{},item.isLeaf?item.key:`▾ ${item.key}${item.type==='array'?'[]':''}`));if(item.isLeaf)li.append(element('small',{},item.type));list.append(li);
+      }
+    } else {
+      const datasets=window.MvpDesignerBands?.info?.datasets?.length?window.MvpDesignerBands.info.datasets:(state.datasets||[]).map(d=>({id:d.id,columns:d.columns}));
+      for (const d of datasets) { const li=element('li',{class:'group'});li.append(element('span',{},`▾ ${d.name||d.id}`));list.append(li);for(const c of (d.columns||[]).slice(0,20)){const leaf=element('li',{class:'leaf'});leaf.style.paddingLeft='14px';leaf.append(element('span',{},c));list.append(leaf)} }
+    }
+    if (list.children.length) node.append(list); else node.append(element('p',{class:'structure-hint'},'연결된 데이터가 없습니다.'));
+    return node;
+  }
+  // 자동 바인딩: applies the analyzer/proposal result as it stands (no LLM); the review below stays editable.
+  function autoBindingBar(){
+    const bar=element('div',{class:'auto-binding'}),rows=(state.bindingProposal?.proposals||[]).filter(x=>x.targetId);
+    const run=button('자동 바인딩',applyProposals,{class:'ai-primary primary','data-action':'auto-binding'});run.disabled=!rows.some(x=>x.selectedPath);
+    bar.append(run,element('small',{},`자동 ${state.bindingProposal?.summary?.auto||0}건 · 확인 필요 ${state.bindingProposal?.summary?.review||0}건`));
+    return bar;
+  }
   function renderProposalReview(){
-    const body=dataBody(); body.className=''; body.replaceChildren(dataHeader());
+    const body=dataBody(); body.className=''; body.replaceChildren(dataHeader(),...(PROFILE.designer?[datasetSection(),autoBindingBar()]:[]));
     const summary=state.bindingProposal?.summary||{}, stats=element('div',{class:'proposal-summary'});
     for (const [key,label] of [['auto','자동 연결'],['review','확인 필요'],['unbound','미연결']]) { const item=element('span',{'data-kind':key}); item.append(element('b',{},String(summary[key]||0)),document.createTextNode(` ${label}`)); stats.append(item); }
     body.append(stats,element('h3',{class:'binding-kind'},'단일 항목'));
     const list=element('div',{class:'proposal-list'}), rows=(state.bindingProposal?.proposals||[]).filter(x=>x.targetId);
-    for (const row of rows) { const item=button('',()=>{state.selectedProposalTarget=row.targetId;renderProposalReview()},{class:`proposal-row status-${row.status.toLowerCase()}${row.targetId===state.selectedProposalTarget?' selected':''}`,'data-target-id':row.targetId}); item.append(element('span',{class:'proposal-label'},row.label||row.targetId),element('code',{},row.selectedPath?row.selectedPath.replace(/^\$\./,''):'-'),element('span',{class:'proposal-status'},row.selectedPath&&row.status!=='AUTO'?'✓ 연결':row.status==='AUTO'?'✓ 연결':statusLabel[row.status]||row.status)); list.append(item); }
+    for (const row of rows) { const item=button('',()=>{state.selectedProposalTarget=row.targetId;renderProposalReview()},{class:`proposal-row status-${row.status.toLowerCase()}${row.targetId===state.selectedProposalTarget?' selected':''}`,'data-target-id':row.targetId}); item.append(element('span',{class:'proposal-label'},row.label||row.targetId),element('code',{},row.selectedPath?row.selectedPath.replace(/^\$\./,''):'-'),element('span',{class:'proposal-status'},`${row.selectedPath&&row.status!=='AUTO'?'✓ 연결':row.status==='AUTO'?'✓ 연결':statusLabel[row.status]||row.status}${Number.isFinite(row.confidence)&&row.confidence>0?` · ${Math.round(row.confidence*100)}%`:''}`)); list.append(item); }
     body.append(list);
     const selected=rows.find(x=>x.targetId===(state.selectedProposalTarget||rows[0]?.targetId));
     if (selected) {
@@ -451,6 +567,22 @@
   async function applyProposals(){try{setSaveState('연결 적용 중');const data=await api('/api/ai-builder/binding-proposals/apply',{method:'POST',body:JSON.stringify(scope)});state.bindingProposal.appliedAt=new Date().toISOString();state.savedPreview=data.previewUrl;$('viewer').src=state.savedPreview;setSaveState(`연결 ${data.appliedCount}건 적용됨`);await window.__mvp58?.load?.();renderProposalReview()}catch(error){showError(error)}}
   async function applyArrayProposal(row){try{setSaveState('반복 데이터 연결 중');const data=await api('/api/ai-builder/array-proposals/apply',{method:'POST',body:JSON.stringify({...scope,tableId:row.tableId})});row.appliedAt=new Date().toISOString();state.savedPreview=data.previewUrl;$('viewer').src=state.savedPreview;setSaveState(`반복 데이터 ${data.runtimeDetailRows}건 연결됨`);await window.__mvp58?.load?.();renderProposalReview()}catch(error){showError(error)}}
 
+  // ---- Viewer chrome theme ---------------------------------------------------------------------------
+  // The UView5 toolbar reads its accent from its own CSS variables (pink). Only that chrome is mapped to the Studio
+  // accent; the document rendering (canvas) is untouched.
+  function themeViewer(){
+    const doc=$('viewer')?.contentDocument; if(!doc?.head||doc.getElementById('studio-viewer-chrome'))return;
+    const css=getComputedStyle(document.documentElement),primary=css.getPropertyValue('--studio-primary').trim(),soft=`color-mix(in srgb, ${primary} 14%, transparent)`;
+    const style=doc.createElement('style');style.id='studio-viewer-chrome';
+    style.textContent=`:root{--viewer-btn-active:${soft};--font-point:${primary};--bg-point:${primary};--viewer-themeB-icon-point:${primary}}`+
+      `.viewer .edit-tool-wrap .btn:hover{background-color:color-mix(in srgb, ${primary} 8%, transparent)}`+
+      `.bottom-panel .nav-tabs.tool-tabs>li.active>button::after{background-color:${primary}!important}`+
+      `ul.color-select>li>button.active,ul.border-select>li>button.active{border-color:${primary}!important}`+
+      `label.checkbox input[type="checkbox"]:focus-visible{outline-color:${primary}!important}`;
+    doc.head.append(style);
+  }
+  $('viewer').addEventListener('load',themeViewer); window.addEventListener('mysuit-editor-attached',themeViewer); themeViewer();
+
   // ---- 저장 / 부팅 ---------------------------------------------------------------------------------
   $('builder-save').onclick=async()=>{ try { setSaveState('저장 중'); const data=await api('/api/ai-builder/save',{method:'POST',body:JSON.stringify(scope)}); state.savedPreview=data.previewUrl; $('viewer').src=state.savedPreview; setSaveState('저장 완료'); } catch (error) { showError(error); } };
   async function boot() {
@@ -471,10 +603,10 @@
     $('builder-document-name').textContent='문서 선택';
   }
   greet();
-  selectTab('ai');
+  selectTab(PROFILE.defaultTab);
   if (SURFACE==='user' && !params.get('projectName')) { const last=AiBuilderSidebar.lastQuery(); if (last) { location.replace(`/ai-builder/user${last}`); return; } chooseDocument(); }
   else boot().catch(showError);
 
-  window.aiBuilder={surface:SURFACE,selectTab,scope,state,builderState,get selectedObjectId(){return state.selection?.sourceObjectId||null},get savedPreview(){return state.savedPreview},get importContext(){return state.importContext},loadBinding:renderData,
+  window.aiBuilder={surface:SURFACE,selectTab,openAssistant:()=>toggleAssistant(true),closeAssistant:()=>toggleAssistant(false),setPreview,get previewing(){return previewing},scope,state,builderState,get selectedObjectId(){return state.selection?.sourceObjectId||null},get savedPreview(){return state.savedPreview},get importContext(){return state.importContext},loadBinding:renderData,
     chat:{setProvider(provider){chatProvider=provider||null},get provider(){return chatProvider}},renderInspector,showError};
 })();

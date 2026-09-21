@@ -44,7 +44,7 @@ const panelText = (page) => page.evaluate(() => document.querySelector('main > a
     await page.click('[data-tab=binding]'); await until(page, () => document.querySelector('#builder-binding-body')?.innerText.length > 0);
     const devData = await page.evaluate(() => ({ visible: !document.querySelector('.builder-data').hidden, json: Boolean(document.querySelector('#workspace-json-direct')) }));
     await page.click('[data-tab=direct]'); await page.waitForTimeout(300); await shot(page, 'studio-developer-edit.png');
-    check('3_9_developerEdit', dev.active === '편집하기' && /편집하기 · MySuit AI Studio/.test(dev.title) && devTabs.join('|') === '채팅|직접 편집|데이터 연결' && devModes.join('|') === '셀|행|열' && devData.visible && devData.json && docTitle === '발주서', { dev, devTabs, devModes, devData, docTitle });
+    check('3_9_developerEdit', dev.active === '편집하기' && /편집하기 · MySuit AI Studio/.test(dev.title) && devTabs.join('|') === '속성|데이터' && devModes.join('|') === '셀|행|열' && devData.visible && devData.json && docTitle === '발주서', { dev, devTabs, devModes, devData, docTitle });
 
     // 사용자 편집: the Sidebar opens the same document on a separate screen.
     await Promise.all([page.waitForURL(/\/ai-builder\/user\?/), page.click('.ai-nav-item[data-route=user]')]);

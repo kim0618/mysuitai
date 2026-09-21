@@ -121,7 +121,8 @@ async function openWorkspace(page, url) {
 
     // G. Selection → 채팅: every Direct Edit selection is cleared.
     await clickObject(page, packing);
-    await page.click('[data-tab=ai]'); await page.waitForTimeout(600);
+    // Designer 2.0: the 데이터 panel is the non-editing workspace (the chat moved into the AI 도우미 drawer).
+    await page.click('[data-tab=binding]'); await page.waitForTimeout(600);
     const g = await layers(page);
     check('G_chatClears', !g.cell && !g.staticType && g.markers.length === 0 && !g.toolbar && g.upperInk === 0 && noNative(g), g);
     // H. Back to 직접 편집: the mode is kept, nothing stale.

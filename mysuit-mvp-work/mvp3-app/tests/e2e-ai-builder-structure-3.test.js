@@ -66,7 +66,7 @@ async function saveAndRead(page) {
     await page.waitForTimeout(500);
     const cell = await ui(page);
     await shot(page, 'structure3-cell-mode.png');
-    check('cellMode', cell.mode === '셀' && cell.grips === 0 && cell.markers.length === 0 && cell.toolbar && cell.sections.join('|') === '셀 편집|표시' && !cell.internalIds, cell);
+    check('cellMode', cell.mode === '셀' && cell.grips === 0 && cell.markers.length === 0 && cell.toolbar && cell.sections.join('|') === '셀 편집|표|표시' && !cell.internalIds, cell);
 
     // ---- E. Mode switching: cell → row → column → cell ----------------------------------------------------
     await mode(page, 'row'); const toRow = await ui(page);
@@ -75,7 +75,7 @@ async function saveAndRead(page) {
     check('modeSwitching',
       toRow.static === 'ROW' && !toRow.cellSelection && !toRow.toolbar && toRow.sections.join('|') === '행 편집' && toRow.markers.length === 1 && toRow.meta === '선택: 3–4행 (2개 행) / 26'
       && toColumn.static === 'COLUMN' && !toColumn.toolbar && toColumn.sections.join('|') === '열 편집' && toColumn.markers.length === 1 && toColumn.meta === '현재 열: 3 / 9'
-      && !toCell.static && !toCell.cellSelection && toCell.markers.length === 0 && toCell.sections.length === 0 && toCell.grips === 0,
+      && !toCell.static && !toCell.cellSelection && toCell.markers.length === 0 && !toCell.sections.some((x) => /셀 편집|행 편집|열 편집/.test(x)) && toCell.grips === 0,
       { toRow, toColumn, toCell });
 
     // ---- Row mode: a click selects the row, never a cell ----------------------------------------------------
@@ -146,8 +146,11 @@ async function saveAndRead(page) {
 
     // ---- Workspace isolation: chat / data tabs drop the table selection -----------------------------------------
     await mode(page, 'row'); await clickObject(page, packing); await until(page, () => window.aiBuilder?.state?.staticSelection?.type === 'ROW');
-    await page.click('[data-tab=ai]'); await page.waitForTimeout(400);
+    await page.click('[data-action=preview]'); await page.waitForTimeout(400);
     const chat = await page.evaluate(() => ({ markers: document.querySelector('#viewer').contentWindow.document.querySelectorAll('.mvp12-static-marker').length, selection: window.aiBuilder?.state?.staticSelection || null }));
+    // Leave 미리보기 (the panel is hidden there), reselect the row, then the 데이터 panel must drop it too.
+    await page.click('[data-action=preview]'); await page.waitForTimeout(400);
+    await clickObject(page, packing); await until(page, () => window.aiBuilder?.state?.staticSelection?.type === 'ROW');
     await page.click('[data-tab=binding]'); await page.waitForTimeout(400);
     const data = await page.evaluate(() => document.querySelector('#viewer').contentWindow.document.querySelectorAll('.mvp12-static-marker').length);
     check('modeIsolation', chat.markers === 0 && !chat.selection && data === 0, { chat, data });

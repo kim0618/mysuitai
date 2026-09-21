@@ -200,3 +200,55 @@ body.ai-builder{margin:0;height:100vh;overflow:hidden;background:var(--studio-bg
 .studio-document-empty{color:var(--studio-text-muted);font-size:13px}
 .studio-document-create{margin-top:var(--studio-space-3);height:var(--studio-control-height);display:inline-flex;align-items:center;padding:0 var(--studio-space-4);border-radius:var(--studio-radius);background:var(--studio-primary);color:#fff;font-size:13px;font-weight:700;text-decoration:none}
 .studio-document-create:hover{background:var(--studio-primary-hover)}
+
+/* ---- Developer Designer 2.0 --------------------------------------------------------------------------------- */
+.ai-builder .studio-secondary-button{height:var(--studio-control-height);padding:0 var(--studio-space-3);border:1px solid var(--studio-border-strong);border-radius:var(--studio-radius);background:var(--studio-surface);color:var(--studio-text);font:600 13px var(--studio-font);cursor:pointer}
+.ai-builder .studio-secondary-button:hover{border-color:var(--studio-primary-border);background:var(--studio-primary-softer)}
+.ai-builder .studio-secondary-button[aria-pressed=true]{border-color:var(--studio-primary-border);background:var(--studio-primary-soft);color:var(--studio-primary)}
+.ai-builder .header-actions{gap:var(--studio-space-2)}
+/* AI 도우미: a drawer beside the 속성/데이터 panel. */
+.studio-assistant{position:fixed;z-index:60;top:var(--ai-topbar-height);right:var(--ai-panel-width);bottom:0;width:360px;display:flex;flex-direction:column;box-sizing:border-box;border-left:1px solid var(--studio-border);background:var(--studio-surface);box-shadow:-8px 0 24px rgba(16,24,40,.08)}
+.studio-assistant[hidden]{display:none}
+.studio-assistant-head{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--studio-space-3);padding:var(--studio-space-4) var(--studio-space-5);border-bottom:1px solid var(--studio-border)}
+.studio-assistant-head strong{display:block;color:var(--studio-text);font-size:14px}
+.studio-assistant-head small{color:var(--studio-text-muted);font-size:11px}
+.studio-assistant-close{width:28px;height:28px;border:0;border-radius:var(--studio-radius-sm);background:transparent;color:var(--studio-text-muted);font-size:18px;cursor:pointer}
+.studio-assistant-close:hover{background:var(--studio-bg);color:var(--studio-text)}
+.studio-assistant .builder-panel{flex:1;height:auto;min-height:0}
+/* 미리보기: the same Viewer without the designer panel and tools. */
+body.studio-preview.ai-builder>main{grid-template-columns:minmax(0,1fr) 0}
+body.studio-preview.ai-builder>main>aside,body.studio-preview .studio-tools{display:none}
+/* Designer tools beside the canvas. */
+.studio-tools{position:absolute;z-index:6;top:60px;left:var(--studio-space-3);display:flex;flex-direction:column;gap:var(--studio-space-1);padding:var(--studio-space-1);border:1px solid var(--studio-border);border-radius:var(--studio-radius-lg);background:var(--studio-surface);box-shadow:var(--studio-shadow)}
+.studio-tool{width:32px;height:32px;border:0;border-radius:var(--studio-radius);background:transparent;color:var(--studio-text-secondary);font-size:15px;cursor:pointer}
+.studio-tool:hover:not(:disabled){background:var(--studio-bg)}
+.studio-tool[aria-pressed=true]{background:var(--studio-primary-soft);color:var(--studio-primary)}
+.studio-tool:disabled{color:var(--studio-text-subtle);cursor:not-allowed}
+.studio-tool-divider{height:1px;margin:2px 4px;background:var(--studio-border)}
+/* Property cards */
+.inspector-collapsible{margin:0 0 var(--studio-space-4);padding:0 0 var(--studio-space-3);border-bottom:1px solid var(--studio-border)}
+.inspector-collapsible>summary{padding:2px 0;color:var(--studio-text);font-size:12px;font-weight:700;cursor:pointer}
+.inspector-collapsible[open]>summary{margin-bottom:var(--studio-space-2)}
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--studio-space-2) var(--studio-space-3)}
+.field-grid .inspector-field{margin-top:0}
+.property-list{display:grid;grid-template-columns:auto 1fr;gap:var(--studio-space-2) var(--studio-space-4);margin:0 0 var(--studio-space-2);font-size:12px}
+.property-list dt{color:var(--studio-text-muted)}
+.property-list dd{margin:0;color:var(--studio-text);font-weight:600;text-align:right}
+.table-section .structure-actions{margin-bottom:var(--studio-space-2)}
+.table-section button{height:32px;border:1px solid var(--studio-border-strong);border-radius:var(--studio-radius);background:var(--studio-surface);color:var(--studio-text);font-size:12px;cursor:pointer}
+.table-section button:hover{border-color:var(--studio-primary-border);background:var(--studio-primary-softer)}
+.band-list{display:grid;gap:var(--studio-space-2)}
+.band-list-item{display:flex;align-items:baseline;justify-content:space-between;gap:var(--studio-space-2);padding:var(--studio-space-2) var(--studio-space-3);border:1px solid var(--studio-border);border-radius:var(--studio-radius);background:var(--studio-surface);color:var(--studio-text);text-align:left;cursor:pointer}
+.band-list-item:hover{border-color:var(--studio-primary-border);background:var(--studio-primary-softer)}
+.band-list-item b{font-size:12px}
+.band-list-item small{color:var(--studio-text-muted);font-size:11px}
+/* Data panel: datasets and auto binding */
+.dataset-tree{margin:var(--studio-space-4) 0;padding:var(--studio-space-3);border:1px solid var(--studio-border);border-radius:var(--studio-radius-lg);background:var(--studio-surface-muted)}
+.dataset-tree h3{margin:0 0 var(--studio-space-2);color:var(--studio-text-secondary);font-size:11px;font-weight:700;letter-spacing:.02em}
+.dataset-tree ul{max-height:220px;margin:0;padding:0;overflow:auto;list-style:none}
+.dataset-tree li{display:flex;justify-content:space-between;gap:var(--studio-space-2);padding:3px 0;color:var(--studio-text);font-size:12px}
+.dataset-tree li.group>span{font-weight:700}
+.dataset-tree li small{color:var(--studio-text-subtle);font-size:10px}
+.auto-binding{display:flex;align-items:center;gap:var(--studio-space-3);margin:0 0 var(--studio-space-4)}
+.auto-binding small{color:var(--studio-text-muted);font-size:11px}
+.auto-binding .ai-primary{width:auto;padding:0 var(--studio-space-4)}

@@ -31,11 +31,13 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   await until(page, () => window.aiBuilder && window.__mvp12?.tables?.length && window.__mvp58?.state && !document.querySelector('#viewer').classList.contains('viewer-loading'), null, 60000);
   await page.waitForTimeout(500);
 
-  // 1. Chat tab: clicking a cell creates no editing selection, overlay or toolbar.
+  // 1. 미리보기 (Designer 2.0 replaced the chat tab): clicking a cell creates no editing selection, overlay or toolbar.
+  await page.click('[data-action=preview]');
   await clickObject(page, 'IMPCL0078');
   const chatClick = await editingUi(page);
   await shot(page, 'editing-v2-ux-chat-click.png');
-  check('chatModeNoDirectEdit', chatClick.mode === 'chat' && !chatClick.selected && ['\u2014', '-'].includes(chatClick.sourceId) && chatClick.grips === 0 && !chatClick.toolbar && chatClick.movable === 0, chatClick);
+  await page.click('[data-action=preview]');
+  check('chatModeNoDirectEdit', chatClick.mode === 'preview' && !chatClick.selected && ['\u2014', '-'].includes(chatClick.sourceId) && chatClick.grips === 0 && !chatClick.toolbar && chatClick.movable === 0, chatClick);
 
   // 2. Direct Edit tab (셀 mode): the same cell selects normally with toolbar and property panel, no row/column labels.
   await page.click('[data-tab=direct]');
@@ -69,8 +71,8 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   const again = await editingUi(page);
   check('directModeReentry', back.inspector.includes('선택하세요') && !again.selected && again.staticSelection === 'ROW' && again.grips === 0 && again.markers === 1 && !again.toolbar, { back, again });
 
-  // 5-6. Chat: greeting, chips fill the composer, send shows user + honest AI bubble.
-  await page.click('[data-tab=ai]');
+  // 5-6. AI 도우미 drawer: greeting, chips fill the composer, send shows user + honest AI bubble.
+  await page.click('[data-action=ai-assistant]');
   const greeting = await page.evaluate(() => ({ docTitle: window.aiBuilder.state.document?.title, text: document.querySelector('.chat-row.assistant .chat-message').innerText, chips: [...document.querySelectorAll('.chat-suggestions button')].map(x => x.textContent), composerHeight: document.querySelector('.ai-composer').getBoundingClientRect().height, inputHeight: document.querySelector('.ai-composer input').getBoundingClientRect().height, panel: document.querySelector('main>aside').getBoundingClientRect().width, logScrolls: getComputedStyle(document.querySelector('.chat-conversation')).overflowY }));
   await page.click('.chat-suggestions button:nth-child(1)');
   const filled = await page.inputValue('.ai-composer input');
@@ -79,9 +81,9 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   await until(page, () => document.querySelectorAll('.chat-row').length >= 3);
   const bubbles = await page.evaluate(() => [...document.querySelectorAll('.chat-row')].map(row => ({ kind: row.classList.contains('user') ? 'user' : 'assistant', text: row.querySelector('.chat-message p')?.textContent })));
   await shot(page, 'editing-v2-ux-chat.png');
-  check('chatGreeting', greeting.text.includes('안녕하세요') && greeting.text.includes(`"${greeting.docTitle}"`) && greeting.docTitle !== project.formName && greeting.chips.join('|') === '제목 수정|표 열 너비 조정|행 이동|데이터 연결' && greeting.logScrolls === 'auto' && greeting.panel === 380, greeting);
+  check('chatGreeting', greeting.text.includes('안녕하세요') && greeting.text.includes(`"${greeting.docTitle}"`) && greeting.docTitle !== project.formName && greeting.chips.join('|') === '표 데이터 연결|반복 데이터|제목 수정|열 너비 조정' && greeting.logScrolls === 'auto' && greeting.panel === 380, greeting);
   check('chatComposerCompact', greeting.composerHeight <= 52 && greeting.inputHeight <= 34, greeting);
-  check('chatChipFillsComposer', filled === '문서 제목을 수정해줘', { filled });
+  check('chatChipFillsComposer', filled === '이 표를 items 데이터에 연결해줘', { filled });
   check('chatBubbles', bubbles.at(-2)?.kind === 'user' && bubbles.at(-2)?.text === '두 번째 표의 열 너비를 조정해줘' && bubbles.at(-1)?.kind === 'assistant' && bubbles.at(-1)?.text === 'AI 연결이 아직 설정되지 않았습니다.', bubbles);
 
   // 7-8. Sidebar: icon-only toggle; collapse and expand restore the same layout.
