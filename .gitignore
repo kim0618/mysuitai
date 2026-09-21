@@ -2,8 +2,14 @@
 node_modules/
 mysuit-mvp-work/runtime/
 
-# Local Tomcat + MySuit Viewer installation (vendor product and 17GB temp); not source of this project
-apache-tomcat-8.5.78/
+# Tomcat runtime is tracked except the MySuit webapp, runtime dirs and files holding live credentials
+apache-tomcat-8.5.78/webapps/MYSUIT/
+apache-tomcat-8.5.78/temp/
+apache-tomcat-8.5.78/work/
+apache-tomcat-8.5.78/logs/
+# server.xml contains a live internal DB datasource (username/password); never commit it
+apache-tomcat-8.5.78/conf/server.xml
+apache-tomcat-8.5.78/conf/server - 복사본.xml
 
 # Environment and credentials
 .env
