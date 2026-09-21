@@ -4,6 +4,8 @@ mysuit-mvp-work/runtime/
 
 # Tomcat runtime is tracked except the MySuit webapp, runtime dirs and files holding live credentials
 apache-tomcat-8.5.78/webapps/MYSUIT/
+apache-tomcat-8.5.78/webapps/MYSUIT.zip
+apache-tomcat-8.5.78/webapps/MYSUIT.*
 apache-tomcat-8.5.78/temp/
 apache-tomcat-8.5.78/work/
 apache-tomcat-8.5.78/logs/
