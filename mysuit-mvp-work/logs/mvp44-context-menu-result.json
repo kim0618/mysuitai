@@ -1,0 +1,80 @@
+{
+  "inline": {
+    "text": "  MVP 4.4 직접 편집",
+    "fontSize": 32,
+    "fontWeight": "600",
+    "textAlign": "left",
+    "visible": true,
+    "width": 425,
+    "height": 68,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "escaped": {
+    "text": "  MVP 4.4 직접 편집",
+    "fontSize": 32,
+    "fontWeight": "600",
+    "textAlign": "left",
+    "visible": true,
+    "width": 425,
+    "height": 68,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "toolbar": {
+    "text": "  MVP 4.4 직접 편집",
+    "fontSize": 24,
+    "fontWeight": "normal",
+    "textAlign": "center",
+    "visible": true,
+    "width": 425,
+    "height": 68,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "resized": {
+    "text": "  MVP 4.4 직접 편집",
+    "fontSize": 24,
+    "fontWeight": "normal",
+    "textAlign": "center",
+    "visible": true,
+    "width": 455,
+    "height": 80,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "hidden": {
+    "text": "  MVP 4.4 직접 편집",
+    "fontSize": 24,
+    "fontWeight": "normal",
+    "textAlign": "center",
+    "visible": false,
+    "width": 455,
+    "height": 80,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "restored": {
+    "text": "  MVP 4.4 직접 편집",
+    "fontSize": 24,
+    "fontWeight": "normal",
+    "textAlign": "center",
+    "visible": true,
+    "width": 455,
+    "height": 80,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "patches": 6,
+  "hashes": {
+    "before": {
+      "form": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+      "info": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e"
+    },
+    "after": {
+      "form": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+      "info": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e"
+    },
+    "unchanged": true
+  }
+}

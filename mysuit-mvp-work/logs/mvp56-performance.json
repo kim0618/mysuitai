@@ -1,0 +1,14 @@
+{
+  "rowCandidateMs": 19,
+  "tableCandidateMs": 13,
+  "render": {
+    "original": 3344,
+    "row": 2138,
+    "table": 1882
+  },
+  "pdf": {
+    "original": 499,
+    "row": 345,
+    "table": 236
+  }
+}

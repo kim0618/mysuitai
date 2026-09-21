@@ -1,0 +1,8 @@
+const {decodedText}=require('../services/form-patch-service');
+const {normalizeLabel}=require('./scalar-binding-matcher');
+const VERSION='1.0';
+function bindingOf(cell){return String(cell?.dataType)==='1'?{dataType:'1',dataSet:cell.dataSet,column:cell.column}:null}
+function resolve(parsed){const tables=[];for(const [pageIndex,page] of parsed.pages.entries())for(const item of page.items||[]){if(item?.className!=='UBTable'||!item.id||!Array.isArray(item.table))continue;const rows=item.table,first=rows[0]||[],labels=first.map(w=>decodedText(w?.cell?.text||'').trim()),distinct=new Set(labels.map(normalizeLabel).filter(Boolean));if(rows.length<2||!labels.every(Boolean)||distinct.size!==labels.length)continue;tables.push({tableId:item.id,page:pageIndex,rowCount:Number(item.rowCount||rows.length),columnCount:Number(item.columnCount||first.length),geometry:{x:Number(item.x||0),y:Number(item.y||0),width:Number(item.width||0),height:Number(item.height||0)},headerRowIndex:0,headerCells:first.map((w,columnIndex)=>({cellId:w.cell.id,columnIndex,label:labels[columnIndex],normalizedLabel:normalizeLabel(labels[columnIndex]),style:{fontSize:w.cell.fontSize,fontWeight:w.cell.fontWeight,textAlign:w.cell.textAlign,verticalAlign:w.cell.verticalAlign,textColor:w.cell.fontColor,backgroundColor:w.cell.backgroundColor,borderString:w.borderString},geometry:{x:w.x,y:w.y,width:w.width,height:w.height}})),bodyRows:rows.slice(1).map(row=>row.map(w=>({cellId:w.cell?.id,text:decodedText(w.cell?.text||''),binding:bindingOf(w.cell)}))),cellIds:rows.flat().map(w=>w.cell?.id).filter(Boolean),currentBand:item.band||'',currentBindings:rows.flat().map(w=>bindingOf(w.cell)).filter(Boolean)});}
+  return{resolverVersion:VERSION,tables};
+}
+module.exports={VERSION,resolve};

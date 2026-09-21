@@ -1,0 +1,83 @@
+{
+  "before": {
+    "widths": [
+      370,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70
+    ],
+    "hidden": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "offsets": [
+      0,
+      370,
+      440,
+      510,
+      580,
+      650,
+      720
+    ],
+    "totalWidth": 790
+  },
+  "after": {
+    "widths": [
+      386,
+      73,
+      73,
+      73,
+      73,
+      73,
+      74
+    ],
+    "hidden": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "offsets": [
+      0,
+      386,
+      459,
+      532,
+      605,
+      678,
+      751
+    ],
+    "totalWidth": 825
+  },
+  "target": 825,
+  "exact": true,
+  "mode": "PROPORTIONAL"
+}

@@ -1,0 +1,22 @@
+Candidate semantic form diff
+============================
+Source:    /home/tjd618/mysuit-ai-viewer/apache-tomcat-8.5.78/webapps/MYSUIT/UFile/project/sample/sample/form.ubjf
+Candidate: /home/tjd618/mysuit-ai-viewer/apache-tomcat-8.5.78/webapps/MYSUIT/UFile/project/sample/sample_mvp2/form.ubjf
+Object:    LB6417 (pages/0/items/6)
+Band:      UPHB2584
+
+Changed semantic paths: 1
+
+pages/0/items/6/text
+- %20%20%EC%97%B0%EB%8F%84%EB%B3%84%20%EC%8B%A4%EC%A0%81%EB%B3%B4%EA%B3%A0%EC%84%9C
++ MVP%20%EC%9B%90%EB%B3%B8%20%EC%88%98%EC%A0%95%20%ED%85%8C%EC%8A%A4%ED%8A%B8
+
+Decoded value:
+- "  연도별 실적보고서"
++ "MVP 원본 수정 테스트"
+
+Source SHA-256:           020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83
+Candidate SHA-256 before: 020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83
+Candidate SHA-256 after:  2446d6c4bf4659f50ae5b3251d51ff1803f8d1a417a35782d733edd5545cfb8e
+Reparse valid: yes
+Other semantic changes: none

@@ -1,0 +1,1519 @@
+{
+  "stable": true,
+  "expected": {
+    "ops": [
+      {
+        "operation": "resizeColumn",
+        "columnIndex": 2,
+        "afterWidth": 100
+      },
+      {
+        "operation": "resizeColumn",
+        "columnIndex": 1,
+        "afterWidth": 90
+      },
+      {
+        "operation": "resizeColumn",
+        "columnIndex": 3,
+        "afterWidth": 110
+      },
+      {
+        "operation": "hideColumn",
+        "columnIndex": 5
+      }
+    ],
+    "state": {
+      "widths": [
+        370,
+        90,
+        100,
+        110,
+        70,
+        70,
+        70
+      ],
+      "hidden": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "offsets": [
+        0,
+        370,
+        460,
+        560,
+        670,
+        740,
+        740
+      ],
+      "totalWidth": 810
+    },
+    "columns": [
+      {
+        "count": 24,
+        "visible": 24,
+        "widths": [
+          370
+        ],
+        "lefts": [
+          2
+        ]
+      },
+      {
+        "count": 24,
+        "visible": 24,
+        "widths": [
+          90
+        ],
+        "lefts": [
+          372
+        ]
+      },
+      {
+        "count": 24,
+        "visible": 24,
+        "widths": [
+          100
+        ],
+        "lefts": [
+          462
+        ]
+      },
+      {
+        "count": 24,
+        "visible": 24,
+        "widths": [
+          110
+        ],
+        "lefts": [
+          562
+        ]
+      },
+      {
+        "count": 24,
+        "visible": 24,
+        "widths": [
+          70
+        ],
+        "lefts": [
+          672
+        ]
+      },
+      {
+        "count": 24,
+        "visible": 0,
+        "widths": [
+          70
+        ],
+        "lefts": [
+          742
+        ]
+      },
+      {
+        "count": 24,
+        "visible": 24,
+        "widths": [
+          70
+        ],
+        "lefts": [
+          742
+        ]
+      }
+    ]
+  },
+  "samples": [
+    {
+      "kind": "refresh",
+      "index": 1,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 2,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 3,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 4,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 5,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-page",
+      "index": 1,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-page",
+      "index": 2,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-page",
+      "index": 3,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-page",
+      "index": 4,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-page",
+      "index": 5,
+      "layout": {
+        "ops": [
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 2,
+            "afterWidth": 100
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 1,
+            "afterWidth": 90
+          },
+          {
+            "operation": "resizeColumn",
+            "columnIndex": 3,
+            "afterWidth": 110
+          },
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          }
+        ],
+        "state": {
+          "widths": [
+            370,
+            90,
+            100,
+            110,
+            70,
+            70,
+            70
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            370,
+            460,
+            560,
+            670,
+            740,
+            740
+          ],
+          "totalWidth": 810
+        },
+        "columns": [
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              370
+            ],
+            "lefts": [
+              2
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              90
+            ],
+            "lefts": [
+              372
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              100
+            ],
+            "lefts": [
+              462
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              110
+            ],
+            "lefts": [
+              562
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              672
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 0,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          },
+          {
+            "count": 24,
+            "visible": 24,
+            "widths": [
+              70
+            ],
+            "lefts": [
+              742
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

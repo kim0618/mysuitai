@@ -1,0 +1,10 @@
+.mode-tabs { display:flex; gap:6px; margin:10px 0; }
+.mode-tabs button { flex:1; }
+.mode-tabs button.active { background:#0868c7; color:#fff; border-color:#0868c7; }
+#position-editor { padding-bottom:16px; margin-bottom:16px; border-bottom:1px solid #dce3ec; }
+.position-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; }
+.position-grid span { background:#edf2f7; padding:7px; border-radius:5px; }
+.warning { font-size:12px; color:#b54708; background:#fff4e5; padding:8px; border-radius:5px; }
+.render-patch { border:1px solid #d9e1eb; border-radius:6px; padding:8px; margin:7px 0; font-size:12px; }
+.render-patch strong { display:block; color:#7a3e00; }
+.render-patch button { margin-top:6px; width:100%; padding:5px; }

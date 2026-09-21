@@ -1,0 +1,211 @@
+{
+  "nodes": [
+    {
+      "id": "UPHB2584",
+      "type": "BAND",
+      "role": "PAGE_HEADER",
+      "section": "PAGE_HEADER"
+    },
+    {
+      "id": "UDHB4114",
+      "type": "BAND",
+      "role": "HEADER",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "UGHB7543",
+      "type": "BAND",
+      "role": "GROUP_HEADER",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "UDB3195",
+      "type": "BAND",
+      "role": "DATA",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "UGFB0223",
+      "type": "BAND",
+      "role": "SUMMARY",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "UPFB9094",
+      "type": "BAND",
+      "role": "PAGE_FOOTER",
+      "section": "PAGE_FOOTER"
+    },
+    {
+      "id": "LB6417",
+      "type": "STATIC_OBJECT",
+      "role": "PAGE_HEADER",
+      "section": "PAGE_HEADER"
+    },
+    {
+      "id": "IMG4979",
+      "type": "STATIC_OBJECT",
+      "role": "PAGE_HEADER",
+      "section": "PAGE_HEADER"
+    },
+    {
+      "id": "UBA6577",
+      "type": "STATIC_OBJECT",
+      "role": "PAGE_HEADER",
+      "section": "PAGE_HEADER"
+    },
+    {
+      "id": "TB3039",
+      "type": "COMPOSITE_MEMBER",
+      "role": "HEADER",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "TB3979",
+      "type": "COMPOSITE_MEMBER",
+      "role": "GROUP_HEADER",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "TB5514",
+      "type": "COMPOSITE_MEMBER",
+      "role": "DATA",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "TB8715",
+      "type": "COMPOSITE_MEMBER",
+      "role": "SUMMARY",
+      "section": "BODY_FINANCIAL"
+    },
+    {
+      "id": "TB7301",
+      "type": "STATIC_OBJECT",
+      "role": "PAGE_FOOTER",
+      "section": "PAGE_FOOTER"
+    }
+  ],
+  "edges": [
+    {
+      "from": "UPHB2584",
+      "to": "UDHB4114",
+      "relation": "AFTER",
+      "evidence": "page-band-source-order"
+    },
+    {
+      "from": "UDHB4114",
+      "to": "UGHB7543",
+      "relation": "AFTER",
+      "evidence": "page-band-source-order"
+    },
+    {
+      "from": "UGHB7543",
+      "to": "UDB3195",
+      "relation": "AFTER",
+      "evidence": "page-band-source-order"
+    },
+    {
+      "from": "UDB3195",
+      "to": "UGFB0223",
+      "relation": "AFTER",
+      "evidence": "page-band-source-order"
+    },
+    {
+      "from": "UGFB0223",
+      "to": "UPFB9094",
+      "relation": "AFTER",
+      "evidence": "page-band-source-order"
+    },
+    {
+      "from": "UPHB2584",
+      "to": "LB6417",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UPHB2584",
+      "to": "IMG4979",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UPHB2584",
+      "to": "UBA6577",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UDHB4114",
+      "to": "TB3039",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UGHB7543",
+      "to": "TB3979",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UDB3195",
+      "to": "TB5514",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UGFB0223",
+      "to": "TB8715",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UPFB9094",
+      "to": "TB7301",
+      "relation": "INSIDE",
+      "evidence": "band-property-and-bandItems"
+    },
+    {
+      "from": "UDHB4114",
+      "to": "UGHB7543",
+      "relation": "DEPENDS_ON_HEIGHT",
+      "evidence": "MVP54-header-height-delta-runtime-reflow"
+    },
+    {
+      "from": "UGHB7543",
+      "to": "UDB3195",
+      "relation": "DEPENDS_ON_HEIGHT",
+      "evidence": "MVP54-header-height-delta-runtime-reflow"
+    },
+    {
+      "from": "UDB3195",
+      "to": "UGFB0223",
+      "relation": "DEPENDS_ON_HEIGHT",
+      "evidence": "MVP54-header-height-delta-runtime-reflow"
+    }
+  ],
+  "bodySignature": {
+    "header": {
+      "instances": 1,
+      "height": 33,
+      "total": 33
+    },
+    "groupHeader": {
+      "instances": 3,
+      "height": 27,
+      "total": 81
+    },
+    "detail": {
+      "instances": 17,
+      "height": 27,
+      "total": 459
+    },
+    "summary": {
+      "instances": 3,
+      "height": 27,
+      "total": 81
+    },
+    "collapsedHeight": 654,
+    "flowStart": 300,
+    "flowEnd": 954
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "matrix": [
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "updateText",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "setFontSize",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "setFontWeight",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "setTextAlign",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "resizeObject",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "moveObject",
+      "allowed": false,
+      "reason": "SOURCE_MAPPING_UNVERIFIED",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "setImageFit",
+      "allowed": false,
+      "reason": "SOURCE_MAPPING_UNVERIFIED",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "replaceImage",
+      "allowed": false,
+      "reason": "SOURCE_MAPPING_UNVERIFIED",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "hideObject",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "restoreObject",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "operation": "moveRenderObject",
+      "allowed": true,
+      "reason": null,
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "resizeColumn",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "moveColumn",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "hideColumn",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "restoreColumn",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "addStaticColumn",
+      "allowed": false,
+      "reason": "RUNTIME_UI_NOT_CONNECTED",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "addBoundColumn",
+      "allowed": false,
+      "reason": "RUNTIME_UI_NOT_CONNECTED",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "operation": "removeColumn",
+      "allowed": false,
+      "reason": "RUNTIME_UI_NOT_CONNECTED",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "resizeRow",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "hideRow",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "restoreRow",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "collapseRow",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "moveRow",
+      "allowed": false,
+      "reason": "STATIC_TABLE_ONLY",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "removeRow",
+      "allowed": false,
+      "reason": "STATIC_TABLE_ONLY",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "moveRenderedRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "addStaticRow",
+      "allowed": false,
+      "reason": "RUNTIME_UI_NOT_CONNECTED",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "removeStaticRow",
+      "allowed": false,
+      "reason": "RUNTIME_UI_NOT_CONNECTED",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "resizeRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "hideRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "restoreRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "collapseRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "moveRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "removeRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "moveRenderedRow",
+      "allowed": true,
+      "reason": null,
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "addStaticRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "removeStaticRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:main-report-table",
+      "operation": "moveTable",
+      "allowed": true,
+      "reason": null,
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      }
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:main-report-table",
+      "operation": "resizeTableWidth",
+      "allowed": true,
+      "reason": null,
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      }
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:main-report-table",
+      "operation": "hideTable",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:main-report-table",
+      "operation": "restoreTable",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:main-report-table",
+      "operation": "collapseTable",
+      "allowed": true,
+      "reason": null,
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    }
+  ]
+}

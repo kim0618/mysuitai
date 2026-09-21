@@ -1,0 +1,10 @@
+{
+  "backup":"mysuit-mvp-work/mvp3-app/data/render-patches.pre-mvp411.json",
+  "beforeCount":7,
+  "afterCount":7,
+  "migrated":7,
+  "ambiguous":0,
+  "unresolved":0,
+  "status":"MIGRATED",
+  "rule":"unique viewerObjectId + exact original before coordinate, then persist stable renderIndex and fingerprint"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "sample": {
+    "formUbjfSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "infoXmlSha256": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e",
+    "unchangedByPreAiBaseline": true
+  },
+  "template": {
+    "formUbjfSha256": "de581865731addeef2f607753c7208801056275e29ee211eecf769e132e7c17b",
+    "infoXmlSha256": "2c3903c54e465ab0672fe7e5093dda70ef94b617a57ab15c9470b12c4f3d508f",
+    "unchanged": true
+  },
+  "import": {
+    "projectName": "import_mvp10_20260827_164519_71baac",
+    "formUbjfSha256": "af36f84d446e77eab0ecbce9cdf1624e4d88238381b925022caf8a2c10c083ba",
+    "infoXmlSha256": "2c3903c54e465ab0672fe7e5093dda70ef94b617a57ab15c9470b12c4f3d508f",
+    "archivedAsEvidence": true
+  },
+  "userCandidatesPreserved": true,
+  "preAiIntegrityEvidence": "mysuit-mvp-work/logs/pre-ai-integrity.json"
+}

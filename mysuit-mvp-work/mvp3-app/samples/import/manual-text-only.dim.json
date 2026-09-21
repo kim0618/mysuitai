@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "page": { "width": 794, "height": 1123 },
+  "elements": [
+    { "id": "title", "type": "text", "x": 182, "y": 60, "width": 430, "height": 44, "text": "월간 실적 보고서", "style": { "fontSize": 24, "bold": true, "textAlign": "center" } },
+    { "id": "subtitle", "type": "text", "x": 247, "y": 125, "width": 300, "height": 32, "text": "2026년 8월", "style": { "fontSize": 16, "bold": false, "textAlign": "center" } },
+    { "id": "guide", "type": "text", "x": 54, "y": 245, "width": 500, "height": 40, "text": "부서별 주요 실적을 보고합니다.", "style": { "fontSize": 14, "bold": false, "textAlign": "left" } },
+    { "id": "date", "type": "text", "x": 520, "y": 315, "width": 220, "height": 32, "text": "작성일: 2026.08.27", "style": { "fontSize": 12, "bold": true, "textAlign": "right" } },
+    { "id": "footer", "type": "text", "x": 247, "y": 1040, "width": 300, "height": 30, "text": "CONFIDENTIAL", "style": { "fontSize": 11, "bold": true, "textAlign": "center" } }
+  ]
+}

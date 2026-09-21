@@ -1,0 +1,159 @@
+{
+  "success": true,
+  "startedAt": "2026-09-17T01:25:39.577Z",
+  "assertions": {
+    "columnAllowed": true,
+    "overflow": true,
+    "unknown": true,
+    "failureNoHistory": true,
+    "detailBlocked": true,
+    "tableScope": true,
+    "directValidated": true
+  },
+  "column": {
+    "target": "tbl:financial-7col|col:2",
+    "resize": {
+      "allowed": true,
+      "constraints": {
+        "support": {
+          "viewer": true,
+          "source": true,
+          "pdf": true
+        },
+        "maturity": "STABLE",
+        "candidateMaterialization": "SUPPORTED",
+        "sameGroupOnly": false,
+        "groupKey": "grp:financial-all-columns",
+        "maxTableWidth": 792
+      }
+    },
+    "move": {
+      "allowed": true,
+      "constraints": {
+        "support": {
+          "viewer": true,
+          "source": true,
+          "pdf": true
+        },
+        "maturity": "STABLE",
+        "candidateMaterialization": "SUPPORTED",
+        "sameGroupOnly": true,
+        "groupKey": "grp:financial-all-columns",
+        "maxTableWidth": 792
+      }
+    },
+    "panel": "✓ 열 너비\n출력에도 반영\n✓ 열 이동\n출력에도 반영\n✓ 열 숨김\n출력에도 반영\n✓ 열 복원\n출력에도 반영"
+  },
+  "overflow": {
+    "valid": false,
+    "code": "TABLE_WIDTH_OVERFLOW",
+    "message": "표 너비 793는 페이지 출력 가능 폭 792를 넘습니다.",
+    "details": {
+      "currentWidth": 790,
+      "requestedWidth": 793,
+      "maximumWidth": 792
+    }
+  },
+  "unknown": {
+    "valid": false,
+    "code": "UNSUPPORTED_OPERATION",
+    "message": "등록되지 않은 Operation입니다.",
+    "details": {
+      "operation": "deleteEverything"
+    }
+  },
+  "detail": {
+    "cap": {
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+      "constraints": {
+        "support": {
+          "viewer": true,
+          "source": true,
+          "pdf": true
+        },
+        "maturity": "STABLE",
+        "candidateMaterialization": "SUPPORTED",
+        "reflowScope": "UNSUPPORTED",
+        "reflowEvidence": "rendered-detail-template"
+      }
+    },
+    "buttonDisabled": true,
+    "panel": "✓ 상세 행 화면 순서 이동\n화면에만 반영"
+  },
+  "table": {
+    "collapse": {
+      "allowed": true,
+      "constraints": {
+        "support": {
+          "viewer": true,
+          "source": true,
+          "pdf": true
+        },
+        "maturity": "STABLE",
+        "candidateMaterialization": "SUPPORTED",
+        "reflowScope": "SAME_SECTION",
+        "pageFooterProtected": true
+      }
+    },
+    "width": {
+      "allowed": true,
+      "constraints": {
+        "support": {
+          "viewer": true,
+          "source": false,
+          "pdf": false
+        },
+        "maturity": "LIMITED",
+        "candidateMaterialization": "VIEWER_ONLY",
+        "reflowScope": "SAME_SECTION",
+        "pageFooterProtected": true
+      }
+    }
+  },
+  "directHistory": {
+    "schemaVersion": 1,
+    "cursor": 1,
+    "events": [
+      {
+        "schemaVersion": 1,
+        "historyEventId": "hist_mu4ullph_319ed1b8",
+        "userActionId": "action_mu4ullph_e6906c",
+        "sequence": 1,
+        "timestamp": "2026-09-17T01:25:41.285Z",
+        "draftId": "mvp59_e2e",
+        "projectName": "sample",
+        "formName": "sample",
+        "scope": "STRUCTURE",
+        "operation": "hideColumn",
+        "target": {
+          "logicalTableKey": "tbl:financial-7col",
+          "columnIndex": 6,
+          "logicalColumnKey": "tbl:financial-7col|col:6"
+        },
+        "before": {
+          "active": false
+        },
+        "after": {
+          "active": true
+        },
+        "sourceOperationId": "sop_mu4ullpd_263b5d",
+        "generatedIds": {},
+        "internalOperations": [],
+        "label": "Column 6 숨김"
+      }
+    ],
+    "canUndo": true,
+    "canRedo": false,
+    "structuralState": {
+      "schemaVersion": 1,
+      "kind": "STATIC_SOURCE",
+      "projectName": "sample",
+      "formName": "sample",
+      "formSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+      "semanticSignature": "f59714480092dc23f94a387551bf5f1146a1d39bf854e2469ac47f5b66c00c84"
+    },
+    "previewUrl": "/mysuit/UView5/index.jsp?projectName=sample&formName=sample"
+  }
+}

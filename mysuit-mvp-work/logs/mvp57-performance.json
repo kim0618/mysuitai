@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "hoverCalculations": 3,
+    "dropCalculations": 24,
+    "derivedRecomputes": 105,
+    "frames": 24
+  },
+  "columnDragMs": 575.6291449999999,
+  "columnResizeMs": 393.9870430000001,
+  "requestCount": 9
+}

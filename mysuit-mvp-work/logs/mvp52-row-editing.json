@@ -1,0 +1,603 @@
+{
+  "rowResized": [
+    {
+      "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "role": "HEADER",
+      "count": 7,
+      "top": 300,
+      "height": 33,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 333,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 360,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 387,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 414,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 441,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 468,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 495,
+      "height": 39,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 534,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 561,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 588,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 615,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 642,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 669,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 696,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 723,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 750,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 777,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 804,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 831,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 858,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 885,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 912,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 939,
+      "height": 27,
+      "hidden": false
+    }
+  ],
+  "rowHidden": [
+    {
+      "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "role": "HEADER",
+      "count": 7,
+      "top": 300,
+      "height": 33,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 333,
+      "height": 27,
+      "hidden": true
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 333,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 360,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 387,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 414,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 441,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 468,
+      "height": 39,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 507,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 534,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 561,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 588,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 615,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 642,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 669,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 696,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 723,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 750,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 777,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 804,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 831,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 858,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 885,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 912,
+      "height": 27,
+      "hidden": false
+    }
+  ],
+  "rowRestored": [
+    {
+      "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "role": "HEADER",
+      "count": 7,
+      "top": 300,
+      "height": 33,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 333,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 360,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 387,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 414,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 441,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 468,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 495,
+      "height": 39,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 534,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 561,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 588,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 615,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 642,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 669,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 696,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 723,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+      "role": "GROUP_HEADER",
+      "count": 7,
+      "top": 750,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 777,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 804,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 831,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 858,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 885,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+      "role": "RENDERED_DETAIL",
+      "count": 7,
+      "top": 912,
+      "height": 27,
+      "hidden": false
+    },
+    {
+      "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+      "role": "SUMMARY",
+      "count": 7,
+      "top": 939,
+      "height": 27,
+      "hidden": false
+    }
+  ],
+  "dataRowUi": {
+    "role": "RENDERED_DETAIL",
+    "resizeDisabled": true,
+    "hideDisabled": true,
+    "message": "데이터 밴드 상세 행: 선택만 가능하며 이동·크기·숨김은 차단됩니다."
+  },
+  "rejected": {
+    "status": 409,
+    "body": {
+      "success": false,
+      "code": "DATA_ROW_STRUCTURE_EDIT_REJECTED",
+      "message": "Rendered Data Row는 구조 편집할 수 없습니다."
+    }
+  },
+  "rowReorder": {
+    "implemented": false,
+    "status": "STOPPED_BY_DATA_SEMANTICS",
+    "reason": "Rendered Detail 반복 순서와 fixed/data 경계의 안전한 source 의미가 검증되지 않음"
+  }
+}

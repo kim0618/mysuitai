@@ -1,0 +1,141 @@
+{
+  "target": {
+    "viewerObjectId": "LB6417_UPHB2584_ROW0",
+    "sourceObjectId": "LB6417",
+    "bandId": "UPHB2584",
+    "rowIndex": 0,
+    "className": "UBLabel",
+    "beforeText": "  연도별 실적보고서",
+    "left": 367,
+    "top": 100,
+    "width": 425,
+    "height": 68
+  },
+  "reload": {
+    "cursor": 9,
+    "signature": {
+      "title": "  연도별 실적보고서",
+      "objects": 180,
+      "columns": {
+        "order": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "widths": [
+          419,
+          79,
+          113,
+          79,
+          80,
+          70,
+          70
+        ],
+        "hidden": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "totalWidth": 770
+      },
+      "header": {
+        "height": 33,
+        "hidden": true
+      },
+      "table": {
+        "left": 2,
+        "top": 300,
+        "width": 790,
+        "collapsed": false
+      },
+      "sourcePatches": [
+        {
+          "id": "patch_a5582770",
+          "property": "text",
+          "after": "  MVP 5.8 History"
+        }
+      ],
+      "renderPatches": [
+        {
+          "key": "p0|c0|src:LB6417|band:UPHB2584|row:0|idx:0",
+          "after": {
+            "left": 397,
+            "top": 80
+          }
+        }
+      ]
+    }
+  },
+  "newContext": {
+    "cursor": 9,
+    "signature": {
+      "title": "  연도별 실적보고서",
+      "objects": 180,
+      "columns": {
+        "order": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "widths": [
+          419,
+          79,
+          113,
+          79,
+          80,
+          70,
+          70
+        ],
+        "hidden": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "totalWidth": 770
+      },
+      "header": {
+        "height": 33,
+        "hidden": true
+      },
+      "table": {
+        "left": 2,
+        "top": 300,
+        "width": 790,
+        "collapsed": false
+      },
+      "sourcePatches": [
+        {
+          "id": "patch_a5582770",
+          "property": "text",
+          "after": "  MVP 5.8 History"
+        }
+      ],
+      "renderPatches": [
+        {
+          "key": "p0|c0|src:LB6417|band:UPHB2584|row:0|idx:0",
+          "after": {
+            "left": 397,
+            "top": 80
+          }
+        }
+      ]
+    }
+  },
+  "same": true
+}

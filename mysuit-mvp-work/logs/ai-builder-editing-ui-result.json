@@ -1,0 +1,35 @@
+{
+  "phase": "AI_BUILDER_EDITING_UI_PRODUCTIZATION",
+  "verdict": "B",
+  "sidebarPass": true,
+  "viewerIframeReusePass": true,
+  "viewerToolbarDuplicated": false,
+  "tabOrderPass": true,
+  "chatUiPass": true,
+  "directEditUiPass": true,
+  "rowEditUiPass": true,
+  "columnEditUiPass": true,
+  "imageEditUiPass": false,
+  "dataBindingUiPass": true,
+  "selectionBridgePass": true,
+  "viewerReloadOnTabSwitch": false,
+  "savePass": true,
+  "undoRedoPass": true,
+  "responsive1440Pass": true,
+  "responsive1920Pass": true,
+  "regressionPass": true,
+  "measurements": {
+    "sidebar1440": 184,
+    "viewer1440": 876,
+    "rightPanel1440": 380,
+    "viewer1920": 1356,
+    "rightPanel1920": 380,
+    "topBar": 54
+  },
+  "limitations": [
+    "AI chat backend is not implemented; composer and suggestions remain disabled.",
+    "UBImage selection is visible in the Viewer, but source image resize/replace capability is unavailable and therefore hidden.",
+    "General row reorder and delete are not exposed because the current verified contract does not support them safely.",
+    "The legacy selection controller may emit transient non-fatal canvas warnings during initialization."
+  ]
+}

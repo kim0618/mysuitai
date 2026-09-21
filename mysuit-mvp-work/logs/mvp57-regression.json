@@ -1,0 +1,101 @@
+{
+  "assertions": {
+    "coordinate": true,
+    "columnReorder": true,
+    "columnResize": true,
+    "rowGutter": true,
+    "tableDrag": true,
+    "tableResize": true,
+    "collapse": true,
+    "rollback": true,
+    "sourceSmoke": true
+  },
+  "requests": [
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "logicalTableKey": "tbl:financial-7col",
+      "operation": "moveColumn",
+      "columnIndex": 2,
+      "originalVisualIndex": 2,
+      "toVisualIndex": 1
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "logicalTableKey": "tbl:financial-7col",
+      "operation": "hideColumn",
+      "columnIndex": 6
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "logicalTableKey": "tbl:financial-7col",
+      "operation": "resizeColumn",
+      "columnIndex": 2,
+      "afterWidth": 100
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "logicalTableKey": "tbl:financial-7col",
+      "operation": "resizeColumn",
+      "columnIndex": 2,
+      "afterWidth": 142
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "logicalTableKey": "tbl:financial-7col",
+      "operation": "resizeRow",
+      "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+      "beforeHeight": 27,
+      "afterHeight": 39
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "operation": "moveTable",
+      "compositeTableKey": "ctbl:main-report-table",
+      "before": {
+        "left": 2,
+        "top": 300
+      },
+      "after": {
+        "left": 32,
+        "top": 280
+      }
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "operation": "resizeTableWidth",
+      "compositeTableKey": "ctbl:main-report-table",
+      "beforeWidth": 792,
+      "afterWidth": 772
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "logicalTableKey": "tbl:financial-7col",
+      "operation": "resizeColumn",
+      "columnIndex": 2,
+      "afterWidth": 128
+    },
+    {
+      "layoutDraftId": "mvp57_direct_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "operation": "collapseTable",
+      "compositeTableKey": "ctbl:main-report-table"
+    }
+  ]
+}

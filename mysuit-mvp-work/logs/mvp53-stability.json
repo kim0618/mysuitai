@@ -1,0 +1,3855 @@
+{
+  "stable": true,
+  "samples": [
+    {
+      "kind": "refresh",
+      "index": 1,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 2,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 3,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 4,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "refresh",
+      "index": 5,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-context",
+      "index": 1,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-context",
+      "index": 2,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-context",
+      "index": 3,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-context",
+      "index": 4,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    },
+    {
+      "kind": "new-context",
+      "index": 5,
+      "value": {
+        "table": {
+          "bounds": {
+            "left": 32,
+            "top": 280,
+            "right": 857,
+            "bottom": 944,
+            "width": 825,
+            "height": 664
+          },
+          "visible": 144,
+          "collapsed": false,
+          "hidden": false
+        },
+        "columns": {
+          "widths": [
+            424,
+            80,
+            80,
+            80,
+            80,
+            70,
+            81
+          ],
+          "hidden": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "order": [
+            0,
+            2,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "offsets": [
+            0,
+            504,
+            424,
+            584,
+            664,
+            744,
+            744
+          ],
+          "totalWidth": 825
+        },
+        "rows": [
+          {
+            "key": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+            "height": 33,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+            "height": 37,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_1_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_1_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UGHB7543|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:1",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:2",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:3",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:4",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:grp_2_UDB3195|rendered-row:5",
+            "height": 27,
+            "hidden": false
+          },
+          {
+            "key": "tbl:financial-7col|band:UGHB7543grp_2_dataset_2|rendered-row:0",
+            "height": 27,
+            "hidden": false
+          }
+        ],
+        "first": {
+          "left": 32,
+          "top": 280
+        },
+        "ids": [
+          "UB5273553_UDHB4114_ROW0",
+          "UB5297739_UDHB4114_ROW0",
+          "UB5302287_UDHB4114_ROW0",
+          "UB5305348_UDHB4114_ROW0",
+          "UB5313710_UDHB4114_ROW0",
+          "UB5316883_UDHB4114_ROW0",
+          "UB5337756_UDHB4114_ROW0",
+          "UB5595998_grp_0_UGHB7543_ROW0",
+          "UB5595998_grp_1_UGHB7543_ROW0",
+          "UB5595998_grp_2_UGHB7543_ROW0",
+          "UB5596214_grp_0_UGHB7543_ROW0",
+          "UB5596214_grp_1_UGHB7543_ROW0",
+          "UB5596214_grp_2_UGHB7543_ROW0",
+          "UB5599952_grp_0_UGHB7543_ROW0",
+          "UB5599952_grp_1_UGHB7543_ROW0",
+          "UB5599952_grp_2_UGHB7543_ROW0",
+          "UB5602336_grp_0_UGHB7543_ROW0",
+          "UB5602336_grp_1_UGHB7543_ROW0",
+          "UB5602336_grp_2_UGHB7543_ROW0",
+          "UB5622520_grp_0_UGHB7543_ROW0",
+          "UB5622520_grp_1_UGHB7543_ROW0",
+          "UB5622520_grp_2_UGHB7543_ROW0",
+          "UB5624437_grp_0_UGHB7543_ROW0",
+          "UB5624437_grp_1_UGHB7543_ROW0",
+          "UB5624437_grp_2_UGHB7543_ROW0",
+          "UB5634325_grp_0_UGHB7543_ROW0",
+          "UB5634325_grp_1_UGHB7543_ROW0",
+          "UB5634325_grp_2_UGHB7543_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW2",
+          "UB6093171_grp_0_UDB3195_ROW3",
+          "UB6093171_grp_0_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW0",
+          "UB6093171_grp_1_UDB3195_ROW1",
+          "UB6093171_grp_1_UDB3195_ROW2",
+          "UB6093171_grp_1_UDB3195_ROW3",
+          "UB6093171_grp_1_UDB3195_ROW4",
+          "UB6093171_grp_1_UDB3195_ROW5",
+          "UB6093171_grp_2_UDB3195_ROW0",
+          "UB6093171_grp_2_UDB3195_ROW1",
+          "UB6093171_grp_2_UDB3195_ROW2",
+          "UB6093171_grp_2_UDB3195_ROW3",
+          "UB6093171_grp_2_UDB3195_ROW4",
+          "UB6093171_grp_2_UDB3195_ROW5",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW2",
+          "UB6103460_grp_0_UDB3195_ROW3",
+          "UB6103460_grp_0_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW0",
+          "UB6103460_grp_1_UDB3195_ROW1",
+          "UB6103460_grp_1_UDB3195_ROW2",
+          "UB6103460_grp_1_UDB3195_ROW3",
+          "UB6103460_grp_1_UDB3195_ROW4",
+          "UB6103460_grp_1_UDB3195_ROW5",
+          "UB6103460_grp_2_UDB3195_ROW0",
+          "UB6103460_grp_2_UDB3195_ROW1",
+          "UB6103460_grp_2_UDB3195_ROW2",
+          "UB6103460_grp_2_UDB3195_ROW3",
+          "UB6103460_grp_2_UDB3195_ROW4",
+          "UB6103460_grp_2_UDB3195_ROW5",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW2",
+          "UB6114512_grp_0_UDB3195_ROW3",
+          "UB6114512_grp_0_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW0",
+          "UB6114512_grp_1_UDB3195_ROW1",
+          "UB6114512_grp_1_UDB3195_ROW2",
+          "UB6114512_grp_1_UDB3195_ROW3",
+          "UB6114512_grp_1_UDB3195_ROW4",
+          "UB6114512_grp_1_UDB3195_ROW5",
+          "UB6114512_grp_2_UDB3195_ROW0",
+          "UB6114512_grp_2_UDB3195_ROW1",
+          "UB6114512_grp_2_UDB3195_ROW2",
+          "UB6114512_grp_2_UDB3195_ROW3",
+          "UB6114512_grp_2_UDB3195_ROW4",
+          "UB6114512_grp_2_UDB3195_ROW5",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW2",
+          "UB6116306_grp_0_UDB3195_ROW3",
+          "UB6116306_grp_0_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW0",
+          "UB6116306_grp_1_UDB3195_ROW1",
+          "UB6116306_grp_1_UDB3195_ROW2",
+          "UB6116306_grp_1_UDB3195_ROW3",
+          "UB6116306_grp_1_UDB3195_ROW4",
+          "UB6116306_grp_1_UDB3195_ROW5",
+          "UB6116306_grp_2_UDB3195_ROW0",
+          "UB6116306_grp_2_UDB3195_ROW1",
+          "UB6116306_grp_2_UDB3195_ROW2",
+          "UB6116306_grp_2_UDB3195_ROW3",
+          "UB6116306_grp_2_UDB3195_ROW4",
+          "UB6116306_grp_2_UDB3195_ROW5",
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6131219_grp_0_UDB3195_ROW2",
+          "UB6131219_grp_0_UDB3195_ROW3",
+          "UB6131219_grp_0_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW0",
+          "UB6131219_grp_1_UDB3195_ROW1",
+          "UB6131219_grp_1_UDB3195_ROW2",
+          "UB6131219_grp_1_UDB3195_ROW3",
+          "UB6131219_grp_1_UDB3195_ROW4",
+          "UB6131219_grp_1_UDB3195_ROW5",
+          "UB6131219_grp_2_UDB3195_ROW0",
+          "UB6131219_grp_2_UDB3195_ROW1",
+          "UB6131219_grp_2_UDB3195_ROW2",
+          "UB6131219_grp_2_UDB3195_ROW3",
+          "UB6131219_grp_2_UDB3195_ROW4",
+          "UB6131219_grp_2_UDB3195_ROW5",
+          "UB6132002_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW2",
+          "UB6132002_grp_0_UDB3195_ROW3",
+          "UB6132002_grp_0_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW0",
+          "UB6132002_grp_1_UDB3195_ROW1",
+          "UB6132002_grp_1_UDB3195_ROW2",
+          "UB6132002_grp_1_UDB3195_ROW3",
+          "UB6132002_grp_1_UDB3195_ROW4",
+          "UB6132002_grp_1_UDB3195_ROW5",
+          "UB6132002_grp_2_UDB3195_ROW0",
+          "UB6132002_grp_2_UDB3195_ROW1",
+          "UB6132002_grp_2_UDB3195_ROW2",
+          "UB6132002_grp_2_UDB3195_ROW3",
+          "UB6132002_grp_2_UDB3195_ROW4",
+          "UB6132002_grp_2_UDB3195_ROW5",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW2",
+          "UB6143762_grp_0_UDB3195_ROW3",
+          "UB6143762_grp_0_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW0",
+          "UB6143762_grp_1_UDB3195_ROW1",
+          "UB6143762_grp_1_UDB3195_ROW2",
+          "UB6143762_grp_1_UDB3195_ROW3",
+          "UB6143762_grp_1_UDB3195_ROW4",
+          "UB6143762_grp_1_UDB3195_ROW5",
+          "UB6143762_grp_2_UDB3195_ROW0",
+          "UB6143762_grp_2_UDB3195_ROW1",
+          "UB6143762_grp_2_UDB3195_ROW2",
+          "UB6143762_grp_2_UDB3195_ROW3",
+          "UB6143762_grp_2_UDB3195_ROW4",
+          "UB6143762_grp_2_UDB3195_ROW5",
+          "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+          "UB6213241_UGHB7543grp_2_dataset_2_ROW0"
+        ],
+        "ops": [
+          {
+            "operation": "hideColumn",
+            "columnIndex": 5
+          },
+          {
+            "operation": "moveColumn",
+            "columnIndex": 2,
+            "toVisualIndex": 1
+          },
+          {
+            "operation": "moveTable",
+            "before": {
+              "left": 2,
+              "top": 300
+            },
+            "after": {
+              "left": 32,
+              "top": 280
+            }
+          },
+          {
+            "operation": "resizeRow",
+            "afterHeight": 37,
+            "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+          },
+          {
+            "operation": "resizeTableWidth",
+            "afterWidth": 825
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "sourceImage": "mysuit-mvp-work/screenshots/import-mvp21-source.png",
+  "representativePixels": {
+    "headerBackground": { "rgb": [58, 58, 58], "hex": "#3A3A3A", "confidence": "HIGH" },
+    "bodyBackground": { "rgb": [255, 255, 255], "hex": "#FFFFFF", "confidence": "HIGH" },
+    "balanceBanner": { "rgb": [245, 245, 245], "hex": "#F5F5F5", "confidence": "HIGH" }
+  },
+  "header": { "textColor": "#FFFFFF", "verticalAlign": "middle", "borderVisible": false, "confidence": "HIGH" },
+  "body": { "primaryTextColor": "#3A3A3A", "verticalAlign": "top", "borderVisible": false, "confidence": "HIGH" },
+  "existingMvp21ResultCopied": false,
+  "sourceImageReinspected": true
+}

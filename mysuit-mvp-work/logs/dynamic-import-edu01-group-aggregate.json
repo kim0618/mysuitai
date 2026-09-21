@@ -1,0 +1,32 @@
+{
+  "groundTruth": "edu_01",
+  "group": {
+    "headerBandId": "UGHB0811",
+    "dataSet": "dataset_0",
+    "primaryColumn": "POSITION",
+    "columns": [{ "column": "POSITION", "orderBy": false, "numeric": false }],
+    "headerVisibleDepth": 0,
+    "footerBandId": "UGFB4830",
+    "footerBackReference": "UGHB0811",
+    "footerColumns": ["POSITION"],
+    "embeddedGroupCount": 8,
+    "embeddedGroupRowCounts": [1, 2, 2, 2, 3, 1, 2, 12]
+  },
+  "groupFooter": {
+    "labelCellId": "UB2612502",
+    "labelExpression": "FN.getDataSetValue('dataset_0','POSITION') + \" 합계\"",
+    "aggregateCellId": "UB2628402",
+    "aggregateExpression": "FN.Sum('dataset_0','PAY')",
+    "scopeEvidence": "The cell is inside UBGroupFooterBand linked to UGHB0811; the expression itself contains no explicit group argument.",
+    "merge": { "cellId": "UB2612502", "colSpan": 5, "wrapperStatus": "MS", "continuations": 4, "continuationStatus": "MC" }
+  },
+  "dataFooter": {
+    "labelCellId": "UB1430088",
+    "label": "전체합계",
+    "aggregateCellId": "UB1459086",
+    "aggregateExpression": "FN.Sum('dataset_0','PAY')",
+    "embeddedExpectedResult": 105850,
+    "scopeEvidence": "The identical expression is inside UBDataFooterBand, so band context distinguishes whole-dataset scope from group scope."
+  },
+  "conclusion": "Aggregate reset/scope is not encoded in FN.Sum arguments in this form; it is context-sensitive to GroupFooterBand versus DataFooterBand."
+}

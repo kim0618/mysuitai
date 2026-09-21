@@ -1,0 +1,9 @@
+const fs=require('fs'),path=require('path'),config=require('../src/server/config');
+function atomic(file,value){const temp=`${file}.${process.pid}.tmp`;fs.writeFileSync(temp,JSON.stringify(value,null,2)+'\n');fs.renameSync(temp,file)}
+const data=path.join(config.appRoot,'data'),historyFile=path.join(data,'history.json'),structureFile=path.join(data,'structure-operations.json'),renderFile=path.join(data,'render-patches.json'),changesFile=path.join(data,'changesets.json');
+const history=fs.existsSync(historyFile)?JSON.parse(fs.readFileSync(historyFile,'utf8')):{schemaVersion:1,drafts:{}};let historyCount=0;for(const key of Object.keys(history.drafts||{}))if(key.split('|')[0].startsWith('mvp58_')){delete history.drafts[key];historyCount++}atomic(historyFile,history);
+const structure=JSON.parse(fs.readFileSync(structureFile,'utf8')),beforeStructure=(structure.operations||[]).length;structure.operations=(structure.operations||[]).filter(x=>!String(x.layoutDraftId||'').startsWith('mvp58_'));atomic(structureFile,structure);
+const render=JSON.parse(fs.readFileSync(renderFile,'utf8')),beforeRender=(render.patches||[]).length;render.patches=(render.patches||[]).filter(x=>!String(x.layoutDraftId||'').startsWith('mvp58_'));atomic(renderFile,render);
+const changes=JSON.parse(fs.readFileSync(changesFile,'utf8')),kept=changes.filter(x=>!String(x.layoutDraftId||'').startsWith('mvp58_')),removedChanges=changes.length-kept.length;atomic(changesFile,kept);
+const candidates=fs.readdirSync(config.projectsRoot).filter(x=>/^sample_mvp58_/.test(x));if(candidates.length)throw new Error(`MVP 5.8 후보가 남아 있습니다: ${candidates.join(', ')}`);
+console.log(JSON.stringify({historyDrafts:historyCount,structureOperations:beforeStructure-structure.operations.length,renderPatches:beforeRender-render.patches.length,changeSets:removedChanges,candidates:0},null,2));

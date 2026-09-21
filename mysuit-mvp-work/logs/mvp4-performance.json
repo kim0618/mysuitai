@@ -1,0 +1,8 @@
+{
+  "objectSelectionMs": 170,
+  "firstPatchBatchMs": 67,
+  "candidateCreateMs": 97,
+  "candidateRenderMs": 755,
+  "candidateDeleteMs": 97,
+  "totalMs": 6854
+}

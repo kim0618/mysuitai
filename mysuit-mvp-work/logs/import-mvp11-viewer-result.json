@@ -1,0 +1,524 @@
+{
+  "oneByOne": {
+    "projectName": "import_mvp11_20260827_170557_9d643d",
+    "loaded": true,
+    "fatalErrors": [],
+    "cells": 1,
+    "pdf": {
+      "status": 200,
+      "contentType": "application/pdf;charset=utf-8",
+      "bytes": 20278,
+      "sha256": "98ded55b25d8ba26aefef6cb21a07fc992b3bb1f30dabb110efdcdf8404cc072",
+      "durationMs": 108.16
+    }
+  },
+  "threeByFour": {
+    "projectName": "import_mvp11_20260827_170551_e59e1d",
+    "formName": "SampleReport_FreeForm",
+    "url": "http://127.0.0.1:3100/mysuit/UView5/index.jsp?projectName=import_mvp11_20260827_170551_e59e1d&formName=SampleReport_FreeForm",
+    "loaded": true,
+    "httpStatus": 200,
+    "fatalErrors": [],
+    "textObjectCount": 3,
+    "tableCellCount": 12,
+    "comparisons": [
+      {
+        "expected": {
+          "id": "IMPCL0001",
+          "text": "부서",
+          "x": 82,
+          "y": 165,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 2,
+          "id": "IMPCL0001",
+          "className": "UBLabel",
+          "text": "부서",
+          "left": 82,
+          "top": 165,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid",
+            "none",
+            "solid"
+          ],
+          "fontWeight": "600",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0002",
+          "text": "담당자",
+          "x": 292,
+          "y": 165,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 3,
+          "id": "IMPCL0002",
+          "className": "UBLabel",
+          "text": "담당자",
+          "left": 292,
+          "top": 165,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid_share",
+            "none",
+            "solid"
+          ],
+          "fontWeight": "600",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0003",
+          "text": "실적",
+          "x": 502,
+          "y": 165,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 4,
+          "id": "IMPCL0003",
+          "className": "UBLabel",
+          "text": "실적",
+          "left": 502,
+          "top": 165,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid_share",
+            "solid",
+            "solid"
+          ],
+          "fontWeight": "600",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0004",
+          "text": "개발팀",
+          "x": 82,
+          "y": 205,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 5,
+          "id": "IMPCL0004",
+          "className": "UBLabel",
+          "text": "개발팀",
+          "left": 82,
+          "top": 205,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid",
+            "none",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0005",
+          "text": "홍길동",
+          "x": 292,
+          "y": 205,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 6,
+          "id": "IMPCL0005",
+          "className": "UBLabel",
+          "text": "홍길동",
+          "left": 292,
+          "top": 205,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid_share",
+            "none",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0006",
+          "text": "100",
+          "x": 502,
+          "y": 205,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 7,
+          "id": "IMPCL0006",
+          "className": "UBLabel",
+          "text": "100",
+          "left": 502,
+          "top": 205,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid_share",
+            "solid",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0007",
+          "text": "영업팀",
+          "x": 82,
+          "y": 245,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 8,
+          "id": "IMPCL0007",
+          "className": "UBLabel",
+          "text": "영업팀",
+          "left": 82,
+          "top": 245,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid",
+            "none",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0008",
+          "text": "김철수",
+          "x": 292,
+          "y": 245,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 9,
+          "id": "IMPCL0008",
+          "className": "UBLabel",
+          "text": "김철수",
+          "left": 292,
+          "top": 245,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid_share",
+            "none",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0009",
+          "text": "200",
+          "x": 502,
+          "y": 245,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 10,
+          "id": "IMPCL0009",
+          "className": "UBLabel",
+          "text": "200",
+          "left": 502,
+          "top": 245,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "none",
+            "solid_share",
+            "solid",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0010",
+          "text": "기획팀",
+          "x": 82,
+          "y": 285,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 11,
+          "id": "IMPCL0010",
+          "className": "UBLabel",
+          "text": "기획팀",
+          "left": 82,
+          "top": 285,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "solid",
+            "solid",
+            "none",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0011",
+          "text": "이영희",
+          "x": 292,
+          "y": 285,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 12,
+          "id": "IMPCL0011",
+          "className": "UBLabel",
+          "text": "이영희",
+          "left": 292,
+          "top": 285,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "solid",
+            "solid_share",
+            "none",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      },
+      {
+        "expected": {
+          "id": "IMPCL0012",
+          "text": "150",
+          "x": 502,
+          "y": 285,
+          "width": 210,
+          "height": 40
+        },
+        "actual": {
+          "renderIndex": 13,
+          "id": "IMPCL0012",
+          "className": "UBLabel",
+          "text": "150",
+          "left": 502,
+          "top": 285,
+          "width": 210,
+          "height": 40,
+          "borderSide": [
+            "bottom",
+            "left",
+            "right",
+            "top"
+          ],
+          "borderTypes": [
+            "solid",
+            "solid_share",
+            "solid",
+            "solid_share"
+          ],
+          "fontWeight": "normal",
+          "textAlign": "center"
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "pass": true
+      }
+    ],
+    "maxGeometryDelta": 0,
+    "bordersVisible": true,
+    "reload": true,
+    "newContext": true,
+    "loadMs": 625.22
+  }
+}

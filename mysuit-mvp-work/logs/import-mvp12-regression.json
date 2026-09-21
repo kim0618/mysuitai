@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "importMvp11": "PASS_23",
+  "importMvp12": "PASS_7",
+  "core": "PASS",
+  "capability": "PASS",
+  "preAiBaseline": "PASS",
+  "sampleApprovalAndCompositeProtected": true,
+  "evidence": "mysuit-mvp-work/logs/pre-ai-regression.json"
+}

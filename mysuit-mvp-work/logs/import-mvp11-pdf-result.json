@@ -1,0 +1,12 @@
+{
+  "projectName": "import_mvp11_20260827_170551_e59e1d",
+  "status": 200,
+  "contentType": "application/pdf;charset=utf-8",
+  "bytes": 29269,
+  "sha256": "77a3200fad05e19d50235cd38b32f5215a9f56072cdc1e1e5f1e0d42875cb362",
+  "durationMs": 97.88,
+  "file": "output/import-mvp11-static-table.pdf",
+  "pageCount": 1,
+  "textExtraction": "UNAVAILABLE_NO_PDFTOTEXT",
+  "gridValidation": "viewer border properties plus non-empty server PDF"
+}

@@ -1,0 +1,9 @@
+{
+  "tableRenderInstances": 168,
+  "fullE2EWallMs": 15560,
+  "columnReorder": "interactive wait completed",
+  "columnResizeHide": "interactive wait completed",
+  "rowResizeHide": "interactive wait completed",
+  "replayChecks": 10,
+  "note": "개별 preview/save 구간은 이번 E2E에서 별도 계측하지 않았고 전체 wall time만 기록"
+}

@@ -1,0 +1,29 @@
+{
+  "attempt": 2,
+  "image": "/home/tjd618/mysuit-ai-viewer/mysuit-mvp-work/screenshots/import-mvp20-source.png",
+  "provider": "CODEX",
+  "mode": "DEVELOPMENT_AGENT_POC",
+  "api": false,
+  "imageSize": { "width": 1280, "height": 1300 },
+  "pageBoundary": { "x": 243, "y": 58, "width": 794, "height": 1123 },
+  "detected": { "page": 1, "texts": 3, "tables": 1 },
+  "table": { "rows": 4, "columns": 3, "cells": 12 },
+  "texts": ["월간 실적 보고서", "2026년 8월 부서별 실적", "작성일: 2026.08.27"],
+  "unsupportedVisuals": ["TABLE_RED_BACKGROUND", "TABLE_WHITE_TEXT", "VIEWER_TOOLBAR", "PAGE_SHADOW"],
+  "confidence": {
+    "pageBoundary": "HIGH",
+    "textDetection": "HIGH",
+    "textContent": "HIGH",
+    "tableDetection": "HIGH",
+    "tableStructure": "HIGH",
+    "geometry": "MEDIUM",
+    "style": "MEDIUM"
+  },
+  "coordinateNormalization": {
+    "dimPage": { "width": 794, "height": 1123 },
+    "scaleX": 1,
+    "scaleY": 1,
+    "rounding": "nearest integer"
+  },
+  "groundTruthAccessed": false
+}

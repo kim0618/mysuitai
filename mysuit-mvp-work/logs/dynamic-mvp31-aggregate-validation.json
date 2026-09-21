@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "expression": "FN.Sum('employees','PAY')",
+  "groupFooter": {
+    "sourceCellId": "DPCL0019",
+    "scope": "GROUP",
+    "expected": [
+      1010,
+      2050,
+      2090,
+      2130,
+      3270,
+      1110,
+      2250,
+      14340
+    ],
+    "actual": [
+      1010,
+      2050,
+      2090,
+      2130,
+      3270,
+      1110,
+      2250,
+      14340
+    ],
+    "exact": true
+  },
+  "dataFooter": {
+    "sourceCellId": "DPCL0021",
+    "scope": "REPORT",
+    "expected": 28250,
+    "actual": 28250,
+    "exact": true
+  },
+  "bandContextChangesScope": true
+}

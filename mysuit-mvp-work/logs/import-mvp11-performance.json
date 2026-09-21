@@ -1,0 +1,9 @@
+{
+  "dimValidationMs": 0.761175999999999,
+  "templateCloneMs": 3.670313,
+  "tableAndTextGenerationMs": 1.840091000000001,
+  "serializationMs": 0.8184640000000059,
+  "reparseMs": 0.35156200000000126,
+  "viewerLoadMs": 625.22,
+  "pdfMs": 97.88
+}

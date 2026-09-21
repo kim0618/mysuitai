@@ -1,0 +1,17 @@
+{
+  "reportId": "sample",
+  "candidateProjectName": "sample",
+  "candidateFormName": "sample_mvp2",
+  "baseFormSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+  "viewerObjectId": "LB6417_UPHB2584_ROW0",
+  "sourceObjectId": "LB6417",
+  "bandId": "UPHB2584",
+  "rowIndex": 0,
+  "scope": "SOURCE_OBJECT_ALL_INSTANCES",
+  "operation": "updateProperty",
+  "property": "text",
+  "before": "  연도별 실적보고서",
+  "after": "MVP 원본 수정 테스트",
+  "temporary": false,
+  "candidateOnly": true
+}

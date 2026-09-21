@@ -1,0 +1,7 @@
+{
+  "tableSourceX": 2,
+  "resizeColumn2": {"sourceX": 440, "viewerLeft": 442, "width": 100, "pass": true},
+  "rightColumn3": {"sourceX": 540, "viewerLeft": 542, "pass": true},
+  "resizeColumn4": {"sourceX": 610, "viewerLeft": 612, "width": 90, "pass": true},
+  "explanation": "후보 Viewer 좌표는 UBTable.x=2 + wrapper.x이며 최초 E2E 판정식이 wrapper.x만 기대해 false를 기록했다. 실제 source/render geometry는 일치한다."
+}

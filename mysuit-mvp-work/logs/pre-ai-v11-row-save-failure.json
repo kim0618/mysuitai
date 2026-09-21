@@ -1,0 +1,1 @@
+{"success":false,"status":"INCOMPLETE_INSTRUMENTATION","finalHeightRolledBack":true,"finalLayoutRolledBack":true,"historyCursorUnchanged":true,"structureStoreCount":0,"previewHeightObserved":false,"reason":"HTTP 500 이후 rollback은 확인했으나 pointermove preview +12px 순간을 자동 계측하지 못함"}

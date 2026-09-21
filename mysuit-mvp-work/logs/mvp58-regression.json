@@ -1,0 +1,19 @@
+{
+  "assertions": {
+    "timeline": true,
+    "fullUndo": true,
+    "fullRedo": true,
+    "persistence": true,
+    "newContext": true,
+    "undoFailure": true,
+    "branch": true
+  },
+  "forcedUndo": {
+    "status": 500,
+    "body": {
+      "success": false,
+      "code": "HISTORY_REBUILD_FAILED",
+      "message": "테스트용 History rebuild 실패입니다."
+    }
+  }
+}

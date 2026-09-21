@@ -1,0 +1,172 @@
+{
+  "patches": [
+    {
+      "patchId": "rp_20260807_2b094b",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "UB6116306_grp_0_UDB3195_ROW0",
+      "sourceObjectId": "UB6116306",
+      "bandId": "grp_0_UDB3195",
+      "rowIndex": 0,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 442,
+        "top": 360
+      },
+      "after": {
+        "left": 442,
+        "top": 357
+      },
+      "createdAt": "2026-08-07T05:48:28.003Z",
+      "updatedAt": "2026-08-07T05:48:28.003Z"
+    },
+    {
+      "patchId": "rp_20260807_0a08b2",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "UB6114512_grp_0_UDB3195_ROW0",
+      "sourceObjectId": "UB6114512",
+      "bandId": "grp_0_UDB3195",
+      "rowIndex": 0,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 372,
+        "top": 360
+      },
+      "after": {
+        "left": 371.00000007687044,
+        "top": 360
+      },
+      "createdAt": "2026-08-07T05:48:28.502Z",
+      "updatedAt": "2026-08-07T05:48:28.502Z"
+    },
+    {
+      "patchId": "rp_20260807_44d6d7",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "UB6116306_grp_0_UDB3195_ROW3",
+      "sourceObjectId": "UB6116306",
+      "bandId": "grp_0_UDB3195",
+      "rowIndex": 3,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 442,
+        "top": 441
+      },
+      "after": {
+        "left": 440.0000001537409,
+        "top": 441
+      },
+      "createdAt": "2026-08-07T05:48:31.324Z",
+      "updatedAt": "2026-08-07T05:48:31.324Z"
+    },
+    {
+      "patchId": "rp_20260807_0f754e",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "UB6116306_grp_0_UDB3195_ROW1",
+      "sourceObjectId": "UB6116306",
+      "bandId": "grp_0_UDB3195",
+      "rowIndex": 1,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 442,
+        "top": 387
+      },
+      "after": {
+        "left": 440.0000001537409,
+        "top": 387
+      },
+      "createdAt": "2026-08-07T05:48:32.754Z",
+      "updatedAt": "2026-08-07T05:48:32.754Z"
+    },
+    {
+      "patchId": "rp_20260807_78693d",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "UB5302287_UDHB4114_ROW0",
+      "sourceObjectId": "UB5302287",
+      "bandId": "UDHB4114",
+      "rowIndex": 0,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 372,
+        "top": 300
+      },
+      "after": {
+        "left": 371.00000007687044,
+        "top": 300
+      },
+      "createdAt": "2026-08-07T05:48:33.418Z",
+      "updatedAt": "2026-08-07T05:48:33.418Z"
+    },
+    {
+      "patchId": "rp_20260807_66cd1f",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "LB6417_UPHB2584_ROW0",
+      "sourceObjectId": "LB6417",
+      "bandId": "UPHB2584",
+      "rowIndex": 0,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 367,
+        "top": 100
+      },
+      "after": {
+        "left": 357.0000007687047,
+        "top": 62
+      },
+      "createdAt": "2026-08-07T05:50:37.363Z",
+      "updatedAt": "2026-08-07T05:50:37.363Z"
+    },
+    {
+      "patchId": "rp_20260807_127aed",
+      "layoutDraftId": "layout_sample_default",
+      "projectName": "sample",
+      "formName": "sample",
+      "pageIndex": 0,
+      "viewerObjectId": "UB5103966_UPHB2584_ROW0",
+      "sourceObjectId": "UB5103966",
+      "bandId": "UPHB2584",
+      "rowIndex": 0,
+      "className": "UBLabel",
+      "scope": "RENDER_INSTANCE",
+      "operation": "updateRenderedPosition",
+      "before": {
+        "left": 140,
+        "top": 193
+      },
+      "after": {
+        "left": 137.00000023061142,
+        "top": 193
+      },
+      "createdAt": "2026-08-07T05:50:37.907Z",
+      "updatedAt": "2026-08-07T05:50:37.907Z"
+    }
+  ]
+}

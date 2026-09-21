@@ -1,0 +1,5 @@
+{
+  "implemented": false,
+  "status": "STOPPED_BY_SCOPE",
+  "reason": "source UBTable array/binding atomicity not yet verified"
+}

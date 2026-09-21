@@ -1,0 +1,1001 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-11T02:30:34.922Z",
+  "tables": [
+    {
+      "tableKey": "tbl:financial-7col",
+      "sourceTableIds": [
+        "TB3039",
+        "TB3979",
+        "TB5514",
+        "TB8715"
+      ],
+      "pageIndex": 0,
+      "bandIds": [
+        "UDHB4114",
+        "UGHB7543",
+        "UDB3195",
+        "UGFB0223"
+      ],
+      "compositionBasis": [
+        "explicit UBTable objects",
+        "band class sequence",
+        "identical source column count and columnWidth schema",
+        "dataset bindings"
+      ],
+      "confidence": "HIGH_SAMPLE_ONLY",
+      "headerRows": [
+        {
+          "rowKey": "tbl:financial-7col|role:HEADER|row:0",
+          "sourceTableId": "TB3039"
+        }
+      ],
+      "groupHeaderRows": [
+        {
+          "rowKey": "tbl:financial-7col|role:GROUP_HEADER|row:template",
+          "sourceTableId": "TB3979"
+        }
+      ],
+      "detailRows": [
+        {
+          "rowKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:template",
+          "sourceTableId": "TB5514"
+        }
+      ],
+      "summaryRows": [
+        {
+          "rowKey": "tbl:financial-7col|role:SUMMARY|row:template",
+          "sourceTableId": "TB8715"
+        }
+      ],
+      "columns": [
+        {
+          "columnKey": "tbl:financial-7col|col:0",
+          "columnIndex": 0,
+          "width": 370,
+          "sourceCells": [
+            "UB5305348",
+            "UB5622520",
+            "UB6131219",
+            "UB6199723"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5305348|band:UDHB4114|row:0|idx:9",
+            "p0|c0|src:UB5622520|band:grp_0_UGHB7543|row:0|idx:16",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:0|idx:23",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:1|idx:24",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:2|idx:25",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:3|idx:26",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:4|idx:27",
+            "p0|c0|src:UB6199723|band:UGHB7543grp_0_dataset_2|row:0|idx:58",
+            "p0|c0|src:UB5622520|band:grp_1_UGHB7543|row:0|idx:65",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:0|idx:72",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:1|idx:73",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:2|idx:74",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:3|idx:75",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:4|idx:76",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:5|idx:77",
+            "p0|c0|src:UB6199723|band:UGHB7543grp_1_dataset_2|row:0|idx:114",
+            "p0|c0|src:UB5622520|band:grp_2_UGHB7543|row:0|idx:121",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:0|idx:128",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:1|idx:129",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:2|idx:130",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:3|idx:131",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:4|idx:132",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:5|idx:133",
+            "p0|c0|src:UB6199723|band:UGHB7543grp_2_dataset_2|row:0|idx:170"
+          ]
+        },
+        {
+          "columnKey": "tbl:financial-7col|col:1",
+          "columnIndex": 1,
+          "width": 70,
+          "sourceCells": [
+            "UB5302287",
+            "UB5602336",
+            "UB6114512",
+            "UB6175108"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5302287|band:UDHB4114|row:0|idx:10",
+            "p0|c0|src:UB5602336|band:grp_0_UGHB7543|row:0|idx:17",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:0|idx:28",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:1|idx:29",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:2|idx:30",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:3|idx:31",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:4|idx:32",
+            "p0|c0|src:UB6175108|band:UGHB7543grp_0_dataset_2|row:0|idx:59",
+            "p0|c0|src:UB5602336|band:grp_1_UGHB7543|row:0|idx:66",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:0|idx:78",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:1|idx:79",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:2|idx:80",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:3|idx:81",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:4|idx:82",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:5|idx:83",
+            "p0|c0|src:UB6175108|band:UGHB7543grp_1_dataset_2|row:0|idx:115",
+            "p0|c0|src:UB5602336|band:grp_2_UGHB7543|row:0|idx:122",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:0|idx:134",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:1|idx:135",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:2|idx:136",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:3|idx:137",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:4|idx:138",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:5|idx:139",
+            "p0|c0|src:UB6175108|band:UGHB7543grp_2_dataset_2|row:0|idx:171"
+          ]
+        },
+        {
+          "columnKey": "tbl:financial-7col|col:2",
+          "columnIndex": 2,
+          "width": 70,
+          "sourceCells": [
+            "UB5313710",
+            "UB5595998",
+            "UB6116306",
+            "UB6198370"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5313710|band:UDHB4114|row:0|idx:11",
+            "p0|c0|src:UB5595998|band:grp_0_UGHB7543|row:0|idx:18",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:0|idx:33",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:1|idx:34",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:2|idx:35",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:3|idx:36",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:4|idx:37",
+            "p0|c0|src:UB6198370|band:UGHB7543grp_0_dataset_2|row:0|idx:60",
+            "p0|c0|src:UB5595998|band:grp_1_UGHB7543|row:0|idx:67",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:0|idx:84",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:1|idx:85",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:2|idx:86",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:3|idx:87",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:4|idx:88",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:5|idx:89",
+            "p0|c0|src:UB6198370|band:UGHB7543grp_1_dataset_2|row:0|idx:116",
+            "p0|c0|src:UB5595998|band:grp_2_UGHB7543|row:0|idx:123",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:0|idx:140",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:1|idx:141",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:2|idx:142",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:3|idx:143",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:4|idx:144",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:5|idx:145",
+            "p0|c0|src:UB6198370|band:UGHB7543grp_2_dataset_2|row:0|idx:172"
+          ]
+        },
+        {
+          "columnKey": "tbl:financial-7col|col:3",
+          "columnIndex": 3,
+          "width": 70,
+          "sourceCells": [
+            "UB5297739",
+            "UB5634325",
+            "UB6103460",
+            "UB6191253"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5297739|band:UDHB4114|row:0|idx:12",
+            "p0|c0|src:UB5634325|band:grp_0_UGHB7543|row:0|idx:19",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:0|idx:38",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:1|idx:39",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:2|idx:40",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:3|idx:41",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:4|idx:42",
+            "p0|c0|src:UB6191253|band:UGHB7543grp_0_dataset_2|row:0|idx:61",
+            "p0|c0|src:UB5634325|band:grp_1_UGHB7543|row:0|idx:68",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:0|idx:90",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:1|idx:91",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:2|idx:92",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:3|idx:93",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:4|idx:94",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:5|idx:95",
+            "p0|c0|src:UB6191253|band:UGHB7543grp_1_dataset_2|row:0|idx:117",
+            "p0|c0|src:UB5634325|band:grp_2_UGHB7543|row:0|idx:124",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:0|idx:146",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:1|idx:147",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:2|idx:148",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:3|idx:149",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:4|idx:150",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:5|idx:151",
+            "p0|c0|src:UB6191253|band:UGHB7543grp_2_dataset_2|row:0|idx:173"
+          ]
+        },
+        {
+          "columnKey": "tbl:financial-7col|col:4",
+          "columnIndex": 4,
+          "width": 70,
+          "sourceCells": [
+            "UB5337756",
+            "UB5624437",
+            "UB6143762",
+            "UB6213241"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5337756|band:UDHB4114|row:0|idx:13",
+            "p0|c0|src:UB5624437|band:grp_0_UGHB7543|row:0|idx:20",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:0|idx:43",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:1|idx:44",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:2|idx:45",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:3|idx:46",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:4|idx:47",
+            "p0|c0|src:UB6213241|band:UGHB7543grp_0_dataset_2|row:0|idx:62",
+            "p0|c0|src:UB5624437|band:grp_1_UGHB7543|row:0|idx:69",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:0|idx:96",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:1|idx:97",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:2|idx:98",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:3|idx:99",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:4|idx:100",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:5|idx:101",
+            "p0|c0|src:UB6213241|band:UGHB7543grp_1_dataset_2|row:0|idx:118",
+            "p0|c0|src:UB5624437|band:grp_2_UGHB7543|row:0|idx:125",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:0|idx:152",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:1|idx:153",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:2|idx:154",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:3|idx:155",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:4|idx:156",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:5|idx:157",
+            "p0|c0|src:UB6213241|band:UGHB7543grp_2_dataset_2|row:0|idx:174"
+          ]
+        },
+        {
+          "columnKey": "tbl:financial-7col|col:5",
+          "columnIndex": 5,
+          "width": 70,
+          "sourceCells": [
+            "UB5316883",
+            "UB5599952",
+            "UB6093171",
+            "UB6180450"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5316883|band:UDHB4114|row:0|idx:14",
+            "p0|c0|src:UB5599952|band:grp_0_UGHB7543|row:0|idx:21",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:0|idx:48",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:1|idx:49",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:2|idx:50",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:3|idx:51",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:4|idx:52",
+            "p0|c0|src:UB6180450|band:UGHB7543grp_0_dataset_2|row:0|idx:63",
+            "p0|c0|src:UB5599952|band:grp_1_UGHB7543|row:0|idx:70",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:0|idx:102",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:1|idx:103",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:2|idx:104",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:3|idx:105",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:4|idx:106",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:5|idx:107",
+            "p0|c0|src:UB6180450|band:UGHB7543grp_1_dataset_2|row:0|idx:119",
+            "p0|c0|src:UB5599952|band:grp_2_UGHB7543|row:0|idx:126",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:0|idx:158",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:1|idx:159",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:2|idx:160",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:3|idx:161",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:4|idx:162",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:5|idx:163",
+            "p0|c0|src:UB6180450|band:UGHB7543grp_2_dataset_2|row:0|idx:175"
+          ]
+        },
+        {
+          "columnKey": "tbl:financial-7col|col:6",
+          "columnIndex": 6,
+          "width": 70,
+          "sourceCells": [
+            "UB5273553",
+            "UB5596214",
+            "UB6132002",
+            "UB6179138"
+          ],
+          "renderInstances": [
+            "p0|c0|src:UB5273553|band:UDHB4114|row:0|idx:15",
+            "p0|c0|src:UB5596214|band:grp_0_UGHB7543|row:0|idx:22",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:0|idx:53",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:1|idx:54",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:2|idx:55",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:3|idx:56",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:4|idx:57",
+            "p0|c0|src:UB6179138|band:UGHB7543grp_0_dataset_2|row:0|idx:64",
+            "p0|c0|src:UB5596214|band:grp_1_UGHB7543|row:0|idx:71",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:0|idx:108",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:1|idx:109",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:2|idx:110",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:3|idx:111",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:4|idx:112",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:5|idx:113",
+            "p0|c0|src:UB6179138|band:UGHB7543grp_1_dataset_2|row:0|idx:120",
+            "p0|c0|src:UB5596214|band:grp_2_UGHB7543|row:0|idx:127",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:0|idx:164",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:1|idx:165",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:2|idx:166",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:3|idx:167",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:4|idx:168",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:5|idx:169",
+            "p0|c0|src:UB6179138|band:UGHB7543grp_2_dataset_2|row:0|idx:176"
+          ]
+        }
+      ],
+      "cells": [
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:0|src:UB5305348",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5305348",
+          "role": "HEADER",
+          "logicalColumnIndex": 0,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5305348|band:UDHB4114|row:0|idx:9"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:1|src:UB5302287",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5302287",
+          "role": "HEADER",
+          "logicalColumnIndex": 1,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5302287|band:UDHB4114|row:0|idx:10"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:2|src:UB5313710",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5313710",
+          "role": "HEADER",
+          "logicalColumnIndex": 2,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5313710|band:UDHB4114|row:0|idx:11"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:3|src:UB5297739",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5297739",
+          "role": "HEADER",
+          "logicalColumnIndex": 3,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5297739|band:UDHB4114|row:0|idx:12"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:4|src:UB5337756",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5337756",
+          "role": "HEADER",
+          "logicalColumnIndex": 4,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5337756|band:UDHB4114|row:0|idx:13"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:5|src:UB5316883",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5316883",
+          "role": "HEADER",
+          "logicalColumnIndex": 5,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5316883|band:UDHB4114|row:0|idx:14"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:HEADER|row:0|col:6|src:UB5273553",
+          "sourceTableId": "TB3039",
+          "sourceCellId": "UB5273553",
+          "role": "HEADER",
+          "logicalColumnIndex": 6,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 1,
+          "renderInstances": [
+            "p0|c0|src:UB5273553|band:UDHB4114|row:0|idx:15"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:0|src:UB5622520",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5622520",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 0,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_1",
+          "dataColumn": "col_1",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5622520|band:grp_0_UGHB7543|row:0|idx:16",
+            "p0|c0|src:UB5622520|band:grp_1_UGHB7543|row:0|idx:65",
+            "p0|c0|src:UB5622520|band:grp_2_UGHB7543|row:0|idx:121"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:1|src:UB5602336",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5602336",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 1,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5602336|band:grp_0_UGHB7543|row:0|idx:17",
+            "p0|c0|src:UB5602336|band:grp_1_UGHB7543|row:0|idx:66",
+            "p0|c0|src:UB5602336|band:grp_2_UGHB7543|row:0|idx:122"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:2|src:UB5595998",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5595998",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 2,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5595998|band:grp_0_UGHB7543|row:0|idx:18",
+            "p0|c0|src:UB5595998|band:grp_1_UGHB7543|row:0|idx:67",
+            "p0|c0|src:UB5595998|band:grp_2_UGHB7543|row:0|idx:123"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:3|src:UB5634325",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5634325",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 3,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5634325|band:grp_0_UGHB7543|row:0|idx:19",
+            "p0|c0|src:UB5634325|band:grp_1_UGHB7543|row:0|idx:68",
+            "p0|c0|src:UB5634325|band:grp_2_UGHB7543|row:0|idx:124"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:4|src:UB5624437",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5624437",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 4,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5624437|band:grp_0_UGHB7543|row:0|idx:20",
+            "p0|c0|src:UB5624437|band:grp_1_UGHB7543|row:0|idx:69",
+            "p0|c0|src:UB5624437|band:grp_2_UGHB7543|row:0|idx:125"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:5|src:UB5599952",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5599952",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 5,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5599952|band:grp_0_UGHB7543|row:0|idx:21",
+            "p0|c0|src:UB5599952|band:grp_1_UGHB7543|row:0|idx:70",
+            "p0|c0|src:UB5599952|band:grp_2_UGHB7543|row:0|idx:126"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:GROUP_HEADER|row:0|col:6|src:UB5596214",
+          "sourceTableId": "TB3979",
+          "sourceCellId": "UB5596214",
+          "role": "GROUP_HEADER",
+          "logicalColumnIndex": 6,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB5596214|band:grp_0_UGHB7543|row:0|idx:22",
+            "p0|c0|src:UB5596214|band:grp_1_UGHB7543|row:0|idx:71",
+            "p0|c0|src:UB5596214|band:grp_2_UGHB7543|row:0|idx:127"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:0|src:UB6131219",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6131219",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 0,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_2",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:0|idx:23",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:1|idx:24",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:2|idx:25",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:3|idx:26",
+            "p0|c0|src:UB6131219|band:grp_0_UDB3195|row:4|idx:27",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:0|idx:72",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:1|idx:73",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:2|idx:74",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:3|idx:75",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:4|idx:76",
+            "p0|c0|src:UB6131219|band:grp_1_UDB3195|row:5|idx:77",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:0|idx:128",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:1|idx:129",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:2|idx:130",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:3|idx:131",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:4|idx:132",
+            "p0|c0|src:UB6131219|band:grp_2_UDB3195|row:5|idx:133"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:1|src:UB6114512",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6114512",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 1,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_3",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:0|idx:28",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:1|idx:29",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:2|idx:30",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:3|idx:31",
+            "p0|c0|src:UB6114512|band:grp_0_UDB3195|row:4|idx:32",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:0|idx:78",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:1|idx:79",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:2|idx:80",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:3|idx:81",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:4|idx:82",
+            "p0|c0|src:UB6114512|band:grp_1_UDB3195|row:5|idx:83",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:0|idx:134",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:1|idx:135",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:2|idx:136",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:3|idx:137",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:4|idx:138",
+            "p0|c0|src:UB6114512|band:grp_2_UDB3195|row:5|idx:139"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:2|src:UB6116306",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6116306",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 2,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_4",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:0|idx:33",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:1|idx:34",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:2|idx:35",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:3|idx:36",
+            "p0|c0|src:UB6116306|band:grp_0_UDB3195|row:4|idx:37",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:0|idx:84",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:1|idx:85",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:2|idx:86",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:3|idx:87",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:4|idx:88",
+            "p0|c0|src:UB6116306|band:grp_1_UDB3195|row:5|idx:89",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:0|idx:140",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:1|idx:141",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:2|idx:142",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:3|idx:143",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:4|idx:144",
+            "p0|c0|src:UB6116306|band:grp_2_UDB3195|row:5|idx:145"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:3|src:UB6103460",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6103460",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 3,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_5",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:0|idx:38",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:1|idx:39",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:2|idx:40",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:3|idx:41",
+            "p0|c0|src:UB6103460|band:grp_0_UDB3195|row:4|idx:42",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:0|idx:90",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:1|idx:91",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:2|idx:92",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:3|idx:93",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:4|idx:94",
+            "p0|c0|src:UB6103460|band:grp_1_UDB3195|row:5|idx:95",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:0|idx:146",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:1|idx:147",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:2|idx:148",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:3|idx:149",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:4|idx:150",
+            "p0|c0|src:UB6103460|band:grp_2_UDB3195|row:5|idx:151"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:4|src:UB6143762",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6143762",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 4,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_6",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:0|idx:43",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:1|idx:44",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:2|idx:45",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:3|idx:46",
+            "p0|c0|src:UB6143762|band:grp_0_UDB3195|row:4|idx:47",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:0|idx:96",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:1|idx:97",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:2|idx:98",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:3|idx:99",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:4|idx:100",
+            "p0|c0|src:UB6143762|band:grp_1_UDB3195|row:5|idx:101",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:0|idx:152",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:1|idx:153",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:2|idx:154",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:3|idx:155",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:4|idx:156",
+            "p0|c0|src:UB6143762|band:grp_2_UDB3195|row:5|idx:157"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:5|src:UB6093171",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6093171",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 5,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_7",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:0|idx:48",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:1|idx:49",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:2|idx:50",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:3|idx:51",
+            "p0|c0|src:UB6093171|band:grp_0_UDB3195|row:4|idx:52",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:0|idx:102",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:1|idx:103",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:2|idx:104",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:3|idx:105",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:4|idx:106",
+            "p0|c0|src:UB6093171|band:grp_1_UDB3195|row:5|idx:107",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:0|idx:158",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:1|idx:159",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:2|idx:160",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:3|idx:161",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:4|idx:162",
+            "p0|c0|src:UB6093171|band:grp_2_UDB3195|row:5|idx:163"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:DETAIL_TEMPLATE|row:0|col:6|src:UB6132002",
+          "sourceTableId": "TB5514",
+          "sourceCellId": "UB6132002",
+          "role": "DETAIL_TEMPLATE",
+          "logicalColumnIndex": 6,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_2",
+          "dataColumn": "col_8",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 36,
+          "renderInstances": [
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:0|idx:53",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:1|idx:54",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:2|idx:55",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:3|idx:56",
+            "p0|c0|src:UB6132002|band:grp_0_UDB3195|row:4|idx:57",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:0|idx:108",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:1|idx:109",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:2|idx:110",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:3|idx:111",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:4|idx:112",
+            "p0|c0|src:UB6132002|band:grp_1_UDB3195|row:5|idx:113",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:0|idx:164",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:1|idx:165",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:2|idx:166",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:3|idx:167",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:4|idx:168",
+            "p0|c0|src:UB6132002|band:grp_2_UDB3195|row:5|idx:169"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:0|src:UB6199723",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6199723",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 0,
+          "templateRowIndex": 0,
+          "dataSet": null,
+          "dataColumn": null,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6199723|band:UGHB7543grp_0_dataset_2|row:0|idx:58",
+            "p0|c0|src:UB6199723|band:UGHB7543grp_1_dataset_2|row:0|idx:114",
+            "p0|c0|src:UB6199723|band:UGHB7543grp_2_dataset_2|row:0|idx:170"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:1|src:UB6175108",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6175108",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 1,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_3",
+          "dataColumn": "col_0",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6175108|band:UGHB7543grp_0_dataset_2|row:0|idx:59",
+            "p0|c0|src:UB6175108|band:UGHB7543grp_1_dataset_2|row:0|idx:115",
+            "p0|c0|src:UB6175108|band:UGHB7543grp_2_dataset_2|row:0|idx:171"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:2|src:UB6198370",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6198370",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 2,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_3",
+          "dataColumn": "col_1",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6198370|band:UGHB7543grp_0_dataset_2|row:0|idx:60",
+            "p0|c0|src:UB6198370|band:UGHB7543grp_1_dataset_2|row:0|idx:116",
+            "p0|c0|src:UB6198370|band:UGHB7543grp_2_dataset_2|row:0|idx:172"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:3|src:UB6191253",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6191253",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 3,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_3",
+          "dataColumn": "col_2",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6191253|band:UGHB7543grp_0_dataset_2|row:0|idx:61",
+            "p0|c0|src:UB6191253|band:UGHB7543grp_1_dataset_2|row:0|idx:117",
+            "p0|c0|src:UB6191253|band:UGHB7543grp_2_dataset_2|row:0|idx:173"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:4|src:UB6213241",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6213241",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 4,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_3",
+          "dataColumn": "col_3",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6213241|band:UGHB7543grp_0_dataset_2|row:0|idx:62",
+            "p0|c0|src:UB6213241|band:UGHB7543grp_1_dataset_2|row:0|idx:118",
+            "p0|c0|src:UB6213241|band:UGHB7543grp_2_dataset_2|row:0|idx:174"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:5|src:UB6180450",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6180450",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 5,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_3",
+          "dataColumn": "col_4",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6180450|band:UGHB7543grp_0_dataset_2|row:0|idx:63",
+            "p0|c0|src:UB6180450|band:UGHB7543grp_1_dataset_2|row:0|idx:119",
+            "p0|c0|src:UB6180450|band:UGHB7543grp_2_dataset_2|row:0|idx:175"
+          ]
+        },
+        {
+          "logicalCellKey": "tbl:financial-7col|role:SUMMARY|row:0|col:6|src:UB6179138",
+          "sourceTableId": "TB8715",
+          "sourceCellId": "UB6179138",
+          "role": "SUMMARY",
+          "logicalColumnIndex": 6,
+          "templateRowIndex": 0,
+          "dataSet": "dataset_3",
+          "dataColumn": "col_5",
+          "rowSpan": 1,
+          "colSpan": 1,
+          "expectedRenderInstanceCount": 6,
+          "renderInstances": [
+            "p0|c0|src:UB6179138|band:UGHB7543grp_0_dataset_2|row:0|idx:64",
+            "p0|c0|src:UB6179138|band:UGHB7543grp_1_dataset_2|row:0|idx:120",
+            "p0|c0|src:UB6179138|band:UGHB7543grp_2_dataset_2|row:0|idx:176"
+          ]
+        }
+      ]
+    },
+    {
+      "tableKey": "tbl:approval:UBA6577",
+      "sourceTableIds": [
+        "UBA6577"
+      ],
+      "pageIndex": 0,
+      "bandIds": [
+        "UPHB2584"
+      ],
+      "confidence": "EXPLICIT",
+      "columns": [
+        {
+          "columnKey": "tbl:approval:UBA6577|col:0",
+          "columnIndex": 0,
+          "width": 26
+        },
+        {
+          "columnKey": "tbl:approval:UBA6577|col:1",
+          "columnIndex": 1,
+          "width": 75
+        }
+      ],
+      "cells": [
+        {
+          "sourceCellId": "UB5115957",
+          "columnIndex": 0,
+          "rowIndex": 0,
+          "rowSpan": 2,
+          "colSpan": 1,
+          "status": "MS",
+          "x": 0,
+          "y": 0,
+          "width": 26,
+          "height": 32,
+          "text": "결\n재",
+          "dataSet": null,
+          "dataColumn": null,
+          "dataType": null,
+          "borderString": null,
+          "logicalCellKey": "tbl:approval:UBA6577|row:0|col:0|src:UB5115957"
+        },
+        {
+          "sourceCellId": "UB5103966",
+          "columnIndex": 1,
+          "rowIndex": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "status": null,
+          "x": 26,
+          "y": 0,
+          "width": 75,
+          "height": 32,
+          "text": "{dataset_0.col_0}",
+          "dataSet": "dataset_0",
+          "dataColumn": "col_0",
+          "dataType": "1",
+          "borderString": null,
+          "logicalCellKey": "tbl:approval:UBA6577|row:0|col:1|src:UB5103966"
+        },
+        {
+          "sourceCellId": "UB2139574",
+          "columnIndex": 0,
+          "rowIndex": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "status": "MR",
+          "x": 0,
+          "y": 32,
+          "width": 26,
+          "height": 55,
+          "text": "",
+          "dataSet": null,
+          "dataColumn": null,
+          "dataType": null,
+          "borderString": null,
+          "logicalCellKey": "tbl:approval:UBA6577|row:1|col:0|src:UB2139574"
+        },
+        {
+          "sourceCellId": "UB5077625",
+          "columnIndex": 1,
+          "rowIndex": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "status": null,
+          "x": 26,
+          "y": 32,
+          "width": 75,
+          "height": 55,
+          "text": "",
+          "dataSet": null,
+          "dataColumn": null,
+          "dataType": null,
+          "borderString": null,
+          "logicalCellKey": "tbl:approval:UBA6577|row:1|col:1|src:UB5077625"
+        }
+      ]
+    }
+  ]
+}

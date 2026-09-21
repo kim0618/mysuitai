@@ -1,0 +1,17 @@
+{
+  "image": "mysuit-mvp-work/screenshots/import-mvp21-source.png",
+  "source": "https://github.com/invoice-x/invoice2data/blob/master/tests/compare/SammyMaystoneLinesTest.png",
+  "sourceType": "PUBLIC_SYNTHETIC_EXTERNAL_INVOICE",
+  "privacy": "PASS_EXPLICITLY_FICTITIOUS_DATA",
+  "width": 1700,
+  "height": 2200,
+  "totalPixels": 3740000,
+  "whiteThreshold": 248,
+  "nonWhitePixels": 214714,
+  "contentBBox": { "x": 82, "y": 74, "width": 1547, "height": 1674 },
+  "contentCoverageRatio": 0.057410160427807486,
+  "contentBBoxWidthRatio": 0.91,
+  "contentBBoxHeightRatio": 0.7609090909090909,
+  "sha256": "a1096c69296113ecd3fd5b0ae53bb493b6baa32011843793eb7dfa3fb040f9f3",
+  "status": "PASS"
+}

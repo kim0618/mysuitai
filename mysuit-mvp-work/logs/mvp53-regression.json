@@ -1,0 +1,7 @@
+{
+  "structureOperationService": {"passed": 5, "failed": 0},
+  "mvp44": "PASS",
+  "mvp51": "PASS via MVP 5.2 column regression",
+  "mvp52": "PASS",
+  "sourceAndRenderPatchStoresPreserved": true
+}

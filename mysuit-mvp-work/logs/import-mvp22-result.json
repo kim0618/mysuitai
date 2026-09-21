@@ -1,0 +1,22 @@
+{
+  "mvp": "2.2",
+  "dimStyleVersion": "1.2",
+  "validator": "PASS",
+  "manualStyleFixture": "PASS",
+  "externalInvoice": "PASS",
+  "textColor": "PASS",
+  "backgroundColor": "PASS",
+  "verticalAlign": "PASS",
+  "borderVisibility": "PASS",
+  "borderColorWidth": "PASS_WITH_SHARED_EDGE_SEMANTICS",
+  "perCellStyle": "PASS",
+  "prototypeLeakage": false,
+  "viewer": { "http": 200, "fatalErrors": 0 },
+  "pdf": { "http": 200, "bytes": 29387, "pageCount": 1 },
+  "editor": { "attach": "PASS", "manualCorrections": 3, "styleCorrections": 0, "undoRedo": "PASS" },
+  "backwardCompatibility": true,
+  "regression": true,
+  "integrity": true,
+  "verdict": "B",
+  "nextPriority": "VISUAL_GEOMETRY_REFINEMENT"
+}

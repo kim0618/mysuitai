@@ -1,0 +1,22 @@
+{
+  "geometry": {
+    "pageWidth": 794,
+    "pageHeight": 1123,
+    "marginLeft": 0,
+    "marginRight": 0,
+    "usableLeft": 0,
+    "usableRight": 794,
+    "tableX": 2,
+    "currentTableWidth": 790,
+    "maxTableWidth": 792,
+    "remainingWidth": 2
+  },
+  "overflow": {
+    "blocked": true,
+    "code": "TABLE_WIDTH_OVERFLOW",
+    "currentWidth": 810,
+    "requestedWidth": 810,
+    "maxWidth": 792,
+    "message": "표 너비 810는 페이지 출력 가능 폭 792를 넘습니다."
+  }
+}

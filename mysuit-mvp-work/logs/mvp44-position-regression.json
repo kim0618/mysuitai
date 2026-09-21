@@ -1,0 +1,70 @@
+{
+  "object": {
+    "viewerObjectId": "LB6417_UPHB2584_ROW0",
+    "renderIndex": 0,
+    "text": "  연도별 실적보고서",
+    "className": "UBLabel"
+  },
+  "before": {
+    "left": 367,
+    "top": 100
+  },
+  "after": {
+    "left": 397,
+    "top": 80
+  },
+  "requestCount": 1,
+  "objectCountBefore": 180,
+  "objectCountAfter": 180,
+  "refreshed": {
+    "left": 397,
+    "top": 80
+  },
+  "firstVisible": {
+    "ms": 1321.5999999996275,
+    "hidden": false,
+    "position": {
+      "left": 397,
+      "top": 80
+    }
+  },
+  "unpatchedVisible": false,
+  "duplicate": {
+    "aBefore": {
+      "left": 65,
+      "top": 193
+    },
+    "bBefore": {
+      "left": 140,
+      "top": 193
+    },
+    "aPatch": {
+      "left": 85,
+      "top": 183
+    },
+    "bPatch": {
+      "left": 125,
+      "top": 218
+    },
+    "reload": {
+      "a": {
+        "left": 85,
+        "top": 183
+      },
+      "b": {
+        "left": 125,
+        "top": 218
+      }
+    },
+    "reset": {
+      "a": {
+        "left": 65,
+        "top": 193
+      },
+      "b": {
+        "left": 125,
+        "top": 218
+      }
+    }
+  }
+}

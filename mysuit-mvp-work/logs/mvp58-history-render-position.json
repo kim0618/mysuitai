@@ -1,0 +1,32 @@
+{
+  "event": {
+    "schemaVersion": 1,
+    "historyEventId": "hist_muazywp6_42f7e12b",
+    "userActionId": "action_muazywp7_a9c48e",
+    "sequence": 2,
+    "timestamp": "2026-09-21T08:42:37.194Z",
+    "draftId": "mvp58_compound_e2e",
+    "projectName": "sample",
+    "formName": "sample",
+    "scope": "RENDER_POSITION",
+    "operation": "moveRenderObject",
+    "target": {
+      "renderInstanceKey": "p0|c0|src:LB6417|band:UPHB2584|row:0|idx:0",
+      "viewerObjectId": "LB6417_UPHB2584_ROW0",
+      "sourceObjectId": "LB6417"
+    },
+    "before": {
+      "left": 367,
+      "top": 100
+    },
+    "after": {
+      "left": 397,
+      "top": 80
+    },
+    "sourceOperationId": "rp_20260921_ca41f2",
+    "generatedIds": {},
+    "internalOperations": [],
+    "label": "LB6417_UPHB2584_ROW0 위치 이동"
+  },
+  "key": "p0|c0|src:LB6417|band:UPHB2584|row:0|idx:0"
+}

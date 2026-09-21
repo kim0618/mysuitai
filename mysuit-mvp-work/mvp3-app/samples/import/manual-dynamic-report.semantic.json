@@ -1,0 +1,56 @@
+{
+  "version": "0.1",
+  "page": { "width": 794, "height": 1123 },
+  "title": "Synthetic Employee Report",
+  "datasets": [{
+    "id": "employees",
+    "type": "embedded",
+    "columns": [
+      { "name": "NAME", "type": "string" }, { "name": "DEP", "type": "string" },
+      { "name": "POSITION", "type": "string" }, { "name": "PHONE", "type": "string" },
+      { "name": "ADDRESS", "type": "string" }, { "name": "PAY", "type": "number" }
+    ],
+    "rows": [
+      {"NAME":"Employee 01","DEP":"Dept A","POSITION":"Level A","PHONE":"000-0000-0001","ADDRESS":"Test Address 01","PAY":1010},
+      {"NAME":"Employee 02","DEP":"Dept B","POSITION":"Level B","PHONE":"000-0000-0002","ADDRESS":"Test Address 02","PAY":1020},
+      {"NAME":"Employee 03","DEP":"Dept C","POSITION":"Level B","PHONE":"000-0000-0003","ADDRESS":"Test Address 03","PAY":1030},
+      {"NAME":"Employee 04","DEP":"Dept A","POSITION":"Level C","PHONE":"000-0000-0004","ADDRESS":"Test Address 04","PAY":1040},
+      {"NAME":"Employee 05","DEP":"Dept B","POSITION":"Level C","PHONE":"000-0000-0005","ADDRESS":"Test Address 05","PAY":1050},
+      {"NAME":"Employee 06","DEP":"Dept C","POSITION":"Level D","PHONE":"000-0000-0006","ADDRESS":"Test Address 06","PAY":1060},
+      {"NAME":"Employee 07","DEP":"Dept A","POSITION":"Level D","PHONE":"000-0000-0007","ADDRESS":"Test Address 07","PAY":1070},
+      {"NAME":"Employee 08","DEP":"Dept B","POSITION":"Level E","PHONE":"000-0000-0008","ADDRESS":"Test Address 08","PAY":1080},
+      {"NAME":"Employee 09","DEP":"Dept C","POSITION":"Level E","PHONE":"000-0000-0009","ADDRESS":"Test Address 09","PAY":1090},
+      {"NAME":"Employee 10","DEP":"Dept A","POSITION":"Level E","PHONE":"000-0000-0010","ADDRESS":"Test Address 10","PAY":1100},
+      {"NAME":"Employee 11","DEP":"Dept B","POSITION":"Level F","PHONE":"000-0000-0011","ADDRESS":"Test Address 11","PAY":1110},
+      {"NAME":"Employee 12","DEP":"Dept C","POSITION":"Level G","PHONE":"000-0000-0012","ADDRESS":"Test Address 12","PAY":1120},
+      {"NAME":"Employee 13","DEP":"Dept A","POSITION":"Level G","PHONE":"000-0000-0013","ADDRESS":"Test Address 13","PAY":1130},
+      {"NAME":"Employee 14","DEP":"Dept B","POSITION":"Level H","PHONE":"000-0000-0014","ADDRESS":"Test Address 14","PAY":1140},
+      {"NAME":"Employee 15","DEP":"Dept C","POSITION":"Level H","PHONE":"000-0000-0015","ADDRESS":"Test Address 15","PAY":1150},
+      {"NAME":"Employee 16","DEP":"Dept A","POSITION":"Level H","PHONE":"000-0000-0016","ADDRESS":"Test Address 16","PAY":1160},
+      {"NAME":"Employee 17","DEP":"Dept B","POSITION":"Level H","PHONE":"000-0000-0017","ADDRESS":"Test Address 17","PAY":1170},
+      {"NAME":"Employee 18","DEP":"Dept C","POSITION":"Level H","PHONE":"000-0000-0018","ADDRESS":"Test Address 18","PAY":1180},
+      {"NAME":"Employee 19","DEP":"Dept A","POSITION":"Level H","PHONE":"000-0000-0019","ADDRESS":"Test Address 19","PAY":1190},
+      {"NAME":"Employee 20","DEP":"Dept B","POSITION":"Level H","PHONE":"000-0000-0020","ADDRESS":"Test Address 20","PAY":1200},
+      {"NAME":"Employee 21","DEP":"Dept C","POSITION":"Level H","PHONE":"000-0000-0021","ADDRESS":"Test Address 21","PAY":1210},
+      {"NAME":"Employee 22","DEP":"Dept A","POSITION":"Level H","PHONE":"000-0000-0022","ADDRESS":"Test Address 22","PAY":1220},
+      {"NAME":"Employee 23","DEP":"Dept B","POSITION":"Level H","PHONE":"000-0000-0023","ADDRESS":"Test Address 23","PAY":1230},
+      {"NAME":"Employee 24","DEP":"Dept C","POSITION":"Level H","PHONE":"000-0000-0024","ADDRESS":"Test Address 24","PAY":1240},
+      {"NAME":"Employee 25","DEP":"Dept A","POSITION":"Level H","PHONE":"000-0000-0025","ADDRESS":"Test Address 25","PAY":1250}
+    ]
+  }],
+  "groups": [{ "id": "position_group", "dataset": "employees", "key": "POSITION" }],
+  "bands": [
+    {"id":"page_header","type":"PAGE_HEADER","height":106.1,"elements":["title"]},
+    {"id":"data_header","type":"DATA_HEADER","height":25,"elements":["header_table"]},
+    {"id":"group_header","type":"GROUP_HEADER","height":0,"dataset":"employees","group":"position_group","elements":[]},
+    {"id":"data","type":"DATA","height":25,"dataset":"employees","elements":["detail_table"]},
+    {"id":"group_footer","type":"GROUP_FOOTER","height":25,"group":"position_group","elements":["group_total"]},
+    {"id":"data_footer","type":"DATA_FOOTER","height":25,"dataset":"employees","elements":["report_total"]},
+    {"id":"page_footer","type":"PAGE_FOOTER","height":50,"elements":["page_number"]}
+  ],
+  "detailColumns": ["NAME","DEP","POSITION","PHONE","ADDRESS","PAY"],
+  "headers": ["Name","Department","Position","Phone","Address","Pay"],
+  "groupFooter": {"group":"position_group","labelColumn":"POSITION","suffix":" Total","aggregate":{"function":"SUM","dataset":"employees","column":"PAY","scope":"GROUP"},"mergeColumns":5},
+  "dataFooter": {"label":"Grand Total","aggregate":{"function":"SUM","dataset":"employees","column":"PAY","scope":"REPORT"},"mergeColumns":5},
+  "pageFooter": {"type":"PAGE_NUMBER","format":"TOTAL_CURRENT"}
+}

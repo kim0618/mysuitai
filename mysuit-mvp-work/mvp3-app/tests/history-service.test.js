@@ -1,0 +1,4 @@
+const test=require('node:test'),assert=require('node:assert/strict'),h=require('./history-test-helper');let saved,s;
+test.before(()=>{saved=h.backup();s=h.scope('service');h.setup(s)});test.after(()=>h.restore(saved));
+test('appends one event and moves cursor with undo/redo',()=>{h.history.transact(s,{scope:'STRUCTURE',operation:'resizeColumn',target:{columnIndex:2},before:{width:70},after:{width:72}},()=>h.structure.upsert({...s,logicalTableKey:'tbl:financial-7col',operation:'resizeColumn',columnIndex:2,afterWidth:72}));let state=h.history.get(s);assert.equal(state.cursor,1);assert.equal(state.events.length,1);assert.equal(h.structure.list(s)[0].afterWidth,72);h.history.undo(s);assert.equal(h.structure.list(s).length,0);h.history.redo(s);assert.equal(h.structure.list(s)[0].afterWidth,72)});
+test('drafts are isolated',()=>{const other=h.scope('other');h.setup(other);assert.equal(h.history.get(other).events.length,0);h.cleanup(other)});

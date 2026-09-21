@@ -1,0 +1,8 @@
+{
+  "adapterUnit": {"passed": 3, "failed": 0},
+  "geometryAndPdfVerification": {"passed": 2, "failed": 0},
+  "structureOperationService": {"passed": 5, "failed": 0},
+  "mvp44DirectEditing": "PASS",
+  "mvp53CompositeTable": "PREVIOUS_PASS; current rerun physical grip pointer-up was flaky before save and left 0 operations",
+  "sourcePatchAndRenderPatchStoresPreserved": true
+}

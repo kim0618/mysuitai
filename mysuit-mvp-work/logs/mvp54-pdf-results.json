@@ -1,0 +1,46 @@
+{
+  "pdfs": {
+    "original": {
+      "file": "output/mvp54-original.pdf",
+      "bytes": 64536,
+      "sha256": "2b8dcd160853c0220a74f74a135770c26974b4591bf0f45426a357c17cf31bf3",
+      "saveMs": 485.87065500000017,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do"
+    },
+    "resize": {
+      "file": "output/mvp54-column-resized.pdf",
+      "bytes": 64623,
+      "sha256": "c53a8c9b46106ccd8d8f3d305b40fb37bf9acde2cbace440140409e7ce17e61a",
+      "saveMs": 355.30405900000005,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do"
+    },
+    "hide": {
+      "file": "output/mvp54-column-hidden.pdf",
+      "bytes": 62765,
+      "sha256": "2193e2ef934f53e1774cb26e1eba24f7f8176d71351abd133e40df0b35ffa387",
+      "saveMs": 260.31807899999967,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do"
+    },
+    "reorder": {
+      "file": "output/mvp54-column-reordered.pdf",
+      "bytes": 64531,
+      "sha256": "77b143c952d061c02d7f8b479d2de4777045c4a2913e5fb71ee1add89caa51dd",
+      "saveMs": 305.3005940000003,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do"
+    },
+    "row": {
+      "file": "output/mvp54-row-resized.pdf",
+      "bytes": 64538,
+      "sha256": "14766bfa938e8267f5a3050ad0368cacf86e65836782c9b390d3fe9081f93d02",
+      "saveMs": 264.63803499999995,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do"
+    }
+  },
+  "sourceBased": true,
+  "ocrUsed": false,
+  "layoutScreenshots": [
+    "mvp54-original-pdf.png",
+    "mvp54-structure-pdf.png"
+  ],
+  "distinct": true
+}

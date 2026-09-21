@@ -1,0 +1,10 @@
+{
+  "logicalTableKey": "tbl:financial-7col",
+  "columnCount": 7,
+  "memberCounts": [24, 24, 24, 24, 24, 24, 24],
+  "rolesPerColumn": {"HEADER": 1, "GROUP_HEADER": 3, "DETAIL_TEMPLATE": 17, "SUMMARY": 3},
+  "visualOrderBefore": [0, 1, 2, 3, 4, 5, 6],
+  "visualOrderAfter": [0, 2, 1, 3, 4, 5, 6],
+  "renderInstanceIdentitiesStable": true,
+  "sourceBindingIdentityStable": true
+}

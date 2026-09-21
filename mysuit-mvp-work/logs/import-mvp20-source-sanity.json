@@ -1,0 +1,17 @@
+{
+  "attempt": 2,
+  "image": "/home/tjd618/mysuit-ai-viewer/mysuit-mvp-work/screenshots/import-mvp20-source.png",
+  "width": 1280,
+  "height": 1300,
+  "totalPixels": 1664000,
+  "whiteThreshold": 248,
+  "toolbarExcludedThroughRow": 47,
+  "nonWhitePixels": 167270,
+  "toolbarExcludedNonWhitePixels": 107767,
+  "contentBBox": { "x": 243, "y": 58, "width": 794, "height": 1123 },
+  "contentCoverageRatio": 0.06724678015175718,
+  "contentBBoxWidthRatio": 0.6203125,
+  "contentBBoxHeightRatio": 0.8638461538461538,
+  "sourceSha256": "9e58c1380d62d4f7e52050ced310c716df5dbbfc61aa76216bbfc65052488a24",
+  "status": "PASS"
+}

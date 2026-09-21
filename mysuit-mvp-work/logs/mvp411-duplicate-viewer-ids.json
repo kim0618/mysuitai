@@ -1,0 +1,18 @@
+{
+  "pageIndex": 0,
+  "canvasIndex": 0,
+  "objectCount": 180,
+  "duplicateGroupCount": 2,
+  "groups": [
+    {"viewerObjectId":"UB5103966_UPHB2584_ROW0","objects":[
+      {"renderIndex":3,"sourceObjectId":"UB5103966","bandId":"UPHB2584","rowIndex":0,"className":"UBLabel","text":"대표이사","left":65,"top":193,"width":75,"height":32},
+      {"renderIndex":4,"sourceObjectId":"UB5103966","bandId":"UPHB2584","rowIndex":0,"className":"UBLabel","text":"사장","left":140,"top":193,"width":75,"height":32},
+      {"renderIndex":5,"sourceObjectId":"UB5103966","bandId":"UPHB2584","rowIndex":0,"className":"UBLabel","text":"부사장","left":215,"top":193,"width":75,"height":32}
+    ]},
+    {"viewerObjectId":"UB5077625_UPHB2584_ROW0","objects":[
+      {"renderIndex":6,"sourceObjectId":"UB5077625","bandId":"UPHB2584","rowIndex":0,"className":"UBLabel","text":"","left":65,"top":225,"width":75,"height":55},
+      {"renderIndex":7,"sourceObjectId":"UB5077625","bandId":"UPHB2584","rowIndex":0,"className":"UBLabel","text":"","left":140,"top":225,"width":75,"height":55},
+      {"renderIndex":8,"sourceObjectId":"UB5077625","bandId":"UPHB2584","rowIndex":0,"className":"UBLabel","text":"","left":215,"top":225,"width":75,"height":55}
+    ]}
+  ]
+}

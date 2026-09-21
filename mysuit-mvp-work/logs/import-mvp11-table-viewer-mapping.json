@@ -1,0 +1,78 @@
+{
+  "dimTableId": "main_table",
+  "sourceTableId": "IMPTB0001",
+  "mappings": [
+    {
+      "sourceCellId": "IMPCL0001",
+      "viewerObjectId": "IMPCL0001",
+      "renderIndex": 2,
+      "text": "부서"
+    },
+    {
+      "sourceCellId": "IMPCL0002",
+      "viewerObjectId": "IMPCL0002",
+      "renderIndex": 3,
+      "text": "담당자"
+    },
+    {
+      "sourceCellId": "IMPCL0003",
+      "viewerObjectId": "IMPCL0003",
+      "renderIndex": 4,
+      "text": "실적"
+    },
+    {
+      "sourceCellId": "IMPCL0004",
+      "viewerObjectId": "IMPCL0004",
+      "renderIndex": 5,
+      "text": "개발팀"
+    },
+    {
+      "sourceCellId": "IMPCL0005",
+      "viewerObjectId": "IMPCL0005",
+      "renderIndex": 6,
+      "text": "홍길동"
+    },
+    {
+      "sourceCellId": "IMPCL0006",
+      "viewerObjectId": "IMPCL0006",
+      "renderIndex": 7,
+      "text": "100"
+    },
+    {
+      "sourceCellId": "IMPCL0007",
+      "viewerObjectId": "IMPCL0007",
+      "renderIndex": 8,
+      "text": "영업팀"
+    },
+    {
+      "sourceCellId": "IMPCL0008",
+      "viewerObjectId": "IMPCL0008",
+      "renderIndex": 9,
+      "text": "김철수"
+    },
+    {
+      "sourceCellId": "IMPCL0009",
+      "viewerObjectId": "IMPCL0009",
+      "renderIndex": 10,
+      "text": "200"
+    },
+    {
+      "sourceCellId": "IMPCL0010",
+      "viewerObjectId": "IMPCL0010",
+      "renderIndex": 11,
+      "text": "기획팀"
+    },
+    {
+      "sourceCellId": "IMPCL0011",
+      "viewerObjectId": "IMPCL0011",
+      "renderIndex": 12,
+      "text": "이영희"
+    },
+    {
+      "sourceCellId": "IMPCL0012",
+      "viewerObjectId": "IMPCL0012",
+      "renderIndex": 13,
+      "text": "150"
+    }
+  ]
+}

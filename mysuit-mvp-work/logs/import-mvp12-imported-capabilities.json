@@ -1,0 +1,520 @@
+{
+  "object": {
+    "targetType": "OBJECT",
+    "targetKey": "IMPLB0001",
+    "target": {
+      "targetType": "OBJECT",
+      "targetKey": "IMPLB0001",
+      "viewerObjectId": "IMPLB0001",
+      "renderInstanceKey": null,
+      "sourceObjectId": "IMPLB0001",
+      "properties": [
+        "text",
+        "fontSize",
+        "fontWeight",
+        "textAlign",
+        "visible",
+        "width",
+        "height"
+      ],
+      "sourceClassName": "UBLabel"
+    },
+    "capabilities": {
+      "updateText": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "setFontSize": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "setFontWeight": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "setTextAlign": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "resizeObject": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "hideObject": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "restoreObject": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED"
+        }
+      },
+      "moveRenderObject": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": false,
+            "pdf": false
+          },
+          "maturity": "LIMITED",
+          "candidateMaterialization": "VIEWER_ONLY"
+        }
+      }
+    },
+    "constraints": {
+      "canonicalSerializer": "PARTIAL"
+    },
+    "warnings": [
+      "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+    ]
+  },
+  "column": {
+    "targetType": "LOGICAL_COLUMN",
+    "targetKey": "tbl:static:IMPTB0001|col:0",
+    "target": {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:static:IMPTB0001|col:0",
+      "logicalTableKey": "tbl:static:IMPTB0001",
+      "logicalColumnKey": "tbl:static:IMPTB0001|col:0",
+      "columnIndex": 0,
+      "groupKey": "grp:static:IMPTB0001",
+      "baseWidth": 210,
+      "tableType": "STATIC_SINGLE",
+      "sourceTableId": "IMPTB0001",
+      "memberCellIds": [
+        "IMPCL0001",
+        "IMPCL0004",
+        "IMPCL0007",
+        "IMPCL0010"
+      ]
+    },
+    "capabilities": {
+      "resizeColumn": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "sameGroupOnly": false,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792
+        }
+      },
+      "moveColumn": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "sameGroupOnly": true,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792
+        }
+      },
+      "hideColumn": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "sameGroupOnly": false,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792
+        }
+      },
+      "restoreColumn": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "sameGroupOnly": false,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792
+        }
+      },
+      "addStaticColumn": {
+        "allowed": false,
+        "reason": "RUNTIME_UI_NOT_CONNECTED",
+        "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "POC_ONLY",
+          "candidateMaterialization": "SUPPORTED",
+          "engineValidated": true,
+          "runtimeUiConnected": false,
+          "sameGroupOnly": false,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792
+        }
+      },
+      "addBoundColumn": {
+        "allowed": false,
+        "reason": "RUNTIME_UI_NOT_CONNECTED",
+        "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "POC_ONLY",
+          "candidateMaterialization": "SUPPORTED",
+          "engineValidated": true,
+          "runtimeUiConnected": false,
+          "sameGroupOnly": false,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792,
+          "bindingWhitelist": [
+            "dataset_2.col_8"
+          ]
+        }
+      },
+      "removeColumn": {
+        "allowed": false,
+        "reason": "RUNTIME_UI_NOT_CONNECTED",
+        "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "POC_ONLY",
+          "candidateMaterialization": "SUPPORTED",
+          "engineValidated": true,
+          "runtimeUiConnected": false,
+          "sameGroupOnly": false,
+          "groupKey": "grp:static:IMPTB0001",
+          "maxTableWidth": 792
+        }
+      }
+    },
+    "constraints": {
+      "canonicalSerializer": "PARTIAL"
+    },
+    "warnings": [
+      "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+    ]
+  },
+  "row": {
+    "targetType": "LOGICAL_ROW",
+    "targetKey": "tbl:static:IMPTB0001|row:0",
+    "target": {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:static:IMPTB0001|row:0",
+      "logicalTableKey": "tbl:static:IMPTB0001",
+      "logicalRowKey": "tbl:static:IMPTB0001|row:0",
+      "rowRole": "STATIC_ROW",
+      "rowIndex": 0,
+      "rowSpanDependent": false,
+      "tableType": "STATIC_SINGLE",
+      "sourceTableId": "IMPTB0001",
+      "memberCellIds": [
+        "IMPCL0001",
+        "IMPCL0002",
+        "IMPCL0003"
+      ]
+    },
+    "capabilities": {
+      "resizeRow": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      },
+      "hideRow": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      },
+      "restoreRow": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      },
+      "collapseRow": {
+        "allowed": false,
+        "reason": "CROSS_BAND_REFLOW_UNVERIFIED",
+        "message": "CROSS_BAND_REFLOW_UNVERIFIED",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      },
+      "moveRenderedRow": {
+        "allowed": false,
+        "reason": "DATA_REPEAT_ROW",
+        "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": false,
+            "pdf": false
+          },
+          "maturity": "LIMITED",
+          "candidateMaterialization": "VIEWER_ONLY",
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      },
+      "addStaticRow": {
+        "allowed": false,
+        "reason": "RUNTIME_UI_NOT_CONNECTED",
+        "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "POC_ONLY",
+          "candidateMaterialization": "SUPPORTED",
+          "engineValidated": true,
+          "runtimeUiConnected": false,
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      },
+      "removeStaticRow": {
+        "allowed": false,
+        "reason": "RUNTIME_UI_NOT_CONNECTED",
+        "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "POC_ONLY",
+          "candidateMaterialization": "SUPPORTED",
+          "engineValidated": true,
+          "runtimeUiConnected": false,
+          "reflowScope": "TABLE_LOCAL",
+          "reflowEvidence": "static-single-row"
+        }
+      }
+    },
+    "constraints": {
+      "canonicalSerializer": "PARTIAL"
+    },
+    "warnings": [
+      "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+    ]
+  },
+  "table": {
+    "targetType": "COMPOSITE_TABLE",
+    "targetKey": "ctbl:static:IMPTB0001",
+    "target": {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:static:IMPTB0001",
+      "compositeTableKey": "ctbl:static:IMPTB0001",
+      "logicalTableKey": "tbl:static:IMPTB0001",
+      "tableType": "STATIC_SINGLE",
+      "sourceTableId": "IMPTB0001",
+      "memberCellIds": [
+        "IMPCL0001",
+        "IMPCL0002",
+        "IMPCL0003",
+        "IMPCL0004",
+        "IMPCL0005",
+        "IMPCL0006",
+        "IMPCL0007",
+        "IMPCL0008",
+        "IMPCL0009",
+        "IMPCL0010",
+        "IMPCL0011",
+        "IMPCL0012"
+      ]
+    },
+    "capabilities": {
+      "moveTable": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": false,
+            "pdf": false
+          },
+          "maturity": "LIMITED",
+          "candidateMaterialization": "VIEWER_ONLY",
+          "reflowScope": "PAGE_ABSOLUTE",
+          "pageFooterProtected": true
+        }
+      },
+      "resizeTableWidth": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": false,
+            "pdf": false
+          },
+          "maturity": "LIMITED",
+          "candidateMaterialization": "VIEWER_ONLY",
+          "reflowScope": "PAGE_ABSOLUTE",
+          "pageFooterProtected": true
+        }
+      },
+      "hideTable": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "PAGE_ABSOLUTE",
+          "pageFooterProtected": true
+        }
+      },
+      "restoreTable": {
+        "allowed": true,
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "PAGE_ABSOLUTE",
+          "pageFooterProtected": true
+        }
+      },
+      "collapseTable": {
+        "allowed": false,
+        "reason": "CROSS_BAND_REFLOW_UNVERIFIED",
+        "message": "CROSS_BAND_REFLOW_UNVERIFIED",
+        "constraints": {
+          "support": {
+            "viewer": true,
+            "source": true,
+            "pdf": true
+          },
+          "maturity": "STABLE",
+          "candidateMaterialization": "SUPPORTED",
+          "reflowScope": "PAGE_ABSOLUTE",
+          "pageFooterProtected": true
+        }
+      }
+    },
+    "constraints": {
+      "canonicalSerializer": "PARTIAL"
+    },
+    "warnings": [
+      "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+    ]
+  }
+}

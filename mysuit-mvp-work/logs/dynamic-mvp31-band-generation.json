@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "count": 7,
+  "bands": [
+    {
+      "index": 0,
+      "id": "DPHB0001",
+      "type": "UBPageHeaderBand",
+      "height": 106.1,
+      "bandItems": [
+        "DPTB0001",
+        "DPTB0002",
+        "DPTB0003"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "DDHB0001",
+      "type": "UBDataHeaderBand",
+      "height": 25,
+      "bandItems": [
+        "DPTB0004"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "DGHB0001",
+      "type": "UBGroupHeaderBand",
+      "height": 0,
+      "bandItems": []
+    },
+    {
+      "index": 3,
+      "id": "DDB0001",
+      "type": "UBDataBand",
+      "height": 25,
+      "bandItems": [
+        "DPTB0005"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "DGFB0001",
+      "type": "UBGroupFooterBand",
+      "height": 25,
+      "bandItems": [
+        "DPTB0006"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "DDFB0001",
+      "type": "UBDataFooterBand",
+      "height": 25,
+      "bandItems": [
+        "DPTB0007"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "DPFB0001",
+      "type": "UBPageFooterBand",
+      "height": 50,
+      "bandItems": [
+        "DPTB0008"
+      ]
+    }
+  ]
+}

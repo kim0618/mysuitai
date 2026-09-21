@@ -1,0 +1,37 @@
+{
+  "phase": "AI_BUILDER_FOUNDATION_0_2",
+  "verdict": "A",
+  "bindingSnapshotIntegrated": true,
+  "bindUndoRedoPass": true,
+  "unbindUndoRedoPass": true,
+  "rebindUndoRedoPass": true,
+  "mixedTimelinePass": true,
+  "baseRestorePass": true,
+  "finalRestorePass": true,
+  "redoBranchPass": true,
+  "persistencePass": true,
+  "newContextPass": true,
+  "cursorMaterializationPass": true,
+  "viewerPass": true,
+  "pdfPass": true,
+  "forcedFailureSafetyPass": true,
+  "draftIsolationPass": true,
+  "foundation01RegressionPass": true,
+  "preAiRegressionPass": true,
+  "originalIntegrityPass": true,
+  "cursorSignatures": {
+    "base": "4d9ed036fcd75042cf910747a8295cf7be31e22a223827f418d1554b3b8bdd1b",
+    "mid": "a8e742928aa241249c5cc3d1746ef427185e56b89b337daa948415e8c75855b9",
+    "final": "ed27ea44d492674656be3b384ef695ed3881ceec6ccb4231db6921a421a0257a"
+  },
+  "pdfBytes": {
+    "base": 29269,
+    "mid": 28789,
+    "final": 29875
+  },
+  "limitations": [
+    "Binding targets are limited to verified UBLabel and Cell identities.",
+    "Structure materialization remains scoped to the verified single static table adapter.",
+    "Dataset definitions are materializer inputs and are not a separate History domain."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "attempt": 2,
+  "dim": "mysuit-mvp-work/mvp3-app/samples/import/image-analysis-mvp20.dim.json",
+  "attempts": 1,
+  "status": "VALID",
+  "errors": [],
+  "version": "1.1",
+  "elementCount": 4,
+  "elementTypes": ["text", "text", "table", "text"]
+}

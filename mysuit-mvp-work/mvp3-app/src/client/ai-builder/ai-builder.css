@@ -1,0 +1,47 @@
+body.ai-builder { background:#f4f5f7; overflow:hidden; }
+.ai-builder > header { height:64px; padding:0 22px; background:#fff; border-bottom:1px solid #dde1e7; box-shadow:none; }
+.ai-builder > header .brand { gap:4px; }
+.ai-builder > header .brand strong { font-size:18px; color:#20242a; }
+.ai-builder > header .brand span { color:#69717d; font-size:12px; }
+.ai-builder > main { height:calc(100vh - 64px); grid-template-columns:minmax(720px,1fr) minmax(360px,400px); gap:0; padding:0; }
+.ai-builder .viewer-pane { min-width:0; border:0; border-radius:0; box-shadow:none; border-right:1px solid #d9dde3; }
+.ai-builder .viewer-pane nav { background:#fff; }
+.ai-builder .viewer-pane .easy-guide { display:none; }
+.ai-builder #viewer { height:calc(100vh - 115px); }
+.ai-builder > main > aside { width:auto; min-width:0; height:100%; border:0; border-radius:0; box-shadow:none; overflow:auto; padding:0; background:#fff; }
+.ai-builder .builder-tabs { position:sticky; top:0; z-index:10; display:grid; grid-template-columns:repeat(3,1fr); height:48px; background:#fff; border-bottom:1px solid #dfe3e8; }
+.ai-builder .builder-tab { border:0; border-radius:0; background:#fff; color:#5b6370; font-weight:700; }
+.ai-builder .builder-tab[aria-selected="true"] { color:#b4232f; box-shadow:inset 0 -2px #c92736; }
+.ai-builder .builder-panel { padding:18px; }
+.ai-builder .builder-panel[hidden] { display:none!important; }
+.ai-builder .builder-direct > section { margin:0 0 16px; }
+.ai-builder .builder-direct .context-head { padding:0 0 14px; }
+.ai-builder .builder-direct .context-head h1 { font-size:17px; }
+.ai-builder .builder-direct.no-selection .selection, .ai-builder .builder-direct.no-selection #capability-panel, .ai-builder .builder-direct.no-selection #property-editor { display:none; }
+.ai-builder .builder-direct #selection-help { display:none; }
+.ai-builder .builder-direct .selection details { border:0; padding:0; }
+.ai-builder .builder-direct .selection summary { display:none; }
+.ai-builder .builder-direct .selection dl { display:grid; grid-template-columns:75px 1fr; gap:5px 10px; margin:0; font-size:12px; }
+.ai-builder .builder-direct .selection dt { color:#7a828e; }
+.ai-builder .builder-direct .selection dd { margin:0; overflow-wrap:anywhere; }
+.ai-builder #position-editor, .ai-builder .changes, .ai-builder .history-panel, .ai-builder .result { display:none; }
+.ai-builder #property-editor h2 { font-size:14px; }
+.ai-builder #property-editor .hint, .ai-builder #property-editor .row { display:none; }
+.ai-builder .builder-empty { padding:64px 10px; color:#737b87; text-align:center; font-size:13px; }
+.ai-builder .binding-summary { display:grid; grid-template-columns:90px 1fr; gap:10px; margin:18px 0; font-size:13px; }
+.ai-builder .builder-import-data{display:grid;gap:5px;margin:0 0 18px;padding:13px 14px;border:1px solid #e1e4e8;border-radius:5px;background:#fafbfc}.ai-builder .builder-import-data strong{color:#222831}.ai-builder .builder-import-data span{font-size:13px}.ai-builder .builder-import-data small{color:#777f8b}
+.ai-builder .binding-summary dt { color:#777f8b; }
+.ai-builder .binding-summary dd { margin:0; overflow-wrap:anywhere; }
+.ai-builder .builder-field { margin:14px 0; }
+.ai-builder .builder-field label { display:block; margin-bottom:6px; color:#555d68; font-size:12px; font-weight:700; }
+.ai-builder .builder-field select { width:100%; }
+.ai-builder .builder-actions { display:flex; gap:8px; margin-top:18px; }
+.ai-builder .builder-actions .primary { background:#be2635; border-color:#be2635; color:#fff; }
+.ai-builder .ai-placeholder { min-height:340px; display:flex; flex-direction:column; justify-content:space-between; }
+.ai-builder .ai-placeholder p { margin:80px 18px; color:#737b87; text-align:center; line-height:1.6; }
+.ai-builder .ai-composer { display:grid; grid-template-columns:1fr auto; gap:8px; padding-top:14px; border-top:1px solid #e2e5e9; }
+.ai-builder .ai-composer input { min-width:0; }
+.ai-builder .builder-save-state { color:#777f8b; font-size:12px; }
+.ai-builder .proposal-summary{display:flex;gap:14px;padding:11px 0 13px;border-bottom:1px solid #e4e7eb;font-size:12px}.ai-builder .proposal-summary b{font-size:15px}.ai-builder .proposal-summary [data-kind=auto] b{color:#16803b}.ai-builder .proposal-summary [data-kind=review] b{color:#b65b00}.ai-builder .proposal-list{margin-top:10px;border:1px solid #e1e4e8;border-radius:5px;overflow:hidden}.ai-builder .proposal-row{width:100%;display:grid;grid-template-columns:1fr 1.35fr auto;gap:8px;align-items:center;padding:10px 11px;border:0;border-bottom:1px solid #eceef1;border-radius:0;background:#fff;text-align:left}.ai-builder .proposal-row:last-child{border-bottom:0}.ai-builder .proposal-row:hover,.ai-builder .proposal-row:focus{background:#f8f9fa}.ai-builder .proposal-row code{overflow:hidden;text-overflow:ellipsis;color:#4d5560;font-size:11px}.ai-builder .proposal-status{font-size:11px;font-weight:700}.ai-builder .status-auto .proposal-status{color:#16803b}.ai-builder .status-needs_review .proposal-status{color:#b65b00}.ai-builder .status-unbound .proposal-status{color:#7b828c}.ai-builder .proposal-detail{margin-top:14px;padding:13px;border:1px solid #e1e4e8;border-radius:5px;background:#fafbfc}.ai-builder .proposal-detail h3{margin:0 0 5px;font-size:14px}.ai-builder .proposal-confidence,.ai-builder .proposal-sample{color:#68717d;font-size:12px}.ai-builder .proposal-detail .builder-field{margin:12px 0}.ai-builder .proposal-row:focus{outline:2px solid #e6aeb5;outline-offset:-2px}
+.ai-builder .binding-kind{margin:8px 0 0;font-size:14px}.ai-builder .array-review{margin-top:24px;padding-top:18px;border-top:1px solid #dfe3e8}.ai-builder .array-review h3{display:inline;margin:0;font-size:14px}.ai-builder .array-review-count{float:right;margin:0;color:#68717d;font-size:12px}.ai-builder .array-proposal{clear:both;margin-top:12px;padding:12px;border:1px solid #dfe3e8;border-radius:6px}.ai-builder .array-head{display:grid;grid-template-columns:1fr 1.2fr auto;gap:8px;align-items:center}.ai-builder .array-head code{font-size:11px}.ai-builder .array-proposal small{display:block;margin:6px 0 10px;color:#68717d}.ai-builder .array-column{display:grid;grid-template-columns:64px 1fr 48px;gap:7px;align-items:center;margin:7px 0;font-size:12px}.ai-builder .array-column select{min-width:0}.ai-builder .array-column em{color:#68717d;font-size:10px;font-style:normal}.ai-builder .array-apply{width:100%;margin-top:10px}
+@media (max-width:1100px) { .ai-builder > main { grid-template-columns:minmax(620px,1fr) 360px; } }

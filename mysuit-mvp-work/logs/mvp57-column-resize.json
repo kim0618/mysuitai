@@ -1,0 +1,32 @@
+{
+  "columnResize": {
+    "from": {
+      "x": 774.5,
+      "y": 486
+    },
+    "to": {
+      "x": 804.5,
+      "y": 486
+    },
+    "dx": 30,
+    "dy": 0,
+    "before": 70,
+    "after": 100,
+    "saveRequests": 1,
+    "elapsedMs": 393.9870430000001
+  },
+  "overflow": {
+    "from": {
+      "x": 804.5,
+      "y": 486
+    },
+    "to": {
+      "x": 1304.5,
+      "y": 486
+    },
+    "dx": 500,
+    "dy": 0,
+    "clampedWidth": 142,
+    "totalWidth": 792
+  }
+}

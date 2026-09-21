@@ -1,0 +1,48 @@
+{
+  "groundTruth": "/home/tjd618/mysuit-ai-viewer/test-input/edu_01.ubjf",
+  "sha256": "deb72e9f5b1a0ecc7963700905b1564c07e42bae902f739f5a0f21a741529717",
+  "form": { "projectName": "edu", "formId": "edu_01", "projectType": 3, "pages": 1, "pageWidth": 794, "pageHeight": 1123 },
+  "inventory": {
+    "datasets": 1,
+    "bands": 7,
+    "tables": 8,
+    "sourceCells": 22,
+    "standaloneLabels": 0,
+    "images": 0,
+    "shapes": 0,
+    "groups": 1,
+    "simpleDatasetBindings": 5,
+    "parameterBindings": 1,
+    "systemFunctionCells": 6,
+    "aggregateCells": 2,
+    "pageFooterExpressions": 1
+  },
+  "dataset": {
+    "id": "dataset_0",
+    "className": "UBDmcUser",
+    "typeName": "user",
+    "dataStructureType": 0,
+    "reference": true,
+    "declaredTotalCount": 0,
+    "embeddedDataEncoding": "base64+zlib JSON array",
+    "embeddedRowCount": 25,
+    "columns": [
+      { "index": 0, "dataField": "NAME", "header": "NAME", "type": "0" },
+      { "index": 1, "dataField": "DEP", "header": "DEP", "type": "0" },
+      { "index": 2, "dataField": "POSITION", "header": "POSITION", "type": "0" },
+      { "index": 3, "dataField": "PHONE", "header": "PHONE", "type": "0" },
+      { "index": 4, "dataField": "ADDRESS", "header": "ADDRESS", "type": "0" },
+      { "index": 5, "dataField": "PAY", "header": "PAY", "type": "0" }
+    ]
+  },
+  "runtimeReconstruction": {
+    "dataHeaderRows": 1,
+    "detailTemplateRows": 1,
+    "detailRuntimeRows": 25,
+    "groupCount": 8,
+    "groupFooterRows": 8,
+    "dataFooterRows": 1,
+    "visibleTableRows": 35,
+    "calculation": "1 + 25 + 8 + 1 = 35"
+  }
+}

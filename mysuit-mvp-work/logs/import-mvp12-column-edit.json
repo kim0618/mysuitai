@@ -1,0 +1,13 @@
+{
+  "selectionCount": 4,
+  "sourceCellIds": [
+    "IMPCL0002",
+    "IMPCL0005",
+    "IMPCL0008",
+    "IMPCL0011"
+  ],
+  "beforeWidth": 210,
+  "afterWidth": 240,
+  "history": true,
+  "reload": true
+}

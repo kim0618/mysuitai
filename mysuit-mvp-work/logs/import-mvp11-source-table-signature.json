@@ -1,0 +1,145 @@
+{
+  "projectName": "import_mvp11_20260827_170551_e59e1d",
+  "dimTableId": "main_table",
+  "id": "IMPTB0001",
+  "rowCount": 4,
+  "columnCount": 3,
+  "x": 82,
+  "y": 165,
+  "width": 630,
+  "height": 160,
+  "cells": [
+    {
+      "id": "IMPCL0001",
+      "rowIndex": 0,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 0,
+      "width": 210,
+      "height": 40,
+      "text": "부서",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0002",
+      "rowIndex": 0,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 0,
+      "width": 210,
+      "height": 40,
+      "text": "담당자",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0003",
+      "rowIndex": 0,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 0,
+      "width": 210,
+      "height": 40,
+      "text": "실적",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0004",
+      "rowIndex": 1,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 40,
+      "width": 210,
+      "height": 40,
+      "text": "개발팀",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0005",
+      "rowIndex": 1,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 40,
+      "width": 210,
+      "height": 40,
+      "text": "홍길동",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0006",
+      "rowIndex": 1,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 40,
+      "width": 210,
+      "height": 40,
+      "text": "100",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0007",
+      "rowIndex": 2,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 80,
+      "width": 210,
+      "height": 40,
+      "text": "영업팀",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0008",
+      "rowIndex": 2,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 80,
+      "width": 210,
+      "height": 40,
+      "text": "김철수",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0009",
+      "rowIndex": 2,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 80,
+      "width": 210,
+      "height": 40,
+      "text": "200",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0010",
+      "rowIndex": 3,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 120,
+      "width": 210,
+      "height": 40,
+      "text": "기획팀",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0011",
+      "rowIndex": 3,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 120,
+      "width": 210,
+      "height": 40,
+      "text": "이영희",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    },
+    {
+      "id": "IMPCL0012",
+      "rowIndex": 3,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 120,
+      "width": 210,
+      "height": 40,
+      "text": "150",
+      "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+    }
+  ]
+}

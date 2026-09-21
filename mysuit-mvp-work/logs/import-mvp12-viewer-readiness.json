@@ -1,0 +1,14 @@
+{
+  "strategy": "CANVAS_STABLE_SIGNATURE",
+  "requirements": [
+    "iframe loaded",
+    "Fabric canvas/getObjects",
+    "object count > 0",
+    "upper canvas non-zero",
+    "two identical object signatures"
+  ],
+  "sampleObjectCount": 180,
+  "importedObjectCount": 16,
+  "bothAttached": true,
+  "fatalErrors": 0
+}

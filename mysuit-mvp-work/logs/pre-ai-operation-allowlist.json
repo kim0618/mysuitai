@@ -1,0 +1,252 @@
+{
+  "baseline": "PRE-AI-v1",
+  "policy": "maturity=STABLE, capability.allowed=true, validation.valid=true, exact target, user preview/approval required",
+  "operations": [
+    {
+      "operation": "updateText",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "setFontSize",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "setFontWeight",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "setTextAlign",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "resizeObject",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "hideObject",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "restoreObject",
+      "targetType": "OBJECT",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "SOURCE_MAPPING"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "resizeColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "PAGE_WIDTH_GUARD",
+        "HIDDEN_COLUMN_GUARD"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "moveColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "GROUP_BOUNDARY",
+        "HIDDEN_COLUMN_GUARD"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "hideColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "restoreColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "resizeRow",
+      "targetType": "LOGICAL_ROW",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "ROW_ROLE",
+        "PAYLOAD_SCHEMA"
+      ],
+      "restrictions": "fixed/static rows only"
+    },
+    {
+      "operation": "hideRow",
+      "targetType": "LOGICAL_ROW",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "ROW_ROLE"
+      ],
+      "restrictions": "fixed/static rows only"
+    },
+    {
+      "operation": "restoreRow",
+      "targetType": "LOGICAL_ROW",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "ROW_ROLE"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "collapseRow",
+      "targetType": "LOGICAL_ROW",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "VERTICAL_REFLOW",
+        "ROWSPAN",
+        "SUMMARY",
+        "DATA_REPEAT"
+      ],
+      "restrictions": "Header UDHB4114 only"
+    },
+    {
+      "operation": "hideTable",
+      "targetType": "COMPOSITE_TABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "restoreTable",
+      "targetType": "COMPOSITE_TABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "restrictions": null
+    },
+    {
+      "operation": "collapseTable",
+      "targetType": "COMPOSITE_TABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "validation": [
+        "VERTICAL_REFLOW",
+        "PAGE_FOOTER_PROTECTION"
+      ],
+      "restrictions": null
+    }
+  ]
+}

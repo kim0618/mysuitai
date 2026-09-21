@@ -1,0 +1,21 @@
+{
+  "textDetectionAccuracy": 1,
+  "textContentAccuracy": 1,
+  "tableDetection": { "expected": 1, "actual": 1, "accuracy": 1 },
+  "columnCountExact": true,
+  "rowCountExact": true,
+  "cellCountExact": true,
+  "cellTextAccuracy": 1,
+  "geometryAllElements": {
+    "x": { "avgUnits": 55.75, "maxUnits": 97, "avgPercent": 7.0214, "maxPercent": 12.2166 },
+    "y": { "avgUnits": 0.75, "maxUnits": 3, "avgPercent": 0.0668, "maxPercent": 0.2671 },
+    "width": { "avgUnits": 88, "maxUnits": 126, "avgPercent": 11.0831, "maxPercent": 15.869 },
+    "height": { "avgUnits": 5.5, "maxUnits": 10, "avgPercent": 0.4898, "maxPercent": 0.8905 }
+  },
+  "geometryTextOnly": { "avgX": 74.3333, "maxX": 97, "avgY": 1, "maxY": 3, "avgWidth": 117.3333, "maxWidth": 126, "avgHeight": 7.3333, "maxHeight": 10 },
+  "geometryTable": { "x": 0, "y": 0, "width": 0, "height": 0 },
+  "fontSizeError": { "avgUnits": 0.3333, "maxUnits": 1 },
+  "boldAccuracy": 1,
+  "alignmentAccuracy": 1,
+  "generatorGeometryError": { "avgUnits": 0, "maxUnits": 0 }
+}

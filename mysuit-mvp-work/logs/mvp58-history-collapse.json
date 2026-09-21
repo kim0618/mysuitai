@@ -1,0 +1,32 @@
+{
+  "event": {
+    "schemaVersion": 1,
+    "historyEventId": "hist_muazywsa_440bc712",
+    "userActionId": "action_muazywsa_ab6b8e",
+    "sequence": 6,
+    "timestamp": "2026-09-21T08:42:37.306Z",
+    "draftId": "mvp58_compound_e2e",
+    "projectName": "sample",
+    "formName": "sample",
+    "scope": "STRUCTURE",
+    "operation": "collapseRow",
+    "target": {
+      "logicalTableKey": "tbl:financial-7col",
+      "logicalRowKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0"
+    },
+    "before": {
+      "active": false
+    },
+    "after": {
+      "active": true
+    },
+    "sourceOperationId": "sop_muazyws5_c21f76",
+    "generatedIds": {},
+    "internalOperations": [],
+    "label": "Header 행 공간 제거"
+  },
+  "finalHeader": {
+    "height": 33,
+    "hidden": true
+  }
+}

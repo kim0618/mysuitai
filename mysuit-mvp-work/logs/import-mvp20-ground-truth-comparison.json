@@ -1,0 +1,11 @@
+{
+  "freezeSha256": "79063ca17cfaa316f318f6ad80c7a01580f9c86f856e4d910df14e6f8b783ff0",
+  "page": { "expected": { "width": 794, "height": 1123 }, "actual": { "width": 794, "height": 1123 }, "exact": true },
+  "texts": [
+    { "text": "월간 실적 보고서", "contentExact": true, "expected": { "x": 182, "y": 55, "width": 430, "height": 42, "fontSize": 20, "bold": true, "textAlign": "center" }, "actual": { "x": 245, "y": 55, "width": 304, "height": 32, "fontSize": 20, "bold": true, "textAlign": "center" }, "absoluteError": { "x": 63, "y": 0, "width": 126, "height": 10, "fontSize": 0 } },
+    { "text": "2026년 8월 부서별 실적", "contentExact": true, "expected": { "x": 182, "y": 105, "width": 430, "height": 28, "fontSize": 12, "bold": false, "textAlign": "center" }, "actual": { "x": 245, "y": 102, "width": 304, "height": 24, "fontSize": 12, "bold": false, "textAlign": "center" }, "absoluteError": { "x": 63, "y": 3, "width": 126, "height": 4, "fontSize": 0 } },
+    { "text": "작성일: 2026.08.27", "contentExact": true, "expected": { "x": 482, "y": 350, "width": 230, "height": 28, "fontSize": 11, "bold": false, "textAlign": "right" }, "actual": { "x": 579, "y": 350, "width": 130, "height": 20, "fontSize": 10, "bold": false, "textAlign": "right" }, "absoluteError": { "x": 97, "y": 0, "width": 100, "height": 8, "fontSize": 1 } }
+  ],
+  "table": { "countExact": true, "rowsExact": true, "columnsExact": true, "cellCountExact": true, "cellTextExact": 12, "cellTextTotal": 12, "geometryError": { "x": 0, "y": 0, "width": 0, "height": 0 }, "columnWidthsExact": true, "rowHeightsExact": true },
+  "freezeModifiedAfterComparison": false
+}

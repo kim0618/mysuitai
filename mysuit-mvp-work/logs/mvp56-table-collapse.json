@@ -1,0 +1,1009 @@
+{
+  "candidate": "sample_mvp56_tablecollapse_20260811_145253_6fb958",
+  "source": {
+    "success": true,
+    "appliedOperations": [
+      {
+        "operation": "collapseTable",
+        "supported": true,
+        "scope": "SAME_SECTION",
+        "collapsedHeight": 654,
+        "affectedSourceObjects": [
+          "TB3039",
+          "TB3979",
+          "TB5514",
+          "TB8715",
+          "UDHB4114",
+          "UGHB7543",
+          "UDB3195",
+          "UGFB0223"
+        ],
+        "warnings": [
+          "sample BODY section 뒤에는 일반 body follower가 없어 footer는 page engine 위치를 유지합니다."
+        ],
+        "bodySignature": {
+          "header": {
+            "instances": 1,
+            "height": 33,
+            "total": 33
+          },
+          "groupHeader": {
+            "instances": 3,
+            "height": 27,
+            "total": 81
+          },
+          "detail": {
+            "instances": 17,
+            "height": 27,
+            "total": 459
+          },
+          "summary": {
+            "instances": 3,
+            "height": 27,
+            "total": 81
+          },
+          "collapsedHeight": 654,
+          "flowStart": 300,
+          "flowEnd": 954
+        }
+      }
+    ],
+    "layoutDiscovery": [
+      {
+        "sourceObjectId": "UPHB2584",
+        "className": "UBPageHeaderBand",
+        "bandId": "UPHB2584",
+        "bandType": "PAGE_HEADER",
+        "parentRelation": "PAGE_BAND",
+        "x": 0,
+        "y": 0,
+        "width": 794,
+        "height": 300,
+        "pageIndex": 0,
+        "sourceOrder": 0,
+        "tableMembership": null,
+        "sectionMembership": "PAGE_HEADER",
+        "bandItems": [
+          "LB6417",
+          "IMG4979",
+          "UBA6577"
+        ]
+      },
+      {
+        "sourceObjectId": "UDHB4114",
+        "className": "UBDataHeaderBand",
+        "bandId": "UDHB4114",
+        "bandType": "HEADER",
+        "parentRelation": "PAGE_BAND",
+        "x": 0,
+        "y": 333,
+        "width": 794,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 1,
+        "tableMembership": null,
+        "sectionMembership": "BODY_FINANCIAL",
+        "bandItems": [
+          "TB3039"
+        ]
+      },
+      {
+        "sourceObjectId": "UGHB7543",
+        "className": "UBGroupHeaderBand",
+        "bandId": "UGHB7543",
+        "bandType": "GROUP_HEADER",
+        "parentRelation": "PAGE_BAND",
+        "x": 0,
+        "y": 382,
+        "width": 794,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 2,
+        "tableMembership": null,
+        "sectionMembership": "BODY_FINANCIAL",
+        "bandItems": [
+          "TB3979"
+        ]
+      },
+      {
+        "sourceObjectId": "UDB3195",
+        "className": "UBDataBand",
+        "bandId": "UDB3195",
+        "bandType": "DATA",
+        "parentRelation": "PAGE_BAND",
+        "x": 0,
+        "y": 436,
+        "width": 794,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 3,
+        "tableMembership": null,
+        "sectionMembership": "BODY_FINANCIAL",
+        "bandItems": [
+          "TB5514"
+        ]
+      },
+      {
+        "sourceObjectId": "UGFB0223",
+        "className": "UBGroupFooterBand",
+        "bandId": "UGFB0223",
+        "bandType": "SUMMARY",
+        "parentRelation": "PAGE_BAND",
+        "x": 0,
+        "y": 480,
+        "width": 794,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 4,
+        "tableMembership": null,
+        "sectionMembership": "BODY_FINANCIAL",
+        "bandItems": [
+          "TB8715"
+        ]
+      },
+      {
+        "sourceObjectId": "UPFB9094",
+        "className": "UBPageFooterBand",
+        "bandId": "UPFB9094",
+        "bandType": "PAGE_FOOTER",
+        "parentRelation": "PAGE_BAND",
+        "x": 0,
+        "y": 1086,
+        "width": 794,
+        "height": 37,
+        "pageIndex": 0,
+        "sourceOrder": 5,
+        "tableMembership": null,
+        "sectionMembership": "PAGE_FOOTER",
+        "bandItems": [
+          "TB7301"
+        ]
+      },
+      {
+        "sourceObjectId": "LB6417",
+        "className": "UBLabel",
+        "bandId": "UPHB2584",
+        "bandType": "PAGE_HEADER",
+        "parentRelation": "BAND_ITEM",
+        "x": 367,
+        "y": 100,
+        "width": 425,
+        "height": 68,
+        "pageIndex": 0,
+        "sourceOrder": 6,
+        "tableMembership": null,
+        "sectionMembership": "PAGE_HEADER"
+      },
+      {
+        "sourceObjectId": "IMG4979",
+        "className": "UBImage",
+        "bandId": "UPHB2584",
+        "bandType": "PAGE_HEADER",
+        "parentRelation": "BAND_ITEM",
+        "x": 39,
+        "y": 50,
+        "width": 287,
+        "height": 100,
+        "pageIndex": 0,
+        "sourceOrder": 7,
+        "tableMembership": null,
+        "sectionMembership": "PAGE_HEADER"
+      },
+      {
+        "sourceObjectId": "UBA6577",
+        "className": "UBApproval",
+        "bandId": "UPHB2584",
+        "bandType": "PAGE_HEADER",
+        "parentRelation": "BAND_ITEM",
+        "x": 39,
+        "y": 193,
+        "width": 101,
+        "height": 87,
+        "pageIndex": 0,
+        "sourceOrder": 8,
+        "tableMembership": null,
+        "sectionMembership": "PAGE_HEADER",
+        "rowCount": 2,
+        "columnCount": 2
+      },
+      {
+        "sourceObjectId": "TB3039",
+        "className": "UBTable",
+        "bandId": "UDHB4114",
+        "bandType": "HEADER",
+        "parentRelation": "BAND_ITEM",
+        "x": 2,
+        "y": 333,
+        "width": 790,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 9,
+        "tableMembership": "ctbl:main-report-table",
+        "sectionMembership": "BODY_FINANCIAL",
+        "rowCount": 1,
+        "columnCount": 7
+      },
+      {
+        "sourceObjectId": "TB3979",
+        "className": "UBTable",
+        "bandId": "UGHB7543",
+        "bandType": "GROUP_HEADER",
+        "parentRelation": "BAND_ITEM",
+        "x": 2,
+        "y": 382,
+        "width": 790,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 10,
+        "tableMembership": "ctbl:main-report-table",
+        "sectionMembership": "BODY_FINANCIAL",
+        "rowCount": 1,
+        "columnCount": 7
+      },
+      {
+        "sourceObjectId": "TB5514",
+        "className": "UBTable",
+        "bandId": "UDB3195",
+        "bandType": "DATA",
+        "parentRelation": "BAND_ITEM",
+        "x": 2,
+        "y": 436,
+        "width": 790,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 11,
+        "tableMembership": "ctbl:main-report-table",
+        "sectionMembership": "BODY_FINANCIAL",
+        "rowCount": 1,
+        "columnCount": 7
+      },
+      {
+        "sourceObjectId": "TB8715",
+        "className": "UBTable",
+        "bandId": "UGFB0223",
+        "bandType": "SUMMARY",
+        "parentRelation": "BAND_ITEM",
+        "x": 2,
+        "y": 480,
+        "width": 790,
+        "height": 0,
+        "pageIndex": 0,
+        "sourceOrder": 12,
+        "tableMembership": "ctbl:main-report-table",
+        "sectionMembership": "BODY_FINANCIAL",
+        "rowCount": 1,
+        "columnCount": 7
+      },
+      {
+        "sourceObjectId": "TB7301",
+        "className": "UBTable",
+        "bandId": "UPFB9094",
+        "bandType": "PAGE_FOOTER",
+        "parentRelation": "BAND_ITEM",
+        "x": 0,
+        "y": 1086,
+        "width": 794,
+        "height": 35,
+        "pageIndex": 0,
+        "sourceOrder": 13,
+        "tableMembership": null,
+        "sectionMembership": "PAGE_FOOTER",
+        "rowCount": 1,
+        "columnCount": 2
+      }
+    ],
+    "flowGraph": {
+      "nodes": [
+        {
+          "id": "UPHB2584",
+          "type": "BAND",
+          "role": "PAGE_HEADER",
+          "section": "PAGE_HEADER"
+        },
+        {
+          "id": "UDHB4114",
+          "type": "BAND",
+          "role": "HEADER",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "UGHB7543",
+          "type": "BAND",
+          "role": "GROUP_HEADER",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "UDB3195",
+          "type": "BAND",
+          "role": "DATA",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "UGFB0223",
+          "type": "BAND",
+          "role": "SUMMARY",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "UPFB9094",
+          "type": "BAND",
+          "role": "PAGE_FOOTER",
+          "section": "PAGE_FOOTER"
+        },
+        {
+          "id": "LB6417",
+          "type": "STATIC_OBJECT",
+          "role": "PAGE_HEADER",
+          "section": "PAGE_HEADER"
+        },
+        {
+          "id": "IMG4979",
+          "type": "STATIC_OBJECT",
+          "role": "PAGE_HEADER",
+          "section": "PAGE_HEADER"
+        },
+        {
+          "id": "UBA6577",
+          "type": "STATIC_OBJECT",
+          "role": "PAGE_HEADER",
+          "section": "PAGE_HEADER"
+        },
+        {
+          "id": "TB3039",
+          "type": "COMPOSITE_MEMBER",
+          "role": "HEADER",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "TB3979",
+          "type": "COMPOSITE_MEMBER",
+          "role": "GROUP_HEADER",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "TB5514",
+          "type": "COMPOSITE_MEMBER",
+          "role": "DATA",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "TB8715",
+          "type": "COMPOSITE_MEMBER",
+          "role": "SUMMARY",
+          "section": "BODY_FINANCIAL"
+        },
+        {
+          "id": "TB7301",
+          "type": "STATIC_OBJECT",
+          "role": "PAGE_FOOTER",
+          "section": "PAGE_FOOTER"
+        }
+      ],
+      "edges": [
+        {
+          "from": "UPHB2584",
+          "to": "UDHB4114",
+          "relation": "AFTER",
+          "evidence": "page-band-source-order"
+        },
+        {
+          "from": "UDHB4114",
+          "to": "UGHB7543",
+          "relation": "AFTER",
+          "evidence": "page-band-source-order"
+        },
+        {
+          "from": "UGHB7543",
+          "to": "UDB3195",
+          "relation": "AFTER",
+          "evidence": "page-band-source-order"
+        },
+        {
+          "from": "UDB3195",
+          "to": "UGFB0223",
+          "relation": "AFTER",
+          "evidence": "page-band-source-order"
+        },
+        {
+          "from": "UGFB0223",
+          "to": "UPFB9094",
+          "relation": "AFTER",
+          "evidence": "page-band-source-order"
+        },
+        {
+          "from": "UPHB2584",
+          "to": "LB6417",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UPHB2584",
+          "to": "IMG4979",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UPHB2584",
+          "to": "UBA6577",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UDHB4114",
+          "to": "TB3039",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UGHB7543",
+          "to": "TB3979",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UDB3195",
+          "to": "TB5514",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UGFB0223",
+          "to": "TB8715",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UPFB9094",
+          "to": "TB7301",
+          "relation": "INSIDE",
+          "evidence": "band-property-and-bandItems"
+        },
+        {
+          "from": "UDHB4114",
+          "to": "UGHB7543",
+          "relation": "DEPENDS_ON_HEIGHT",
+          "evidence": "MVP54-header-height-delta-runtime-reflow"
+        },
+        {
+          "from": "UGHB7543",
+          "to": "UDB3195",
+          "relation": "DEPENDS_ON_HEIGHT",
+          "evidence": "MVP54-header-height-delta-runtime-reflow"
+        },
+        {
+          "from": "UDB3195",
+          "to": "UGFB0223",
+          "relation": "DEPENDS_ON_HEIGHT",
+          "evidence": "MVP54-header-height-delta-runtime-reflow"
+        }
+      ],
+      "bodySignature": {
+        "header": {
+          "instances": 1,
+          "height": 0,
+          "total": 0
+        },
+        "groupHeader": {
+          "instances": 3,
+          "height": 0,
+          "total": 0
+        },
+        "detail": {
+          "instances": 17,
+          "height": 0,
+          "total": 0
+        },
+        "summary": {
+          "instances": 3,
+          "height": 0,
+          "total": 0
+        },
+        "collapsedHeight": 0,
+        "flowStart": 300,
+        "flowEnd": 300
+      }
+    },
+    "capabilities": {
+      "rowHeader": {
+        "canHide": true,
+        "canCollapse": true,
+        "reflowScope": "CROSS_BAND_VERIFIED",
+        "reason": "header-band-height-delta-was-verified-by-mvp54"
+      },
+      "rowGroupHeader": {
+        "canHide": true,
+        "canCollapse": false,
+        "reflowScope": "UNSUPPORTED",
+        "reason": "group-boundary-and-repeat-dependency"
+      },
+      "rowSummary": {
+        "canHide": true,
+        "canCollapse": false,
+        "reflowScope": "UNSUPPORTED",
+        "reason": "aggregate-and-group-footer-dependency"
+      },
+      "rowData": {
+        "canHide": false,
+        "canCollapse": false,
+        "reflowScope": "UNSUPPORTED",
+        "reason": "rendered-detail-template"
+      },
+      "compositeTable": {
+        "canHide": true,
+        "canCollapse": true,
+        "reflowScope": "SAME_SECTION",
+        "reason": "four-band-chain-and-dataset-cardinality-verified",
+        "belowBodyFollowers": 0,
+        "pageFooterProtected": true
+      },
+      "sameBand": {
+        "canHide": true,
+        "canCollapse": false,
+        "reflowScope": "UNSUPPORTED",
+        "reason": "sample-has-no-static-body-follower"
+      },
+      "crossBandGeneral": {
+        "canHide": true,
+        "canCollapse": false,
+        "reflowScope": "UNSUPPORTED",
+        "reason": "only-header-to-body-height-dependency-is-verified"
+      }
+    },
+    "structuralDiff": [
+      {
+        "path": "pages/0/items/1/height",
+        "before": 33,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/2/height",
+        "before": 27,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/3/height",
+        "before": 27,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/4/height",
+        "before": 27,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/9/height",
+        "before": 33,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/9/table/0/0/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/table/0/1/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/table/0/2/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/table/0/3/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/table/0/4/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/table/0/5/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/table/0/6/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/9/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/height",
+        "before": 27,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/10/table/0/0/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/table/0/1/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/table/0/2/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/table/0/3/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/table/0/4/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/table/0/5/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/table/0/6/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/10/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/height",
+        "before": 27,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/11/table/0/0/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/table/0/1/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/table/0/2/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/table/0/3/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/table/0/4/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/table/0/5/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/table/0/6/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/11/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/height",
+        "before": 27,
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/12/table/0/0/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/table/0/3/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/table/0/4/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/table/0/5/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/table/0/6/cell/visible",
+        "after": false
+      },
+      {
+        "path": "pages/0/items/12/visible",
+        "after": false
+      }
+    ],
+    "candidateSha256": "b4c9b317c09bc076008741a6cbeddd6e8b15c5af0a45ccfaf11584a4fc676a7b",
+    "originalFormSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83"
+  },
+  "viewer": {
+    "pageCount": 1,
+    "pages": [
+      {
+        "pageIndex": 0,
+        "objectCount": 12,
+        "objects": [
+          {
+            "id": "LB6417_UPHB2584_ROW0",
+            "top": 100,
+            "left": 367,
+            "width": 425,
+            "height": 68,
+            "text": "  연도별 실적보고서"
+          },
+          {
+            "id": "IMG4979_UPHB2584_ROW0",
+            "top": 50,
+            "left": 39,
+            "width": 287,
+            "height": 100,
+            "text": ""
+          },
+          {
+            "id": "UB5115957_UPHB2584_ROW0",
+            "top": 193,
+            "left": 39,
+            "width": 26,
+            "height": 87,
+            "text": "결\n재"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 65,
+            "width": 75,
+            "height": 32,
+            "text": "대표이사"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 140,
+            "width": 75,
+            "height": 32,
+            "text": "사장"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 215,
+            "width": 75,
+            "height": 32,
+            "text": "부사장"
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 65,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 140,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 215,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB7128552_UPFB9094_ROW0",
+            "top": 1086,
+            "left": 0,
+            "width": 673,
+            "height": 35,
+            "text": "    2026년 08월 11일"
+          },
+          {
+            "id": "UB7175166_UPFB9094_ROW0",
+            "top": 1086,
+            "left": 673,
+            "width": 121,
+            "height": 35,
+            "text": "1/1 페이지    "
+          },
+          {
+            "id": null,
+            "top": 0,
+            "left": 0,
+            "width": 0,
+            "height": 0,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "totalObjects": 12,
+    "renderMs": 1882
+  },
+  "positions": {
+    "before": {
+      "header": {
+        "id": "UB5305348_UDHB4114_ROW0",
+        "top": 300,
+        "left": 2,
+        "width": 370,
+        "height": 33,
+        "text": "   IFRS(연결) - 단위 : 억원"
+      },
+      "group": {
+        "id": "UB5622520_grp_0_UGHB7543_ROW0",
+        "top": 333,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "부분별매출"
+      },
+      "detail": {
+        "id": "UB6131219_grp_0_UDB3195_ROW0",
+        "top": 360,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "    Weight management"
+      },
+      "summary": {
+        "id": "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+        "top": 495,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "   YOY"
+      },
+      "footer": {
+        "id": "UB7128552_UPFB9094_ROW0",
+        "top": 1086,
+        "left": 0,
+        "width": 673,
+        "height": 35,
+        "text": "    2026년 08월 11일"
+      }
+    },
+    "after": {
+      "header": null,
+      "group": null,
+      "detail": null,
+      "summary": null,
+      "footer": {
+        "id": "UB7128552_UPFB9094_ROW0",
+        "top": 1086,
+        "left": 0,
+        "width": 673,
+        "height": 35,
+        "text": "    2026년 08월 11일"
+      }
+    }
+  },
+  "complex": {
+    "candidate": "sample_mvp56_complex_20260811_145253_6ed648",
+    "viewer": {
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "objectCount": 12,
+          "objects": [
+            {
+              "id": "LB6417_UPHB2584_ROW0",
+              "top": 100,
+              "left": 367,
+              "width": 425,
+              "height": 68,
+              "text": "  연도별 실적보고서"
+            },
+            {
+              "id": "IMG4979_UPHB2584_ROW0",
+              "top": 50,
+              "left": 39,
+              "width": 287,
+              "height": 100,
+              "text": ""
+            },
+            {
+              "id": "UB5115957_UPHB2584_ROW0",
+              "top": 193,
+              "left": 39,
+              "width": 26,
+              "height": 87,
+              "text": "결\n재"
+            },
+            {
+              "id": "UB5103966_UPHB2584_ROW0",
+              "top": 193,
+              "left": 65,
+              "width": 75,
+              "height": 32,
+              "text": "대표이사"
+            },
+            {
+              "id": "UB5103966_UPHB2584_ROW0",
+              "top": 193,
+              "left": 140,
+              "width": 75,
+              "height": 32,
+              "text": "사장"
+            },
+            {
+              "id": "UB5103966_UPHB2584_ROW0",
+              "top": 193,
+              "left": 215,
+              "width": 75,
+              "height": 32,
+              "text": "부사장"
+            },
+            {
+              "id": "UB5077625_UPHB2584_ROW0",
+              "top": 225,
+              "left": 65,
+              "width": 75,
+              "height": 55,
+              "text": ""
+            },
+            {
+              "id": "UB5077625_UPHB2584_ROW0",
+              "top": 225,
+              "left": 140,
+              "width": 75,
+              "height": 55,
+              "text": ""
+            },
+            {
+              "id": "UB5077625_UPHB2584_ROW0",
+              "top": 225,
+              "left": 215,
+              "width": 75,
+              "height": 55,
+              "text": ""
+            },
+            {
+              "id": "UB7128552_UPFB9094_ROW0",
+              "top": 1086,
+              "left": 0,
+              "width": 673,
+              "height": 35,
+              "text": "    2026년 08월 11일"
+            },
+            {
+              "id": "UB7175166_UPFB9094_ROW0",
+              "top": 1086,
+              "left": 673,
+              "width": 121,
+              "height": 35,
+              "text": "1/1 페이지    "
+            },
+            {
+              "id": null,
+              "top": 0,
+              "left": 0,
+              "width": 0,
+              "height": 0,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "totalObjects": 12,
+      "renderMs": 1833
+    }
+  },
+  "assertions": {
+    "tableRemoved": true,
+    "footerProtected": true,
+    "complexCollapse": true
+  }
+}

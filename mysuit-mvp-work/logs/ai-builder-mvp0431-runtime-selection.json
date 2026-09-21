@@ -1,0 +1,57 @@
+{
+  "clickedRuntimeValue": "상품B",
+  "clickedRuntimeRowIndex": 1,
+  "runtimeInstanceId": "AICL00021_AIDB00002_ROW1",
+  "resolvedTemplateSourceId": "AICL00021",
+  "resolvedBandId": "AIDB00002",
+  "resolvedDataset": "ai_items",
+  "resolvedColumn": "item",
+  "renderGeometry": {
+    "viewerObjectId": "AICL00021_AIDB00002_ROW1",
+    "objectBounds": {
+      "left": 55,
+      "top": 835,
+      "width": 772,
+      "height": 214
+    },
+    "canvasBounds": {
+      "left": 70.5,
+      "top": 58,
+      "width": 794,
+      "height": 1123
+    },
+    "frameBounds": {
+      "left": 184,
+      "top": 52
+    },
+    "canvasSize": {
+      "width": 1588,
+      "height": 2246
+    },
+    "scaleX": 0.5,
+    "scaleY": 0.5,
+    "x": 475,
+    "y": 581,
+    "zoom": 2,
+    "viewportTransform": [
+      2,
+      0,
+      0,
+      2,
+      0,
+      0
+    ]
+  },
+  "selectionEvent": {
+    "type": "selectionChanged",
+    "targetType": "DYNAMIC_DETAIL_TEMPLATE_CELL",
+    "sourceId": "AICL00021",
+    "runtimeId": "AICL00021_AIDB00002_ROW1",
+    "runtimeInstanceKey": "p0|c0|src:AICL00021|band:AIDB00002|row:1|idx:23",
+    "rowIndex": 1,
+    "bandId": "AIDB00002",
+    "page": 0
+  },
+  "rightPanelSelectionPass": true,
+  "runtimeDataEditBlocked": true
+}

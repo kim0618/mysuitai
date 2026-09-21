@@ -1,0 +1,52 @@
+{
+  "startedAt": "2026-08-10T01:49:20.344Z",
+  "candidate": {
+    "count": 179,
+    "title": {
+      "text": "  2026년 연도별 실적보고서",
+      "fontSize": 30,
+      "top": 100,
+      "width": 440
+    },
+    "year": {
+      "present": false,
+      "text": null,
+      "visible": null
+    }
+  },
+  "original": {
+    "count": 180,
+    "title": {
+      "text": "  연도별 실적보고서",
+      "fontSize": 32,
+      "top": 100,
+      "width": 425
+    },
+    "year": {
+      "text": "2013",
+      "visible": true
+    }
+  },
+  "patchCount": 4,
+  "success": true,
+  "integrity": {
+    "startedAt": "2026-08-10T01:49:20.343Z",
+    "formBefore": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "infoBefore": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e",
+    "formAfter": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "infoAfter": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e",
+    "formUnchanged": true,
+    "infoUnchanged": true,
+    "activeCandidateProjects": [],
+    "finishedAt": "2026-08-10T01:49:27.577Z"
+  },
+  "performance": {
+    "objectSelectionMs": 170,
+    "firstPatchBatchMs": 67,
+    "candidateCreateMs": 97,
+    "candidateRenderMs": 755,
+    "candidateDeleteMs": 97,
+    "totalMs": 6854
+  },
+  "finishedAt": "2026-08-10T01:49:27.577Z"
+}

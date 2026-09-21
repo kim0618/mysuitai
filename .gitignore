@@ -1,0 +1,43 @@
+# Dependencies and local runtime
+node_modules/
+mysuit-mvp-work/runtime/
+
+# Local Tomcat + MySuit Viewer installation (vendor product and 17GB temp); not source of this project
+apache-tomcat-8.5.78/
+
+# Environment and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Logs, caches, OS and IDE files
+*.log
+*.tmp
+coverage/
+.cache/
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+*.lnk
+.vscode/
+.idea/
+
+# Runtime state written by the local dev server (drafts, history, audit, uploaded image assets)
+mysuit-mvp-work/mvp3-app/data/
+
+# User uploads and generated output (PDF renders etc.)
+mysuit-mvp-work/uploads/
+mysuit-mvp-work/output/
+mysuit-mvp-work/outputs/
+mysuit-mvp-work/mvp3-app/output/
+mysuit-mvp-work/extracted/
+
+# HWPX package accidentally extracted into the app root; no code reads these files
+mysuit-mvp-work/mvp3-app/BinData/
+mysuit-mvp-work/mvp3-app/Contents/
+mysuit-mvp-work/mvp3-app/META-INF/
+mysuit-mvp-work/mvp3-app/Preview/
+mysuit-mvp-work/mvp3-app/mimetype
+mysuit-mvp-work/mvp3-app/settings.xml
+mysuit-mvp-work/mvp3-app/version.xml

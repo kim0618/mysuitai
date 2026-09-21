@@ -1,0 +1,20 @@
+{
+  "rowSpan": {
+    "success": false,
+    "code": "UNSUPPORTED_ROWSPAN_DEPENDENCY",
+    "message": "rowSpan dependency가 있는 Row는 collapse할 수 없습니다.",
+    "candidateCreated": false
+  },
+  "unverified": {
+    "success": false,
+    "code": "VERTICAL_REFLOW_UNVERIFIED",
+    "message": "검증된 Header Static Row만 collapse할 수 있습니다.",
+    "candidateCreated": false
+  },
+  "capabilities": {
+    "canHide": true,
+    "canCollapse": false,
+    "reflowScope": "UNSUPPORTED",
+    "reason": "only-header-to-body-height-dependency-is-verified"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "selectionCount": 12,
+  "sourceCellIds": [
+    "IMPCL0001",
+    "IMPCL0002",
+    "IMPCL0003",
+    "IMPCL0004",
+    "IMPCL0005",
+    "IMPCL0006",
+    "IMPCL0007",
+    "IMPCL0008",
+    "IMPCL0009",
+    "IMPCL0010",
+    "IMPCL0011",
+    "IMPCL0012"
+  ],
+  "move": {
+    "dx": 20,
+    "dy": 20
+  },
+  "after": [
+    {
+      "id": "IMPCL0001",
+      "left": 102,
+      "top": 185,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0002",
+      "left": 312,
+      "top": 185,
+      "width": 240,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0004",
+      "left": 102,
+      "top": 225,
+      "width": 210,
+      "height": 52
+    }
+  ],
+  "reloaded": [
+    {
+      "id": "IMPCL0001",
+      "left": 102,
+      "top": 185,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0002",
+      "left": 312,
+      "top": 185,
+      "width": 240,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0004",
+      "left": 102,
+      "top": 225,
+      "width": 210,
+      "height": 52
+    }
+  ],
+  "newContextGeometry": [
+    {
+      "id": "IMPCL0001",
+      "left": 102,
+      "top": 185,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0002",
+      "left": 312,
+      "top": 185,
+      "width": 240,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0004",
+      "left": 102,
+      "top": 225,
+      "width": 210,
+      "height": 52
+    }
+  ],
+  "undoRedo": true
+}

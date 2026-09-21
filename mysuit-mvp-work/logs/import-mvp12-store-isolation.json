@@ -1,0 +1,22 @@
+{
+  "scopeKey": "layoutDraftId|projectName|formName",
+  "stores": {
+    "sourcePatch": true,
+    "renderPatch": true,
+    "structure": true,
+    "history": true
+  },
+  "importedClean": {
+    "sourcePatches": 0,
+    "renderPatches": 0,
+    "structureOperations": 0,
+    "historyEvents": 0
+  },
+  "sampleSameDraft": {
+    "sourcePatches": 0,
+    "renderPatches": 0,
+    "structureOperations": 0,
+    "historyEvents": 0
+  },
+  "crossContamination": 0
+}

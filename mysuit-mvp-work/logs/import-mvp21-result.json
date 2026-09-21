@@ -1,0 +1,16 @@
+{
+  "mvp": "2.1",
+  "sourceSanity": "PASS",
+  "source": { "kind": "PUBLIC_SYNTHETIC_EXTERNAL_INVOICE", "privacy": "PASS", "sha256": "a1096c69296113ecd3fd5b0ae53bb493b6baa32011843793eb7dfa3fb040f9f3" },
+  "analyzer": { "provider": "CODEX", "api": false, "dimValidation": "PASS_FIRST_ATTEMPT", "freezeSha256": "6eb47bf838c8baf37a0569c7094bc484069195dd9b0a54a83bceda4028cce32a" },
+  "observableAccuracy": { "textDetection": 1, "textContent": 1, "tableDetection": 1, "columnsExact": true, "rowsExact": true, "cellsExact": true, "cellTextAccuracy": 1, "textGeometry": "NOT_MEASURED", "tableGeometryError": 0 },
+  "generator": { "status": "PASS", "projectName": "import_mvp21_20260828_143646_6f9d99" },
+  "viewer": { "status": "PASS", "http": 200, "fatalErrors": 0, "textObjects": 26, "tableCells": 12 },
+  "editor": { "status": "PASS", "manualCorrectionCount": 3, "undoRedo": true, "separateCandidates": 2 },
+  "pdf": { "status": "PASS", "http": 200, "bytes": 29572, "pageCount": 1 },
+  "timeToUsableDraft": { "imageAnalysis": "NOT_MEASURED", "validation": "NOT_MEASURED", "generation": "NOT_MEASURED", "viewerLoad": "NOT_MEASURED", "manualCorrection": "NOT_MEASURED_AUTOMATED_EDITOR_ACTIONS" },
+  "regression": true,
+  "integrity": true,
+  "verdict": "B",
+  "nextPriority": "DIM_STYLE_V1_2_AND_PER_CELL_TABLE_STYLE_GENERATION"
+}

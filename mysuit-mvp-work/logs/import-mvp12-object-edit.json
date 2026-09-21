@@ -1,0 +1,17 @@
+{
+  "attached": {
+    "status": 200,
+    "errors": [],
+    "objectCount": 16
+  },
+  "sourceId": "IMPLB0001",
+  "before": "월간 실적 보고서",
+  "after": "AI 변환 실적 보고서",
+  "undo": true,
+  "redo": true,
+  "reloadText": "AI 변환 실적 보고서",
+  "freshText": "AI 변환 실적 보고서",
+  "candidateText": "AI 변환 실적 보고서",
+  "historyEvents": 1,
+  "pass": true
+}

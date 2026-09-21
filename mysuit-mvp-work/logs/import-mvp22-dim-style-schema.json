@@ -1,0 +1,12 @@
+{
+  "version": "1.2",
+  "backwardCompatibleVersions": ["1.0", "1.1"],
+  "textStyle": ["fontSize", "bold", "textAlign", "verticalAlign", "textColor", "backgroundColor"],
+  "cellStyle": ["fontSize", "bold", "textAlign", "verticalAlign", "textColor", "backgroundColor", "border"],
+  "colors": "#RRGGBB",
+  "verticalAlign": ["top", "middle", "bottom"],
+  "borderSides": ["top", "right", "bottom", "left"],
+  "borderWidthRange": [0, 2],
+  "unknownStyleProperties": "REJECT",
+  "v12DefaultCellStyle": { "fontSize": 12, "bold": false, "textAlign": "center", "verticalAlign": "middle", "textColor": "#000000", "backgroundColor": "#FFFFFF", "borderVisible": false }
+}

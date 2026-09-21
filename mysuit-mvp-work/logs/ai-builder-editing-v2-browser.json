@@ -1,0 +1,661 @@
+{
+  "steps": {
+    "fixturesWithoutJson": {
+      "pass": true,
+      "detail": {
+        "hwpx": "import_mvp13_20260921_173926_63d8ce",
+        "dim": "import_mvp11_20260921_173926_5f2e64"
+      }
+    },
+    "layout1440": {
+      "pass": true,
+      "detail": {
+        "sidebar": 184,
+        "panel": 380,
+        "viewer": 876,
+        "iframe": "IFRAME",
+        "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_173926_63d8ce&formName=SampleReport_FreeForm",
+        "tabs": [
+          "채팅",
+          "직접 편집",
+          "데이터 연결"
+        ],
+        "active": "채팅",
+        "topbar": 52,
+        "topbarControls": [
+          "실행 취소",
+          "다시 실행",
+          "저장 안 됨",
+          "저장"
+        ],
+        "pageScroll": 0,
+        "viewerToolbarsOutside": 0,
+        "rawCodeVisible": false
+      }
+    },
+    "tabOrder": {
+      "pass": true,
+      "detail": [
+        "채팅",
+        "직접 편집",
+        "데이터 연결"
+      ]
+    },
+    "topbarControls": {
+      "pass": true,
+      "detail": [
+        "실행 취소",
+        "다시 실행",
+        "저장 안 됨",
+        "저장"
+      ]
+    },
+    "noRawErrorCode": {
+      "pass": true
+    },
+    "chatProductUi": {
+      "pass": true,
+      "detail": {
+        "chat": {
+          "composer": true,
+          "send": true,
+          "suggestions": [
+            "제목 수정",
+            "표 열 너비 조정",
+            "행 이동",
+            "데이터 연결"
+          ],
+          "placeholder": false,
+          "empty": "안녕하세요.\n\n현재 \"SampleReport_FreeForm\" 문서를 보고 있습니다.\n\n문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.\n\n추천 작업\n제목 수정\n표 열 너비 조정\n행 이동\n데이터 연결\n오후 05:39"
+        },
+        "suggested": "선택한 행을 아래로 이동해줘",
+        "chatAfter": {
+          "user": "제목을 2026년 인사기록부로 바꿔줘",
+          "time": true,
+          "inputEnabled": true
+        }
+      }
+    },
+    "textEdit": {
+      "pass": true,
+      "detail": {
+        "textUi": {
+          "card": "▦\n표 셀\n2019-01-01~2019-01-01",
+          "sections": [
+            "행 편집",
+            "열 편집",
+            "빠른 편집",
+            "크기",
+            "표시"
+          ],
+          "text": "2019-01-01~2019-01-01"
+        },
+        "styled": {
+          "fontSize": 11,
+          "fontWeight": "bold",
+          "textAlign": "left"
+        },
+        "fontBefore": {
+          "left": 119,
+          "top": 408,
+          "width": 186,
+          "height": 17,
+          "visible": true,
+          "text": "2020-03-01~2024-12-31"
+        }
+      }
+    },
+    "rowMove": {
+      "pass": true,
+      "detail": {
+        "topBefore": 408,
+        "movedTop": 425,
+        "undoneTop": 408,
+        "redoneTop": 425
+      }
+    },
+    "rowHeight": {
+      "pass": true,
+      "detail": {
+        "heightAfter": 30
+      }
+    },
+    "rowHide": {
+      "pass": true,
+      "detail": {
+        "hidden": false,
+        "restored": true
+      }
+    },
+    "rowDelete": {
+      "pass": true,
+      "detail": {
+        "deleted": {
+          "order": "0,1,2,4,5",
+          "visible": false
+        },
+        "undeleted": true
+      }
+    },
+    "mergedRowFailClosed": {
+      "pass": true,
+      "detail": {
+        "refusal": "병합 셀 의존성이 있어 이 행을 변경할 수 없습니다.\n×"
+      }
+    },
+    "columnMove": {
+      "pass": true,
+      "detail": {
+        "colLeftBefore": 119,
+        "colLeftAfter": 205
+      }
+    },
+    "columnResize": {
+      "pass": true,
+      "detail": {
+        "colWidth": 150
+      }
+    },
+    "imageAdapter": {
+      "pass": true,
+      "detail": {
+        "card": "▧\n이미지\nIMPIMG0001",
+        "sections": [
+          "크기",
+          "위치",
+          "이미지",
+          "표시"
+        ],
+        "ratio": true,
+        "align": true,
+        "fit": true,
+        "replace": true
+      }
+    },
+    "imageResize": {
+      "pass": true,
+      "detail": {
+        "imgBefore": {
+          "left": 36,
+          "top": 69,
+          "width": 148,
+          "height": 39,
+          "visible": true,
+          "text": "",
+          "src": "data:image/jpeg;base64,R0lGODlhKgFPAOYAADc1NWdkZLu7vaako+Xk5"
+        }
+      }
+    },
+    "imagePosition": {
+      "pass": true,
+      "detail": {
+        "imgCentered": {
+          "left": 220,
+          "top": 69,
+          "width": 296,
+          "height": 78,
+          "visible": true,
+          "text": "",
+          "src": "data:image/jpeg;base64,R0lGODlhKgFPAOYAADc1NWdkZLu7vaako+Xk5"
+        },
+        "tableBounds": {
+          "left": 0,
+          "right": 735
+        }
+      }
+    },
+    "imageVisibility": {
+      "pass": true
+    },
+    "imageFit": {
+      "pass": true,
+      "detail": {
+        "scaleType": 1
+      }
+    },
+    "imageReplace": {
+      "pass": true,
+      "detail": {
+        "src": "http://127.0.0.1:3100/api/image-assets/aed71814397bf8bea2bfa"
+      }
+    },
+    "tabSwitchKeepsViewer": {
+      "pass": true,
+      "detail": {
+        "srcBefore": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_173926_63d8ce&formName=SampleReport_FreeForm"
+      }
+    },
+    "savePass": {
+      "pass": true,
+      "detail": {
+        "t3Rows": "IMPCL0070,IMPCL0071,IMPCL0083,IMPCL0077,IMPCL0089,IMPCL0095",
+        "t3Row2": "IMPCL0083,IMPCL0085,IMPCL0084,IMPCL0086,IMPCL0087,IMPCL0088",
+        "t4RowCount": 5,
+        "removedGone": true,
+        "text": "2020-03-01~2024-12-31",
+        "fontWeight": "bold",
+        "colWidth": 86,
+        "image": {
+          "x": 220,
+          "width": 296,
+          "height": 78,
+          "scaleType": 1,
+          "data": true
+        }
+      }
+    },
+    "reloadPass": {
+      "pass": true,
+      "detail": {
+        "rows": "0,1,3,2,4,5",
+        "cols": "0,2,1,3,4,5",
+        "deleted": 5,
+        "cursor": 18
+      }
+    },
+    "undoRedoPass": {
+      "pass": true
+    },
+    "dataEmptyState": {
+      "pass": true,
+      "detail": {
+        "empty": "데이터 연결\n연결된 데이터가 없습니다.\n\nJSON 데이터를 추가하면 문서 항목과 자동으로 연결할 수 있습니다.\n\nJSON 파일 선택\nJSON 직접 입력"
+      }
+    },
+    "workspaceJsonUpload": {
+      "pass": true,
+      "detail": {
+        "header": "{ }\n데이터\nemployee-227907.json\n4 fields\n변경\n제거",
+        "summary": "1\n자동 연결\n0\n확인 필요\n11\n미연결",
+        "rows": 9,
+        "auto": 1
+      }
+    },
+    "scalarBinding": {
+      "pass": true,
+      "detail": {
+        "review": {
+          "sample": "샘플 값 김담당",
+          "status": "✓ 연결"
+        },
+        "bound": {
+          "documentNumber": true,
+          "manager": true
+        }
+      }
+    },
+    "dataRemoveFailClosed": {
+      "pass": true,
+      "detail": {
+        "status": 409,
+        "body": {
+          "success": false,
+          "code": "DATA_IN_USE",
+          "message": "연결된 항목이 있어 데이터를 제거할 수 없습니다. 먼저 연결을 해제하거나 실행 취소해 주세요.",
+          "details": {
+            "scalar": 2,
+            "arrays": 0
+          }
+        }
+      }
+    },
+    "workspaceJsonPersistence": {
+      "pass": true,
+      "detail": {
+        "file": "employee-227907.json",
+        "applied": true,
+        "rows": "0,1,3,2,4,5"
+      }
+    },
+    "layout1920": {
+      "pass": true,
+      "detail": {
+        "sidebar": 184,
+        "panel": 380,
+        "viewer": 1356,
+        "mainHeight": 1028,
+        "viewport": 1080,
+        "topbar": 52,
+        "pageScroll": 0
+      }
+    },
+    "sidebarVisualConsistency": {
+      "pass": true,
+      "detail": {
+        "create": {
+          "width": 184,
+          "brand": {
+            "x": 12,
+            "y": 20,
+            "w": 160,
+            "h": 36
+          },
+          "brandOverflow": 0,
+          "brandLines": 1,
+          "menu": [
+            "생성하기",
+            "편집하기",
+            "내 작업",
+            "템플릿",
+            "설정"
+          ],
+          "menuX": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "menuHeight": [
+            42,
+            42,
+            42,
+            42,
+            42
+          ],
+          "fontSizes": [
+            "14px",
+            "14px",
+            "14px",
+            "14px",
+            "14px"
+          ],
+          "iconSizes": [
+            "18px",
+            "18px",
+            "18px",
+            "18px",
+            "18px"
+          ],
+          "activeBackground": "rgba(255, 255, 255, 0.14)",
+          "active": "생성하기",
+          "footer": {
+            "x": 12,
+            "y": 846,
+            "w": 160,
+            "h": 40
+          },
+          "topbar": 52
+        },
+        "edit": {
+          "width": 184,
+          "brand": {
+            "x": 12,
+            "y": 20,
+            "w": 160,
+            "h": 36
+          },
+          "brandOverflow": 0,
+          "brandLines": 1,
+          "menu": [
+            "생성하기",
+            "편집하기",
+            "내 작업",
+            "템플릿",
+            "설정"
+          ],
+          "menuX": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "menuHeight": [
+            42,
+            42,
+            42,
+            42,
+            42
+          ],
+          "fontSizes": [
+            "14px",
+            "14px",
+            "14px",
+            "14px",
+            "14px"
+          ],
+          "iconSizes": [
+            "18px",
+            "18px",
+            "18px",
+            "18px",
+            "18px"
+          ],
+          "activeBackground": "rgba(255, 255, 255, 0.14)",
+          "active": "편집하기",
+          "footer": {
+            "x": 12,
+            "y": 846,
+            "w": 160,
+            "h": 40
+          },
+          "topbar": 52
+        },
+        "differences": []
+      }
+    },
+    "invalidJsonSafe": {
+      "pass": true,
+      "detail": {
+        "invalid": "JSON 형식이 올바르지 않습니다.",
+        "stillEmpty": true
+      }
+    },
+    "workspaceJsonDirectInput": {
+      "pass": true,
+      "detail": {
+        "header": "직접 입력 JSON",
+        "scalar": {
+          "targets": 18,
+          "auto": 1,
+          "review": 1,
+          "unbound": 16,
+          "deferredArray": 0,
+          "arrays": 1,
+          "arrayAuto": 1,
+          "arrayReview": 0
+        },
+        "arrays": [
+          "IMPTB0001:$.items:AUTO"
+        ]
+      }
+    },
+    "arrayBinding": {
+      "pass": true,
+      "detail": {
+        "arrays": [
+          "IMPTB0001:$.items:AUTO"
+        ],
+        "rendered": [
+          "상품A",
+          "상품B",
+          "상품C"
+        ]
+      }
+    },
+    "originalIntegrity": {
+      "pass": true,
+      "detail": [
+        {
+          "file": "import_mvp13_20260921_173926_63d8ce/SampleReport_FreeForm/form.ubjf",
+          "unchanged": true
+        },
+        {
+          "file": "import_mvp13_20260921_173926_63d8ce/SampleReport_FreeForm/info.xml",
+          "unchanged": true
+        },
+        {
+          "file": "import_mvp11_20260921_173926_5f2e64/SampleReport_FreeForm/form.ubjf",
+          "unchanged": true
+        },
+        {
+          "file": "import_mvp11_20260921_173926_5f2e64/SampleReport_FreeForm/info.xml",
+          "unchanged": true
+        }
+      ]
+    },
+    "noPageErrors": {
+      "pass": true,
+      "detail": []
+    }
+  },
+  "errors": [],
+  "screenshots": [
+    "editing-v2-chat.png",
+    "editing-v2-direct-text.png",
+    "editing-v2-direct-row.png",
+    "editing-v2-direct-column.png",
+    "editing-v2-direct-image.png",
+    "editing-v2-data-empty.png",
+    "editing-v2-data-json-added.png",
+    "editing-v2-data-binding-review.png"
+  ],
+  "layout1440": {
+    "sidebar": 184,
+    "panel": 380,
+    "viewer": 876,
+    "iframe": "IFRAME",
+    "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_173926_63d8ce&formName=SampleReport_FreeForm",
+    "tabs": [
+      "채팅",
+      "직접 편집",
+      "데이터 연결"
+    ],
+    "active": "채팅",
+    "topbar": 52,
+    "topbarControls": [
+      "실행 취소",
+      "다시 실행",
+      "저장 안 됨",
+      "저장"
+    ],
+    "pageScroll": 0,
+    "viewerToolbarsOutside": 0,
+    "rawCodeVisible": false
+  },
+  "layout1920": {
+    "sidebar": 184,
+    "panel": 380,
+    "viewer": 1356,
+    "mainHeight": 1028,
+    "viewport": 1080,
+    "topbar": 52,
+    "pageScroll": 0
+  },
+  "sidebar": {
+    "create": {
+      "width": 184,
+      "brand": {
+        "x": 12,
+        "y": 20,
+        "w": 160,
+        "h": 36
+      },
+      "brandOverflow": 0,
+      "brandLines": 1,
+      "menu": [
+        "생성하기",
+        "편집하기",
+        "내 작업",
+        "템플릿",
+        "설정"
+      ],
+      "menuX": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "menuHeight": [
+        42,
+        42,
+        42,
+        42,
+        42
+      ],
+      "fontSizes": [
+        "14px",
+        "14px",
+        "14px",
+        "14px",
+        "14px"
+      ],
+      "iconSizes": [
+        "18px",
+        "18px",
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "activeBackground": "rgba(255, 255, 255, 0.14)",
+      "active": "생성하기",
+      "footer": {
+        "x": 12,
+        "y": 846,
+        "w": 160,
+        "h": 40
+      },
+      "topbar": 52
+    },
+    "edit": {
+      "width": 184,
+      "brand": {
+        "x": 12,
+        "y": 20,
+        "w": 160,
+        "h": 36
+      },
+      "brandOverflow": 0,
+      "brandLines": 1,
+      "menu": [
+        "생성하기",
+        "편집하기",
+        "내 작업",
+        "템플릿",
+        "설정"
+      ],
+      "menuX": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "menuHeight": [
+        42,
+        42,
+        42,
+        42,
+        42
+      ],
+      "fontSizes": [
+        "14px",
+        "14px",
+        "14px",
+        "14px",
+        "14px"
+      ],
+      "iconSizes": [
+        "18px",
+        "18px",
+        "18px",
+        "18px",
+        "18px"
+      ],
+      "activeBackground": "rgba(255, 255, 255, 0.14)",
+      "active": "편집하기",
+      "footer": {
+        "x": 12,
+        "y": 846,
+        "w": 160,
+        "h": 40
+      },
+      "topbar": 52
+    },
+    "differences": []
+  },
+  "viewerLoadsBeforeSave": 6,
+  "pass": true
+}

@@ -1,0 +1,27 @@
+{
+  "phase": "AI_BUILDER_FOUNDATION_0_1",
+  "verdict": "B",
+  "sourceOperationCount": 1,
+  "structureOperationCount": 1,
+  "bindingOperationCount": 1,
+  "viewerPass": true,
+  "reloadPass": true,
+  "newContextCount": 5,
+  "pdfPass": true,
+  "pdfHttpStatus": 200,
+  "pdfBytes": 29779,
+  "deterministicPass": true,
+  "deterministicRepeatCount": 3,
+  "parseBackPass": true,
+  "conflictValidationPass": true,
+  "atomicFailurePass": true,
+  "originalIntegrityPass": true,
+  "regressionPass": true,
+  "preAiBaselinePass": true,
+  "temporaryDataCleaned": true,
+  "limitations": [
+    "Binding operations are accepted by the materializer but no Binding Store is included in History snapshots yet.",
+    "Structure materialization is limited to the verified single Static UBTable adapter.",
+    "General remove operations and dynamic/multi-table authoring are outside Foundation 0.1."
+  ]
+}

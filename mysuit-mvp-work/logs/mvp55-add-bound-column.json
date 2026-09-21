@@ -1,0 +1,1029 @@
+{
+  "candidate": "sample_mvp55_boundcol_20260811_142619_e95cf7",
+  "operations": [
+    {
+      "operation": "resizeColumn",
+      "columnIndex": 0,
+      "afterWidth": 320
+    },
+    {
+      "operation": "addBoundColumn",
+      "insertIndex": 7,
+      "width": 50,
+      "headerText": "2018 복제",
+      "dataSet": "dataset_2",
+      "column": "col_8"
+    }
+  ],
+  "result": {
+    "success": true,
+    "results": [
+      {
+        "operation": "resizeColumn",
+        "columnIndex": 0
+      },
+      {
+        "operation": "addBoundColumn",
+        "newCellIds": [
+          "UBMVP551D1E924E59",
+          "UBMVP55116EAC6816",
+          "UBMVP555DEA988165",
+          "UBMVP55A0ACFFA783"
+        ],
+        "binding": "dataset_2.col_8"
+      }
+    ],
+    "pageWidthGuard": {
+      "pageWidth": 794,
+      "pageHeight": 1123,
+      "marginLeft": 0,
+      "marginRight": 0,
+      "usableLeft": 0,
+      "usableRight": 794,
+      "tableX": 2,
+      "currentTableWidth": 790,
+      "maxTableWidth": 792,
+      "remainingWidth": 2,
+      "requestedWidth": 790
+    },
+    "validation": {
+      "tableCount": 4,
+      "columnCount": 8,
+      "rowCounts": {
+        "TB3039": 1,
+        "TB3979": 1,
+        "TB5514": 1,
+        "TB8715": 1
+      },
+      "uniqueIdCount": 53
+    },
+    "reparseValidation": {
+      "tableCount": 4,
+      "columnCount": 8,
+      "rowCounts": {
+        "TB3039": 1,
+        "TB3979": 1,
+        "TB5514": 1,
+        "TB8715": 1
+      },
+      "uniqueIdCount": 53
+    },
+    "structuralDiff": [
+      {
+        "path": "pages/0/items/9/columnCount",
+        "before": 7,
+        "after": 8
+      },
+      {
+        "path": "pages/0/items/9/table/0/0/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/9/table/0/0/columnWidth",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/9/table/0/0/cell/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/9/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/9/table/0/1/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/9/table/0/1/cell/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/9/table/0/2/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/9/table/0/2/cell/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/9/table/0/3/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/9/table/0/3/cell/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/9/table/0/4/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/9/table/0/4/cell/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/9/table/0/5/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/9/table/0/5/cell/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/9/table/0/6/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/9/table/0/6/cell/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/9/table/0/7",
+        "after": {
+          "x": 740,
+          "y": 0,
+          "width": 50,
+          "columnWidth": 50,
+          "height": 33,
+          "columnIndex": 7,
+          "rowHeight": 33,
+          "cell": {
+            "text": "2018%20%EB%B3%B5%EC%A0%9C",
+            "fontWeight": "bold",
+            "fontColor": 16777215,
+            "className": "Cell",
+            "backgroundColor": 29115,
+            "y": 0,
+            "width": 50,
+            "x": 740,
+            "height": 33,
+            "id": "UBMVP551D1E924E59",
+            "verticalAlign": "middle",
+            "textAlign": "center"
+          },
+          "borderString": "type:borderBottom,borderType:none,borderColor:0,borderThickness:1&type:borderLeft,borderType:none,borderColor:0,borderThickness:1&type:borderRight,borderType:none,borderColor:0,borderThickness:1&type:borderTop,borderType:none,borderColor:0,borderThickness:1"
+        }
+      },
+      {
+        "path": "pages/0/items/10/columnCount",
+        "before": 7,
+        "after": 8
+      },
+      {
+        "path": "pages/0/items/10/table/0/0/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/10/table/0/0/columnWidth",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/10/table/0/0/cell/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/10/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/10/table/0/1/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/10/table/0/1/cell/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/10/table/0/2/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/10/table/0/2/cell/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/10/table/0/3/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/10/table/0/3/cell/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/10/table/0/4/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/10/table/0/4/cell/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/10/table/0/5/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/10/table/0/5/cell/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/10/table/0/6/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/10/table/0/6/cell/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/10/table/0/7",
+        "after": {
+          "x": 740,
+          "y": 0,
+          "width": 50,
+          "columnWidth": 50,
+          "height": 27,
+          "columnIndex": 7,
+          "rowHeight": 27,
+          "cell": {
+            "text": "",
+            "fontWeight": "bold",
+            "textAlign": "center",
+            "x": 740,
+            "backgroundColor": 15263976,
+            "y": 0,
+            "width": 50,
+            "className": "Cell",
+            "height": 27,
+            "id": "UBMVP55116EAC6816",
+            "verticalAlign": "middle"
+          },
+          "borderString": "type:borderBottom,borderType:none,borderColor:0,borderThickness:1&type:borderLeft,borderType:none,borderColor:0,borderThickness:1&type:borderRight,borderType:none,borderColor:0,borderThickness:1&type:borderTop,borderType:none,borderColor:0,borderThickness:1"
+        }
+      },
+      {
+        "path": "pages/0/items/11/columnCount",
+        "before": 7,
+        "after": 8
+      },
+      {
+        "path": "pages/0/items/11/table/0/0/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/11/table/0/0/columnWidth",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/11/table/0/0/cell/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/11/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/11/table/0/1/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/11/table/0/1/cell/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/11/table/0/2/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/11/table/0/2/cell/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/11/table/0/3/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/11/table/0/3/cell/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/11/table/0/4/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/11/table/0/4/cell/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/11/table/0/5/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/11/table/0/5/cell/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/11/table/0/6/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/11/table/0/6/cell/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/11/table/0/7",
+        "after": {
+          "x": 740,
+          "y": 0,
+          "width": 50,
+          "columnWidth": 50,
+          "height": 27,
+          "columnIndex": 7,
+          "rowHeight": 27,
+          "cell": {
+            "dataSet": "dataset_2",
+            "text": "%7Bdataset_2.col_8%7D",
+            "fontWeight": "bold",
+            "dataType": "1",
+            "verticalAlign": "middle",
+            "x": 740,
+            "y": 0,
+            "column": "col_8",
+            "width": 50,
+            "className": "Cell",
+            "formatValue": {
+              "useThousandComma": "true",
+              "isDecimal": "false",
+              "mask": "",
+              "isEmptySetZero": "null",
+              "isZeroSetEmpty": "null",
+              "decimalPointLength": "0"
+            },
+            "height": 27,
+            "systemFunction": "",
+            "id": "UBMVP555DEA988165",
+            "formatter": "MaskNumber",
+            "textAlign": "center"
+          },
+          "borderString": "type:borderBottom,borderType:none,borderColor:0,borderThickness:1&type:borderLeft,borderType:none,borderColor:0,borderThickness:1&type:borderRight,borderType:none,borderColor:0,borderThickness:1&type:borderTop,borderType:none,borderColor:0,borderThickness:1"
+        }
+      },
+      {
+        "path": "pages/0/items/12/columnCount",
+        "before": 7,
+        "after": 8
+      },
+      {
+        "path": "pages/0/items/12/table/0/0/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/12/table/0/0/columnWidth",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/12/table/0/0/cell/width",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/12/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/cell/x",
+        "before": 370,
+        "after": 320
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/cell/x",
+        "before": 440,
+        "after": 390
+      },
+      {
+        "path": "pages/0/items/12/table/0/3/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/12/table/0/3/cell/x",
+        "before": 510,
+        "after": 460
+      },
+      {
+        "path": "pages/0/items/12/table/0/4/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/12/table/0/4/cell/x",
+        "before": 580,
+        "after": 530
+      },
+      {
+        "path": "pages/0/items/12/table/0/5/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/12/table/0/5/cell/x",
+        "before": 650,
+        "after": 600
+      },
+      {
+        "path": "pages/0/items/12/table/0/6/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/12/table/0/6/cell/x",
+        "before": 720,
+        "after": 670
+      },
+      {
+        "path": "pages/0/items/12/table/0/7",
+        "after": {
+          "x": 740,
+          "y": 0,
+          "width": 50,
+          "columnWidth": 50,
+          "height": 27,
+          "columnIndex": 7,
+          "rowHeight": 27,
+          "cell": {
+            "formatValue": {
+              "useThousandComma": "true",
+              "isDecimal": "false",
+              "mask": "",
+              "isEmptySetZero": "null",
+              "isZeroSetEmpty": "null",
+              "decimalPointLength": "0"
+            },
+            "dataSet": "",
+            "text": "FN.Sum('dataset_2'%2C'col_8')",
+            "fontWeight": "bold",
+            "dataType": "2",
+            "fontColor": 29115,
+            "x": 740,
+            "backgroundColor": 13427697,
+            "y": 0,
+            "column": "",
+            "width": 50,
+            "className": "Cell",
+            "verticalAlign": "middle",
+            "height": 27,
+            "systemFunction": "FN.Sum('dataset_2','col_8')",
+            "id": "UBMVP55A0ACFFA783",
+            "formatter": "MaskNumber",
+            "textAlign": "center"
+          },
+          "borderString": "type:borderBottom,borderType:none,borderColor:0,borderThickness:1&type:borderLeft,borderType:none,borderColor:0,borderThickness:1&type:borderRight,borderType:none,borderColor:0,borderThickness:1&type:borderTop,borderType:none,borderColor:0,borderThickness:1"
+        }
+      }
+    ],
+    "candidateSha256": "0a342e08ce2551939ddd7c777f8accb7b1603eda2a9f857413febadfdd3cd2f8",
+    "originalFormSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83"
+  },
+  "sourceTables": [
+    {
+      "id": "TB3039",
+      "band": "UDHB4114",
+      "rowCount": 1,
+      "columnCount": 8,
+      "width": 790,
+      "height": 33,
+      "cellIds": [
+        "UB5305348",
+        "UB5302287",
+        "UB5313710",
+        "UB5297739",
+        "UB5337756",
+        "UB5316883",
+        "UB5273553",
+        "UBMVP551D1E924E59"
+      ]
+    },
+    {
+      "id": "TB3979",
+      "band": "UGHB7543",
+      "rowCount": 1,
+      "columnCount": 8,
+      "width": 790,
+      "height": 27,
+      "cellIds": [
+        "UB5622520",
+        "UB5602336",
+        "UB5595998",
+        "UB5634325",
+        "UB5624437",
+        "UB5599952",
+        "UB5596214",
+        "UBMVP55116EAC6816"
+      ]
+    },
+    {
+      "id": "TB5514",
+      "band": "UDB3195",
+      "rowCount": 1,
+      "columnCount": 8,
+      "width": 790,
+      "height": 27,
+      "cellIds": [
+        "UB6131219",
+        "UB6114512",
+        "UB6116306",
+        "UB6103460",
+        "UB6143762",
+        "UB6093171",
+        "UB6132002",
+        "UBMVP555DEA988165"
+      ]
+    },
+    {
+      "id": "TB8715",
+      "band": "UGFB0223",
+      "rowCount": 1,
+      "columnCount": 8,
+      "width": 790,
+      "height": 27,
+      "cellIds": [
+        "UB6199723",
+        "UB6175108",
+        "UB6198370",
+        "UB6191253",
+        "UB6213241",
+        "UB6180450",
+        "UB6179138",
+        "UBMVP55A0ACFFA783"
+      ]
+    }
+  ],
+  "viewer": {
+    "objectCount": 204,
+    "cellCount": 201,
+    "canvasWidth": 1588,
+    "maxRight": 794,
+    "ids": [
+      "UB5115957_UPHB2584_ROW0",
+      "UB5103966_UPHB2584_ROW0",
+      "UB5103966_UPHB2584_ROW0",
+      "UB5103966_UPHB2584_ROW0",
+      "UB5077625_UPHB2584_ROW0",
+      "UB5077625_UPHB2584_ROW0",
+      "UB5077625_UPHB2584_ROW0",
+      "UB5305348_UDHB4114_ROW0",
+      "UB5302287_UDHB4114_ROW0",
+      "UB5313710_UDHB4114_ROW0",
+      "UB5297739_UDHB4114_ROW0",
+      "UB5337756_UDHB4114_ROW0",
+      "UB5316883_UDHB4114_ROW0",
+      "UB5273553_UDHB4114_ROW0",
+      "UBMVP551D1E924E59_UDHB4114_ROW0",
+      "UB5622520_grp_0_UGHB7543_ROW0",
+      "UB5602336_grp_0_UGHB7543_ROW0",
+      "UB5595998_grp_0_UGHB7543_ROW0",
+      "UB5634325_grp_0_UGHB7543_ROW0",
+      "UB5624437_grp_0_UGHB7543_ROW0",
+      "UB5599952_grp_0_UGHB7543_ROW0",
+      "UB5596214_grp_0_UGHB7543_ROW0",
+      "UBMVP55116EAC6816_grp_0_UGHB7543_ROW0",
+      "UB6131219_grp_0_UDB3195_ROW0",
+      "UB6131219_grp_0_UDB3195_ROW1",
+      "UB6131219_grp_0_UDB3195_ROW2",
+      "UB6131219_grp_0_UDB3195_ROW3",
+      "UB6131219_grp_0_UDB3195_ROW4",
+      "UB6114512_grp_0_UDB3195_ROW0",
+      "UB6114512_grp_0_UDB3195_ROW1",
+      "UB6114512_grp_0_UDB3195_ROW2",
+      "UB6114512_grp_0_UDB3195_ROW3",
+      "UB6114512_grp_0_UDB3195_ROW4",
+      "UB6116306_grp_0_UDB3195_ROW0",
+      "UB6116306_grp_0_UDB3195_ROW1",
+      "UB6116306_grp_0_UDB3195_ROW2",
+      "UB6116306_grp_0_UDB3195_ROW3",
+      "UB6116306_grp_0_UDB3195_ROW4",
+      "UB6103460_grp_0_UDB3195_ROW0",
+      "UB6103460_grp_0_UDB3195_ROW1",
+      "UB6103460_grp_0_UDB3195_ROW2",
+      "UB6103460_grp_0_UDB3195_ROW3",
+      "UB6103460_grp_0_UDB3195_ROW4",
+      "UB6143762_grp_0_UDB3195_ROW0",
+      "UB6143762_grp_0_UDB3195_ROW1",
+      "UB6143762_grp_0_UDB3195_ROW2",
+      "UB6143762_grp_0_UDB3195_ROW3",
+      "UB6143762_grp_0_UDB3195_ROW4",
+      "UB6093171_grp_0_UDB3195_ROW0",
+      "UB6093171_grp_0_UDB3195_ROW1",
+      "UB6093171_grp_0_UDB3195_ROW2",
+      "UB6093171_grp_0_UDB3195_ROW3",
+      "UB6093171_grp_0_UDB3195_ROW4",
+      "UB6132002_grp_0_UDB3195_ROW0",
+      "UB6132002_grp_0_UDB3195_ROW1",
+      "UB6132002_grp_0_UDB3195_ROW2",
+      "UB6132002_grp_0_UDB3195_ROW3",
+      "UB6132002_grp_0_UDB3195_ROW4",
+      "UBMVP555DEA988165_grp_0_UDB3195_ROW0",
+      "UBMVP555DEA988165_grp_0_UDB3195_ROW1",
+      "UBMVP555DEA988165_grp_0_UDB3195_ROW2",
+      "UBMVP555DEA988165_grp_0_UDB3195_ROW3",
+      "UBMVP555DEA988165_grp_0_UDB3195_ROW4",
+      "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+      "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+      "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+      "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+      "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+      "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+      "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+      "UBMVP55A0ACFFA783_UGHB7543grp_0_dataset_2_ROW0",
+      "UB5622520_grp_1_UGHB7543_ROW0",
+      "UB5602336_grp_1_UGHB7543_ROW0",
+      "UB5595998_grp_1_UGHB7543_ROW0",
+      "UB5634325_grp_1_UGHB7543_ROW0",
+      "UB5624437_grp_1_UGHB7543_ROW0",
+      "UB5599952_grp_1_UGHB7543_ROW0",
+      "UB5596214_grp_1_UGHB7543_ROW0",
+      "UBMVP55116EAC6816_grp_1_UGHB7543_ROW0",
+      "UB6131219_grp_1_UDB3195_ROW0",
+      "UB6131219_grp_1_UDB3195_ROW1",
+      "UB6131219_grp_1_UDB3195_ROW2",
+      "UB6131219_grp_1_UDB3195_ROW3",
+      "UB6131219_grp_1_UDB3195_ROW4",
+      "UB6131219_grp_1_UDB3195_ROW5",
+      "UB6114512_grp_1_UDB3195_ROW0",
+      "UB6114512_grp_1_UDB3195_ROW1",
+      "UB6114512_grp_1_UDB3195_ROW2",
+      "UB6114512_grp_1_UDB3195_ROW3",
+      "UB6114512_grp_1_UDB3195_ROW4",
+      "UB6114512_grp_1_UDB3195_ROW5",
+      "UB6116306_grp_1_UDB3195_ROW0",
+      "UB6116306_grp_1_UDB3195_ROW1",
+      "UB6116306_grp_1_UDB3195_ROW2",
+      "UB6116306_grp_1_UDB3195_ROW3",
+      "UB6116306_grp_1_UDB3195_ROW4",
+      "UB6116306_grp_1_UDB3195_ROW5",
+      "UB6103460_grp_1_UDB3195_ROW0",
+      "UB6103460_grp_1_UDB3195_ROW1",
+      "UB6103460_grp_1_UDB3195_ROW2",
+      "UB6103460_grp_1_UDB3195_ROW3",
+      "UB6103460_grp_1_UDB3195_ROW4",
+      "UB6103460_grp_1_UDB3195_ROW5",
+      "UB6143762_grp_1_UDB3195_ROW0",
+      "UB6143762_grp_1_UDB3195_ROW1",
+      "UB6143762_grp_1_UDB3195_ROW2",
+      "UB6143762_grp_1_UDB3195_ROW3",
+      "UB6143762_grp_1_UDB3195_ROW4",
+      "UB6143762_grp_1_UDB3195_ROW5",
+      "UB6093171_grp_1_UDB3195_ROW0",
+      "UB6093171_grp_1_UDB3195_ROW1",
+      "UB6093171_grp_1_UDB3195_ROW2",
+      "UB6093171_grp_1_UDB3195_ROW3",
+      "UB6093171_grp_1_UDB3195_ROW4",
+      "UB6093171_grp_1_UDB3195_ROW5",
+      "UB6132002_grp_1_UDB3195_ROW0",
+      "UB6132002_grp_1_UDB3195_ROW1",
+      "UB6132002_grp_1_UDB3195_ROW2",
+      "UB6132002_grp_1_UDB3195_ROW3",
+      "UB6132002_grp_1_UDB3195_ROW4",
+      "UB6132002_grp_1_UDB3195_ROW5",
+      "UBMVP555DEA988165_grp_1_UDB3195_ROW0",
+      "UBMVP555DEA988165_grp_1_UDB3195_ROW1",
+      "UBMVP555DEA988165_grp_1_UDB3195_ROW2",
+      "UBMVP555DEA988165_grp_1_UDB3195_ROW3",
+      "UBMVP555DEA988165_grp_1_UDB3195_ROW4",
+      "UBMVP555DEA988165_grp_1_UDB3195_ROW5",
+      "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+      "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+      "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+      "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+      "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+      "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+      "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+      "UBMVP55A0ACFFA783_UGHB7543grp_1_dataset_2_ROW0",
+      "UB5622520_grp_2_UGHB7543_ROW0",
+      "UB5602336_grp_2_UGHB7543_ROW0",
+      "UB5595998_grp_2_UGHB7543_ROW0",
+      "UB5634325_grp_2_UGHB7543_ROW0",
+      "UB5624437_grp_2_UGHB7543_ROW0",
+      "UB5599952_grp_2_UGHB7543_ROW0",
+      "UB5596214_grp_2_UGHB7543_ROW0",
+      "UBMVP55116EAC6816_grp_2_UGHB7543_ROW0",
+      "UB6131219_grp_2_UDB3195_ROW0",
+      "UB6131219_grp_2_UDB3195_ROW1",
+      "UB6131219_grp_2_UDB3195_ROW2",
+      "UB6131219_grp_2_UDB3195_ROW3",
+      "UB6131219_grp_2_UDB3195_ROW4",
+      "UB6131219_grp_2_UDB3195_ROW5",
+      "UB6114512_grp_2_UDB3195_ROW0",
+      "UB6114512_grp_2_UDB3195_ROW1",
+      "UB6114512_grp_2_UDB3195_ROW2",
+      "UB6114512_grp_2_UDB3195_ROW3",
+      "UB6114512_grp_2_UDB3195_ROW4",
+      "UB6114512_grp_2_UDB3195_ROW5",
+      "UB6116306_grp_2_UDB3195_ROW0",
+      "UB6116306_grp_2_UDB3195_ROW1",
+      "UB6116306_grp_2_UDB3195_ROW2",
+      "UB6116306_grp_2_UDB3195_ROW3",
+      "UB6116306_grp_2_UDB3195_ROW4",
+      "UB6116306_grp_2_UDB3195_ROW5",
+      "UB6103460_grp_2_UDB3195_ROW0",
+      "UB6103460_grp_2_UDB3195_ROW1",
+      "UB6103460_grp_2_UDB3195_ROW2",
+      "UB6103460_grp_2_UDB3195_ROW3",
+      "UB6103460_grp_2_UDB3195_ROW4",
+      "UB6103460_grp_2_UDB3195_ROW5",
+      "UB6143762_grp_2_UDB3195_ROW0",
+      "UB6143762_grp_2_UDB3195_ROW1",
+      "UB6143762_grp_2_UDB3195_ROW2",
+      "UB6143762_grp_2_UDB3195_ROW3",
+      "UB6143762_grp_2_UDB3195_ROW4",
+      "UB6143762_grp_2_UDB3195_ROW5",
+      "UB6093171_grp_2_UDB3195_ROW0",
+      "UB6093171_grp_2_UDB3195_ROW1",
+      "UB6093171_grp_2_UDB3195_ROW2",
+      "UB6093171_grp_2_UDB3195_ROW3",
+      "UB6093171_grp_2_UDB3195_ROW4",
+      "UB6093171_grp_2_UDB3195_ROW5",
+      "UB6132002_grp_2_UDB3195_ROW0",
+      "UB6132002_grp_2_UDB3195_ROW1",
+      "UB6132002_grp_2_UDB3195_ROW2",
+      "UB6132002_grp_2_UDB3195_ROW3",
+      "UB6132002_grp_2_UDB3195_ROW4",
+      "UB6132002_grp_2_UDB3195_ROW5",
+      "UBMVP555DEA988165_grp_2_UDB3195_ROW0",
+      "UBMVP555DEA988165_grp_2_UDB3195_ROW1",
+      "UBMVP555DEA988165_grp_2_UDB3195_ROW2",
+      "UBMVP555DEA988165_grp_2_UDB3195_ROW3",
+      "UBMVP555DEA988165_grp_2_UDB3195_ROW4",
+      "UBMVP555DEA988165_grp_2_UDB3195_ROW5",
+      "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+      "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+      "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+      "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+      "UB6213241_UGHB7543grp_2_dataset_2_ROW0",
+      "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+      "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+      "UBMVP55A0ACFFA783_UGHB7543grp_2_dataset_2_ROW0",
+      "UB7128552_UPFB9094_ROW0",
+      "UB7175166_UPFB9094_ROW0"
+    ],
+    "texts": [
+      "결\n재",
+      "대표이사",
+      "사장",
+      "부사장",
+      "",
+      "",
+      "",
+      "   IFRS(연결) - 단위 : 억원",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2018 복\n제",
+      "부분별매출",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "    Weight management",
+      "    Tageted ManageMent",
+      "    Energy, Sports and Fitness",
+      "    Outer Nutritio",
+      "    기타",
+      "18,899",
+      "7,001",
+      "2,567",
+      "1,414",
+      "3,152",
+      "2,567",
+      "7,001",
+      "2,567",
+      "1,414",
+      "3,152",
+      "18,899",
+      "7,001",
+      "2,567",
+      "1,414",
+      "3,152",
+      "6,834",
+      "7,001",
+      "2,567",
+      "7,001",
+      "18,899",
+      "18,899",
+      "7,001",
+      "2,567",
+      "1,414",
+      "3,152",
+      "2,567",
+      "7,001",
+      "2,567",
+      "1,414",
+      "3,152",
+      "2,567",
+      "7,001",
+      "2,567",
+      "1,414",
+      "3,152",
+      "   YOY",
+      "33,033",
+      "16,701",
+      "33,033",
+      "42,302",
+      "33,033",
+      "16,701",
+      "16,701",
+      "지역별 매출",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "    북미",
+      "    멕시코",
+      "    남중아메리카",
+      "    EMEA",
+      "    아시아, 태평양",
+      "    중국",
+      "6,834",
+      "3,717",
+      "4,341",
+      "5,866",
+      "18,899",
+      "2,048",
+      "6,834",
+      "3,717",
+      "4,341",
+      "5,866",
+      "7,602",
+      "38,084",
+      "6,834",
+      "3,717",
+      "7,602",
+      "5,866",
+      "7,602",
+      "2,048",
+      "6,834",
+      "3,717",
+      "6,834",
+      "5,866",
+      "7,602",
+      "2,048",
+      "6,834",
+      "3,717",
+      "5,866",
+      "5,866",
+      "4,341",
+      "2,048",
+      "6,834",
+      "3,717",
+      "4,341",
+      "5,866",
+      "7,602",
+      "2,048",
+      "6,834",
+      "3,717",
+      "4,341",
+      "5,866",
+      "7,602",
+      "2,048",
+      "   YOY",
+      "41,705",
+      "66,444",
+      "33,669",
+      "32,901",
+      "28,672",
+      "30,408",
+      "30,408",
+      "Average Active Sales Leaders(지역별)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "    북미",
+      "    멕시코",
+      "    남중아메리카",
+      "    EMEA",
+      "    아시아, 태평양",
+      "    중국",
+      "2,048",
+      "38,084",
+      "28,821",
+      "33,513",
+      "6,848",
+      "7,000",
+      "493,056",
+      "493,056",
+      "28,821",
+      "33,513",
+      "6,848",
+      "7,000",
+      "7,001",
+      "38,084",
+      "28,821",
+      "33,513",
+      "6,848",
+      "7,000",
+      "493,056",
+      "38,084",
+      "28,821",
+      "33,513",
+      "6,848",
+      "7,000",
+      "493,056",
+      "493,056",
+      "28,821",
+      "33,513",
+      "6,848",
+      "7,000",
+      "493,056",
+      "38,084",
+      "4,341",
+      "33,513",
+      "6,848",
+      "7,000",
+      "493,05",
+      "38,084",
+      "4,341",
+      "33,513",
+      "6,848",
+      "7,000",
+      "   YOY",
+      "116,314",
+      "1,062,294",
+      "121,267",
+      "607,322",
+      "1,062,294",
+      "582,842",
+      "582,84",
+      "    2026년 08월 11일",
+      "1/1 페이지    "
+    ]
+  }
+}

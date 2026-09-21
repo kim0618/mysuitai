@@ -1,0 +1,20 @@
+{
+  "sourceTables": 8,
+  "parsedTables": 8,
+  "sourceMergedMasters": 56,
+  "dimMergedMasters": 56,
+  "sourceImages": 1,
+  "dimImages": 1,
+  "sourcePhysicalCells": 186,
+  "majorTextMatch": 13,
+  "geometryWarnings": 1,
+  "styleWarnings": 0,
+  "status": "PASS_WITH_LIMITATIONS",
+  "generatedPhysicalMasterCells": 186,
+  "viewerTables": 8,
+  "viewerImages": 1,
+  "warningDetails": [
+    "One source cell height encoded signed -1282 as uint32 4294966014; sibling/table geometry was used.",
+    "Complex personal-information table has minor exact column/text placement differences."
+  ]
+}

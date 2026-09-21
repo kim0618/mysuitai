@@ -1,0 +1,27 @@
+{
+  "eventCount": 9,
+  "cursor": 9,
+  "scopes": [
+    "SOURCE_PATCH",
+    "RENDER_POSITION",
+    "STRUCTURE",
+    "STRUCTURE",
+    "STRUCTURE",
+    "STRUCTURE",
+    "STRUCTURE",
+    "STRUCTURE",
+    "STRUCTURE"
+  ],
+  "operations": [
+    "updateText",
+    "moveRenderObject",
+    "hideColumn",
+    "resizeColumn",
+    "moveColumn",
+    "collapseRow",
+    "moveTable",
+    "resizeTableWidth",
+    "hideColumn"
+  ],
+  "coalesced": true
+}

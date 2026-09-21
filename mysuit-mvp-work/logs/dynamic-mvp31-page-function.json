@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "sourceCellId": "DPCL0022",
+  "dataType": "2",
+  "systemFunction": "FN.TotalPage() + \" / \" + FN.CurrentPage()",
+  "runtime": [
+    "1 / 1"
+  ],
+  "dynamic": true,
+  "staticLiteral": false
+}

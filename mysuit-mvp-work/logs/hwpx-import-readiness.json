@@ -1,0 +1,195 @@
+{
+  "auditVersion": "0.1",
+  "generatedAt": "2026-09-17T14:25:07+09:00",
+  "readOnlyAudit": true,
+  "source": {
+    "displayPath": "C:\\Users\\jinsung\\Desktop\\시연\\인사.hwpx",
+    "bytes": 57206,
+    "sha256": "b49ac82af8351b16e252f594805f7c418234fa10d21623abb8186dcdeed6312b",
+    "mimetype": "application/hwp+zip",
+    "producer": {
+      "hcfVersion": "5.1.0.1",
+      "xmlVersion": "1.2",
+      "application": "Hancom Office Hangul",
+      "appVersion": "11, 0, 0, 2129 WIN32LEWindows_8"
+    }
+  },
+  "package": {
+    "entryCount": 12,
+    "entries": [
+      { "path": "mimetype", "bytes": 19, "compressedBytes": 19, "compression": "STORE" },
+      { "path": "version.xml", "bytes": 309, "compressedBytes": 309, "compression": "STORE" },
+      { "path": "Contents/header.xml", "bytes": 34642, "compressedBytes": 3223, "compression": "DEFLATE" },
+      { "path": "BinData/image1.gif", "bytes": 4018, "compressedBytes": 4010, "compression": "DEFLATE" },
+      { "path": "Contents/section0.xml", "bytes": 159266, "compressedBytes": 8736, "compression": "DEFLATE" },
+      { "path": "Preview/PrvText.txt", "bytes": 1202, "compressedBytes": 580, "compression": "DEFLATE" },
+      { "path": "settings.xml", "bytes": 279, "compressedBytes": 200, "compression": "DEFLATE" },
+      { "path": "Preview/PrvImage.png", "bytes": 37447, "compressedBytes": 37447, "compression": "STORE" },
+      { "path": "META-INF/container.rdf", "bytes": 867, "compressedBytes": 275, "compression": "DEFLATE" },
+      { "path": "Contents/content.hpf", "bytes": 1794, "compressedBytes": 669, "compression": "DEFLATE" },
+      { "path": "META-INF/container.xml", "bytes": 475, "compressedBytes": 265, "compression": "DEFLATE" },
+      { "path": "META-INF/manifest.xml", "bytes": 134, "compressedBytes": 113, "compression": "DEFLATE" }
+    ],
+    "requiredPartsPresent": true,
+    "sectionCount": 1,
+    "binaryCount": 1,
+    "previewCount": 2
+  },
+  "page": {
+    "source": {
+      "width": 59528,
+      "height": 84188,
+      "landscapeLiteral": "WIDELY",
+      "gutterType": "LEFT_ONLY",
+      "margin": { "left": 1984, "right": 1984, "top": 1417, "bottom": 1417, "header": 1417, "footer": 1417, "gutter": 0 }
+    },
+    "dimTarget": { "width": 794, "height": 1123 },
+    "scale": { "x": 0.013338260986426556, "y": 0.013339193234190146 }
+  },
+  "structure": {
+    "paragraphs": 193,
+    "runs": 196,
+    "textNodes": 80,
+    "tables": 8,
+    "rows": 47,
+    "physicalCells": 186,
+    "logicalGridSlots": 332,
+    "mergedMasterCells": 56,
+    "pictures": 1,
+    "charProperties": 12,
+    "paraProperties": 13,
+    "borderFills": 11,
+    "styles": 14,
+    "cellMargin": { "left": 510, "right": 510, "top": 141, "bottom": 141, "occurrences": 186 },
+    "geometryAnomalies": [
+      { "kind": "INCONSISTENT_CELL_HEIGHT", "detail": "Regular body rows contain first-column height 318 while peer cells report 1282." },
+      { "kind": "UNSIGNED_LOOKING_CELL_HEIGHT", "tableId": "1106664874", "rowAddr": 10, "colAddr": 1, "value": "4294966014" }
+    ]
+  },
+  "tables": [
+    {
+      "id": "1106664773", "role": "문서정보", "rowCnt": 4, "colCnt": 5, "physicalCells": 11, "mergedMasterCells": 3,
+      "sourceGeometry": { "x": 1984, "y": 0, "width": 54881, "height": 9656 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 18.902, "width": 732.017, "height": 128.803 },
+      "representativeText": ["인사기록부", "문서번호", "UB-HR-001", "보존년한", "영구", "문서관리", "업무담당자", "보안관리", "인비(人祕)"]
+    },
+    {
+      "id": "1106664874", "role": "인적사항", "rowCnt": 11, "colCnt": 16, "physicalCells": 58, "mergedMasterCells": 47,
+      "sourceGeometry": { "x": 1984, "y": 10822, "width": 55002, "height": 14986 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 163.258, "width": 733.631, "height": 199.901 },
+      "representativeText": ["성명", "한글", "영문", "한자", "군번", "입대일", "생년월일", "전화번호", "비상연락처", "이메일", "C/P", "관계", "주민등록번호", "혈액형", "형제관계", "거주지 주소", "결혼여부", "종교", "보훈대상", "장애대상", "병역"]
+    },
+    {
+      "id": "1106664872", "role": "개인자격", "rowCnt": 6, "colCnt": 6, "physicalCells": 31, "mergedMasterCells": 1,
+      "sourceGeometry": { "x": 1984, "y": 26974, "width": 54984, "height": 8258 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 378.713, "width": 733.391, "height": 110.155 },
+      "columnWidths": [8948, 13947, 6448, 7698, 11550, 6393],
+      "headers": ["근무처", "근무기간", "직급", "담당부서", "담당업무", "상벌사항"],
+      "dataRowCapacity": 4
+    },
+    {
+      "id": "1106664888", "role": "봉사활동", "rowCnt": 6, "colCnt": 3, "physicalCells": 16, "mergedMasterCells": 1,
+      "sourceGeometry": { "x": 1984, "y": 36114, "width": 55093, "height": 8258 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 500.633, "width": 734.845, "height": 110.155 },
+      "columnWidths": [8947, 17908, 28238], "headers": ["기관명", "봉사기간", "봉사내용"], "dataRowCapacity": 4
+    },
+    {
+      "id": "1106664890", "role": "면허/자격", "rowCnt": 6, "colCnt": 3, "physicalCells": 16, "mergedMasterCells": 1,
+      "sourceGeometry": { "x": 1984, "y": 45254, "width": 55093, "height": 8258 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 622.553, "width": 734.845, "height": 110.155 },
+      "columnWidths": [8947, 17877, 28269], "headers": ["자격명", "취득일", "발행처"], "dataRowCapacity": 4
+    },
+    {
+      "id": "1106664892", "role": "어학", "rowCnt": 4, "colCnt": 4, "physicalCells": 13, "mergedMasterCells": 1,
+      "sourceGeometry": { "x": 1984, "y": 54394, "width": 55108, "height": 5694 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 744.474, "width": 735.045, "height": 75.953 },
+      "columnWidths": [8947, 13946, 19213, 13002], "headers": ["언어명", "공인시험명", "점수", "취득일"], "dataRowCapacity": 2
+    },
+    {
+      "id": "1106664895", "role": "연수", "rowCnt": 4, "colCnt": 3, "physicalCells": 10, "mergedMasterCells": 1,
+      "sourceGeometry": { "x": 1984, "y": 60970, "width": 55124, "height": 5694 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 832.192, "width": 735.258, "height": 75.953 },
+      "columnWidths": [18286, 18191, 18647], "headers": ["국가/교육기관명", "교육기간", "내용"], "dataRowCapacity": 2
+    },
+    {
+      "id": "1106664893", "role": "가족사항", "rowCnt": 6, "colCnt": 6, "physicalCells": 31, "mergedMasterCells": 1,
+      "sourceGeometry": { "x": 1984, "y": 67546, "width": 55060, "height": 8258 },
+      "dimCandidateGeometry": { "x": 26.463, "y": 919.911, "width": 734.405, "height": 110.155 },
+      "columnWidths": [6366, 11304, 10520, 7283, 11589, 7998], "headers": ["관계", "성명", "생년월일", "학력", "직업", "동거여부"], "dataRowCapacity": 4
+    }
+  ],
+  "image": {
+    "pictureId": "1106664907",
+    "binaryItemIDRef": "image1",
+    "packagePath": "BinData/image1.gif",
+    "mediaType": "image/gif",
+    "bytes": 4018,
+    "pixelWidth": 298,
+    "pixelHeight": 79,
+    "sourceWidth": 11089,
+    "sourceHeight": 2943,
+    "sha256": "7b2ab5b3b5c89fc55cffa6278cf49ca78b2a042d3340ee597ff00cd84b1a88c2",
+    "placement": { "treatAsChar": true, "flowWithText": true, "context": "first merged cell of table 1106664773" }
+  },
+  "candidateClassification": {
+    "scalar": ["문서번호", "보존년한", "문서관리", "보안관리", "성명.한글", "성명.영문", "성명.한자", "군번", "입대일", "생년월일", "전화번호", "비상연락처.C/P", "비상연락처.관계", "이메일", "주민등록번호", "혈액형", "형제관계", "거주지주소", "결혼여부", "종교", "보훈대상", "보훈구분", "보훈번호", "장애대상", "장애등급", "장애유형", "장애인정일", "병역.계급", "병역.군별", "병역.복무기간", "병역.미필사유"],
+    "repeating": ["개인자격", "봉사활동", "면허/자격", "어학", "연수", "가족사항"],
+    "bindingCreated": false
+  },
+  "dimV12Mapping": {
+    "text": "SUPPORTED",
+    "geometry": "SUPPORTED",
+    "font": "PARTIAL",
+    "alignment": "PARTIAL",
+    "background": "SUPPORTED",
+    "border": "PARTIAL",
+    "table": "PARTIAL",
+    "row": "SUPPORTED",
+    "column": "SUPPORTED",
+    "mergedCell": "UNSUPPORTED",
+    "rowSpan": "UNSUPPORTED",
+    "colSpan": "UNSUPPORTED",
+    "image": "UNSUPPORTED",
+    "imageSource": "UNSUPPORTED",
+    "paragraph": "PARTIAL",
+    "page": "PARTIAL"
+  },
+  "goldenFixture": {
+    "suitable": true,
+    "role": "first readiness/gap fixture",
+    "strengths": ["merged cells", "scalar fields", "six repeating regions", "embedded image", "style references", "A4 layout", "array-binding candidates"],
+    "limitations": ["single section/page", "no floating image", "no multi-page split", "no external binary", "no nested table", "limited mixed-run content"]
+  },
+  "decision": {
+    "grade": "C",
+    "label": "LARGE_DIM_OR_GENERATOR_CHANGE_REQUIRED",
+    "readiness": "BLOCKED_BY_DIM_AND_GENERATOR_CAPABILITY",
+    "reasons": [
+      "Current DIM rejects rowSpan and colSpan while the fixture has 56 merged master cells.",
+      "Current DIM element types exclude image while the fixture contains one embedded image.",
+      "Current Generator assumes dense rectangular tables and has no HWPX image materialization path.",
+      "Paragraph/run and page-flow fidelity are only partially representable."
+    ]
+  },
+  "answers": {
+    "Q1": { "answer": "YES_WITH_VALIDATION_CAVEAT", "summary": "Explicit IDs, addresses, spans, sizes, margins, and flow anchors make extraction deterministic; source height anomalies require fail-closed validation." },
+    "Q2": { "answer": "YES", "summary": "Package XML and binary references provide structure without Vision or OCR." },
+    "Q3": { "answer": "NO", "summary": "Merge/span and image/source are absent; paragraph and page semantics are partial." },
+    "Q4": { "answer": "NO_FOR_FAITHFUL_IMPORT", "summary": "An adapter-only implementation would have to flatten merges and omit the image." },
+    "Q5": { "answer": "YES_WITH_SUPPLEMENTAL_FIXTURES", "summary": "Suitable as the first gap fixture, but not a complete conformance suite." },
+    "Q6": { "answer": "NO", "summary": "Freeze the DIM extension and prove merged-table/image generation before adapter implementation." }
+  },
+  "mutations": {
+    "productSource": false,
+    "dimSchema": false,
+    "generator": false,
+    "importCore": false,
+    "sourceFixture": false,
+    "candidate": false,
+    "outputsOnly": [
+      "docs/111-hwpx-import-readiness-audit.md",
+      "docs/112-hwpx-to-dim-architecture.md",
+      "mysuit-mvp-work/logs/hwpx-import-readiness.json"
+    ]
+  }
+}

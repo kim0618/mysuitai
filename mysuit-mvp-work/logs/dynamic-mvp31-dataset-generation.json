@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "id": "employees",
+  "type": "embedded",
+  "mySuitClass": "UBDmcUser",
+  "columns": 6,
+  "rows": 25,
+  "encoding": "base64+zlib JSON",
+  "roundTripExact": true
+}

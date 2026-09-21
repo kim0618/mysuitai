@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 1,
+  "snapshots": [
+    {
+      "targetType": "OBJECT",
+      "targetKey": "LB6417_UPHB2584_ROW0",
+      "target": {
+        "targetType": "OBJECT",
+        "targetKey": "LB6417_UPHB2584_ROW0",
+        "viewerObjectId": "LB6417_UPHB2584_ROW0",
+        "renderInstanceKey": null,
+        "sourceObjectId": "LB6417",
+        "properties": [
+          "text",
+          "fontSize",
+          "fontWeight",
+          "textAlign",
+          "visible",
+          "width",
+          "height"
+        ],
+        "sourceClassName": "UBLabel"
+      },
+      "capabilities": {
+        "updateText": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "setFontSize": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "setFontWeight": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "setTextAlign": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "resizeObject": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "moveObject": {
+          "allowed": false,
+          "reason": "SOURCE_MAPPING_UNVERIFIED",
+          "message": "SOURCE_MAPPING_UNVERIFIED",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "setImageFit": {
+          "allowed": false,
+          "reason": "SOURCE_MAPPING_UNVERIFIED",
+          "message": "SOURCE_MAPPING_UNVERIFIED",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "replaceImage": {
+          "allowed": false,
+          "reason": "SOURCE_MAPPING_UNVERIFIED",
+          "message": "SOURCE_MAPPING_UNVERIFIED",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "hideObject": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "restoreObject": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED"
+          }
+        },
+        "moveRenderObject": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": false,
+              "pdf": false
+            },
+            "maturity": "LIMITED",
+            "candidateMaterialization": "VIEWER_ONLY"
+          }
+        }
+      },
+      "constraints": {
+        "canonicalSerializer": "PARTIAL"
+      },
+      "warnings": [
+        "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+      ]
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
+      "target": {
+        "targetType": "LOGICAL_COLUMN",
+        "targetKey": "tbl:financial-7col|col:2",
+        "logicalTableKey": "tbl:financial-7col",
+        "logicalColumnKey": "tbl:financial-7col|col:2",
+        "columnIndex": 2,
+        "groupKey": "grp:financial-all-columns",
+        "baseWidth": 70
+      },
+      "capabilities": {
+        "resizeColumn": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        },
+        "moveColumn": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "sameGroupOnly": true,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        },
+        "hideColumn": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        },
+        "restoreColumn": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        },
+        "addStaticColumn": {
+          "allowed": false,
+          "reason": "RUNTIME_UI_NOT_CONNECTED",
+          "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        },
+        "addBoundColumn": {
+          "allowed": false,
+          "reason": "RUNTIME_UI_NOT_CONNECTED",
+          "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792,
+            "bindingWhitelist": [
+              "dataset_2.col_8"
+            ]
+          }
+        },
+        "removeColumn": {
+          "allowed": false,
+          "reason": "RUNTIME_UI_NOT_CONNECTED",
+          "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        }
+      },
+      "constraints": {
+        "canonicalSerializer": "PARTIAL"
+      },
+      "warnings": [
+        "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+      ]
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "target": {
+        "targetType": "LOGICAL_ROW",
+        "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+        "logicalTableKey": "tbl:financial-7col",
+        "logicalRowKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+        "rowRole": "HEADER",
+        "bandId": "UDHB4114",
+        "rowIndex": 0,
+        "rowSpanDependent": false
+      },
+      "capabilities": {
+        "resizeRow": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "hideRow": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "restoreRow": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "collapseRow": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "moveRow": {
+          "allowed": false,
+          "reason": "STATIC_TABLE_ONLY",
+          "message": "가져온 정적 표에서만 지원합니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "removeRow": {
+          "allowed": false,
+          "reason": "STATIC_TABLE_ONLY",
+          "message": "가져온 정적 표에서만 지원합니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "moveRenderedRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": false,
+              "pdf": false
+            },
+            "maturity": "LIMITED",
+            "candidateMaterialization": "VIEWER_ONLY",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "addStaticRow": {
+          "allowed": false,
+          "reason": "RUNTIME_UI_NOT_CONNECTED",
+          "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
+        "removeStaticRow": {
+          "allowed": false,
+          "reason": "RUNTIME_UI_NOT_CONNECTED",
+          "message": "검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        }
+      },
+      "constraints": {
+        "canonicalSerializer": "PARTIAL"
+      },
+      "warnings": [
+        "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+      ]
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "target": {
+        "targetType": "LOGICAL_ROW",
+        "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+        "logicalTableKey": "tbl:financial-7col",
+        "logicalRowKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+        "rowRole": "RENDERED_DETAIL",
+        "bandId": "grp_0_UDB3195",
+        "rowIndex": 0,
+        "rowSpanDependent": false
+      },
+      "capabilities": {
+        "resizeRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "hideRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "restoreRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "collapseRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "moveRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "removeRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "moveRenderedRow": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": false,
+              "pdf": false
+            },
+            "maturity": "LIMITED",
+            "candidateMaterialization": "VIEWER_ONLY",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "addStaticRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "removeStaticRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "POC_ONLY",
+            "candidateMaterialization": "SUPPORTED",
+            "engineValidated": true,
+            "runtimeUiConnected": false,
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        }
+      },
+      "constraints": {
+        "canonicalSerializer": "PARTIAL"
+      },
+      "warnings": [
+        "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+      ]
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "targetKey": "ctbl:main-report-table",
+      "target": {
+        "targetType": "COMPOSITE_TABLE",
+        "targetKey": "ctbl:main-report-table",
+        "compositeTableKey": "ctbl:main-report-table",
+        "logicalTableKey": "tbl:financial-7col"
+      },
+      "capabilities": {
+        "moveTable": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": false,
+              "pdf": false
+            },
+            "maturity": "LIMITED",
+            "candidateMaterialization": "VIEWER_ONLY",
+            "reflowScope": "SAME_SECTION",
+            "pageFooterProtected": true
+          }
+        },
+        "resizeTableWidth": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": false,
+              "pdf": false
+            },
+            "maturity": "LIMITED",
+            "candidateMaterialization": "VIEWER_ONLY",
+            "reflowScope": "SAME_SECTION",
+            "pageFooterProtected": true
+          }
+        },
+        "hideTable": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "SAME_SECTION",
+            "pageFooterProtected": true
+          }
+        },
+        "restoreTable": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "SAME_SECTION",
+            "pageFooterProtected": true
+          }
+        },
+        "collapseTable": {
+          "allowed": true,
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "SAME_SECTION",
+            "pageFooterProtected": true
+          }
+        }
+      },
+      "constraints": {
+        "canonicalSerializer": "PARTIAL"
+      },
+      "warnings": [
+        "Source Patch + Structure/Reflow 혼합 후보는 canonical serializer가 필요합니다."
+      ]
+    }
+  ]
+}

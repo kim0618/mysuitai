@@ -1,0 +1,10 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
+const {validateSemanticModel}=require('../src/server/dynamic/semantic-validator');
+const {createImportedDataset,decodeImportedRows}=require('../src/server/dynamic/dataset-generator');
+const {writeDatasetBinding,writeSystemFunction,aggregateExpression,pageExpression}=require('../src/server/dynamic/binding-writer');
+const service=require('../src/server/dynamic/dynamic-project-service');
+const fixture=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../samples/import/manual-dynamic-report.semantic.json')));
+test('validates semantic fixture and rejects missing group key',()=>{assert.equal(validateSemanticModel(fixture).datasets[0].rows.length,25);const bad=structuredClone(fixture);bad.groups[0].key='MISSING';assert.throws(()=>validateSemanticModel(bad),{code:'DYNAMIC_GROUP_KEY_MISSING'})});
+test('encodes and decodes embedded dataset exactly',()=>{const proto=require('../src/server/services/form-patch-service').readForm(service.GROUND).root.datasets[0],out=createImportedDataset(proto,fixture.datasets[0]);assert.equal(out.columns.length,6);assert.deepEqual(decodeImportedRows(out),fixture.datasets[0].rows)});
+test('writes binding, aggregate and page contracts',()=>{const c={};writeDatasetBinding(c,'employees','NAME');assert.deepEqual({dataType:c.dataType,dataSet:c.dataSet,column:c.column,text:decodeURIComponent(c.text)},{dataType:'1',dataSet:'employees',column:'NAME',text:'{employees.NAME}'});assert.equal(aggregateExpression(fixture.groupFooter.aggregate),"FN.Sum('employees','PAY')");assert.equal(pageExpression(fixture.pageFooter),'FN.TotalPage() + " / " + FN.CurrentPage()');writeSystemFunction(c,'FN.X()');assert.equal(c.dataType,'2')});
+test('assembles seven new bands and a single detail source row',()=>{const parsed=service.assemble(validateSemanticModel(fixture),'dynamic_mvp31_20260831_120000_abcdef'),s=service.assertDynamic(parsed);assert.equal(s.bands,7);assert.equal(s.rows,25);assert.equal(s.dataBandRows,1);assert.equal(s.dataBandCells,6);assert.equal(s.groupFooters,1)});

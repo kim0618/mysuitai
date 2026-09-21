@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "importUnitTests": {
+    "passed": 23,
+    "failed": 0
+  },
+  "preAiBaseline": "PASS",
+  "initialAttempt": {
+    "status": "FLAKY_RETRIED",
+    "cause": "history E2E captured initial canvas object count 0 before initialization"
+  },
+  "finalEvidence": "mysuit-mvp-work/logs/pre-ai-regression.json"
+}

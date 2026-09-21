@@ -1,0 +1,21 @@
+{
+  "imageCount": 2,
+  "assetCount": 2,
+  "missingAssets": 0,
+  "viewerPass": true,
+  "reloadPass": true,
+  "newContextPass": true,
+  "pdfPass": true,
+  "pngPass": true,
+  "gifPass": true,
+  "jpegPass": false,
+  "projectName": "import_mvp13_20260917_144104_1b0293",
+  "formName": "SampleReport_FreeForm",
+  "pdf": {
+    "http": 200,
+    "bytes": 155641,
+    "sha256": "dc57e47c34b1f355057bea32ddd8db2464b50531052e0a213531fc8a5c8f9f30",
+    "file": "output/dim13-hwpx-like-fixture.pdf"
+  },
+  "fatalErrors": []
+}

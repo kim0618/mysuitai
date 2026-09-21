@@ -1,0 +1,67 @@
+{
+  "operations": [
+    {
+      "operation": "editCellText",
+      "layer": "SOURCE"
+    },
+    {
+      "operation": "hideColumn",
+      "layer": "HYBRID",
+      "reason": "all source tables in the composite band chain plus runtime reflow/borders"
+    },
+    {
+      "operation": "resizeColumn",
+      "layer": "HYBRID",
+      "reason": "source wrapper/cell widths and following x values; runtime preview group transform"
+    },
+    {
+      "operation": "moveColumn",
+      "layer": "SOURCE/HYBRID",
+      "reason": "2D table order, wrapper columnIndex/x, cell binding and runtime preview must move atomically"
+    },
+    {
+      "operation": "moveRenderedRow",
+      "layer": "RENDER"
+    },
+    {
+      "operation": "sortDataRows",
+      "layer": "DATA_SOURCE",
+      "reason": "UBDataBand repetition order follows dataset"
+    },
+    {
+      "operation": "collapseTableEditor",
+      "layer": "UI"
+    },
+    {
+      "operation": "collapseTableOutput",
+      "layer": "HYBRID",
+      "reason": "band height, following bands, pagination and page breaks"
+    }
+  ],
+  "schemas": {
+    "hideColumn": {
+      "operation": "hideColumn",
+      "tableKey": "tbl:financial-7col",
+      "columnIndex": 2,
+      "collapseSpace": true
+    },
+    "resizeColumn": {
+      "operation": "resizeColumn",
+      "tableKey": "tbl:financial-7col",
+      "columnIndex": 1,
+      "beforeWidth": 70,
+      "afterWidth": 100
+    },
+    "moveColumn": {
+      "operation": "moveColumn",
+      "tableKey": "tbl:financial-7col",
+      "fromIndex": 2,
+      "toIndex": 1
+    },
+    "collapseTable": {
+      "operation": "collapseTable",
+      "tableKey": "tbl:financial-7col",
+      "outputCollapse": true
+    }
+  }
+}

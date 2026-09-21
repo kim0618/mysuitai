@@ -1,0 +1,558 @@
+{
+  "capturedAt": "2026-08-07T06:20:46.354Z",
+  "position": {
+    "id": "LB6417_UPHB2584_ROW0",
+    "left": 357.0000007687047,
+    "top": 62,
+    "objectCount": 180
+  },
+  "directBefore": {
+    "left": 367,
+    "top": 100
+  },
+  "exportMs": 791,
+  "browserPrintMs": 98,
+  "serverPdf": {
+    "path": "outputs/mvp42-server-output.pdf",
+    "bytes": 64535,
+    "sha256": "2e16a07566a42e65d27537dc79b8fbfcbdad237d698631d1a2aab5191d1eb3a0",
+    "classification": "MYSUIT_SERVER_PDF"
+  },
+  "browserPrint": {
+    "path": "outputs/mvp42-browser-print.pdf",
+    "bytes": 10194,
+    "sha256": "e9b4600578ead4a054a5a3419343d5552e3b9b0ae870055a18f9c356f6dcb68e",
+    "classification": "BROWSER_PRINT_NOT_SERVER_PDF"
+  },
+  "events": [
+    {
+      "type": "request",
+      "atMs": 324,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/change-sets",
+      "keys": [
+        "{\"projectName\":\"sample\",\"formName\":\"sample\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 44
+    },
+    {
+      "type": "response",
+      "atMs": 349,
+      "status": 201,
+      "url": "http://127.0.0.1:3100/api/change-sets",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "request",
+      "atMs": 969,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do",
+      "keys": [
+        "DOMAIN",
+        "FILE_TYPE",
+        "CALL",
+        "CLIENT_REQUEST_VERSION",
+        "EXCEL_OPTION",
+        "PAGE_MARGIN_TOP",
+        "PAGE_MARGIN_LEFT",
+        "PAGE_MARGIN_RIGHT",
+        "PAGE_MARGIN_BOTTOM",
+        "CHANGE_ITEM_DATA",
+        "CHANGE_DATASET",
+        "UB_GLOBAL_DATASET",
+        "CLIENT_SESSION_ID",
+        "METHOD_NAME",
+        "PROJECT_NAME",
+        "FORM_ID",
+        "FILE_NAME",
+        "TREE_PROJECT_NAME",
+        "UB_PDF_PRINT_VERSION",
+        "USER",
+        "UB_EX_PROJECTCODE",
+        "LOGIN_ID",
+        "USE_CLIENT_TIME_LOG",
+        "UB_BARCODE_TYPE",
+        "UB_USE_JCO_SAMPLE_DATA",
+        "ENCODE_KEYSIZE",
+        "IS_UBPARAMS_ENCODED",
+        "UBPARAMS",
+        "PAGE_NUM",
+        "LOAD_TYPE",
+        "MULTI_FORM_TYPE",
+        "UB_FILE_LOAD_TYPE",
+        "USE_PREVIEW",
+        "UB_USE_BG_IMAGE_INFO",
+        "CLIENT_EDIT_MODE",
+        "UB_FORMLIST_INFO",
+        "OPENER_LOCATION",
+        "UBOpener",
+        "FORM_LOCATION_TYPE",
+        "UB_HWP_TABLE_PROTECTED",
+        "UB_HWP_TREAT_AS_CHAR",
+        "UB_HWP_PAGE_MARGIN",
+        "UB_HWP_TABLE_RELTO_PAPER",
+        "USER_ID",
+        "EDITOR_TYPE",
+        "UB_OPEN_PARAM_POPUP",
+        "UB_PARAM_USE_POPUP",
+        "UB_DOCUMENT_DATA",
+        "UB_JS_ENGINE",
+        "UB_BARCODE_USE_THINRECT",
+        "UB_SIMPLE_TYPE",
+        "USE_DOCUMENT_SAVEAS",
+        "UB_SIMPLELAYOUT_DATASET"
+      ],
+      "methodName": "getHtmlViewer",
+      "projectName": "sample",
+      "formId": "sample",
+      "loadType": "div",
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 1048
+    },
+    {
+      "type": "response",
+      "atMs": 1054,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do",
+      "contentType": "bin;charset=utf-8"
+    },
+    {
+      "type": "request",
+      "atMs": 1477,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_2b094b\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 1478,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_0a08b2\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 1478,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_44d6d7\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 1478,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_0f754e\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 1478,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_78693d\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 1478,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_66cd1f\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 1479,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_127aed\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "response",
+      "atMs": 1492,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 1494,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 1494,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 1494,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 1494,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 1494,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 1494,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "request",
+      "atMs": 1676,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do",
+      "keys": [
+        "DOMAIN",
+        "FILE_TYPE",
+        "CALL",
+        "CLIENT_REQUEST_VERSION",
+        "EXCEL_OPTION",
+        "PAGE_MARGIN_TOP",
+        "PAGE_MARGIN_LEFT",
+        "PAGE_MARGIN_RIGHT",
+        "PAGE_MARGIN_BOTTOM",
+        "CHANGE_ITEM_DATA",
+        "CHANGE_DATASET",
+        "UB_GLOBAL_DATASET",
+        "CLIENT_SESSION_ID",
+        "METHOD_NAME",
+        "PROJECT_NAME",
+        "FORM_ID",
+        "FILE_NAME",
+        "TREE_PROJECT_NAME",
+        "UB_PDF_PRINT_VERSION",
+        "USER",
+        "UB_EX_PROJECTCODE",
+        "LOGIN_ID",
+        "USE_CLIENT_TIME_LOG",
+        "UB_BARCODE_TYPE",
+        "UB_USE_JCO_SAMPLE_DATA",
+        "ENCODE_KEYSIZE",
+        "IS_UBPARAMS_ENCODED",
+        "UBPARAMS",
+        "PAGE_NUM",
+        "LOAD_TYPE",
+        "MULTI_FORM_TYPE",
+        "UB_FILE_LOAD_TYPE",
+        "USE_PREVIEW",
+        "UB_USE_BG_IMAGE_INFO",
+        "CLIENT_EDIT_MODE",
+        "UB_FORMLIST_INFO",
+        "OPENER_LOCATION",
+        "UBOpener",
+        "FORM_LOCATION_TYPE",
+        "UB_HWP_TABLE_PROTECTED",
+        "UB_HWP_TREAT_AS_CHAR",
+        "UB_HWP_PAGE_MARGIN",
+        "UB_HWP_TABLE_RELTO_PAPER",
+        "USER_ID",
+        "EDITOR_TYPE",
+        "UB_OPEN_PARAM_POPUP",
+        "UB_PARAM_USE_POPUP",
+        "UB_DOCUMENT_DATA",
+        "UB_JS_ENGINE",
+        "UB_BARCODE_USE_THINRECT",
+        "UB_SIMPLE_TYPE",
+        "USE_DOCUMENT_SAVEAS",
+        "UB_SIMPLELAYOUT_DATASET",
+        "START_PAGE",
+        "END_PAGE",
+        "PDF_EXPORT_TYPE",
+        "USE_TIMESTAMP",
+        "PDF_PASSWORD",
+        "USE_PROTECTION",
+        "USE_PDF_EMBEDED_IMAGE",
+        "USE_FILE_SPLIT",
+        "UB_USER_IMAGE_LIST",
+        "UB_EXPORT_EUC_ITEM",
+        "UB_EXPORT_EUC_ITEM_FOR_EMPTY",
+        "MARKANY_VERSION",
+        "EXPORT_RESULT_TYPE"
+      ],
+      "methodName": "savePDF",
+      "projectName": "sample",
+      "formId": "sample",
+      "loadType": "div",
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 1311
+    },
+    {
+      "type": "response",
+      "atMs": 1805,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/MYSUIT/ubiform.do",
+      "contentType": "application/pdf;charset=utf-8"
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_2b094b\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_0a08b2\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_44d6d7\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_0f754e\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_78693d\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_66cd1f\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "request",
+      "atMs": 2284,
+      "method": "POST",
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "keys": [
+        "{\"event\":\"RENDER_PATCH_APPLIED\",\"patchId\":\"rp_20260807_127aed\"}"
+      ],
+      "methodName": null,
+      "projectName": null,
+      "formId": null,
+      "loadType": null,
+      "hasChangeItemData": false,
+      "hasChangeDataset": false,
+      "hasFabricJson": false,
+      "bodyBytes": 63
+    },
+    {
+      "type": "response",
+      "atMs": 2295,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 2296,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 2296,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 2296,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 2296,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 2297,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "type": "response",
+      "atMs": 2297,
+      "status": 200,
+      "url": "http://127.0.0.1:3100/api/render-patches/events",
+      "contentType": "application/json; charset=utf-8"
+    }
+  ],
+  "conclusion": {
+    "fabricCoordinatesPresentInPdfRequest": false,
+    "renderPatchKeyPresent": false
+  }
+}

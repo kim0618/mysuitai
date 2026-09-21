@@ -1,0 +1,12 @@
+{
+  "capabilities": [
+    { "capability": "CELL_BACKGROUND_COLOR", "priority": "P0", "impact": "Table header identity is lost." },
+    { "capability": "CELL_TEXT_COLOR", "priority": "P0", "impact": "White header labels cannot be reproduced." },
+    { "capability": "CELL_VERTICAL_ALIGN", "priority": "P0", "impact": "Multiline item descriptions cannot be top aligned." },
+    { "capability": "CELL_TEXT_STYLE", "priority": "P1", "impact": "Item names cannot be bold while detail lines remain regular within one cell." },
+    { "capability": "ROUNDED_RECTANGLE", "priority": "P1", "impact": "Balance Due banner background is omitted." },
+    { "capability": "FONT_COLOR", "priority": "P1", "impact": "Gray secondary labels render with prototype color." },
+    { "capability": "CELL_BORDER_VISIBILITY", "priority": "P1", "impact": "The borderless source becomes a visible prototype grid." },
+    { "capability": "FONT_FAMILY", "priority": "P2", "impact": "Exact external typography is not representable." }
+  ]
+}

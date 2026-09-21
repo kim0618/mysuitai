@@ -1,0 +1,86 @@
+{
+  "context": {
+    "element": {},
+    "rect": {
+      "x": 332.5,
+      "y": 58,
+      "width": 794,
+      "height": 1123,
+      "top": 58,
+      "right": 1126.5,
+      "bottom": 1181,
+      "left": 332.5
+    },
+    "viewport": [
+      2,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "scaleX": 0.5,
+    "scaleY": 0.5,
+    "zoomX": 2,
+    "zoomY": 2,
+    "scrollX": 0,
+    "scrollY": 0,
+    "devicePixelRatio": 1
+  },
+  "rows": [
+    {
+      "canvas": {
+        "x": 2,
+        "y": 300
+      },
+      "screen": {
+        "x": 334.5,
+        "y": 358
+      },
+      "roundtrip": {
+        "x": 2,
+        "y": 300
+      },
+      "error": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "canvas": {
+        "x": 442,
+        "y": 333
+      },
+      "screen": {
+        "x": 774.5,
+        "y": 391
+      },
+      "roundtrip": {
+        "x": 442,
+        "y": 333
+      },
+      "error": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "canvas": {
+        "x": 792,
+        "y": 954
+      },
+      "screen": {
+        "x": 1124.5,
+        "y": 1012
+      },
+      "roundtrip": {
+        "x": 792,
+        "y": 954
+      },
+      "error": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

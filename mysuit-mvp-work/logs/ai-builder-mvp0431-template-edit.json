@@ -1,0 +1,14 @@
+{
+  "property": "width",
+  "before": 379,
+  "after": 399,
+  "runtimeInstanceCount": 3,
+  "allRuntimeInstancesUpdated": true,
+  "bindingPreserved": true,
+  "sourceDetailRows": 1,
+  "runtimeDetailRows": 3,
+  "identityCollisionCount": 0,
+  "undoPass": true,
+  "redoPass": true,
+  "reloadPass": true
+}

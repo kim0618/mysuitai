@@ -1,0 +1,11 @@
+{
+  "baseSignature": null,
+  "arrayAppliedSignature": "78d1e0c5402f3c7cae9880a2f53096f046dea246358f0a6a139fc50e74389aad",
+  "dynamicEditedSignature": "26340cd920b1d1786812b9b5ea8d96ed76074121759e3e5ad44077539a0d97d6",
+  "undoAllSignature": "STATIC_SOURCE",
+  "redoAllSignature": "26340cd920b1d1786812b9b5ea8d96ed76074121759e3e5ad44077539a0d97d6",
+  "undoMatchesBase": true,
+  "redoMatchesFinal": true,
+  "eventCount": 4,
+  "limitation": "Scalar rebind not included in this focused integration fixture"
+}

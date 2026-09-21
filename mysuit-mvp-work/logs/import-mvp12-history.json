@@ -1,0 +1,12 @@
+{
+  "objectDraft": {
+    "events": 1
+  },
+  "structureDraft": {
+    "events": 3,
+    "undoRedo": true,
+    "reload": true,
+    "newContext": true
+  },
+  "isolated": true
+}

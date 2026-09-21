@@ -1,0 +1,30 @@
+{
+  "phase": "AI_BUILDER_UPLOAD_UI_PRODUCTIZATION",
+  "verdict": "A",
+  "sidebarPass": true,
+  "uploadUiPass": true,
+  "hwpxUiPass": true,
+  "jsonOptionalPass": true,
+  "dimAdvancedOptionPass": true,
+  "hwpBlockedPass": true,
+  "processingUiPass": true,
+  "errorUiPass": true,
+  "hwpxPipelinePass": true,
+  "imagePipelineRegressionPass": true,
+  "workspaceRedirectPass": true,
+  "viewerRenderPass": true,
+  "viewerObjectCount": 180,
+  "responsivePass": true,
+  "accessibilityPass": true,
+  "regressionPass": true,
+  "importPageErrorCount": 0,
+  "screenshots": [
+    "ai-builder-ui-upload-empty.png",
+    "ai-builder-ui-upload-hwpx-selected.png",
+    "ai-builder-ui-upload-processing.png",
+    "ai-builder-ui-upload-error.png"
+  ],
+  "limitations": [
+    "Builder Workspace startup may emit a transient non-fatal canvas selection warning; Viewer rendered 180 objects successfully."
+  ]
+}

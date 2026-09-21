@@ -1,0 +1,11 @@
+{
+  "projectName": "import_mvp13_20260917_144104_1b0293",
+  "formName": "SampleReport_FreeForm",
+  "previewUrl": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260917_144104_1b0293&formName=SampleReport_FreeForm",
+  "formSha256": "2fe858d82287e7f731d211902e18fa99b58e5e17f8bc7424a468c7084d815ee4",
+  "semanticDeterminism": true,
+  "assetHashes": [
+    "aed71814397bf8bea2bfa24cb417dfb5cb6e20634bbfcc3b58a95999bef34144",
+    "1e85ec81b9800b4c443d39caca0d0926089a3ac201120db1ceb45b93789480b8"
+  ]
+}

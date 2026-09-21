@@ -1,0 +1,28 @@
+{
+  "baseline": "PRE-AI-v1",
+  "before": {
+    "timestamp": "2026-09-17T05:55:52.592Z",
+    "formUbjfSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "infoXmlSha256": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e",
+    "userCandidates": [
+      {
+        "name": "sample_mvp4_20260811_102025_7201dd",
+        "treeSha256": "c6304343bb7e5f0562524cb648ebaf35dcb608e01c6e1014032f88f13c94e478"
+      }
+    ]
+  },
+  "after": {
+    "timestamp": "2026-09-17T01:25:44.766Z",
+    "formUbjfSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "infoXmlSha256": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e",
+    "userCandidates": [
+      {
+        "name": "sample_mvp4_20260811_102025_7201dd",
+        "treeSha256": "c6304343bb7e5f0562524cb648ebaf35dcb608e01c6e1014032f88f13c94e478"
+      }
+    ]
+  },
+  "formUbjfUnchanged": true,
+  "infoXmlUnchanged": true,
+  "userCandidatesPreserved": true
+}

@@ -1,0 +1,8 @@
+{
+  "attempt": 2,
+  "dimPath": "mysuit-mvp-work/mvp3-app/samples/import/image-analysis-mvp20.freeze.dim.json",
+  "sha256": "79063ca17cfaa316f318f6ad80c7a01580f9c86f856e4d910df14e6f8b783ff0",
+  "validationAttempts": 1,
+  "validation": "PASS",
+  "frozenAt": "2026-08-28T14:18:14+09:00"
+}

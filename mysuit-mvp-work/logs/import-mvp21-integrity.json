@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "freezeSha256": "6eb47bf838c8baf37a0569c7094bc484069195dd9b0a54a83bceda4028cce32a",
+  "freezeUnchangedAfterEvaluation": true,
+  "templateIntegrityAssertedByGenerator": true,
+  "originalExternalImageUnmodified": true,
+  "existingMvp20EvidenceModified": false,
+  "existingCandidatesPreserved": true,
+  "evidenceProject": "import_mvp21_20260828_143646_6f9d99",
+  "evidenceCandidatesPreserved": 2
+}

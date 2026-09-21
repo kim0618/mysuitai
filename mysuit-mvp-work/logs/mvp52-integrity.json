@@ -1,0 +1,18 @@
+{
+  "hashesBefore": {
+    "form": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "info": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e"
+  },
+  "hashesAfter": {
+    "form": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "info": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e"
+  },
+  "unchanged": true,
+  "candidateDirsBefore": [
+    "sample_mvp4_20260811_102025_7201dd"
+  ],
+  "candidateDirsAfter": [
+    "sample_mvp4_20260811_102025_7201dd"
+  ],
+  "newCandidateDirs": []
+}

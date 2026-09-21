@@ -1,0 +1,193 @@
+{
+  "projectName": "import_mvp10_20260827_164519_71baac",
+  "formName": "SampleReport_FreeForm",
+  "url": "http://127.0.0.1:3100/mysuit/UView5/index.jsp?projectName=import_mvp10_20260827_164519_71baac&formName=SampleReport_FreeForm",
+  "loaded": true,
+  "httpStatus": 200,
+  "fatalErrors": [],
+  "expectedTextCount": 5,
+  "actualTextCount": 5,
+  "comparisons": [
+    {
+      "dimElementId": "title",
+      "sourceObjectId": "IMPLB0001",
+      "expectedText": "월간 실적 보고서",
+      "actualText": "월간 실적 보고서",
+      "viewerObjectId": "IMPLB0001",
+      "renderInstanceKey": "p0|c0|src:IMPLB0001|band:FREEFORM|row:0|idx:0",
+      "expected": {
+        "x": 182,
+        "y": 60,
+        "width": 430,
+        "height": 44,
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "textAlign": "center"
+      },
+      "actual": {
+        "x": 182,
+        "y": 60,
+        "width": 430,
+        "height": 44,
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "textAlign": "center"
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "fontSize": 0
+      },
+      "pass": true
+    },
+    {
+      "dimElementId": "subtitle",
+      "sourceObjectId": "IMPLB0002",
+      "expectedText": "2026년 8월",
+      "actualText": "2026년 8월",
+      "viewerObjectId": "IMPLB0002",
+      "renderInstanceKey": "p0|c0|src:IMPLB0002|band:FREEFORM|row:0|idx:1",
+      "expected": {
+        "x": 247,
+        "y": 125,
+        "width": 300,
+        "height": 32,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "textAlign": "center"
+      },
+      "actual": {
+        "x": 247,
+        "y": 125,
+        "width": 300,
+        "height": 32,
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "textAlign": "center"
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "fontSize": 0
+      },
+      "pass": true
+    },
+    {
+      "dimElementId": "guide",
+      "sourceObjectId": "IMPLB0003",
+      "expectedText": "부서별 주요 실적을 보고합니다.",
+      "actualText": "부서별 주요 실적을 보고합니다.",
+      "viewerObjectId": "IMPLB0003",
+      "renderInstanceKey": "p0|c0|src:IMPLB0003|band:FREEFORM|row:0|idx:2",
+      "expected": {
+        "x": 54,
+        "y": 245,
+        "width": 500,
+        "height": 40,
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "textAlign": "left"
+      },
+      "actual": {
+        "x": 54,
+        "y": 245,
+        "width": 500,
+        "height": 40,
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "textAlign": "left"
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "fontSize": 0
+      },
+      "pass": true
+    },
+    {
+      "dimElementId": "date",
+      "sourceObjectId": "IMPLB0004",
+      "expectedText": "작성일: 2026.08.27",
+      "actualText": "작성일: 2026.08.27",
+      "viewerObjectId": "IMPLB0004",
+      "renderInstanceKey": "p0|c0|src:IMPLB0004|band:FREEFORM|row:0|idx:3",
+      "expected": {
+        "x": 520,
+        "y": 315,
+        "width": 220,
+        "height": 32,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "textAlign": "right"
+      },
+      "actual": {
+        "x": 520,
+        "y": 315,
+        "width": 220,
+        "height": 32,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "textAlign": "right"
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "fontSize": 0
+      },
+      "pass": true
+    },
+    {
+      "dimElementId": "footer",
+      "sourceObjectId": "IMPLB0005",
+      "expectedText": "CONFIDENTIAL",
+      "actualText": "CONFIDENTIAL",
+      "viewerObjectId": "IMPLB0005",
+      "renderInstanceKey": "p0|c0|src:IMPLB0005|band:FREEFORM|row:0|idx:4",
+      "expected": {
+        "x": 247,
+        "y": 1040,
+        "width": 300,
+        "height": 30,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "textAlign": "center"
+      },
+      "actual": {
+        "x": 247,
+        "y": 1040,
+        "width": 300,
+        "height": 30,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "textAlign": "center"
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "fontSize": 0
+      },
+      "pass": true
+    }
+  ],
+  "geometryTolerance": 2,
+  "allMatched": true,
+  "reload": {
+    "count": 5,
+    "identical": true
+  },
+  "newContext": {
+    "loaded": true,
+    "count": 5,
+    "identical": true
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "key": "window",
+    "hasGetObjects": false,
+    "hasRenderAll": true,
+    "hasRequestRenderAll": false,
+    "isArray": false,
+    "constructorName": "Window"
+  },
+  {
+    "key": "self",
+    "hasGetObjects": false,
+    "hasRenderAll": true,
+    "hasRequestRenderAll": false,
+    "isArray": false,
+    "constructorName": "Window"
+  },
+  {
+    "key": "frames",
+    "hasGetObjects": false,
+    "hasRenderAll": true,
+    "hasRequestRenderAll": false,
+    "isArray": false,
+    "constructorName": "Window"
+  },
+  {
+    "key": "top",
+    "hasGetObjects": false,
+    "hasRenderAll": true,
+    "hasRequestRenderAll": false,
+    "isArray": false,
+    "constructorName": "Window"
+  },
+  {
+    "key": "parent",
+    "hasGetObjects": false,
+    "hasRenderAll": true,
+    "hasRequestRenderAll": false,
+    "isArray": false,
+    "constructorName": "Window"
+  },
+  {
+    "key": "canvasModule",
+    "hasGetObjects": false,
+    "hasRenderAll": true,
+    "hasRequestRenderAll": false,
+    "isArray": false,
+    "constructorName": "Object"
+  }
+]

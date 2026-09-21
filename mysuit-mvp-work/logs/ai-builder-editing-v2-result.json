@@ -1,0 +1,158 @@
+{
+  "phase": "AI_BUILDER_EDITING_WORKSPACE_V2",
+  "verdict": "A",
+  "generatedAt": "2026-09-21T08:20:54.614Z",
+  "sharedSidebarPass": true,
+  "sharedTopbarPass": true,
+  "viewerIframePass": true,
+  "chatProductUiPass": true,
+  "textEditPass": true,
+  "rowMovePass": true,
+  "rowDeletePass": true,
+  "rowHeightPass": true,
+  "rowHidePass": true,
+  "columnMovePass": true,
+  "columnResizePass": true,
+  "imageAdapterPass": true,
+  "imageResizePass": true,
+  "imagePositionPass": true,
+  "imageReplacePass": true,
+  "imageFitPass": true,
+  "imageVisibilityPass": true,
+  "workspaceJsonUploadPass": true,
+  "workspaceJsonDirectInputPass": true,
+  "scalarBindingPass": true,
+  "arrayBindingPass": true,
+  "savePass": true,
+  "undoRedoPass": true,
+  "reloadPass": true,
+  "sidebarVisualConsistencyPass": true,
+  "regressionPass": true,
+  "originalIntegrityPass": true,
+  "measurements": {
+    "layout1440": {
+      "sidebar": 184,
+      "panel": 380,
+      "viewer": 876,
+      "iframe": "IFRAME",
+      "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_171918_f6fc35&formName=SampleReport_FreeForm",
+      "tabs": [
+        "채팅",
+        "직접 편집",
+        "데이터 연결"
+      ],
+      "active": "채팅",
+      "topbar": 52,
+      "topbarControls": [
+        "실행 취소",
+        "다시 실행",
+        "저장 안 됨",
+        "저장"
+      ],
+      "pageScroll": 0,
+      "viewerToolbarsOutside": 0,
+      "rawCodeVisible": false
+    },
+    "layout1920": {
+      "sidebar": 184,
+      "panel": 380,
+      "viewer": 1356,
+      "mainHeight": 1028,
+      "viewport": 1080,
+      "topbar": 52,
+      "pageScroll": 0
+    },
+    "sidebar": {
+      "differences": [],
+      "brand": {
+        "x": 12,
+        "y": 20,
+        "w": 160,
+        "h": 36
+      },
+      "brandOverflowPx": 0
+    }
+  },
+  "browserSteps": {
+    "total": 36,
+    "passed": 36,
+    "pageErrors": 0
+  },
+  "regression": {
+    "unitTests": {
+      "total": 200,
+      "passed": 200
+    },
+    "e2ePassed": [
+      "editing-v2",
+      "editing-workspace(sample)",
+      "upload-ui",
+      "upload-refinement",
+      "foundation01",
+      "foundation02",
+      "mvp01",
+      "mvp02",
+      "mvp021",
+      "mvp03",
+      "mvp043",
+      "mvp0431-runtime-selection",
+      "mvp58-history",
+      "import-mvp12-editor",
+      "dim13"
+    ],
+    "preExistingFailures": [
+      {
+        "test": "e2e-mvp42-output",
+        "reason": "작업 전 클라이언트로도 동일 지점(47행) 실패"
+      },
+      {
+        "test": "e2e-unified-ux",
+        "reason": "작업 전 클라이언트로도 동일 실패"
+      },
+      {
+        "test": "e2e-mvp54-source-output",
+        "reason": "손대지 않은 ubjf-add-remove-adapter 폭 가드(792)에 테스트 변형 840px가 걸림"
+      },
+      {
+        "test": "run-hwpx-direct-upload-e2e",
+        "reason": "업로드 UI 개편 전 안내 문구(native parsing)를 기다림"
+      }
+    ],
+    "notRun": [
+      {
+        "test": "run-hwpx-mvp01-e2e",
+        "reason": "projectName 인자와 9990 포트 Tomcat 필요"
+      },
+      {
+        "test": "e2e-ai-builder-mvp041",
+        "reason": "/tmp/mvp041-cases.json 사전 생성물 필요"
+      }
+    ],
+    "testSelectorUpdates": [
+      "upload-ui/upload-refinement: 공통 Sidebar 선택자",
+      "editing-workspace/mvp01: 새 Inspector·TopBar 52px·main>aside",
+      "mvp02/mvp021: 접힌 JSON 직접 입력 펼치기",
+      "mvp03: 자동 연결 행을 status-auto로 집계",
+      "mvp0431: 직접 편집 탭에서 새 너비 입력",
+      "mvp59: registry 32개"
+    ]
+  },
+  "screenshots": [
+    "editing-v2-chat.png",
+    "editing-v2-direct-text.png",
+    "editing-v2-direct-row.png",
+    "editing-v2-direct-column.png",
+    "editing-v2-direct-image.png",
+    "editing-v2-data-empty.png",
+    "editing-v2-data-json-added.png",
+    "editing-v2-data-binding-review.png"
+  ],
+  "limitations": [
+    "반복 데이터 자동 제안: 기존 Table↔Array Resolver가 HWPX 표(전체 폭 제목 병합행 구조)를 인식하지 못해 HWPX 문서에서는 반복 데이터 후보가 0건. DIM 기반 표에서는 동작(E2E 검증).",
+    "병합 블록을 가로지르는 행 이동·병합 시작 행의 숨김/삭제·병합 시작 열 숨김은 안전성 때문에 거부(fail-closed, 사용자 문구 표시).",
+    "이미지 삭제는 원본 구조 제거 연산이 없어 미구현. 표시 끄기(숨김)로 대체.",
+    "Merge/Unmerge 편집은 계속 미노출.",
+    "AI 채팅 backend 미연결(ChatProvider 인터페이스만 제공).",
+    "HWPX 인적사항 표의 겹침은 원본 변환 결과(원본 행 높이 10/5px)이며 이번 변경과 무관(Viewer 원본 좌표와 186개 셀 일치 확인)."
+  ]
+}

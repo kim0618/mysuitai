@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "groundTruth": {
+    "path": "/home/tjd618/mysuit-ai-viewer/test-input/edu_01.ubjf",
+    "sha256": "deb72e9f5b1a0ecc7963700905b1564c07e42bae902f739f5a0f21a741529717",
+    "expected": "deb72e9f5b1a0ecc7963700905b1564c07e42bae902f739f5a0f21a741529717",
+    "unchanged": true
+  },
+  "sample": {
+    "sha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83"
+  },
+  "staticTemplate": {
+    "sha256": "de581865731addeef2f607753c7208801056275e29ee211eecf769e132e7c17b"
+  },
+  "existingCandidatesModified": false
+}

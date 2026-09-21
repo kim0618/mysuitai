@@ -1,0 +1,41 @@
+{
+  "phase": "AI_BUILDER_MVP_0_2",
+  "verdict": "A",
+  "scope": "VERIFIED_EXTERNAL_IMAGE_FIXTURE",
+  "importEntryRoutePass": true,
+  "documentUploadPass": true,
+  "jsonFileUploadPass": true,
+  "jsonDirectInputPass": true,
+  "jsonSyntaxValidationPass": true,
+  "existingImportPipelineReused": true,
+  "newImportedProjectPass": true,
+  "workspaceRedirectPass": true,
+  "existingViewerPass": true,
+  "viewerObjectCount": 218,
+  "jsonContextPersistencePass": true,
+  "reloadPass": true,
+  "newContextPass": true,
+  "directEditRegressionPass": true,
+  "savePass": true,
+  "pdfPass": true,
+  "pdfBytes": 66350,
+  "invalidJsonFailClosed": true,
+  "importFailureAtomicityPass": true,
+  "mvp01RegressionPass": true,
+  "foundation01RegressionPass": true,
+  "foundation02RegressionPass": true,
+  "coreRegressionPass": true,
+  "capabilityRegressionPass": true,
+  "preAiRegressionPass": "NOT_RUN",
+  "originalIntegrityPass": true,
+  "screenshots": [
+    "mysuit-mvp-work/screenshots/ai-builder-mvp02-import-entry.png",
+    "mysuit-mvp-work/screenshots/ai-builder-mvp02-processing.png",
+    "mysuit-mvp-work/screenshots/ai-builder-mvp02-workspace.png"
+  ],
+  "limitations": [
+    "The repository has no runtime OCR provider; the supported fixture reuses its pre-verified frozen DIM.",
+    "Only PNG, JPG, and JPEG are supported.",
+    "JSON schema analysis and automatic binding are not implemented."
+  ]
+}

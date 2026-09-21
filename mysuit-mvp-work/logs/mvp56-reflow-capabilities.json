@@ -1,0 +1,46 @@
+{
+  "rowHeader": {
+    "canHide": true,
+    "canCollapse": true,
+    "reflowScope": "CROSS_BAND_VERIFIED",
+    "reason": "header-band-height-delta-was-verified-by-mvp54"
+  },
+  "rowGroupHeader": {
+    "canHide": true,
+    "canCollapse": false,
+    "reflowScope": "UNSUPPORTED",
+    "reason": "group-boundary-and-repeat-dependency"
+  },
+  "rowSummary": {
+    "canHide": true,
+    "canCollapse": false,
+    "reflowScope": "UNSUPPORTED",
+    "reason": "aggregate-and-group-footer-dependency"
+  },
+  "rowData": {
+    "canHide": false,
+    "canCollapse": false,
+    "reflowScope": "UNSUPPORTED",
+    "reason": "rendered-detail-template"
+  },
+  "compositeTable": {
+    "canHide": true,
+    "canCollapse": true,
+    "reflowScope": "SAME_SECTION",
+    "reason": "four-band-chain-and-dataset-cardinality-verified",
+    "belowBodyFollowers": 0,
+    "pageFooterProtected": true
+  },
+  "sameBand": {
+    "canHide": true,
+    "canCollapse": false,
+    "reflowScope": "UNSUPPORTED",
+    "reason": "sample-has-no-static-body-follower"
+  },
+  "crossBandGeneral": {
+    "canHide": true,
+    "canCollapse": false,
+    "reflowScope": "UNSUPPORTED",
+    "reason": "only-header-to-body-height-dependency-is-verified"
+  }
+}

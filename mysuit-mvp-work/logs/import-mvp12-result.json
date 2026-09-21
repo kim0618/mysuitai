@@ -1,0 +1,57 @@
+{
+  "status": "A",
+  "genericAttach": true,
+  "objectTarget": true,
+  "singleTable": {
+    "discovered": true,
+    "columns": 3,
+    "rows": 4,
+    "cells": 12
+  },
+  "selection": {
+    "column": 4,
+    "row": 3,
+    "table": 12
+  },
+  "operations": {
+    "object": [
+      "updateText"
+    ],
+    "column": [
+      "resizeColumn"
+    ],
+    "row": [
+      "resizeRow"
+    ],
+    "table": [
+      "moveTable"
+    ],
+    "mixed": "BLOCKED_MIXED_CANONICAL_SERIALIZER_UNAVAILABLE"
+  },
+  "history": {
+    "undoRedo": true,
+    "reload": true,
+    "newContext": true,
+    "isolated": true
+  },
+  "candidate": {
+    "object": true,
+    "structure": true,
+    "baseProtected": true
+  },
+  "pdf": {
+    "object": {
+      "status": 200,
+      "bytes": 29907,
+      "sha256": "ba39452d13d9a0a76bc901baac0d58ec163ad4062342145c8f7e8ab5e0f64b6c"
+    },
+    "structure": {
+      "status": 200,
+      "bytes": 29288,
+      "sha256": "a19db398fbf8f07380d67eef993d8133c787ffd17e991c95de635857c5607326"
+    }
+  },
+  "preAiRegression": true,
+  "integrity": true,
+  "imageDimReady": true
+}

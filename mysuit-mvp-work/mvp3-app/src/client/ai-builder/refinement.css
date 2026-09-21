@@ -1,0 +1,36 @@
+/* Final entry-screen density and terminology refinement. */
+
+.page-grid{grid-template-columns:minmax(680px,1fr) 312px;gap:22px;max-width:1450px;padding:24px 30px 34px}
+.title-block{margin-bottom:16px}
+.title-block h1{margin-bottom:5px;font-size:26px}
+.title-block p{line-height:1.55}
+form{gap:12px}
+.upload-card,.json-card{padding:19px 22px}
+.section-heading{margin-bottom:13px}
+.section-heading p{margin-top:3px}
+.dropzone{height:210px}
+.upload-icon{width:44px;height:44px;margin-bottom:9px}
+.dropzone small{margin-top:5px}
+.format-cards{margin-top:11px}
+.format-card{padding:9px 10px}
+.selected-files{margin-top:13px}
+.inline-note{margin-top:9px;padding:8px 11px}
+.json-card .section-heading{margin-bottom:12px}
+.json-controls{min-height:38px}
+.json-file-row{margin-top:10px;background:#fbfdfc}
+.json-file-row .file-type-icon{font-size:10px}
+.json-direct{margin-top:10px}
+.json-direct textarea{height:112px}
+.advanced-card summary{min-height:50px;padding:13px 19px}
+.dim-panel{padding:16px 19px}
+.action-row{display:flex;align-items:center;justify-content:flex-end;gap:20px}
+.action-row .policy-note{flex:1;text-align:right}
+.primary{width:204px;height:46px}
+.info-panel{gap:12px;padding-top:91px}
+.info-card{padding:17px 18px}
+.info-card h2{margin-bottom:14px}
+.flow-card li{padding-bottom:15px}
+.summary-card dl>div{padding:8px 0}
+.hwp-help{display:flex;gap:7px;margin:13px 0 0;padding:10px;border-radius:7px;background:#fff7ed;color:#94612c;font-size:10px;line-height:1.5}
+.hwp-help span{font-weight:900}
+.support-card{display:none}@media(max-width:1120px){.page-grid{grid-template-columns:1fr;padding-inline:24px}.info-panel{grid-template-columns:1fr 1fr;padding-top:0}.flow-card ol{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.page-grid{padding:20px 14px 32px}.upload-card,.json-card{padding:18px 16px}.dropzone{height:196px}.action-row{display:block}.action-row .policy-note{text-align:center;margin-bottom:10px}.primary{width:100%}}

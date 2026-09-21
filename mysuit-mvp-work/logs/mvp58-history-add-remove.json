@@ -1,0 +1,5 @@
+{
+  "supported": false,
+  "reason": "MVP 5.5 add/remove는 source POC이며 active operation store bridge가 없음",
+  "identityUnitCovered": true
+}

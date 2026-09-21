@@ -1,0 +1,22 @@
+{
+  "editorCollapseButton": "편집 화면 접기",
+  "outputHideButton": "출력에서 숨기기",
+  "collapseOperation": {
+    "operationId": "sop_mu4ulcvd_543886",
+    "type": "STRUCTURE",
+    "sequence": 7,
+    "layoutDraftId": "mvp57_direct_e2e",
+    "projectName": "sample",
+    "formName": "sample",
+    "logicalTableKey": "tbl:financial-7col",
+    "compositeTableKey": "ctbl:main-report-table",
+    "operation": "collapseTable",
+    "collapseSpace": true,
+    "collapsedHeight": 654,
+    "reflowScope": "SAME_SECTION",
+    "pageFooterProtected": true,
+    "createdAt": "2026-09-17T01:25:29.833Z",
+    "updatedAt": "2026-09-17T01:25:29.833Z"
+  },
+  "visibleMembers": 0
+}

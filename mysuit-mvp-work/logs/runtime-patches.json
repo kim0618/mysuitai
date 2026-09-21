@@ -1,0 +1,26 @@
+[
+  {
+    "reportId": "sample",
+    "baseVersion": null,
+    "pageIndex": 0,
+    "objectId": "LB6417_UPHB2584_ROW0",
+    "objectType": "UBLabel",
+    "operation": "updateProperty",
+    "property": "text",
+    "before": "  연도별 실적보고서",
+    "after": "MVP 테스트",
+    "temporary": true
+  },
+  {
+    "reportId": "sample",
+    "baseVersion": null,
+    "pageIndex": 0,
+    "objectId": "LB6417_UPHB2584_ROW0",
+    "objectType": "UBLabel",
+    "operation": "updateProperty",
+    "property": "top",
+    "before": 100,
+    "after": 90,
+    "temporary": true
+  }
+]

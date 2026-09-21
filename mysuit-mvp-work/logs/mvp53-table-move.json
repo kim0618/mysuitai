@@ -1,0 +1,33 @@
+{
+  "before": {
+    "bounds": {
+      "left": 2,
+      "top": 300,
+      "right": 792,
+      "bottom": 954,
+      "width": 790,
+      "height": 654
+    },
+    "visible": 168,
+    "collapsed": false,
+    "hidden": false
+  },
+  "after": {
+    "bounds": {
+      "left": 32,
+      "top": 280,
+      "right": 822,
+      "bottom": 934,
+      "width": 790,
+      "height": 654
+    },
+    "visible": 168,
+    "collapsed": false,
+    "hidden": false
+  },
+  "delta": {
+    "x": 30,
+    "y": -20
+  },
+  "relativeStable": true
+}

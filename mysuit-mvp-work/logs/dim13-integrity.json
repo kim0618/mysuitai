@@ -1,0 +1,9 @@
+{
+  "originalIntegrityPass": true,
+  "sampleFreeFormFormSha256": "de581865731addeef2f607753c7208801056275e29ee211eecf769e132e7c17b",
+  "sampleFreeFormInfoSha256": "2c3903c54e465ab0672fe7e5093dda70ef94b617a57ab15c9470b12c4f3d508f",
+  "tablePrototypeFormSha256": "ff93eea5e10aa0cdbf0d7f5d476148a73ee7cad2c31a562dd09228c97a14073f",
+  "tablePrototypeInfoSha256": "11f4de367fa5b06b75c884a8458ac121607ec33e0aec06a0cad18f8d5451c938",
+  "protectedHashAssertions": "PASS",
+  "existingCandidatesPreserved": true
+}

@@ -1,0 +1,28 @@
+{
+  "groundTruth": "edu_01",
+  "orderingEvidence": {
+    "sourceBandArrayOrder": ["UPHB0981", "UDHB3351", "UGHB0811", "UDB6169", "UGFB4830", "UDFB9389", "UPFB4921"],
+    "topCoordinatesAreAscending": true,
+    "explicitSequencePropertyFound": false,
+    "conclusion": "Observed render order matches source array and y order, but renderer priority cannot be isolated from this single form."
+  },
+  "bands": [
+    { "sourceIndex": 0, "id": "UPHB0981", "type": "UBPageHeaderBand", "y": 0, "height": 106.1, "dataset": null, "group": null, "childTableIds": ["TB9069", "TB8383", "TB2902157"], "purpose": "title, parameter value, current date/time" },
+    { "sourceIndex": 1, "id": "UDHB3351", "type": "UBDataHeaderBand", "y": 195, "height": 25, "dataset": null, "group": null, "childTableIds": ["TB5066"], "purpose": "six-column table header" },
+    { "sourceIndex": 2, "id": "UGHB0811", "type": "UBGroupHeaderBand", "y": 308, "height": 0, "dataset": "dataset_0", "group": { "column": "POSITION", "columns": [{ "column": "POSITION", "orderBy": false, "numeric": false }], "headerVisibleDepth": 0 }, "childTableIds": [], "purpose": "group boundary definition; no visible header row" },
+    { "sourceIndex": 3, "id": "UDB6169", "type": "UBDataBand", "y": 384, "height": 25, "dataset": null, "group": null, "childTableIds": ["TB1414542"], "purpose": "one source detail template repeated for embedded dataset rows" },
+    { "sourceIndex": 4, "id": "UGFB4830", "type": "UBGroupFooterBand", "y": 503, "height": 25, "dataset": null, "group": { "groupHeader": "UGHB0811", "columns": ["POSITION"] }, "childTableIds": ["TB2630981"], "purpose": "POSITION group label and scoped PAY sum" },
+    { "sourceIndex": 5, "id": "UDFB9389", "type": "UBDataFooterBand", "y": 626, "height": 25, "dataset": null, "group": null, "childTableIds": ["TB1418363"], "purpose": "whole dataset PAY sum" },
+    { "sourceIndex": 6, "id": "UPFB4921", "type": "UBPageFooterBand", "y": 1073, "height": 50, "dataset": null, "group": null, "childTableIds": ["TB4312"], "purpose": "dynamic total/current page expression" }
+  ],
+  "tables": [
+    { "id": "TB9069", "bandId": "UPHB0981", "bandType": "UBPageHeaderBand", "rows": 1, "columns": 1, "purpose": "report title" },
+    { "id": "TB8383", "bandId": "UPHB0981", "bandType": "UBPageHeaderBand", "rows": 1, "columns": 2, "purpose": "print parameter label/value" },
+    { "id": "TB2902157", "bandId": "UPHB0981", "bandType": "UBPageHeaderBand", "rows": 1, "columns": 2, "purpose": "print date/time" },
+    { "id": "TB5066", "bandId": "UDHB3351", "bandType": "UBDataHeaderBand", "rows": 1, "columns": 6, "purpose": "detail column headers" },
+    { "id": "TB1414542", "bandId": "UDB6169", "bandType": "UBDataBand", "rows": 1, "columns": 6, "purpose": "repeating detail template" },
+    { "id": "TB2630981", "bandId": "UGFB4830", "bandType": "UBGroupFooterBand", "rows": 1, "columns": 6, "purpose": "group subtotal; first cell spans five columns" },
+    { "id": "TB1418363", "bandId": "UDFB9389", "bandType": "UBDataFooterBand", "rows": 1, "columns": 6, "purpose": "dataset grand total; first cell spans five columns" },
+    { "id": "TB4312", "bandId": "UPFB4921", "bandType": "UBPageFooterBand", "rows": 1, "columns": 1, "purpose": "page count" }
+  ]
+}

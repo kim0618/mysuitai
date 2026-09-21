@@ -1,0 +1,28 @@
+{
+  "phase": "AI_BUILDER_UPLOAD_UI_REFINEMENT",
+  "verdict": "A",
+  "sidebarWidth": 184,
+  "collapsedSidebarWidth": 64,
+  "brandOneLinePass": true,
+  "navigationCopyPass": true,
+  "uploadCompactPass": true,
+  "jsonCollapsedPass": true,
+  "jsonTogglePass": true,
+  "advancedCollapsedPass": true,
+  "hwpxDimHiddenPass": true,
+  "rightPanelWidth": 312,
+  "supportCardRemovedPass": true,
+  "ctaFirstViewport1440x900Pass": true,
+  "ctaBottom1440x900": 877.375,
+  "responsive1920x1080Pass": true,
+  "functionalRegressionPass": true,
+  "nodeRegressionTests": 49,
+  "importPageErrorCount": 0,
+  "viewerObjectCount": 180,
+  "screenshots": [
+    "upload-final-empty.png",
+    "upload-final-hwpx-selected.png",
+    "upload-final-json-expanded.png",
+    "upload-final-processing.png"
+  ]
+}

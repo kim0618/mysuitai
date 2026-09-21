@@ -1,0 +1,10 @@
+{
+  "projectName": "import_mvp10_20260827_164519_71baac",
+  "status": 200,
+  "contentType": "application/pdf;charset=utf-8",
+  "bytes": 26100,
+  "sha256": "089a87d581a20153d580a6e78b32435cd1bb56971fbee5c6696ae458bf3f17b1",
+  "file": "output/import-mvp10-text-only.pdf",
+  "pageCount": "not measured: pdfinfo unavailable",
+  "textExtraction": "not measured: pdftotext unavailable; OCR not used"
+}

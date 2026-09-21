@@ -1,0 +1,381 @@
+{
+  "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+  "topCoordinates": {
+    "x": 715,
+    "y": 724,
+    "box": {
+      "x": 305.5,
+      "y": 719,
+      "width": 819,
+      "height": 10
+    }
+  },
+  "iframeBox": {
+    "x": 0,
+    "y": 144,
+    "width": 1459,
+    "height": 1056
+  },
+  "local": {
+    "rect": {
+      "left": 305.5,
+      "top": 575,
+      "right": 1124.5,
+      "bottom": 585,
+      "width": 819,
+      "height": 10
+    },
+    "canvas": {
+      "left": 332.5,
+      "top": 58,
+      "right": 1126.5,
+      "bottom": 1181,
+      "width": 794,
+      "height": 1123
+    },
+    "hit": {
+      "className": "mvp57-row-boundary",
+      "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+    },
+    "style": {
+      "zIndex": "2147483000",
+      "pointerEvents": "auto",
+      "position": "fixed",
+      "transform": "none"
+    },
+    "scroll": {
+      "x": 0,
+      "y": 0
+    },
+    "dpr": 1,
+    "zoom": 2,
+    "viewportTransform": [
+      2,
+      0,
+      0,
+      2,
+      0,
+      0
+    ]
+  },
+  "before": {
+    "height": 27,
+    "capability": null,
+    "approvalMembers": [
+      {
+        "id": "UB5115957_UPHB2584_ROW0",
+        "left": 39,
+        "top": 193,
+        "width": 26,
+        "height": 87,
+        "bounds": {
+          "left": 71,
+          "top": 379,
+          "width": 66,
+          "height": 188
+        }
+      },
+      {
+        "id": "UB5103966_UPHB2584_ROW0",
+        "left": 65,
+        "top": 193,
+        "width": 75,
+        "height": 32,
+        "bounds": {
+          "left": 123,
+          "top": 379,
+          "width": 164,
+          "height": 78
+        }
+      },
+      {
+        "id": "UB5103966_UPHB2584_ROW0",
+        "left": 140,
+        "top": 193,
+        "width": 75,
+        "height": 32,
+        "bounds": {
+          "left": 273,
+          "top": 379,
+          "width": 164,
+          "height": 78
+        }
+      },
+      {
+        "id": "UB5103966_UPHB2584_ROW0",
+        "left": 215,
+        "top": 193,
+        "width": 75,
+        "height": 32,
+        "bounds": {
+          "left": 423,
+          "top": 379,
+          "width": 164,
+          "height": 78
+        }
+      },
+      {
+        "id": "UB5077625_UPHB2584_ROW0",
+        "left": 65,
+        "top": 225,
+        "width": 75,
+        "height": 55,
+        "bounds": {
+          "left": 122.99999999999999,
+          "top": 443,
+          "width": 164,
+          "height": 124
+        }
+      },
+      {
+        "id": "UB5077625_UPHB2584_ROW0",
+        "left": 140,
+        "top": 225,
+        "width": 75,
+        "height": 55,
+        "bounds": {
+          "left": 273,
+          "top": 443,
+          "width": 164,
+          "height": 124
+        }
+      },
+      {
+        "id": "UB5077625_UPHB2584_ROW0",
+        "left": 215,
+        "top": 225,
+        "width": 75,
+        "height": 55,
+        "bounds": {
+          "left": 423,
+          "top": 443,
+          "width": 164,
+          "height": 124
+        }
+      }
+    ]
+  },
+  "after": {
+    "height": 39,
+    "lock": null,
+    "operations": [
+      {
+        "operationId": "sop_mspn42tb_242065",
+        "type": "STRUCTURE",
+        "sequence": 1,
+        "layoutDraftId": "pre_ai_v11_row_pointer",
+        "projectName": "sample",
+        "formName": "sample",
+        "logicalTableKey": "tbl:financial-7col",
+        "logicalRowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+        "rowRole": "SUMMARY",
+        "operation": "resizeRow",
+        "beforeHeight": 27,
+        "afterHeight": 39,
+        "createdAt": "2026-08-12T05:19:51.359Z",
+        "updatedAt": "2026-08-12T05:19:51.359Z"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "pointermove",
+      "target": "mvp57-row-boundary",
+      "path": [
+        "mvp57-row-boundary",
+        "viewer",
+        "HTML"
+      ],
+      "clientX": 715,
+      "clientY": 580,
+      "pageX": 715,
+      "pageY": 580,
+      "screenX": 725,
+      "screenY": 821,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+    },
+    {
+      "type": "mousemove",
+      "target": "mvp57-row-boundary",
+      "path": [
+        "mvp57-row-boundary",
+        "viewer",
+        "HTML"
+      ],
+      "clientX": 715,
+      "clientY": 580,
+      "pageX": 715,
+      "pageY": 580,
+      "screenX": 725,
+      "screenY": 821,
+      "capture": false,
+      "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+    },
+    {
+      "type": "pointerdown",
+      "target": "mvp57-row-boundary",
+      "path": [
+        "mvp57-row-boundary",
+        "viewer",
+        "HTML"
+      ],
+      "clientX": 715,
+      "clientY": 580,
+      "pageX": 715,
+      "pageY": 580,
+      "screenX": 725,
+      "screenY": 821,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+    },
+    {
+      "type": "pointermove",
+      "target": "mvp57-row-boundary",
+      "path": [
+        "mvp57-row-boundary",
+        "viewer",
+        "HTML"
+      ],
+      "clientX": 715,
+      "clientY": 582,
+      "pageX": 715,
+      "pageY": 582,
+      "screenX": 725,
+      "screenY": 823,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+    },
+    {
+      "type": "pointermove",
+      "target": "mvp57-row-boundary",
+      "path": [
+        "mvp57-row-boundary",
+        "viewer",
+        "HTML"
+      ],
+      "clientX": 715,
+      "clientY": 584,
+      "pageX": 715,
+      "pageY": 584,
+      "screenX": 725,
+      "screenY": 825,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0"
+    },
+    {
+      "type": "pointermove",
+      "target": "upper-canvas ",
+      "path": [
+        "upper-canvas ",
+        "canvas-container",
+        "ubcanvas",
+        "canvasAreaCont",
+        "canvasArea",
+        "main_canvas",
+        "canvas-wrap"
+      ],
+      "clientX": 715,
+      "clientY": 586,
+      "pageX": 715,
+      "pageY": 586,
+      "screenX": 725,
+      "screenY": 827,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": null
+    },
+    {
+      "type": "pointermove",
+      "target": "upper-canvas ",
+      "path": [
+        "upper-canvas ",
+        "canvas-container",
+        "ubcanvas",
+        "canvasAreaCont",
+        "canvasArea",
+        "main_canvas",
+        "canvas-wrap"
+      ],
+      "clientX": 715,
+      "clientY": 588,
+      "pageX": 715,
+      "pageY": 588,
+      "screenX": 725,
+      "screenY": 829,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": null
+    },
+    {
+      "type": "pointermove",
+      "target": "upper-canvas ",
+      "path": [
+        "upper-canvas ",
+        "canvas-container",
+        "ubcanvas",
+        "canvasAreaCont",
+        "canvasArea",
+        "main_canvas",
+        "canvas-wrap"
+      ],
+      "clientX": 715,
+      "clientY": 590,
+      "pageX": 715,
+      "pageY": 590,
+      "screenX": 725,
+      "screenY": 831,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": null
+    },
+    {
+      "type": "pointermove",
+      "target": "upper-canvas ",
+      "path": [
+        "upper-canvas ",
+        "canvas-container",
+        "ubcanvas",
+        "canvasAreaCont",
+        "canvasArea",
+        "main_canvas",
+        "canvas-wrap"
+      ],
+      "clientX": 715,
+      "clientY": 592,
+      "pageX": 715,
+      "pageY": 592,
+      "screenX": 725,
+      "screenY": 833,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": null
+    },
+    {
+      "type": "pointerup",
+      "target": "upper-canvas ",
+      "path": [
+        "upper-canvas ",
+        "canvas-container",
+        "ubcanvas",
+        "canvasAreaCont",
+        "canvasArea",
+        "main_canvas",
+        "canvas-wrap"
+      ],
+      "clientX": 715,
+      "clientY": 592,
+      "pageX": 715,
+      "pageY": 592,
+      "screenX": 725,
+      "screenY": 833,
+      "pointerId": 1,
+      "capture": false,
+      "rowKey": null
+    }
+  ]
+}

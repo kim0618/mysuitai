@@ -1,0 +1,30 @@
+{
+  "event": {
+    "schemaVersion": 1,
+    "historyEventId": "hist_muazywoh_1ee22210",
+    "userActionId": "action_muazywoh_cdf4d1",
+    "sequence": 1,
+    "timestamp": "2026-09-21T08:42:37.169Z",
+    "draftId": "mvp58_compound_e2e",
+    "projectName": "sample",
+    "formName": "sample",
+    "scope": "SOURCE_PATCH",
+    "operation": "updateText",
+    "target": {
+      "sourceObjectId": "LB6417",
+      "viewerObjectId": "LB6417_UPHB2584_ROW0",
+      "property": "text"
+    },
+    "before": {
+      "text": "  연도별 실적보고서"
+    },
+    "after": {
+      "text": "  MVP 5.8 History"
+    },
+    "sourceOperationId": null,
+    "generatedIds": {},
+    "internalOperations": [],
+    "label": "LB6417 문구 변경"
+  },
+  "active": true
+}

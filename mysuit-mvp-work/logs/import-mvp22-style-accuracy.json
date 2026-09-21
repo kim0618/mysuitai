@@ -1,0 +1,12 @@
+{
+  "representativeColorAccuracy": {
+    "headerBackground": { "source": "#3A3A3A", "dim": "#3A3A3A", "viewer": "#3A3A3A", "channelDelta": [0, 0, 0] },
+    "headerText": { "source": "#FFFFFF", "dim": "#FFFFFF", "viewer": "#FFFFFF", "channelDelta": [0, 0, 0] },
+    "bodyBackground": { "source": "#FFFFFF", "dim": "#FFFFFF", "viewer": "#FFFFFF", "channelDelta": [0, 0, 0] },
+    "bodyPrimaryText": { "source": "#3A3A3A", "dim": "#3A3A3A", "viewer": "#3A3A3A", "channelDelta": [0, 0, 0] }
+  },
+  "invoiceBorderVisibility": { "expectedHiddenCells": 12, "dimHiddenCells": 12, "viewerHiddenCells": 12, "accuracy": 1 },
+  "verticalAlignment": { "headerMiddle": 4, "bodyTop": 8, "viewerExact": 12, "accuracy": 1 },
+  "manualFixtureVisibleSharedBorder": { "viewerType": "solid_share", "color": "#DDDDDD", "width": 1 },
+  "textElementColorAccuracy": "NOT_MEASURED_FOR_ALL_26_ELEMENTS"
+}

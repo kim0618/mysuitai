@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "attach": {
+    "object": {
+      "http": 200,
+      "errors": []
+    },
+    "structure": {
+      "http": 200,
+      "errors": []
+    },
+    "columns": 4,
+    "rows": 3,
+    "cells": 12
+  },
+  "manualCorrectionCount": 3,
+  "corrections": [
+    {
+      "category": "TEXT_WIDTH",
+      "sourceObjectId": "IMPLB0018",
+      "before": 55,
+      "after": 70
+    },
+    {
+      "category": "COLUMN_WIDTH",
+      "columnIndex": 0,
+      "before": 339,
+      "after": 320
+    },
+    {
+      "category": "COLUMN_WIDTH",
+      "columnIndex": 3,
+      "before": 81,
+      "after": 100
+    }
+  ],
+  "history": {
+    "object": {
+      "events": 1,
+      "undo": true,
+      "redo": true
+    },
+    "structure": {
+      "events": 2,
+      "undo": true,
+      "redo": true
+    }
+  },
+  "candidates": {
+    "object": "import_mvp21_20260828_143646_6f9d99_mvp12_20260828_143907_576aa8",
+    "structure": "import_mvp21_20260828_143646_6f9d99_mvp12_20260828_143910_29f4c3",
+    "policy": "SEPARATE_OBJECT_AND_STRUCTURE_CANDIDATES",
+    "preservedAsEvidence": true
+  },
+  "correctedGeometry": [
+    {
+      "id": "IMPCL0001",
+      "left": 31,
+      "width": 320,
+      "text": "Item"
+    },
+    {
+      "id": "IMPCL0004",
+      "left": 512,
+      "width": 100,
+      "text": "Amount"
+    },
+    {
+      "id": "IMPCL0008",
+      "left": 512,
+      "width": 100,
+      "text": "$120.00"
+    }
+  ],
+  "mixedCanonicalSerializer": "NOT_USED"
+}

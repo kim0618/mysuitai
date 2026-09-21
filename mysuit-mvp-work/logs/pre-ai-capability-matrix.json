@@ -1,0 +1,628 @@
+{
+  "baseline": "PRE-AI-v1",
+  "generatedAt": "2026-09-17T05:55:52.574Z",
+  "targetTypes": [
+    {
+      "targetType": "OBJECT",
+      "identity": "viewerObjectId + source mapping",
+      "canonicalType": "OBJECT",
+      "sourceRelation": "verified UBLabel source object",
+      "viewerRelation": "source object instances",
+      "pdf": "property patches only"
+    },
+    {
+      "targetType": "RENDER_INSTANCE",
+      "identity": "p{page}|c{canvas}|src:{id}|band:{id}|row:{n}|idx:{n}",
+      "canonicalType": "OBJECT",
+      "sourceRelation": "identity check only",
+      "viewerRelation": "exact one render instance",
+      "pdf": false
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "identity": "tbl:financial-7col|col:N",
+      "canonicalType": "LOGICAL_COLUMN",
+      "sourceRelation": "four UBTable columns",
+      "viewerRelation": "24 members",
+      "pdf": true
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "identity": "table|band|rendered-row",
+      "canonicalType": "LOGICAL_ROW",
+      "sourceRelation": "role-dependent",
+      "viewerRelation": "7 members",
+      "pdf": "role-dependent"
+    },
+    {
+      "targetType": "HEADER_ROW",
+      "identity": "...|band:UDHB4114|rendered-row:0",
+      "canonicalType": "LOGICAL_ROW",
+      "pdf": true
+    },
+    {
+      "targetType": "GROUP_HEADER_ROW",
+      "identity": "...|band:grp_N_UGHB7543|rendered-row:0",
+      "canonicalType": "LOGICAL_ROW",
+      "pdf": "hide/resize only; collapse blocked"
+    },
+    {
+      "targetType": "SUMMARY_ROW",
+      "identity": "...|band:UGHB7543grp_N_dataset_2|rendered-row:0",
+      "canonicalType": "LOGICAL_ROW",
+      "pdf": "hide/resize only; collapse blocked"
+    },
+    {
+      "targetType": "STATIC_ROW",
+      "identity": "source table/band row identity",
+      "canonicalType": "LOGICAL_ROW",
+      "pdf": "POC only"
+    },
+    {
+      "targetType": "RENDERED_DETAIL_ROW",
+      "identity": "...|band:grp_N_UDB3195|rendered-row:N",
+      "canonicalType": "LOGICAL_ROW",
+      "pdf": false
+    },
+    {
+      "targetType": "COMPOSITE_TABLE",
+      "identity": "ctbl:main-report-table",
+      "canonicalType": "COMPOSITE_TABLE",
+      "sourceRelation": "four BODY UBTables/Bands",
+      "viewerRelation": "168 members",
+      "pdf": "operation-dependent"
+    }
+  ],
+  "operations": [
+    {
+      "operation": "updateText",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "setFontSize",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "setFontWeight",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "setTextAlign",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "resizeObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "property",
+        "value"
+      ],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING",
+        "PAYLOAD_SCHEMA"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "hideObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "restoreObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "SOURCE_MAPPING"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "moveRenderObject",
+      "targetType": "OBJECT",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "after"
+      ],
+      "history": true,
+      "validation": [
+        "RENDER_INSTANCE_IDENTITY"
+      ],
+      "knownRestrictions": "Viewer-only; exact Render Instance Key",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "resizeColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "width"
+      ],
+      "history": true,
+      "validation": [
+        "PAGE_WIDTH_GUARD",
+        "HIDDEN_COLUMN_GUARD"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "moveColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "toVisualIndex"
+      ],
+      "history": true,
+      "validation": [
+        "GROUP_BOUNDARY",
+        "HIDDEN_COLUMN_GUARD"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "hideColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "restoreColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "addStaticColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": false,
+      "validation": [
+        "PAGE_WIDTH_GUARD",
+        "RUNTIME_CONNECTION"
+      ],
+      "knownRestrictions": "source POC; runtime Store/UI disconnected",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "addBoundColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "dataSet",
+        "column"
+      ],
+      "history": false,
+      "validation": [
+        "BINDING_WHITELIST",
+        "PAGE_WIDTH_GUARD",
+        "RUNTIME_CONNECTION"
+      ],
+      "knownRestrictions": "dataset_2.col_8 source POC only",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "removeColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": false,
+      "validation": [
+        "LAST_COLUMN",
+        "FORMULA",
+        "BINDING",
+        "RUNTIME_CONNECTION"
+      ],
+      "knownRestrictions": "source POC; runtime Store/UI disconnected",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "resizeRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "height"
+      ],
+      "history": true,
+      "validation": [
+        "ROW_ROLE",
+        "PAYLOAD_SCHEMA"
+      ],
+      "knownRestrictions": "fixed/static rows only",
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "hideRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "ROW_ROLE"
+      ],
+      "knownRestrictions": "fixed/static rows only",
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "restoreRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "ROW_ROLE"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "collapseRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "VERTICAL_REFLOW",
+        "ROWSPAN",
+        "SUMMARY",
+        "DATA_REPEAT"
+      ],
+      "knownRestrictions": "Header UDHB4114 only",
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "moveRenderedRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "toRowIndex"
+      ],
+      "history": true,
+      "validation": [],
+      "knownRestrictions": null,
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "addStaticRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": false,
+      "validation": [
+        "ROW_ROLE",
+        "RUNTIME_CONNECTION"
+      ],
+      "knownRestrictions": "Header source POC; runtime disconnected",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "removeStaticRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": false,
+      "validation": [
+        "ROWSPAN",
+        "FORMULA",
+        "BINDING",
+        "RUNTIME_CONNECTION"
+      ],
+      "knownRestrictions": "added unbound static row POC only",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "moveTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "after"
+      ],
+      "history": true,
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "knownRestrictions": "Viewer-only; source/PDF unsupported",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "resizeTableWidth",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "width"
+      ],
+      "history": true,
+      "validation": [
+        "PAGE_WIDTH_GUARD"
+      ],
+      "knownRestrictions": "Viewer-only; source/PDF unsupported",
+      "aiV1Allowed": false
+    },
+    {
+      "operation": "hideTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "restoreTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "TARGET_IDENTITY"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    },
+    {
+      "operation": "collapseTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [],
+      "history": true,
+      "validation": [
+        "VERTICAL_REFLOW",
+        "PAGE_FOOTER_PROTECTION"
+      ],
+      "knownRestrictions": null,
+      "aiV1Allowed": true
+    }
+  ],
+  "unsupported": [
+    "moveRenderedDetailRow",
+    "removeRenderedDetailRow",
+    "collapseRenderedDetailRow",
+    "reorderDataRows",
+    "collapseSummaryRow",
+    "collapseRowSpanDependentRow",
+    "generalCrossBandReflow",
+    "crossGroupColumnMove",
+    "createDataset",
+    "modifySql",
+    "createArbitraryBinding",
+    "rawUbjfWrite",
+    "exportExcel",
+    "exportHwp"
+  ]
+}

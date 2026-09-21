@@ -1,0 +1,57 @@
+{
+  "addcol": {
+    "tableCount": 4,
+    "columnCount": 8,
+    "rowCounts": {
+      "TB3039": 1,
+      "TB3979": 1,
+      "TB5514": 1,
+      "TB8715": 1
+    },
+    "uniqueIdCount": 53
+  },
+  "removecol": {
+    "tableCount": 4,
+    "columnCount": 6,
+    "rowCounts": {
+      "TB3039": 1,
+      "TB3979": 1,
+      "TB5514": 1,
+      "TB8715": 1
+    },
+    "uniqueIdCount": 45
+  },
+  "addrow": {
+    "tableCount": 4,
+    "columnCount": 7,
+    "rowCounts": {
+      "TB3039": 2,
+      "TB3979": 1,
+      "TB5514": 1,
+      "TB8715": 1
+    },
+    "uniqueIdCount": 56
+  },
+  "removerow": {
+    "tableCount": 4,
+    "columnCount": 7,
+    "rowCounts": {
+      "TB3039": 1,
+      "TB3979": 1,
+      "TB5514": 1,
+      "TB8715": 1
+    },
+    "uniqueIdCount": 49
+  },
+  "boundcol": {
+    "tableCount": 4,
+    "columnCount": 8,
+    "rowCounts": {
+      "TB3039": 1,
+      "TB3979": 1,
+      "TB5514": 1,
+      "TB8715": 1
+    },
+    "uniqueIdCount": 53
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "versionCompatibility": [
+    "1.0",
+    "1.1"
+  ],
+  "fixture": "samples/import/manual-text-table.dim.json",
+  "validElements": 4,
+  "validText": 3,
+  "validTables": 1,
+  "invalidCases": [
+    "no columns",
+    "bad cell count",
+    "width mismatch",
+    "negative row height",
+    "duplicate element id",
+    "span"
+  ],
+  "correctionPolicy": "reject, no automatic correction"
+}

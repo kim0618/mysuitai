@@ -1,0 +1,51 @@
+{
+  "status": "B",
+  "projectName": "dynamic_mvp31_20260831_171431_6c2846",
+  "formName": "DynamicReport",
+  "semanticModel": {
+    "version": "0.1",
+    "valid": true
+  },
+  "dataset": {
+    "count": 1,
+    "columns": 6,
+    "rows": 25
+  },
+  "source": {
+    "bands": 7,
+    "tables": 8,
+    "dataBandRows": 1,
+    "detailBindingCells": 6,
+    "groups": 1,
+    "groupFooterSources": 1
+  },
+  "runtime": {
+    "http": 200,
+    "fatalErrors": [],
+    "detailInstances": 25,
+    "detailRuntimeCells": 150,
+    "groupFooterInstances": 8,
+    "groupTotalsExact": true,
+    "reportTotalExact": true,
+    "pageFooterDynamic": true,
+    "identityCollisions": 0
+  },
+  "editor": {
+    "attach": false,
+    "sourceEditSmoke": false,
+    "reason": "STATIC_SINGLE-only"
+  },
+  "candidate": {
+    "tested": false
+  },
+  "pdf": {
+    "http": 200,
+    "bytes": 40306,
+    "path": "/home/tjd618/mysuit-ai-viewer/mysuit-mvp-work/output/dynamic-mvp31-report.pdf"
+  },
+  "staticFlattening": false,
+  "regression": true,
+  "integrity": true,
+  "multiPage": false,
+  "recommendedNextStep": "Dynamic MVP 3.1.1: dynamic form-context/editor/candidate adapter, then multi-page smoke before image semantic inference."
+}

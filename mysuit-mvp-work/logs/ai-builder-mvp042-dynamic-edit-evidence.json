@@ -1,0 +1,28 @@
+{
+  "header": {
+    "beforeText": "Item",
+    "afterText": "상품명"
+  },
+  "column": {
+    "beforeWidth": 339,
+    "afterWidth": 379,
+    "headerWidth": 379,
+    "detailWidth": 379
+  },
+  "detail": {
+    "beforeFontSize": 11,
+    "afterFontSize": 12,
+    "dataSet": "ai_items",
+    "column": "item"
+  },
+  "sourceDetailRows": 1,
+  "runtimeDetailRows": 3,
+  "runtimeIdentityCollisions": 0,
+  "history": {
+    "events": 4,
+    "undoMatchesBase": true,
+    "redoMatchesFinal": true
+  },
+  "signature": "26340cd920b1d1786812b9b5ea8d96ed76074121759e3e5ad44077539a0d97d6",
+  "forcedFailureAtomic": true
+}

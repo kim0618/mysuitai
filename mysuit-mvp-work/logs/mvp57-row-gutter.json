@@ -1,0 +1,26 @@
+{
+  "summaryKey": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+  "selectedSummary": "tbl:financial-7col|band:UGHB7543grp_0_dataset_2|rendered-row:0",
+  "rowDrag": {
+    "from": {
+      "x": 751,
+      "y": 724
+    },
+    "to": {
+      "x": 751,
+      "y": 736
+    },
+    "dx": 0,
+    "dy": 12
+  },
+  "before": 27,
+  "after": 39,
+  "saveRequests": 1,
+  "detailKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+  "dataDisabled": {
+    "resize": true,
+    "hide": true,
+    "collapse": true,
+    "status": "데이터 밴드 상세 행: 선택만 가능하며 이동·크기·숨김은 차단됩니다."
+  }
+}

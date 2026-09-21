@@ -1,0 +1,16 @@
+{
+  "memberCount": 168,
+  "unique": 168,
+  "unrelated": 12,
+  "sourceTableIds": 4,
+  "columnCount": 7,
+  "rowCount": 24,
+  "bounds": {
+    "left": 2,
+    "top": 300,
+    "right": 792,
+    "bottom": 954,
+    "width": 790,
+    "height": 654
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "environment": {
+    "nodeHealth": 200,
+    "tomcatPort": true,
+    "viewerHealth": 200
+  },
+  "cases": [
+    {
+      "arrayLength": 1,
+      "sourceDetailRows": 1,
+      "runtimeDetailRows": 1,
+      "http": 200,
+      "viewerPass": true,
+      "pdfPass": true,
+      "contentPass": true,
+      "scalarValues": {
+        "customer": true,
+        "total": true
+      },
+      "identityCollisionCount": 0,
+      "detailIdentities": [
+        "AICL00021_AIDB00002_ROW0"
+      ],
+      "reloadPass": true,
+      "reloads": [
+        {
+          "runtimeDetailRows": 1,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "runtimeDetailRows": 1,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "runtimeDetailRows": 1,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        }
+      ],
+      "pdf": {
+        "http": 200,
+        "bytes": 29680,
+        "sha256": "66b69e28bfa56f439c716fe9f99b2b30207818a380f8fae8b8178c73acae29cb",
+        "file": "output/ai-builder-mvp041-1rows.pdf"
+      }
+    },
+    {
+      "arrayLength": 3,
+      "sourceDetailRows": 1,
+      "runtimeDetailRows": 3,
+      "http": 200,
+      "viewerPass": true,
+      "pdfPass": true,
+      "contentPass": true,
+      "scalarValues": {
+        "customer": true,
+        "total": true
+      },
+      "identityCollisionCount": 0,
+      "detailIdentities": [
+        "AICL00021_AIDB00002_ROW0",
+        "AICL00021_AIDB00002_ROW1",
+        "AICL00021_AIDB00002_ROW2"
+      ],
+      "reloadPass": true,
+      "reloads": [
+        {
+          "runtimeDetailRows": 3,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW1",
+              "left": 31,
+              "top": 421,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW2",
+              "left": 31,
+              "top": 521,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "runtimeDetailRows": 3,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW1",
+              "left": 31,
+              "top": 421,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW2",
+              "left": 31,
+              "top": 521,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "runtimeDetailRows": 3,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW1",
+              "left": 31,
+              "top": 421,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW2",
+              "left": 31,
+              "top": 521,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        }
+      ],
+      "pdf": {
+        "http": 200,
+        "bytes": 30252,
+        "sha256": "b91dc842e046acb15593c66b745872d50ca0eb6e2a1024c36ab583534690d6bc",
+        "file": "output/ai-builder-mvp041-3rows.pdf"
+      }
+    },
+    {
+      "arrayLength": 5,
+      "sourceDetailRows": 1,
+      "runtimeDetailRows": 5,
+      "http": 200,
+      "viewerPass": true,
+      "pdfPass": true,
+      "contentPass": true,
+      "scalarValues": {
+        "customer": true,
+        "total": true
+      },
+      "identityCollisionCount": 0,
+      "detailIdentities": [
+        "AICL00021_AIDB00002_ROW0",
+        "AICL00021_AIDB00002_ROW1",
+        "AICL00021_AIDB00002_ROW2",
+        "AICL00021_AIDB00002_ROW3",
+        "AICL00021_AIDB00002_ROW4"
+      ],
+      "reloadPass": true,
+      "reloads": [
+        {
+          "runtimeDetailRows": 5,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW1",
+              "left": 31,
+              "top": 421,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW2",
+              "left": 31,
+              "top": 521,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW3",
+              "left": 31,
+              "top": 621,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW4",
+              "left": 31,
+              "top": 721,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "runtimeDetailRows": 5,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW1",
+              "left": 31,
+              "top": 421,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW2",
+              "left": 31,
+              "top": 521,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW3",
+              "left": 31,
+              "top": 621,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW4",
+              "left": 31,
+              "top": 721,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "runtimeDetailRows": 5,
+          "geometry": [
+            {
+              "id": "AICL00021_AIDB00002_ROW0",
+              "left": 31,
+              "top": 321,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW1",
+              "left": 31,
+              "top": 421,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW2",
+              "left": 31,
+              "top": 521,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW3",
+              "left": 31,
+              "top": 621,
+              "width": 339,
+              "height": 100
+            },
+            {
+              "id": "AICL00021_AIDB00002_ROW4",
+              "left": 31,
+              "top": 721,
+              "width": 339,
+              "height": 100
+            }
+          ]
+        }
+      ],
+      "pdf": {
+        "http": 200,
+        "bytes": 31362,
+        "sha256": "fcf7c6eeec090388e4805d59b6b9d8c912ad825f452675a3416a51f8906d5af3",
+        "file": "output/ai-builder-mvp041-5rows.pdf"
+      }
+    }
+  ],
+  "newContexts": [
+    {
+      "context": 1,
+      "http": 200,
+      "runtimeDetailRows": 5,
+      "customerPresent": true,
+      "totalPresent": true,
+      "fatalErrors": []
+    },
+    {
+      "context": 2,
+      "http": 200,
+      "runtimeDetailRows": 5,
+      "customerPresent": true,
+      "totalPresent": true,
+      "fatalErrors": []
+    },
+    {
+      "context": 3,
+      "http": 200,
+      "runtimeDetailRows": 5,
+      "customerPresent": true,
+      "totalPresent": true,
+      "fatalErrors": []
+    }
+  ],
+  "fatalErrors": [],
+  "structuralHistory": {
+    "undo": {
+      "cursor": 1,
+      "structural": {
+        "schemaVersion": 1,
+        "kind": "STATIC_SOURCE",
+        "projectName": "import_mvp11_20260916_163646_20decd",
+        "formName": "SampleReport_FreeForm",
+        "formSha256": "5a95cd06c0504284b3c1b576b8894ca98deb38219ea9fcde73c8e729c086e3f7",
+        "semanticSignature": "60bc932884ce67d4a6d344b1d9ff69324d9ef258756a02c3c9feb90711ae1a9f"
+      },
+      "iframe": "http://127.0.0.1:3100/mysuit/UView5/index.jsp?projectName=import_mvp11_20260916_163646_20decd&formName=SampleReport_FreeForm"
+    },
+    "redo": {
+      "cursor": 2,
+      "structural": {
+        "schemaVersion": 1,
+        "kind": "DYNAMIC_CANDIDATE",
+        "projectName": "import_mvp11_20260916_163646_20decd_array_mu3sezdw_cafd4c",
+        "formName": "SampleReport_FreeForm",
+        "formSha256": "3fecaa9ab7b52805a292700e7435915f3ec64cb9f2a8d6dd61d06961cb1314e1",
+        "semanticSignature": "78d1e0c5402f3c7cae9880a2f53096f046dea246358f0a6a139fc50e74389aad",
+        "sourceProjectName": "import_mvp11_20260916_163646_20decd",
+        "sourceFormName": "SampleReport_FreeForm"
+      },
+      "iframe": "http://127.0.0.1:3100/mysuit/UView5/index.jsp?projectName=import_mvp11_20260916_163646_20decd_array_mu3sezdw_cafd4c&formName=SampleReport_FreeForm",
+      "rows": 3
+    },
+    "undoRestoresStatic": true,
+    "redoRestoresDynamic": true
+  },
+  "pass": true
+}

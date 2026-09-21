@@ -1,0 +1,113 @@
+{
+  "original": {
+    "pageCount": 1,
+    "objects": [
+      180
+    ]
+  },
+  "row": {
+    "pageCount": 1,
+    "objects": [
+      173
+    ]
+  },
+  "table": {
+    "pageCount": 1,
+    "objects": [
+      12
+    ]
+  },
+  "footer": {
+    "original": {
+      "header": {
+        "id": "UB5305348_UDHB4114_ROW0",
+        "top": 300,
+        "left": 2,
+        "width": 370,
+        "height": 33,
+        "text": "   IFRS(연결) - 단위 : 억원"
+      },
+      "group": {
+        "id": "UB5622520_grp_0_UGHB7543_ROW0",
+        "top": 333,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "부분별매출"
+      },
+      "detail": {
+        "id": "UB6131219_grp_0_UDB3195_ROW0",
+        "top": 360,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "    Weight management"
+      },
+      "summary": {
+        "id": "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+        "top": 495,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "   YOY"
+      },
+      "footer": {
+        "id": "UB7128552_UPFB9094_ROW0",
+        "top": 1086,
+        "left": 0,
+        "width": 673,
+        "height": 35,
+        "text": "    2026년 08월 11일"
+      }
+    },
+    "row": {
+      "header": null,
+      "group": {
+        "id": "UB5622520_grp_0_UGHB7543_ROW0",
+        "top": 300,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "부분별매출"
+      },
+      "detail": {
+        "id": "UB6131219_grp_0_UDB3195_ROW0",
+        "top": 327,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "    Weight management"
+      },
+      "summary": {
+        "id": "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+        "top": 462,
+        "left": 2,
+        "width": 370,
+        "height": 27,
+        "text": "   YOY"
+      },
+      "footer": {
+        "id": "UB7128552_UPFB9094_ROW0",
+        "top": 1086,
+        "left": 0,
+        "width": 673,
+        "height": 35,
+        "text": "    2026년 08월 11일"
+      }
+    },
+    "table": {
+      "header": null,
+      "group": null,
+      "detail": null,
+      "summary": null,
+      "footer": {
+        "id": "UB7128552_UPFB9094_ROW0",
+        "top": 1086,
+        "left": 0,
+        "width": 673,
+        "height": 35,
+        "text": "    2026년 08월 11일"
+      }
+    }
+  }
+}

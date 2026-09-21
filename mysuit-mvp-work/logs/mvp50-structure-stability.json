@@ -1,0 +1,63 @@
+{
+  "stable": true,
+  "samples": [
+    {
+      "kind": "initial",
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "refresh",
+      "index": 1,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "refresh",
+      "index": 2,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "refresh",
+      "index": 3,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "refresh",
+      "index": 4,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "refresh",
+      "index": 5,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "new-context-page",
+      "index": 1,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "new-context-page",
+      "index": 2,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "new-context-page",
+      "index": 3,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "new-context-page",
+      "index": 4,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    },
+    {
+      "kind": "new-context-page",
+      "index": 5,
+      "signature": "44b9a35249e749f9e90c4043b412569ef9859f1fa3af53ce6158dc623168b375"
+    }
+  ],
+  "tableCount": 2,
+  "columnCount": 7,
+  "logicalCellCount": 28,
+  "mappedCellInstances": 177
+}

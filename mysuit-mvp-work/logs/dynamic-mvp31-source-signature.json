@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "projectName": "dynamic_mvp31_20260831_171431_6c2846",
+  "formName": "DynamicReport",
+  "datasets": 1,
+  "columns": 6,
+  "rows": 25,
+  "bands": 7,
+  "tables": 8,
+  "dataBandRows": 1,
+  "dataBandCells": 6,
+  "groupHeaders": 1,
+  "groupFooters": 1,
+  "dataFooters": 1,
+  "pageFooters": 1,
+  "detailTableId": "DPTB0005",
+  "detailCellIds": [
+    "DPCL0012",
+    "DPCL0013",
+    "DPCL0014",
+    "DPCL0015",
+    "DPCL0016",
+    "DPCL0017"
+  ],
+  "staticFlattening": false,
+  "formSha256": "3d993868cfb5b1de63b755fe72dead59b898f30df6b9cd0b39f8fd4c947eede1"
+}

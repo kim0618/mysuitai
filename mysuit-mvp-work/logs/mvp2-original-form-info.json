@@ -1,0 +1,18 @@
+{
+  "absolutePath": "/home/tjd618/mysuit-ai-viewer/apache-tomcat-8.5.78/webapps/MYSUIT/UFile/project/sample/sample/form.ubjf",
+  "size": 31314,
+  "mtimeUtc": "2026-05-08T05:45:02.000Z",
+  "mtimeAsiaSeoul": "2026-05-08 14:45:02 +09:00",
+  "sha256Before": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+  "sha256AfterCandidateCreation": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+  "sha256AfterViewerVerification": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+  "firstBytesHex": "654e714d764e65793631715348666f7646564672514276394159506b504357",
+  "firstBytesAscii": "eNqMvNey61qSHfovFVFv/QBv9AYPkPCW",
+  "outerEncoding": "Base64 ASCII with CRLF wrapping",
+  "compression": "zlib/DEFLATE",
+  "serialization": "outer JSON whose pages entries are JSON strings",
+  "infoXmlSha256": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e",
+  "backupPath": "/home/tjd618/mysuit-ai-viewer/mysuit-mvp-work/mvp2-backup/original-form.ubjf",
+  "backupSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+  "unchanged": true
+}

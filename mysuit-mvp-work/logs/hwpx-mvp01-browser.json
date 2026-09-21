@@ -1,0 +1,35 @@
+{
+  "projectName": "import_mvp13_20260917_152137_96d522",
+  "viewerPass": true,
+  "http": 200,
+  "fatalErrors": [],
+  "objectCount": 187,
+  "imageCount": 1,
+  "reloads": [
+    true,
+    true,
+    true
+  ],
+  "reloadPass": true,
+  "contexts": [
+    {
+      "http": 200,
+      "fatal": [],
+      "same": true
+    },
+    {
+      "http": 200,
+      "fatal": [],
+      "same": true
+    }
+  ],
+  "newContextPass": true,
+  "pdf": {
+    "http": 200,
+    "bytes": 63747,
+    "sha256": "bde35219d11786294ad06b4c991df943eb89ace3776e8b47de1118ab531a7d17",
+    "file": "/home/tjd618/mysuit-ai-viewer/mysuit-mvp-work/output/hwpx-personnel-record.pdf"
+  },
+  "pdfPass": true,
+  "success": true
+}

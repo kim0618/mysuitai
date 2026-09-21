@@ -1,0 +1,11 @@
+{
+  "status": "LIMITED",
+  "attach": false,
+  "sourceEditSmoke": false,
+  "historyUndoRedo": false,
+  "runtimeInstanceEditPolicy": {
+    "allowed": false,
+    "reason": "DYNAMIC_BOUND_INSTANCE_SOURCE_TEXT_EDIT_UNSUPPORTED"
+  },
+  "reason": "Existing generic Editor resolves only STATIC_SINGLE forms with exactly one UBTable; Dynamic Form has eight band-owned tables."
+}

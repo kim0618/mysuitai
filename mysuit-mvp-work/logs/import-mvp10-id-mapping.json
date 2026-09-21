@@ -1,0 +1,35 @@
+{
+  "projectName": "import_mvp10_20260827_164519_71baac",
+  "mappings": [
+    {
+      "dimElementId": "title",
+      "sourceObjectId": "IMPLB0001",
+      "viewerObjectId": "IMPLB0001",
+      "renderInstanceKey": "p0|c0|src:IMPLB0001|band:FREEFORM|row:0|idx:0"
+    },
+    {
+      "dimElementId": "subtitle",
+      "sourceObjectId": "IMPLB0002",
+      "viewerObjectId": "IMPLB0002",
+      "renderInstanceKey": "p0|c0|src:IMPLB0002|band:FREEFORM|row:0|idx:1"
+    },
+    {
+      "dimElementId": "guide",
+      "sourceObjectId": "IMPLB0003",
+      "viewerObjectId": "IMPLB0003",
+      "renderInstanceKey": "p0|c0|src:IMPLB0003|band:FREEFORM|row:0|idx:2"
+    },
+    {
+      "dimElementId": "date",
+      "sourceObjectId": "IMPLB0004",
+      "viewerObjectId": "IMPLB0004",
+      "renderInstanceKey": "p0|c0|src:IMPLB0004|band:FREEFORM|row:0|idx:3"
+    },
+    {
+      "dimElementId": "footer",
+      "sourceObjectId": "IMPLB0005",
+      "viewerObjectId": "IMPLB0005",
+      "renderInstanceKey": "p0|c0|src:IMPLB0005|band:FREEFORM|row:0|idx:4"
+    }
+  ]
+}

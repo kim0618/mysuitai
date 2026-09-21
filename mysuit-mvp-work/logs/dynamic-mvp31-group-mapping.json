@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "groupId": "position_group",
+  "dataset": "employees",
+  "key": "POSITION",
+  "sourceGroupHeaders": 1,
+  "sourceGroupFooters": 1,
+  "runtimeGroups": 8,
+  "runtimeGroupFooters": 8,
+  "labelsExact": true,
+  "groups": [
+    {
+      "value": "Level A",
+      "rows": 1,
+      "expectedTotal": 1010
+    },
+    {
+      "value": "Level B",
+      "rows": 2,
+      "expectedTotal": 2050
+    },
+    {
+      "value": "Level C",
+      "rows": 2,
+      "expectedTotal": 2090
+    },
+    {
+      "value": "Level D",
+      "rows": 2,
+      "expectedTotal": 2130
+    },
+    {
+      "value": "Level E",
+      "rows": 3,
+      "expectedTotal": 3270
+    },
+    {
+      "value": "Level F",
+      "rows": 1,
+      "expectedTotal": 1110
+    },
+    {
+      "value": "Level G",
+      "rows": 2,
+      "expectedTotal": 2250
+    },
+    {
+      "value": "Level H",
+      "rows": 12,
+      "expectedTotal": 14340
+    }
+  ]
+}

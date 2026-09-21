@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "count": 6,
+  "bindings": [
+    {
+      "sourceCellId": "DPCL0012",
+      "bandId": "DDB0001",
+      "dataType": "1",
+      "dataSet": "employees",
+      "column": "NAME",
+      "text": "{employees.NAME}",
+      "runtimeInstances": 25
+    },
+    {
+      "sourceCellId": "DPCL0013",
+      "bandId": "DDB0001",
+      "dataType": "1",
+      "dataSet": "employees",
+      "column": "DEP",
+      "text": "{employees.DEP}",
+      "runtimeInstances": 25
+    },
+    {
+      "sourceCellId": "DPCL0014",
+      "bandId": "DDB0001",
+      "dataType": "1",
+      "dataSet": "employees",
+      "column": "POSITION",
+      "text": "{employees.POSITION}",
+      "runtimeInstances": 25
+    },
+    {
+      "sourceCellId": "DPCL0015",
+      "bandId": "DDB0001",
+      "dataType": "1",
+      "dataSet": "employees",
+      "column": "PHONE",
+      "text": "{employees.PHONE}",
+      "runtimeInstances": 25
+    },
+    {
+      "sourceCellId": "DPCL0016",
+      "bandId": "DDB0001",
+      "dataType": "1",
+      "dataSet": "employees",
+      "column": "ADDRESS",
+      "text": "{employees.ADDRESS}",
+      "runtimeInstances": 25
+    },
+    {
+      "sourceCellId": "DPCL0017",
+      "bandId": "DDB0001",
+      "dataType": "1",
+      "dataSet": "employees",
+      "column": "PAY",
+      "text": "{employees.PAY}",
+      "runtimeInstances": 25
+    }
+  ]
+}

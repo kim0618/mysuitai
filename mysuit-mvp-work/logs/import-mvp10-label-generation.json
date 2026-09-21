@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "strategy": "prototype-clone",
+  "prototypeId": "LB8872",
+  "generatedCount": 5,
+  "generatedIds": ["IMPLB0001", "IMPLB0002", "IMPLB0003", "IMPLB0004", "IMPLB0005"],
+  "staticOnly": true,
+  "bindingRemoved": true,
+  "formulaAbsent": true,
+  "serializedAndReparsed": true,
+  "existingTemplateObjectPolicy": "REMOVE_ALL_AND_INSERT_CLONES"
+}

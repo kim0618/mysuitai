@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "order": 1,
+      "scope": "BINDING",
+      "operation": "scalarAutoBinding",
+      "source": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "structure": "dc2821cd1978c6650972cee44b1e009168292a18bce525e7826930eda52939c8",
+      "binding": "0d81b2d7ead8888f5897473672bce5d549b15588a85649bb5af87666f9fa0cb9",
+      "overall": "ec5e736ca3b9d14caef2c85ab0e1499a60c7a88b7608c2111621be4f5f279a08"
+    },
+    {
+      "order": 2,
+      "scope": "STRUCTURAL",
+      "operation": "arrayBindingApply",
+      "source": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "structure": "cc7ef51dfafe0d1279f54e028638259fb39b16e8b8a50c1a68eece18f56e348c",
+      "binding": "0d81b2d7ead8888f5897473672bce5d549b15588a85649bb5af87666f9fa0cb9",
+      "overall": "4901dd1693177cdc8da9ca32992521b2d113da016aa8fddbaf13eb370a05a5d4"
+    },
+    {
+      "order": 3,
+      "scope": "SOURCE",
+      "operation": "dynamicHeaderText",
+      "source": "2f6c7047b8592b4753c3fb8f8d9155050eeb0ecee16d93850f9bc3b7361123a8",
+      "structure": "cc7ef51dfafe0d1279f54e028638259fb39b16e8b8a50c1a68eece18f56e348c",
+      "binding": "0d81b2d7ead8888f5897473672bce5d549b15588a85649bb5af87666f9fa0cb9",
+      "overall": "604753c40bc914a7dcd391cf6c74d73b8dc5e016c61c3124f18ec7c891fb93c6"
+    },
+    {
+      "order": 4,
+      "scope": "STRUCTURE",
+      "operation": "dynamicColumnResize",
+      "source": "ee4e1bd7691a105c012e946be6e546332e6bb795251b8bfbd1b4a8fd60ab2848",
+      "structure": "cc7ef51dfafe0d1279f54e028638259fb39b16e8b8a50c1a68eece18f56e348c",
+      "binding": "0d81b2d7ead8888f5897473672bce5d549b15588a85649bb5af87666f9fa0cb9",
+      "overall": "39061414cc97d2283bd5a5b14ea65fc4a6d9129a31760dedb7d09d3bd2da84e9"
+    },
+    {
+      "order": 5,
+      "scope": "SOURCE",
+      "operation": "dynamicDetailStyle",
+      "source": "61bab2bd7acdccaea25baba680ce5a358a833bd129f02a7c5a0bc102456c64a3",
+      "structure": "cc7ef51dfafe0d1279f54e028638259fb39b16e8b8a50c1a68eece18f56e348c",
+      "binding": "0d81b2d7ead8888f5897473672bce5d549b15588a85649bb5af87666f9fa0cb9",
+      "overall": "f0368671acbfb022409602f5a00e7d71ea2ff1be3d23c91130279e6a047ee46e"
+    },
+    {
+      "order": 6,
+      "scope": "BINDING",
+      "operation": "scalarRebind",
+      "source": "61bab2bd7acdccaea25baba680ce5a358a833bd129f02a7c5a0bc102456c64a3",
+      "structure": "cc7ef51dfafe0d1279f54e028638259fb39b16e8b8a50c1a68eece18f56e348c",
+      "binding": "c14d09f389e4922bf08c6559eb2a5438396faec678a2ef66bf61a32283764a7c",
+      "overall": "b4bc429d35693b9f3c26f70665c5befc848ee0c5e58763d66fa29b72e255b533"
+    }
+  ],
+  "importBaseSignature": "2b7d104a37e67d6306fdfa63840cb3bf471b50941a350520e48b2176a3f4010a",
+  "finalSignature": "b4bc429d35693b9f3c26f70665c5befc848ee0c5e58763d66fa29b72e255b533",
+  "undoAllSignature": "2b7d104a37e67d6306fdfa63840cb3bf471b50941a350520e48b2176a3f4010a",
+  "redoAllSignature": "b4bc429d35693b9f3c26f70665c5befc848ee0c5e58763d66fa29b72e255b533",
+  "undoAllPass": true,
+  "redoAllPass": true
+}

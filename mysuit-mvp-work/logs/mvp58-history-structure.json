@@ -1,0 +1,190 @@
+{
+  "events": [
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywpo_8f029818",
+      "userActionId": "action_muazywpo_eb37ef",
+      "sequence": 3,
+      "timestamp": "2026-09-21T08:42:37.212Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "hideColumn",
+      "target": {
+        "logicalTableKey": "tbl:financial-7col",
+        "columnIndex": 6,
+        "logicalColumnKey": "tbl:financial-7col|col:6"
+      },
+      "before": {
+        "active": false
+      },
+      "after": {
+        "active": true
+      },
+      "sourceOperationId": "sop_muazywpj_0ce92a",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "Column 6 숨김"
+    },
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywqr_f4566fb7",
+      "userActionId": "action_muazywqr_1741e7",
+      "sequence": 4,
+      "timestamp": "2026-09-21T08:42:37.251Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "resizeColumn",
+      "target": {
+        "logicalTableKey": "tbl:financial-7col",
+        "columnIndex": 2,
+        "logicalColumnKey": "tbl:financial-7col|col:2"
+      },
+      "before": {
+        "width": 70
+      },
+      "after": {
+        "width": 100
+      },
+      "sourceOperationId": "sop_muazywqe_faeec8",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "Column 2 너비 70 → 100"
+    },
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywrp_a0485dda",
+      "userActionId": "action_muazywrp_a06829",
+      "sequence": 5,
+      "timestamp": "2026-09-21T08:42:37.285Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "moveColumn",
+      "target": {
+        "logicalTableKey": "tbl:financial-7col",
+        "columnIndex": 2,
+        "logicalColumnKey": "tbl:financial-7col|col:2"
+      },
+      "before": {
+        "visualIndex": 2
+      },
+      "after": {
+        "visualIndex": 1
+      },
+      "sourceOperationId": "sop_muazywrf_1d5415",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "Column 2 순서 이동"
+    },
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywsa_440bc712",
+      "userActionId": "action_muazywsa_ab6b8e",
+      "sequence": 6,
+      "timestamp": "2026-09-21T08:42:37.306Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "collapseRow",
+      "target": {
+        "logicalTableKey": "tbl:financial-7col",
+        "logicalRowKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0"
+      },
+      "before": {
+        "active": false
+      },
+      "after": {
+        "active": true
+      },
+      "sourceOperationId": "sop_muazyws5_c21f76",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "Header 행 공간 제거"
+    },
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywsr_727ae074",
+      "userActionId": "action_muazywsr_08f180",
+      "sequence": 7,
+      "timestamp": "2026-09-21T08:42:37.323Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "moveTable",
+      "target": {
+        "compositeTableKey": "ctbl:main-report-table"
+      },
+      "before": {
+        "left": 2,
+        "top": 300
+      },
+      "after": {
+        "left": 32,
+        "top": 280
+      },
+      "sourceOperationId": "sop_muazywsn_2447c7",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "본문 표 위치 이동"
+    },
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywth_b21be21c",
+      "userActionId": "action_muazywth_ebccdc",
+      "sequence": 8,
+      "timestamp": "2026-09-21T08:42:37.349Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "resizeTableWidth",
+      "target": {
+        "compositeTableKey": "ctbl:main-report-table"
+      },
+      "before": {
+        "width": 750
+      },
+      "after": {
+        "width": 770
+      },
+      "sourceOperationId": "sop_muazywt8_35ae29",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "본문 표 너비 변경"
+    },
+    {
+      "schemaVersion": 1,
+      "historyEventId": "hist_muazywty_03020096",
+      "userActionId": "action_muazywty_a02bb6",
+      "sequence": 9,
+      "timestamp": "2026-09-21T08:42:37.366Z",
+      "draftId": "mvp58_compound_e2e",
+      "projectName": "sample",
+      "formName": "sample",
+      "scope": "STRUCTURE",
+      "operation": "hideColumn",
+      "target": {
+        "logicalTableKey": "tbl:financial-7col",
+        "columnIndex": 5,
+        "logicalColumnKey": "tbl:financial-7col|col:5"
+      },
+      "before": {
+        "active": false
+      },
+      "after": {
+        "active": true
+      },
+      "sourceOperationId": "sop_muazywtt_bebec7",
+      "generatedIds": {},
+      "internalOperations": [],
+      "label": "Column 5 숨김"
+    }
+  ]
+}

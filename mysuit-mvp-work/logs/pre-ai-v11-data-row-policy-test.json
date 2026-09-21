@@ -1,0 +1,142 @@
+{
+  "success": true,
+  "individualCellStructuralMove": {
+    "status": 409,
+    "code": "SOURCE_ID_MISMATCH",
+    "historyUnaffected": true
+  },
+  "logicalRowMove": {
+    "before": {
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0": {
+        "top": 360,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW0"
+        ]
+      },
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1": {
+        "top": 387,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW1"
+        ]
+      }
+    },
+    "moved": {
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0": {
+        "top": 387,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW0"
+        ]
+      },
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1": {
+        "top": 360,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW1"
+        ]
+      }
+    },
+    "reloaded": {
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0": {
+        "top": 387,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW0"
+        ]
+      },
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1": {
+        "top": 360,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW1"
+        ]
+      }
+    },
+    "undone": {
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0": {
+        "top": 360,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW0"
+        ]
+      },
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1": {
+        "top": 387,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW1"
+        ]
+      }
+    },
+    "redone": {
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0": {
+        "top": 387,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW0",
+          "UB6114512_grp_0_UDB3195_ROW0",
+          "UB6116306_grp_0_UDB3195_ROW0",
+          "UB6103460_grp_0_UDB3195_ROW0",
+          "UB6143762_grp_0_UDB3195_ROW0",
+          "UB6093171_grp_0_UDB3195_ROW0",
+          "UB6132002_grp_0_UDB3195_ROW0"
+        ]
+      },
+      "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:1": {
+        "top": 360,
+        "memberIds": [
+          "UB6131219_grp_0_UDB3195_ROW1",
+          "UB6114512_grp_0_UDB3195_ROW1",
+          "UB6116306_grp_0_UDB3195_ROW1",
+          "UB6103460_grp_0_UDB3195_ROW1",
+          "UB6143762_grp_0_UDB3195_ROW1",
+          "UB6093171_grp_0_UDB3195_ROW1",
+          "UB6132002_grp_0_UDB3195_ROW1"
+        ]
+      }
+    },
+    "sameMembers": true,
+    "historyCursor": 1
+  }
+}

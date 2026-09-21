@@ -1,0 +1,26 @@
+{
+  "original": {
+    "file": "output/mvp56-original.pdf",
+    "bytes": 64536,
+    "sha256": "cd3c993cb1f11f4cc80dea9efe6559592da4ba8190ef637902cb5c3c9f956ff0",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8",
+    "savePdfMs": 499
+  },
+  "row": {
+    "file": "output/mvp56-row-collapsed.pdf",
+    "bytes": 62824,
+    "sha256": "b8d68c324a0029517e711a1269d3c3a4c897530bc3f99b643527f8ba29d7688a",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8",
+    "savePdfMs": 345
+  },
+  "table": {
+    "file": "output/mvp56-table-collapsed.pdf",
+    "bytes": 41485,
+    "sha256": "b854295ae56a03cdcf29d08d62455e71b46a012e19f8de2bdc50897da8d9d57d",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8",
+    "savePdfMs": 236
+  }
+}

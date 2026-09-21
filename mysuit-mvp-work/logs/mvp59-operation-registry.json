@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "operations": [
+    {
+      "operation": "updateText",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ]
+    },
+    {
+      "operation": "setFontSize",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ]
+    },
+    {
+      "operation": "setFontWeight",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ]
+    },
+    {
+      "operation": "setTextAlign",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ]
+    },
+    {
+      "operation": "resizeObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "property",
+        "value"
+      ]
+    },
+    {
+      "operation": "moveObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "property",
+        "value"
+      ]
+    },
+    {
+      "operation": "setImageFit",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ]
+    },
+    {
+      "operation": "replaceImage",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "value"
+      ]
+    },
+    {
+      "operation": "hideObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "restoreObject",
+      "targetType": "OBJECT",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "moveRenderObject",
+      "targetType": "OBJECT",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "after"
+      ]
+    },
+    {
+      "operation": "resizeColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "width"
+      ]
+    },
+    {
+      "operation": "moveColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "toVisualIndex"
+      ]
+    },
+    {
+      "operation": "hideColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "restoreColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "addStaticColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "addBoundColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "dataSet",
+        "column"
+      ]
+    },
+    {
+      "operation": "removeColumn",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "resizeRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "height"
+      ]
+    },
+    {
+      "operation": "hideRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "restoreRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "collapseRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "moveRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "toRowIndex"
+      ]
+    },
+    {
+      "operation": "removeRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "moveRenderedRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "toRowIndex"
+      ]
+    },
+    {
+      "operation": "addStaticRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "removeStaticRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "POC_ONLY",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "moveTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "after"
+      ]
+    },
+    {
+      "operation": "resizeTableWidth",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "LIMITED",
+      "support": {
+        "viewer": true,
+        "source": false,
+        "pdf": false
+      },
+      "candidateMaterialization": "VIEWER_ONLY",
+      "requiredPayload": [
+        "width"
+      ]
+    },
+    {
+      "operation": "hideTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "restoreTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    },
+    {
+      "operation": "collapseTable",
+      "targetType": "COMPOSITE_TABLE",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": []
+    }
+  ]
+}

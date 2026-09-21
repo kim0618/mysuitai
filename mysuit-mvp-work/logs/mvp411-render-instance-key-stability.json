@@ -1,0 +1,13 @@
+{
+  "loads": 10,
+  "method": "10 isolated Browser Context loads",
+  "objectCounts": [180,180,180,180,180,180,180,180,180,180],
+  "keyFormat": "p{page}|c{canvas}|src:{source}|band:{band}|row:{row}|idx:{renderIndex}",
+  "duplicateObjects": [
+    {"text":"대표이사","renderIndexes":[3,3,3,3,3,3,3,3,3,3],"stable":true},
+    {"text":"사장","renderIndexes":[4,4,4,4,4,4,4,4,4,4],"stable":true},
+    {"text":"부사장","renderIndexes":[5,5,5,5,5,5,5,5,5,5],"stable":true}
+  ],
+  "fingerprintStable": true,
+  "result": "STABLE_FOR_SAMPLE"
+}

@@ -1,0 +1,44 @@
+{
+  "original": {
+    "file": "output/mvp55-original.pdf",
+    "bytes": 64536,
+    "sha256": "82bb1ccfebea2c403ba9b5aa6e2699e10ca7d7638ee9f58345ad24ed642f18b6",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8"
+  },
+  "addcol": {
+    "file": "output/mvp55-add-column.pdf",
+    "bytes": 66292,
+    "sha256": "2309b069517e8243fa919b33d6735b0d5082516fd82e9effc0ee58a82c6a748e",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8"
+  },
+  "removecol": {
+    "file": "output/mvp55-remove-column.pdf",
+    "bytes": 62758,
+    "sha256": "50fd370632d69329d42a83c6beea158b109586710912840d4aae2ecce43219e4",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8"
+  },
+  "addrow": {
+    "file": "output/mvp55-add-row.pdf",
+    "bytes": 65696,
+    "sha256": "4bc37adad4c01b1e3ea6f59ee4af80d7f224bac3d9b825005e79204d193c1a50",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8"
+  },
+  "removerow": {
+    "file": "output/mvp55-remove-row.pdf",
+    "bytes": 64536,
+    "sha256": "d8bcde12266f7cf46fccba5fc38e471cc4eb7264b0a07f449577880c55463f44",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8"
+  },
+  "boundcol": {
+    "file": "output/mvp55-bound-column.pdf",
+    "bytes": 66635,
+    "sha256": "425f44401c9ccff527f785b1c22183cec322589c400750d89b33fb8a900c6c55",
+    "status": 200,
+    "contentType": "application/pdf;charset=utf-8"
+  }
+}

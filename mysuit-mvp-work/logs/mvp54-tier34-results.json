@@ -1,0 +1,50 @@
+{
+  "resize": {
+    "count": 180,
+    "header": {
+      "top": 300,
+      "height": 45,
+      "visible": true
+    },
+    "group": {
+      "top": 345,
+      "height": 27,
+      "visible": true
+    }
+  },
+  "hidden": {
+    "count": 173,
+    "header": null,
+    "group": {
+      "top": 333,
+      "height": 27,
+      "visible": true
+    }
+  },
+  "table": {
+    "count": 12,
+    "header": null,
+    "group": null
+  },
+  "pdfs": {
+    "resize": {
+      "file": "output/mvp54-row-resized.pdf",
+      "bytes": 64538,
+      "sha256": "ed58c396828470e4ff88d4488c84ec8fdc7de578d2904aad48215508bf5cd507"
+    },
+    "hide": {
+      "file": "output/mvp54-row-hidden.pdf",
+      "bytes": 62827,
+      "sha256": "43f15bb9d30391652da5af17440d07ae7fdb8e7f4303b2efae95f406000918aa"
+    },
+    "tableHide": {
+      "file": "output/mvp54-table-hidden.pdf",
+      "bytes": 41485,
+      "sha256": "3cc2e3eaff5ffe6e026277cf2f44566c16d5728676a8762839f79ac17aef12fe"
+    }
+  },
+  "resizeSuccess": true,
+  "hideSuccess": true,
+  "hideCollapse": false,
+  "tableHideSuccess": true
+}

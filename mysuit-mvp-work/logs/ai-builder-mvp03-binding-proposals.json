@@ -1,0 +1,16 @@
+{
+  "phase": "AI_BUILDER_MVP_0_3",
+  "fixture": "my-report.png + scalar JSON",
+  "targets": 8,
+  "auto": 4,
+  "review": 0,
+  "unbound": 4,
+  "wrongAuto": 0,
+  "proposals": [
+    {"label":"이름","targetId":"IMPCL0008","candidatePath":"$.employeeName","confidence":0.92,"method":"ALIAS_STRONG","status":"AUTO"},
+    {"label":"핸드폰 번호","targetId":"IMPCL0010","candidatePath":"$.mobilePhone","confidence":0.92,"method":"ALIAS_STRONG","status":"AUTO"},
+    {"label":"주소","targetId":"IMPCL0011","candidatePath":"$.address","confidence":0.92,"method":"ALIAS_STRONG","status":"AUTO"},
+    {"label":"연봉","targetId":"IMPCL0012","candidatePath":"$.salary","confidence":0.92,"method":"ALIAS_STRONG","status":"AUTO"}
+  ],
+  "groundTruthUsedAtRuntime": false
+}

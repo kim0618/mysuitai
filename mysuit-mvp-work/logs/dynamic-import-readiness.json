@@ -1,0 +1,40 @@
+{
+  "status": "PARTIALLY_READY",
+  "groundTruth": "edu_01",
+  "discovered": {
+    "dataset": true,
+    "datasetColumns": true,
+    "embeddedSampleData": true,
+    "bandInventory": true,
+    "tableBandMembership": true,
+    "binding": true,
+    "group": true,
+    "aggregate": true,
+    "pageFooter": true,
+    "repeatTemplate": true,
+    "rendererBandPriorityContract": false,
+    "explicitDataHeaderDataBandLink": false,
+    "paginationBreakContract": false
+  },
+  "generatorSupport": {
+    "visualText": true,
+    "staticTable": true,
+    "styleV12": true,
+    "dataset": false,
+    "band": false,
+    "binding": false,
+    "group": false,
+    "aggregate": false,
+    "pageExpression": false,
+    "dynamicPagination": false
+  },
+  "reusable": ["UBJF codec/read-write", "deep clone and ID generation patterns", "UBTable/Cell geometry generation", "DIM v1.2 style mapper", "atomic project creation and integrity checks", "Viewer and server PDF path", "candidate isolation primitives", "render instance key fields page/source/band/row/index"],
+  "generalize": ["band-aware object discovery", "dataset-aware validation", "dynamic logical table model", "source-versus-runtime edit capabilities", "history event model for semantic operations", "editor policies for one source cell to many runtime instances"],
+  "new": ["Dataset generator", "Band generator", "Binding writer", "Group generator", "Aggregate writer", "Page expression writer", "dynamic pagination validator", "semantic model validator", "image ambiguity confirmation UX"],
+  "topRisks": [
+    { "rank": 1, "risk": "Aggregate and repeat semantics depend on band context and renderer-internal behavior not explicit in expressions." },
+    { "rank": 2, "risk": "Image-only input cannot recover real dataset identity, schema, source/query, group scope, or binding intent." },
+    { "rank": 3, "risk": "One source cell expands to many runtime instances, requiring explicit source-wide versus instance-only edit policy and pagination-stable identity." }
+  ],
+  "recommendedNextStep": "Dynamic Import MVP 3.1: Manual Semantic Model to Dynamic UBJF, starting with an embedded UBDmcUser dataset, the seven edu_01 band types, simple column bindings, one POSITION group, group/data SUM, and page expression; verify against read-only render/PDF before image semantic detection."
+}

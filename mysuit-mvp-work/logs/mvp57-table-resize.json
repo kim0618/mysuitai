@@ -1,0 +1,26 @@
+{
+  "tableResize": {
+    "from": {
+      "x": 1156.5,
+      "y": 815
+    },
+    "to": {
+      "x": 1136.5,
+      "y": 815
+    },
+    "dx": -20,
+    "dy": 0
+  },
+  "tableBoundaryHit": {
+    "rect": {
+      "left": 1151.5,
+      "top": 338,
+      "width": 10,
+      "height": 666
+    },
+    "hitClass": "mvp57-table-boundary"
+  },
+  "before": 792,
+  "after": 772,
+  "saveRequests": 1
+}

@@ -1,0 +1,49 @@
+{
+  "selection": {
+    "projectName": "sample",
+    "formName": "Sales/SL_Report_01",
+    "tableId": "TB7451"
+  },
+  "selectionReason": "Static cells, no spans/bindings/formulas, visible solid grid; cloned rather than schema-authored.",
+  "sourceSha256": {
+    "form": "ff93eea5e10aa0cdbf0d7f5d476148a73ee7cad2c31a562dd09228c97a14073f",
+    "info": "11f4de367fa5b06b75c884a8458ac121607ec33e0aec06a0cad18f8d5451c938"
+  },
+  "table": {
+    "id": "TB7451",
+    "className": "UBTable",
+    "x": 59,
+    "y": 637,
+    "width": 674,
+    "height": 75,
+    "rowCount": 3,
+    "columnCount": 6,
+    "band": "UDHB8093",
+    "band_x": 59,
+    "band_y": 0
+  },
+  "wrapper": {
+    "x": 0,
+    "y": 0,
+    "width": 45,
+    "height": 25,
+    "rowHeight": 25,
+    "columnWidth": 45,
+    "borderString": "type:borderBottom,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderLeft,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderRight,borderType:SOLD,borderColor:13172736,borderThickness:1&type:borderTop,borderType:SOLD,borderColor:13172736,borderThickness:1"
+  },
+  "cell": {
+    "height": 25,
+    "text": "Seq.",
+    "fontColor": 16777215,
+    "textAlign": "center",
+    "x": 0,
+    "backgroundColor": 13172736,
+    "y": 0,
+    "fontSize": 13.333333333333334,
+    "width": 45,
+    "textFlowJson": null,
+    "id": "UB2878322",
+    "tabIndexForViewer": 0,
+    "className": "Cell"
+  }
+}

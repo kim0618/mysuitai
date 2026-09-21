@@ -1,0 +1,35 @@
+{
+  "tableDrag": {
+    "from": {
+      "x": 359.78125,
+      "y": 518.5
+    },
+    "to": {
+      "x": 389.78125,
+      "y": 498.5
+    },
+    "dx": 30,
+    "dy": -20
+  },
+  "before": {
+    "left": 2,
+    "top": 300,
+    "right": 794,
+    "bottom": 966,
+    "width": 792,
+    "height": 666
+  },
+  "after": {
+    "left": 32,
+    "top": 280,
+    "right": 824,
+    "bottom": 946,
+    "width": 792,
+    "height": 666
+  },
+  "delta": {
+    "x": 30,
+    "y": -20
+  },
+  "saveRequests": 1
+}

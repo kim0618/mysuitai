@@ -1,0 +1,15 @@
+{
+  "status": "A",
+  "template": { "projectName": "sample", "formName": "SampleReport_FreeForm", "pageWidth": 794, "pageHeight": 1123, "datasets": 0, "bands": 0 },
+  "importedProject": { "projectName": "import_mvp10_20260827_164519_71baac", "formName": "SampleReport_FreeForm", "archivedAsEvidence": true },
+  "dim": { "version": "1.0", "supportedElements": ["text"], "fixtureElements": 5, "validation": "PASS" },
+  "labelCreation": { "supported": true, "strategy": "prototype-clone", "prototypeId": "LB8872", "generatedCount": 5 },
+  "viewer": { "loaded": true, "httpStatus": 200, "fatalErrors": 0, "expectedTextCount": 5, "actualTextCount": 5, "geometryStyleMatched": true, "maxGeometryDelta": 0, "reload": true, "newContext": true },
+  "editorSmoke": { "status": "LIMITED_NOT_CONNECTED", "sourceEdit": false, "aGradeRequired": false, "reason": "Existing Editor remains sample/sample scoped" },
+  "pdf": { "status": 200, "bytes": 26100, "contentType": "application/pdf;charset=utf-8", "pageCount": "not measured: pdfinfo unavailable", "textExtraction": "not measured: pdftotext unavailable" },
+  "staticOnly": { "datasets": 0, "bindings": 0, "formulas": 0, "viewer": true, "pdf": true },
+  "atomicFailure": true,
+  "integrity": true,
+  "preAiRegression": "PASS_WITH_EXISTING_TEST_DEBT",
+  "nextRecommendation": "Import MVP 1.1 Simple Table Generator may begin, while generic Editor integration remains MVP 1.2 work."
+}

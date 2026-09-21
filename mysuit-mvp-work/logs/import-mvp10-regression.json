@@ -1,0 +1,12 @@
+{
+  "status": "PASS_WITH_EXISTING_TEST_DEBT",
+  "command": "npm run test:pre-ai",
+  "core": { "passed": 31, "failed": 0 },
+  "capabilityValidation": { "passed": 18, "failed": 0 },
+  "historyAdapter": { "passed": 24, "failed": 0 },
+  "directUx": { "passed": 9, "failed": 0 },
+  "candidateViewer": "PASS",
+  "serverPdf": "PASS",
+  "baselineFinal": "PRE-AI BASELINE v1: PASS",
+  "existingDebt": "Row save failure pointer-preview automatic evidence remains incomplete; not introduced by Import MVP 1.0"
+}

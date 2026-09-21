@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "mvp21FreezeSha256": "6eb47bf838c8baf37a0569c7094bc484069195dd9b0a54a83bceda4028cce32a",
+  "mvp22FreezeSha256": "267411c60826790e2fe8660785122efe6cb7432d72a3d2c9eba8acf25ef248a9",
+  "existingEvidenceModified": false,
+  "templateIntegrityAssertedByGenerator": true,
+  "prototypeModified": false,
+  "existingCandidatesPreserved": true,
+  "styledBaseProject": "import_mvp22_20260828_145034_870e7a",
+  "styledBasePreserved": true
+}

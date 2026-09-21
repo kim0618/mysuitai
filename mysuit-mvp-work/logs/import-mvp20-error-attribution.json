@@ -1,0 +1,10 @@
+{
+  "errors": [
+    { "category": "ANALYZER_GEOMETRY", "scope": "TEXT_LABEL_BOX", "detail": "Visible glyph bounds were estimated instead of the wider source label containers." },
+    { "category": "ANALYZER_STYLE", "scope": "TABLE", "detail": "DIM v1.1 cannot represent the observed red cell background and white cell text." }
+  ],
+  "dimValidationErrors": 0,
+  "generatorErrors": 0,
+  "viewerRenderErrors": 0,
+  "primary": "ANALYZER_GEOMETRY"
+}

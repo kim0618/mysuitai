@@ -1,0 +1,23 @@
+{
+  "importBaseSignature": "2b7d104a37e67d6306fdfa63840cb3bf471b50941a350520e48b2176a3f4010a",
+  "scalarAppliedSignature": "ec5e736ca3b9d14caef2c85ab0e1499a60c7a88b7608c2111621be4f5f279a08",
+  "arrayAppliedSignature": "4901dd1693177cdc8da9ca32992521b2d113da016aa8fddbaf13eb370a05a5d4",
+  "dynamicEditedSignature": "f0368671acbfb022409602f5a00e7d71ea2ff1be3d23c91130279e6a047ee46e",
+  "finalSignature": "b4bc429d35693b9f3c26f70665c5befc848ee0c5e58763d66fa29b72e255b533",
+  "undoAllSignature": "2b7d104a37e67d6306fdfa63840cb3bf471b50941a350520e48b2176a3f4010a",
+  "redoAllSignature": "b4bc429d35693b9f3c26f70665c5befc848ee0c5e58763d66fa29b72e255b533",
+  "undoMatchesBase": true,
+  "redoMatchesFinal": true,
+  "sourceDetailRows": 1,
+  "runtimeDetailRows": 3,
+  "runtimeIdentityCollisions": 0,
+  "staticFlatteningDetected": false,
+  "viewerPass": true,
+  "reloadPass": true,
+  "newContextPass": true,
+  "pdfPass": true,
+  "failureAtomicity": {
+    "undo": true,
+    "redo": true
+  }
+}

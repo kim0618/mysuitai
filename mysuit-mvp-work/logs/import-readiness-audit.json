@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-08-27",
+  "status": "PARTIALLY_READY",
+  "runtimeApplication": "mysuit-mvp-work/mvp3-app",
+  "operationRegistry": {
+    "actualCount": 27,
+    "documentedBaselineCount": 26,
+    "maturity": {
+      "STABLE": 18,
+      "LIMITED": 4,
+      "POC_ONLY": 5,
+      "UNSUPPORTED": 0
+    },
+    "baselineMismatch": "Current runtime includes moveRenderedRow; PRE-AI baseline snapshot reports 26 operations and 3 LIMITED operations."
+  },
+  "aiV1Allowlist": {
+    "count": 18,
+    "location": "mysuit-mvp-work/logs/pre-ai-operation-allowlist.json",
+    "matchesCurrentStableOperations": true,
+    "runtimeAiConsumerFound": false,
+    "classification": "artifact_and_future_contract_only"
+  },
+  "newFormGeneration": {
+    "zeroBased": false,
+    "templateClone": true,
+    "arbitraryProjectFormCreation": false,
+    "containerCodec": true,
+    "semanticDocumentBuilder": false
+  },
+  "objectCreation": {
+    "text": "existing_patch_only; new UBLabel creation unverified",
+    "table": "existing-table cell/row/column clone POC only; zero-based UBTable unsupported",
+    "image": "UBImage sample with URL-encoded embedded PNG base64 exists; creation unsupported",
+    "line": "no evidence",
+    "rectangle": "no evidence"
+  },
+  "reusable": {
+    "candidateIsolationPattern": true,
+    "viewerLauncherProxy": true,
+    "pdfBrowserFlow": true,
+    "historyTransactionModel": true,
+    "capabilityContract": true,
+    "validationContract": true,
+    "ubjfContainerCodec": true
+  },
+  "requiresGeneralization": [
+    "sample-only project/form scope and candidate naming",
+    "hard-coded viewer object count and URL",
+    "sample-specific target resolver and logical table model",
+    "Cell-only ID generator and clone-based add row/column adapters",
+    "page width guard for margins, orientation and multiple pages",
+    "history, capability and validation scopes",
+    "explicit Imported Form PDF workflow"
+  ],
+  "gaps": [
+    "DIM schema and validator",
+    "blank/static form template contract or zero-based UBJF builder",
+    "generic object, page, band and relationship creation helpers",
+    "generic logical table and target discovery",
+    "image encoding/resource writer",
+    "line and rectangle writer",
+    "coordinate, DPI and font normalization",
+    "mixed source-patch and structure/reflow canonical serializer",
+    "input parsers for image, PDF, PPTX, DOCX and XLSX",
+    "visual fidelity oracle and multi-page tests"
+  ],
+  "topRisks": [
+    "No validated semantic contract for creating a new UBJF document",
+    "Unverified pixel/page/band/Fabric coordinate and font metric conversion",
+    "Editor identity and logical model are coupled to sample/sample"
+  ],
+  "viewerEditor": {
+    "viewerPreview": "conditional_on_valid_form",
+    "existingEditorDirectReuse": false,
+    "adaptationRequired": true
+  },
+  "serverPdf": {
+    "existingCandidateEvidence": true,
+    "importedStaticFormValidated": false,
+    "reuseAssessment": "conditional",
+    "standaloneNodePdfApi": false
+  },
+  "recommendedNextStep": "Create and validate an immutable one-page static MySuit template, clone it into import-scoped candidates, then implement a template-aware manual DIM text-only generator before adding tables and images."
+}

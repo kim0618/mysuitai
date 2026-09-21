@@ -1,0 +1,130 @@
+{
+  "projectName": "import_mvp20_20260828_141922_dfd7ab",
+  "http": 200,
+  "fatalErrors": [],
+  "pageVisible": true,
+  "textObjects": 3,
+  "tableCells": 12,
+  "objects": [
+    {
+      "id": "IMPLB0001",
+      "text": "월간 실적 보고서",
+      "left": 245,
+      "top": 55,
+      "width": 304,
+      "height": 32
+    },
+    {
+      "id": "IMPLB0002",
+      "text": "2026년 8월 부서별 실적",
+      "left": 245,
+      "top": 102,
+      "width": 304,
+      "height": 24
+    },
+    {
+      "id": "IMPCL0001",
+      "text": "부서",
+      "left": 82,
+      "top": 165,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0002",
+      "text": "담당자",
+      "left": 292,
+      "top": 165,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0003",
+      "text": "실적",
+      "left": 502,
+      "top": 165,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0004",
+      "text": "개발팀",
+      "left": 82,
+      "top": 205,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0005",
+      "text": "홍길동",
+      "left": 292,
+      "top": 205,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0006",
+      "text": "100",
+      "left": 502,
+      "top": 205,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0007",
+      "text": "영업팀",
+      "left": 82,
+      "top": 245,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0008",
+      "text": "김철수",
+      "left": 292,
+      "top": 245,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0009",
+      "text": "200",
+      "left": 502,
+      "top": 245,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0010",
+      "text": "기획팀",
+      "left": 82,
+      "top": 285,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0011",
+      "text": "이영희",
+      "left": 292,
+      "top": 285,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPCL0012",
+      "text": "150",
+      "left": 502,
+      "top": 285,
+      "width": 210,
+      "height": 40
+    },
+    {
+      "id": "IMPLB0003",
+      "text": "작성일: 2026.08.27",
+      "left": 579,
+      "top": 350,
+      "width": 130,
+      "height": 20
+    }
+  ]
+}

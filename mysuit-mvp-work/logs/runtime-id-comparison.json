@@ -1,0 +1,13 @@
+{
+  "viewerId": "LB6417_UPHB2584_ROW0",
+  "viewerItemId": null,
+  "formPath": "/home/tjd618/mysuit-ai-viewer/apache-tomcat-8.5.78/webapps/MYSUIT/UFile/project/sample/sample/form.ubjf",
+  "formObjectId": "LB6417",
+  "formBandId": "UPHB2584",
+  "runtimeRowSuffix": "ROW0",
+  "exactFullIdMatch": false,
+  "derivedMapping": true,
+  "mappingRuleObserved": "<formObjectId>_<formBandId>_ROW<renderedRowIndex>",
+  "classification": "partial",
+  "evidence": "The decoded form contains UBLabel id LB6417, band UPHB2584, matching text, x=367, y=100, width=425, height=68. The Viewer object has the same properties and composite id LB6417_UPHB2584_ROW0."
+}

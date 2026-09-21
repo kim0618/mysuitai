@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE",
+  "dependencies": [
+    {
+      "dependency": "app.js viewer readiness == 180",
+      "classification": "B_GENERALIZED",
+      "result": "stable signature over non-empty canvas"
+    },
+    {
+      "dependency": "app.js projectName/formName sample",
+      "classification": "B_GENERALIZED",
+      "result": "validated FormContext query"
+    },
+    {
+      "dependency": "Viewer ID suffix parser",
+      "classification": "B_GENERALIZED",
+      "result": "verified raw Imported source IDs"
+    },
+    {
+      "dependency": "ChangeSet/Render/Structure/History sample-only scopes",
+      "classification": "B_GENERALIZED",
+      "result": "project+form+draft isolation"
+    },
+    {
+      "dependency": "Target Resolver financial table keys",
+      "classification": "C_SAMPLE_SPECIAL",
+      "result": "StaticSingle path added; sample path retained"
+    },
+    {
+      "dependency": "four UBTable Structure Adapter",
+      "classification": "C_SAMPLE_SPECIAL",
+      "result": "StaticSingle adapter added; composite adapter retained"
+    },
+    {
+      "dependency": "logical controllers member counts 168/180",
+      "classification": "C_SAMPLE_SPECIAL",
+      "result": "sample controllers retained; Imported controller selected by FormContext"
+    },
+    {
+      "dependency": "Approval Table IDs/band",
+      "classification": "C_SAMPLE_SPECIAL",
+      "result": "sample-only and PRE-AI regression protected"
+    },
+    {
+      "dependency": "Candidate copy sample-only",
+      "classification": "B_GENERALIZED",
+      "result": "metadata-validated Imported base and mvp12 candidate names"
+    }
+  ],
+  "exact180InGenericAttach": false,
+  "sampleSpecialPathsRetained": true
+}

@@ -1,0 +1,930 @@
+{
+  "candidate": "sample_mvp54_20260811_135436_82f476",
+  "result": {
+    "success": true,
+    "appliedOperations": [
+      {
+        "operation": "moveColumn",
+        "columnIndex": 2,
+        "originalVisualIndex": 2,
+        "toVisualIndex": 1
+      }
+    ],
+    "unsupportedOperations": [],
+    "warnings": [],
+    "changedSourceTables": [
+      "TB3039",
+      "TB3979",
+      "TB5514",
+      "TB8715"
+    ],
+    "sourceColumnMapping": [
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:0",
+        "sourceColumnIndex": 0,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 0,
+            "sourceCellIds": [
+              "UB5305348"
+            ],
+            "width": 370,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 0,
+            "sourceCellIds": [
+              "UB5622520"
+            ],
+            "width": 370,
+            "dataSet": "dataset_1",
+            "dataColumn": "col_1"
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 0,
+            "sourceCellIds": [
+              "UB6131219"
+            ],
+            "width": 370,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_2"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 0,
+            "sourceCellIds": [
+              "UB6199723"
+            ],
+            "width": 370,
+            "dataSet": "",
+            "dataColumn": ""
+          }
+        ]
+      },
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:1",
+        "sourceColumnIndex": 1,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 1,
+            "sourceCellIds": [
+              "UB5302287"
+            ],
+            "width": 70,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 1,
+            "sourceCellIds": [
+              "UB5602336"
+            ],
+            "width": 70,
+            "dataSet": "",
+            "dataColumn": ""
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 1,
+            "sourceCellIds": [
+              "UB6114512"
+            ],
+            "width": 70,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_3"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 1,
+            "sourceCellIds": [
+              "UB6175108"
+            ],
+            "width": 70,
+            "dataSet": "dataset_3",
+            "dataColumn": "col_0"
+          }
+        ]
+      },
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:2",
+        "sourceColumnIndex": 2,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 2,
+            "sourceCellIds": [
+              "UB5313710"
+            ],
+            "width": 70,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 2,
+            "sourceCellIds": [
+              "UB5595998"
+            ],
+            "width": 70,
+            "dataSet": "",
+            "dataColumn": ""
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 2,
+            "sourceCellIds": [
+              "UB6116306"
+            ],
+            "width": 70,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_4"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 2,
+            "sourceCellIds": [
+              "UB6198370"
+            ],
+            "width": 70,
+            "dataSet": "dataset_3",
+            "dataColumn": "col_1"
+          }
+        ]
+      },
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:3",
+        "sourceColumnIndex": 3,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 3,
+            "sourceCellIds": [
+              "UB5297739"
+            ],
+            "width": 70,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 3,
+            "sourceCellIds": [
+              "UB5634325"
+            ],
+            "width": 70,
+            "dataSet": "",
+            "dataColumn": ""
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 3,
+            "sourceCellIds": [
+              "UB6103460"
+            ],
+            "width": 70,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_5"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 3,
+            "sourceCellIds": [
+              "UB6191253"
+            ],
+            "width": 70,
+            "dataSet": "dataset_3",
+            "dataColumn": "col_2"
+          }
+        ]
+      },
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:4",
+        "sourceColumnIndex": 4,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 4,
+            "sourceCellIds": [
+              "UB5337756"
+            ],
+            "width": 70,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 4,
+            "sourceCellIds": [
+              "UB5624437"
+            ],
+            "width": 70,
+            "dataSet": "",
+            "dataColumn": ""
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 4,
+            "sourceCellIds": [
+              "UB6143762"
+            ],
+            "width": 70,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_6"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 4,
+            "sourceCellIds": [
+              "UB6213241"
+            ],
+            "width": 70,
+            "dataSet": "dataset_3",
+            "dataColumn": "col_3"
+          }
+        ]
+      },
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:5",
+        "sourceColumnIndex": 5,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 5,
+            "sourceCellIds": [
+              "UB5316883"
+            ],
+            "width": 70,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 5,
+            "sourceCellIds": [
+              "UB5599952"
+            ],
+            "width": 70,
+            "dataSet": "",
+            "dataColumn": ""
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 5,
+            "sourceCellIds": [
+              "UB6093171"
+            ],
+            "width": 70,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_7"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 5,
+            "sourceCellIds": [
+              "UB6180450"
+            ],
+            "width": 70,
+            "dataSet": "dataset_3",
+            "dataColumn": "col_4"
+          }
+        ]
+      },
+      {
+        "logicalColumnKey": "tbl:financial-7col|col:6",
+        "sourceColumnIndex": 6,
+        "sourceColumns": [
+          {
+            "sourceTableId": "TB3039",
+            "bandId": "UDHB4114",
+            "sourceColumnIndex": 6,
+            "sourceCellIds": [
+              "UB5273553"
+            ],
+            "width": 70,
+            "dataSet": null,
+            "dataColumn": null
+          },
+          {
+            "sourceTableId": "TB3979",
+            "bandId": "UGHB7543",
+            "sourceColumnIndex": 6,
+            "sourceCellIds": [
+              "UB5596214"
+            ],
+            "width": 70,
+            "dataSet": "",
+            "dataColumn": ""
+          },
+          {
+            "sourceTableId": "TB5514",
+            "bandId": "UDB3195",
+            "sourceColumnIndex": 6,
+            "sourceCellIds": [
+              "UB6132002"
+            ],
+            "width": 70,
+            "dataSet": "dataset_2",
+            "dataColumn": "col_8"
+          },
+          {
+            "sourceTableId": "TB8715",
+            "bandId": "UGFB0223",
+            "sourceColumnIndex": 6,
+            "sourceCellIds": [
+              "UB6179138"
+            ],
+            "width": 70,
+            "dataSet": "dataset_3",
+            "dataColumn": "col_5"
+          }
+        ]
+      }
+    ],
+    "derived": {
+      "widths": [
+        370,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70
+      ],
+      "hidden": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "order": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "structuralDiff": [
+      {
+        "path": "pages/0/items/9/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/9/table/0/1/cell/text",
+        "before": "2013",
+        "after": "2014"
+      },
+      {
+        "path": "pages/0/items/9/table/0/1/cell/id",
+        "before": "UB5302287",
+        "after": "UB5313710"
+      },
+      {
+        "path": "pages/0/items/9/table/0/2/cell/text",
+        "before": "2014",
+        "after": "2013"
+      },
+      {
+        "path": "pages/0/items/9/table/0/2/cell/id",
+        "before": "UB5313710",
+        "after": "UB5302287"
+      },
+      {
+        "path": "pages/0/items/10/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/10/table/0/1/cell/id",
+        "before": "UB5602336",
+        "after": "UB5595998"
+      },
+      {
+        "path": "pages/0/items/10/table/0/2/cell/id",
+        "before": "UB5595998",
+        "after": "UB5602336"
+      },
+      {
+        "path": "pages/0/items/11/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/11/table/0/1/cell/text",
+        "before": "%7Bdataset_2.col_3%7D",
+        "after": "%7Bdataset_2.col_4%7D"
+      },
+      {
+        "path": "pages/0/items/11/table/0/1/cell/column",
+        "before": "col_3",
+        "after": "col_4"
+      },
+      {
+        "path": "pages/0/items/11/table/0/1/cell/id",
+        "before": "UB6114512",
+        "after": "UB6116306"
+      },
+      {
+        "path": "pages/0/items/11/table/0/2/cell/text",
+        "before": "%7Bdataset_2.col_4%7D",
+        "after": "%7Bdataset_2.col_3%7D"
+      },
+      {
+        "path": "pages/0/items/11/table/0/2/cell/column",
+        "before": "col_4",
+        "after": "col_3"
+      },
+      {
+        "path": "pages/0/items/11/table/0/2/cell/id",
+        "before": "UB6116306",
+        "after": "UB6114512"
+      },
+      {
+        "path": "pages/0/items/12/table/0/0/columnIndex",
+        "after": 0
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/cell/text",
+        "before": "FN.Sum('dataset_2'%2C'col_3')",
+        "after": "FN.Sum('dataset_2'%2C'col_4')"
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/cell/column",
+        "before": "col_0",
+        "after": "col_1"
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/cell/systemFunction",
+        "before": "FN.Sum('dataset_2','col_3')",
+        "after": "FN.Sum('dataset_2','col_4')"
+      },
+      {
+        "path": "pages/0/items/12/table/0/1/cell/id",
+        "before": "UB6175108",
+        "after": "UB6198370"
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/cell/text",
+        "before": "FN.Sum('dataset_2'%2C'col_4')",
+        "after": "FN.Sum('dataset_2'%2C'col_3')"
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/cell/column",
+        "before": "col_1",
+        "after": "col_0"
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/cell/systemFunction",
+        "before": "FN.Sum('dataset_2','col_4')",
+        "after": "FN.Sum('dataset_2','col_3')"
+      },
+      {
+        "path": "pages/0/items/12/table/0/2/cell/id",
+        "before": "UB6198370",
+        "after": "UB6175108"
+      }
+    ],
+    "candidateSha256": "1eb4a5c840cfb9e351302f0020873374a889d49d54d9d0ca9f4b1da69fc312d1",
+    "originalFormSha256": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83"
+  },
+  "viewer": {
+    "objectCount": 180,
+    "bySource": {
+      "UB5305348": {
+        "count": 1,
+        "lefts": [
+          2
+        ],
+        "widths": [
+          370
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB5302287": {
+        "count": 1,
+        "lefts": [
+          442
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB5313710": {
+        "count": 1,
+        "lefts": [
+          372
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB5297739": {
+        "count": 1,
+        "lefts": [
+          512
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB5337756": {
+        "count": 1,
+        "lefts": [
+          582
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB5316883": {
+        "count": 1,
+        "lefts": [
+          652
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB5273553": {
+        "count": 1,
+        "lefts": [
+          722
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          300
+        ],
+        "visible": 1
+      },
+      "UB6131219": {
+        "count": 17,
+        "lefts": [
+          2
+        ],
+        "widths": [
+          370
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6114512": {
+        "count": 17,
+        "lefts": [
+          442
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6116306": {
+        "count": 17,
+        "lefts": [
+          372
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6103460": {
+        "count": 17,
+        "lefts": [
+          512
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6143762": {
+        "count": 17,
+        "lefts": [
+          582
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6093171": {
+        "count": 17,
+        "lefts": [
+          652
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6132002": {
+        "count": 17,
+        "lefts": [
+          722
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          360,
+          387,
+          414,
+          441,
+          468,
+          549,
+          576,
+          603,
+          630,
+          657,
+          684,
+          765,
+          792,
+          819,
+          846,
+          873,
+          900
+        ],
+        "visible": 17
+      },
+      "UB6199723": {
+        "count": 3,
+        "lefts": [
+          2
+        ],
+        "widths": [
+          370
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      },
+      "UB6175108": {
+        "count": 3,
+        "lefts": [
+          442
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      },
+      "UB6198370": {
+        "count": 3,
+        "lefts": [
+          372
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      },
+      "UB6191253": {
+        "count": 3,
+        "lefts": [
+          512
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      },
+      "UB6213241": {
+        "count": 3,
+        "lefts": [
+          582
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      },
+      "UB6180450": {
+        "count": 3,
+        "lefts": [
+          652
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      },
+      "UB6179138": {
+        "count": 3,
+        "lefts": [
+          722
+        ],
+        "widths": [
+          70
+        ],
+        "tops": [
+          495,
+          711,
+          927
+        ],
+        "visible": 3
+      }
+    },
+    "excelFunctions": [],
+    "renderMs": 938.7698639999999
+  },
+  "success": true
+}

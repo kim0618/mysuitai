@@ -1,0 +1,9 @@
+{
+  "status": "NOT_DISCOVERED_STATIC_MODEL",
+  "sourceUBTableExists": true,
+  "viewerCellIdentityAvailable": true,
+  "columnIdentityPossibleFromSource": true,
+  "rowIdentityPossibleFromSource": true,
+  "connectedToExistingEditor": false,
+  "reason": "Existing editor/client and target resolver are scoped to sample/sample and fixed logical/composite assumptions. Generalization is deferred to Import MVP 1.2."
+}

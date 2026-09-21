@@ -1,0 +1,10 @@
+{
+  "projectName": "import_user_test_20260828_150723_d0d4ee",
+  "formName": "SampleReport_FreeForm",
+  "path": "/home/tjd618/mysuit-ai-viewer/mysuit-mvp-work/output/import-user-test-my-report.pdf",
+  "http": 200,
+  "contentType": "application/pdf;charset=utf-8",
+  "bytes": 64901,
+  "sha256": "b26414e2928a03b4b9198e7e59912b9a234d30a6330d1ee10fc58e9ae536d73b",
+  "pageCount": 1
+}

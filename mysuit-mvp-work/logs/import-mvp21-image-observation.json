@@ -1,0 +1,24 @@
+{
+  "provider": "CODEX",
+  "api": false,
+  "pageBoundary": { "x": 0, "y": 0, "width": 1700, "height": 2200 },
+  "dimPage": { "width": 794, "height": 1123 },
+  "normalization": { "scaleX": 0.46705882352941175, "scaleY": 0.5104545454545455, "rounding": "nearest integer" },
+  "detected": { "texts": 26, "tables": 1, "tableColumns": 4, "tableRows": 3, "tableCells": 12 },
+  "tableConfidence": "HIGH",
+  "textContentConfidence": "HIGH",
+  "geometryConfidence": "MEDIUM",
+  "textWidthPolicies": { "FREE_TEXT": 22, "SECTION_TITLE": 4, "TABLE_CELL_TEXT": 12 },
+  "styleObservation": {
+    "fontFamily": "sans-serif",
+    "colors": ["dark gray", "medium gray", "white"],
+    "tableHeader": "dark gray background with white text",
+    "balanceBanner": "light gray rounded rectangle",
+    "verticalAlignment": "top-aligned multiline item descriptions"
+  },
+  "unsupportedVisuals": [
+    { "type": "RECTANGLE", "description": "Balance Due rounded background", "bbox": [713, 440, 606, 60] },
+    { "type": "RECTANGLE", "description": "Dark table header background", "bbox": [66, 579, 1244, 49] }
+  ],
+  "referenceAccessedBeforeFreeze": false
+}

@@ -1,0 +1,187 @@
+{
+  "steps": {
+    "chatModeNoDirectEdit": {
+      "pass": true,
+      "detail": {
+        "mode": "chat",
+        "selected": null,
+        "sourceId": "—",
+        "grips": 0,
+        "toolbar": false,
+        "movable": 0,
+        "inspector": "문서에서 편집할 항목을 선택하세요."
+      }
+    },
+    "directModeSelects": {
+      "pass": true,
+      "detail": {
+        "mode": "direct-edit",
+        "selected": "IMPCL0078",
+        "sourceId": "IMPCL0078",
+        "grips": 13,
+        "toolbar": true,
+        "movable": 186,
+        "inspector": "▦\n표 셀\n2019-01-01~2019-01-01\n행 편집\n\nIMPTB0"
+      }
+    },
+    "dataModeClearsSelection": {
+      "pass": true,
+      "detail": {
+        "mode": "data-binding",
+        "selected": null,
+        "sourceId": "—",
+        "grips": 0,
+        "toolbar": false,
+        "movable": 0,
+        "inspector": "문서에서 편집할 항목을 선택하세요."
+      }
+    },
+    "dataModeNoDirectEdit": {
+      "pass": true,
+      "detail": {
+        "mode": "data-binding",
+        "selected": null,
+        "sourceId": "—",
+        "grips": 0,
+        "toolbar": false,
+        "movable": 0,
+        "inspector": "문서에서 편집할 항목을 선택하세요."
+      }
+    },
+    "directModeReentry": {
+      "pass": true,
+      "detail": {
+        "back": {
+          "mode": "direct-edit",
+          "selected": null,
+          "sourceId": "—",
+          "grips": 0,
+          "toolbar": false,
+          "movable": 186,
+          "inspector": "문서에서 편집할 항목을 선택하세요."
+        },
+        "again": {
+          "mode": "direct-edit",
+          "selected": "IMPCL0083",
+          "sourceId": "IMPCL0083",
+          "grips": 13,
+          "toolbar": true,
+          "movable": 186,
+          "inspector": "▦\n표 셀\nIMPCL0083\n행 편집\n\nIMPTB0003 · 행 4 / "
+        }
+      }
+    },
+    "chatGreeting": {
+      "pass": true,
+      "detail": {
+        "text": "안녕하세요.\n\n현재 \"SampleReport_FreeForm\" 문서를 보고 있습니다.\n\n문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.\n\n추천 작업\n제목 수정\n표 열 너비 조정\n행 이동\n데이터 연결\n오후 05:39",
+        "chips": [
+          "제목 수정",
+          "표 열 너비 조정",
+          "행 이동",
+          "데이터 연결"
+        ],
+        "composerHeight": 51,
+        "inputHeight": 34,
+        "panel": 380,
+        "logScrolls": "auto"
+      }
+    },
+    "chatComposerCompact": {
+      "pass": true,
+      "detail": {
+        "text": "안녕하세요.\n\n현재 \"SampleReport_FreeForm\" 문서를 보고 있습니다.\n\n문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.\n\n추천 작업\n제목 수정\n표 열 너비 조정\n행 이동\n데이터 연결\n오후 05:39",
+        "chips": [
+          "제목 수정",
+          "표 열 너비 조정",
+          "행 이동",
+          "데이터 연결"
+        ],
+        "composerHeight": 51,
+        "inputHeight": 34,
+        "panel": 380,
+        "logScrolls": "auto"
+      }
+    },
+    "chatChipFillsComposer": {
+      "pass": true,
+      "detail": {
+        "filled": "문서 제목을 수정해줘"
+      }
+    },
+    "chatBubbles": {
+      "pass": true,
+      "detail": [
+        {
+          "kind": "assistant",
+          "text": "안녕하세요."
+        },
+        {
+          "kind": "user",
+          "text": "두 번째 표의 열 너비를 조정해줘"
+        },
+        {
+          "kind": "assistant",
+          "text": "AI 연결이 아직 설정되지 않았습니다."
+        }
+      ]
+    },
+    "sidebarIconOnly": {
+      "pass": true,
+      "detail": {
+        "width": 184,
+        "main": 184,
+        "toggleText": "‹",
+        "title": "메뉴 접기",
+        "label": "메뉴 접기",
+        "footer": "{\"x\":12,\"y\":846,\"width\":160,\"height\":40,\"top\":846,\"right\":172,\"bottom\":886,\"left\":12}",
+        "menu": "{\"x\":12,\"y\":83,\"width\":160,\"height\":42,\"top\":83,\"right\":172,\"bottom\":125,\"left\":12},{\"x\":12,\"y\":129,\"width\":160,\"height\":42,\"top\":129,\"right\":172,\"bottom\":171,\"left\":12},{\"x\":12,\"y\":175,\"width\":160,\"height\":42,\"top\":175,\"right\":172,\"bottom\":217,\"left\":12},{\"x\":12,\"y\":221,\"width\":160,\"height\":42,\"top\":221,\"right\":172,\"bottom\":263,\"left\":12},{\"x\":12,\"y\":267,\"width\":160,\"height\":42,\"top\":267,\"right\":172,\"bottom\":309,\"left\":12}"
+      }
+    },
+    "sidebarCollapseExpand": {
+      "pass": true,
+      "detail": {
+        "expanded": {
+          "width": 184,
+          "main": 184,
+          "toggleText": "‹",
+          "title": "메뉴 접기",
+          "label": "메뉴 접기",
+          "footer": "{\"x\":12,\"y\":846,\"width\":160,\"height\":40,\"top\":846,\"right\":172,\"bottom\":886,\"left\":12}",
+          "menu": "{\"x\":12,\"y\":83,\"width\":160,\"height\":42,\"top\":83,\"right\":172,\"bottom\":125,\"left\":12},{\"x\":12,\"y\":129,\"width\":160,\"height\":42,\"top\":129,\"right\":172,\"bottom\":171,\"left\":12},{\"x\":12,\"y\":175,\"width\":160,\"height\":42,\"top\":175,\"right\":172,\"bottom\":217,\"left\":12},{\"x\":12,\"y\":221,\"width\":160,\"height\":42,\"top\":221,\"right\":172,\"bottom\":263,\"left\":12},{\"x\":12,\"y\":267,\"width\":160,\"height\":42,\"top\":267,\"right\":172,\"bottom\":309,\"left\":12}"
+        },
+        "collapsed": {
+          "width": 64,
+          "main": 64,
+          "toggleText": "‹",
+          "title": "메뉴 펼치기",
+          "label": "메뉴 펼치기",
+          "footer": "{\"x\":9,\"y\":846,\"width\":46,\"height\":40,\"top\":846,\"right\":55,\"bottom\":886,\"left\":9}",
+          "menu": "{\"x\":9,\"y\":83,\"width\":46,\"height\":42,\"top\":83,\"right\":55,\"bottom\":125,\"left\":9},{\"x\":9,\"y\":129,\"width\":46,\"height\":42,\"top\":129,\"right\":55,\"bottom\":171,\"left\":9},{\"x\":9,\"y\":175,\"width\":46,\"height\":42,\"top\":175,\"right\":55,\"bottom\":217,\"left\":9},{\"x\":9,\"y\":221,\"width\":46,\"height\":42,\"top\":221,\"right\":55,\"bottom\":263,\"left\":9},{\"x\":9,\"y\":267,\"width\":46,\"height\":42,\"top\":267,\"right\":55,\"bottom\":309,\"left\":9}"
+        },
+        "restored": {
+          "width": 184,
+          "main": 184,
+          "toggleText": "‹",
+          "title": "메뉴 접기",
+          "label": "메뉴 접기",
+          "footer": "{\"x\":12,\"y\":846,\"width\":160,\"height\":40,\"top\":846,\"right\":172,\"bottom\":886,\"left\":12}",
+          "menu": "{\"x\":12,\"y\":83,\"width\":160,\"height\":42,\"top\":83,\"right\":172,\"bottom\":125,\"left\":12},{\"x\":12,\"y\":129,\"width\":160,\"height\":42,\"top\":129,\"right\":172,\"bottom\":171,\"left\":12},{\"x\":12,\"y\":175,\"width\":160,\"height\":42,\"top\":175,\"right\":172,\"bottom\":217,\"left\":12},{\"x\":12,\"y\":221,\"width\":160,\"height\":42,\"top\":221,\"right\":172,\"bottom\":263,\"left\":12},{\"x\":12,\"y\":267,\"width\":160,\"height\":42,\"top\":267,\"right\":172,\"bottom\":309,\"left\":12}"
+        }
+      }
+    },
+    "noPageErrors": {
+      "pass": true,
+      "detail": []
+    }
+  },
+  "errors": [],
+  "screenshots": [
+    "editing-v2-ux-chat-click.png",
+    "editing-v2-ux-direct-click.png",
+    "editing-v2-ux-data-after-direct.png",
+    "editing-v2-ux-chat.png",
+    "editing-v2-ux-sidebar-collapsed.png"
+  ],
+  "pass": true
+}

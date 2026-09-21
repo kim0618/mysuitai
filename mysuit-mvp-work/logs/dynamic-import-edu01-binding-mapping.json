@@ -1,0 +1,23 @@
+{
+  "groundTruth": "edu_01",
+  "contracts": {
+    "static": { "dataType": null, "storage": "URL-encoded Cell.text" },
+    "datasetColumn": { "dataType": "1", "fields": ["dataSet", "column"], "displayTextPattern": "{dataset.column}" },
+    "systemFunction": { "dataType": "2", "fields": ["systemFunction"], "textMirrorsExpression": true },
+    "parameter": { "dataType": "3", "textPattern": "{param:name}" }
+  },
+  "simpleBindings": [
+    { "cellId": "UB1468793", "tableId": "TB1414542", "bandId": "UDB6169", "dataSet": "dataset_0", "column": "NAME", "text": "{dataset_0.NAME}", "runtimeRole": "person name" },
+    { "cellId": "UB1423663", "tableId": "TB1414542", "bandId": "UDB6169", "dataSet": "dataset_0", "column": "POSITION", "text": "{dataset_0.POSITION}", "runtimeRole": "position/group key" },
+    { "cellId": "UB1440256", "tableId": "TB1414542", "bandId": "UDB6169", "dataSet": "dataset_0", "column": "PHONE", "text": "{dataset_0.PHONE}", "runtimeRole": "phone" },
+    { "cellId": "UB1446223", "tableId": "TB1414542", "bandId": "UDB6169", "dataSet": "dataset_0", "column": "ADDRESS", "text": "{dataset_0.ADDRESS}", "runtimeRole": "address" },
+    { "cellId": "UB1457186", "tableId": "TB1414542", "bandId": "UDB6169", "dataSet": "dataset_0", "column": "PAY", "text": "{dataset_0.PAY}", "runtimeRole": "formatted pay", "formatter": "MaskNumber", "decimalPointLength": "1", "useThousandComma": "true" }
+  ],
+  "representativeEndToEnd": [
+    { "kind": "staticHeader", "cellId": "UB1149628", "tableId": "TB5066", "bandId": "UDHB3351", "binding": null, "runtimeRole": "name column header" },
+    { "kind": "detail", "cellId": "UB1468793", "tableId": "TB1414542", "bandId": "UDB6169", "binding": { "dataSet": "dataset_0", "column": "NAME" }, "runtimeRole": "one value per dataset row" },
+    { "kind": "groupDefinition", "cellId": null, "tableId": null, "bandId": "UGHB0811", "binding": { "dataSet": "dataset_0", "column": "POSITION" }, "runtimeRole": "group transition key" },
+    { "kind": "groupFooter", "cellId": "UB2612502", "tableId": "TB2630981", "bandId": "UGFB4830", "binding": { "systemFunction": "FN.getDataSetValue('dataset_0','POSITION') + \" 합계\"" }, "runtimeRole": "current group label" },
+    { "kind": "pageFooter", "cellId": "UB5141923", "tableId": "TB4312", "bandId": "UPFB4921", "binding": { "systemFunction": "FN.TotalPage() + \" / \" + FN.CurrentPage()" }, "runtimeRole": "dynamic total/current page" }
+  ]
+}

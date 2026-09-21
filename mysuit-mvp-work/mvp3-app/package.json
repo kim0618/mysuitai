@@ -1,0 +1,37 @@
+{
+  "name": "mysuit-mvp3-review-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-only MySuit UBLabel candidate review MVP",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "node --test --test-concurrency=1 tests/viewer-id-parser.test.js tests/form-patch-service.test.js tests/candidate-api.test.js tests/property-mapper.test.js tests/coordinate-mapping.test.js tests/changeset-service.test.js tests/multi-patch-api.test.js tests/render-patch-service.test.js tests/render-position-editor.test.js",
+    "test:import:mvp10": "node --test --test-concurrency=1 tests/import-dim-validator.test.js tests/import-label-generator.test.js tests/import-project-service.test.js",
+    "test:import:mvp11": "node --test --test-concurrency=1 tests/import-dim-validator.test.js tests/import-label-generator.test.js tests/import-table-generator.test.js tests/import-project-service.test.js",
+    "test:import:mvp12": "node --test --test-concurrency=1 tests/import-editor-generalization.test.js",
+    "test:foundation01": "node --test --test-concurrency=1 tests/unified-materializer.test.js",
+    "test:foundation02": "node --test --test-concurrency=1 tests/binding-history.test.js tests/history-service.test.js tests/history-branch.test.js tests/history-rebuild.test.js tests/history-transaction.test.js tests/history-identity.test.js tests/unified-materializer.test.js",
+    "test:e2e:foundation01": "node tests/e2e-ai-builder-foundation01.test.js",
+    "test:e2e:foundation02": "node tests/e2e-ai-builder-foundation02.test.js",
+    "test:e2e:builder01": "node tests/e2e-ai-builder-mvp01.test.js",
+    "test:builder02": "node --test --test-concurrency=1 tests/ai-builder-import-service.test.js",
+    "test:e2e:builder02": "node tests/e2e-ai-builder-mvp02.test.js",
+    "test:builder03": "node --test --test-concurrency=1 tests/ai-builder-mvp03.test.js",
+    "test:builder04": "node --test --test-concurrency=1 tests/ai-builder-mvp04.test.js tests/ai-builder-mvp03.test.js tests/dynamic-mvp31.test.js",
+    "test:builder041": "node --test --test-concurrency=1 tests/ai-builder-mvp041-structural-history.test.js tests/ai-builder-mvp04.test.js tests/ai-builder-mvp03.test.js tests/dynamic-mvp31.test.js",
+    "test:builder042": "node --test --test-concurrency=1 tests/ai-builder-mvp042-dynamic-editor.test.js tests/ai-builder-mvp042-integration.test.js tests/ai-builder-mvp041-structural-history.test.js tests/ai-builder-mvp04.test.js tests/ai-builder-mvp03.test.js tests/dynamic-mvp31.test.js",
+    "test:e2e:builder041": "node tests/e2e-ai-builder-mvp041.test.js",
+    "test:e2e:builder03": "node tests/e2e-ai-builder-mvp03.test.js",
+    "test:e2e:builder021": "node tests/e2e-ai-builder-mvp021.test.js",
+    "test:e2e": "node tests/e2e-mvp3.test.js"
+    ,"test:mvp59": "node --test --test-concurrency=1 tests/operation-registry.test.js tests/capability-service.test.js tests/operation-validator.test.js tests/capability-api.test.js tests/mvp59-artifacts.test.js"
+    ,"test:e2e:mvp59": "node tests/e2e-mvp59-capability.test.js"
+    ,"test:pre-ai": "bash scripts/run-pre-ai-baseline.sh"
+    ,"test:hwpx": "node --test --test-concurrency=1 tests/hwpx-parser.test.js"
+    ,"import:hwpx": "node scripts/import-hwpx.js"
+    ,"test:e2e:upload-ui": "node tests/e2e-ai-builder-upload-ui.test.js"
+    ,"test:e2e:upload-refinement": "node tests/e2e-ai-builder-upload-refinement.test.js"
+    ,"test:e2e:editing-ui": "node tests/e2e-ai-builder-editing-workspace.test.js"
+  },
+  "engines": { "node": ">=20" }
+}

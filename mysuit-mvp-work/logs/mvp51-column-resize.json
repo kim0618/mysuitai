@@ -1,0 +1,120 @@
+{
+  "ops": [
+    {
+      "operation": "resizeColumn",
+      "columnIndex": 2,
+      "afterWidth": 100
+    }
+  ],
+  "state": {
+    "widths": [
+      370,
+      70,
+      100,
+      70,
+      70,
+      70,
+      70
+    ],
+    "hidden": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "offsets": [
+      0,
+      370,
+      440,
+      540,
+      610,
+      680,
+      750
+    ],
+    "totalWidth": 820
+  },
+  "columns": [
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        370
+      ],
+      "lefts": [
+        2
+      ]
+    },
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        70
+      ],
+      "lefts": [
+        372
+      ]
+    },
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        100
+      ],
+      "lefts": [
+        442
+      ]
+    },
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        70
+      ],
+      "lefts": [
+        542
+      ]
+    },
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        70
+      ],
+      "lefts": [
+        612
+      ]
+    },
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        70
+      ],
+      "lefts": [
+        682
+      ]
+    },
+    {
+      "count": 24,
+      "visible": 24,
+      "widths": [
+        70
+      ],
+      "lefts": [
+        752
+      ]
+    }
+  ]
+}

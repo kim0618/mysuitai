@@ -1,0 +1,4 @@
+const test=require('node:test');const assert=require('node:assert/strict');const {definition,validateValue,isDynamicText}=require('../src/server/utils/property-mapper');
+test('maps supported properties',()=>{assert.equal(definition('left').sourceProperty,'x');assert.equal(definition('top').sourceProperty,'y');assert.equal(definition('textAlign').defaultValue,'left')});
+test('validates values and blocks unsafe properties',()=>{assert.equal(validateValue('fontSize',14),14);assert.equal(validateValue('visible',false),false);for(const [p,v]of[['fontSize',1000],['textAlign','justify'],['width',0],['x',NaN],['script','x']])assert.throws(()=>validateValue(p,v))});
+test('detects dynamic Cell text',()=>{assert.equal(isDynamicText('{dataset_0.col_0}'),true);assert.equal(isDynamicText("FN.Today()"),true);assert.equal(isDynamicText('2013'),false)});

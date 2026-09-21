@@ -1,0 +1,21 @@
+{
+  "mode": "dry-run",
+  "source": "/home/tjd618/mysuit-ai-viewer/apache-tomcat-8.5.78/webapps/MYSUIT/UFile/project/sample/sample/form.ubjf",
+  "candidate": "/home/tjd618/mysuit-ai-viewer/apache-tomcat-8.5.78/webapps/MYSUIT/UFile/project/sample/sample_mvp2/form.ubjf",
+  "sourceShaBefore": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+  "sourceSize": 31314,
+  "format": {
+    "outerEncoding": "Base64 ASCII with CRLF wrapping",
+    "compression": "zlib/DEFLATE",
+    "serialization": "outer JSON whose pages entries are JSON strings"
+  },
+  "objectId": "LB6417",
+  "bandId": "UPHB2584",
+  "objectCount": 14,
+  "objectMatchCount": 1,
+  "before": "  연도별 실적보고서",
+  "after": "MVP 원본 수정 테스트",
+  "sourceUnchanged": true,
+  "valid": true,
+  "sourceShaAfter": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83"
+}

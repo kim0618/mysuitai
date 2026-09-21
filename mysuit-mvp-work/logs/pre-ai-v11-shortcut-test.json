@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "target": {
+    "id": "LB6417_UPHB2584_ROW0",
+    "currentText": "연도별 실적보고서"
+  },
+  "nativeInputUndo": {
+    "original": "연도별 실적보고서",
+    "after": "연도별 실적보고서",
+    "historyCursorBefore": 0,
+    "historyCursorAfter": 0,
+    "pass": true
+  },
+  "documentHistory": {
+    "ctrlZ": true,
+    "ctrlShiftZ": true,
+    "ctrlY": true,
+    "finalCursor": 1
+  }
+}

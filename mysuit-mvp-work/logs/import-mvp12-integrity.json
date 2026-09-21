@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "sample": {
+    "form": "020c454c1aef1ff9a6495f8a7501cba52725e58d03bcee493ca8731110ae4f83",
+    "info": "4fe05421c191e1ee3344db65f51fb54923aa35ee21856d9a294f3c19c6fe502e"
+  },
+  "template": {
+    "form": "de581865731addeef2f607753c7208801056275e29ee211eecf769e132e7c17b",
+    "info": "2c3903c54e465ab0672fe7e5093dda70ef94b617a57ab15c9470b12c4f3d508f"
+  },
+  "prototype": {
+    "form": "ff93eea5e10aa0cdbf0d7f5d476148a73ee7cad2c31a562dd09228c97a14073f",
+    "info": "11f4de367fa5b06b75c884a8458ac121607ec33e0aec06a0cad18f8d5451c938"
+  },
+  "importedBase": {
+    "form": "7f26b5581f87e5f3d3417bde21125ab993edbd2dc0c8b8de72ac1de0be1e4505",
+    "info": "2c3903c54e465ab0672fe7e5093dda70ef94b617a57ab15c9470b12c4f3d508f",
+    "unchanged": true
+  },
+  "userCandidatesPreserved": true,
+  "preAiIntegrity": "mysuit-mvp-work/logs/pre-ai-integrity.json"
+}

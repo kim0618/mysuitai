@@ -1,0 +1,16 @@
+{
+  "baseline": "PRE-AI-v1",
+  "multiPageValidated": false,
+  "limitations": [
+    "Add/Remove Column·Row runtime Store/UI 미연결",
+    "Bound Column은 dataset_2.col_8 source POC로 제한",
+    "Source Patch + Structure/Reflow mixed canonical serializer 부분 지원",
+    "일반 Cross-Band reflow 미검증",
+    "Summary collapse 미지원",
+    "rowSpan 구조 변경 미지원",
+    "Rendered Detail Row 구조 편집 미지원",
+    "주요 검증은 단일 page sample 기반",
+    "Excel export 미지원",
+    "HWP export 미지원"
+  ]
+}

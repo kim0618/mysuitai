@@ -1,0 +1,14 @@
+{
+  "attempt": 2,
+  "sourceImage": { "sanity": "PASS", "sha256": "9e58c1380d62d4f7e52050ced310c716df5dbbfc61aa76216bbfc65052488a24" },
+  "analyzer": { "provider": "CODEX", "api": false, "groundTruthBeforeFreeze": false, "dimValid": true, "freezeSha256": "79063ca17cfaa316f318f6ad80c7a01580f9c86f856e4d910df14e6f8b783ff0" },
+  "accuracy": { "textDetection": 1, "textContent": 1, "tableDetection": 1, "columnCountExact": true, "rowCountExact": true, "cellCountExact": true, "cellTextAccuracy": 1, "avgGeometryError": { "x": 55.75, "y": 0.75, "width": 88, "height": 5.5 } },
+  "generator": { "status": "PASS", "geometryError": 0, "projectName": "import_mvp20_20260828_141922_dfd7ab" },
+  "viewer": { "status": "PASS", "http": 200, "fatalErrors": 0, "textObjects": 3, "tableCells": 12 },
+  "editor": { "status": "PASS", "selectedText": true, "columns": 3, "rows": 4, "cells": 12 },
+  "pdf": { "status": "PASS", "http": 200, "bytes": 29270, "pageCount": 1 },
+  "regression": true,
+  "integrity": true,
+  "status": "B",
+  "reason": "Structure and text are exact and the full pipeline passes, but TEXT container widths were underestimated and DIM v1.1 cannot reproduce the source table's red background/white text styling."
+}

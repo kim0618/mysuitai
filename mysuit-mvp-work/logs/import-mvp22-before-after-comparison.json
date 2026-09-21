@@ -1,0 +1,12 @@
+{
+  "mvp21": { "tableHeader": "RED_WHITE", "tableBody": "RED_WHITE_GRID", "manualCorrections": 3 },
+  "mvp22": { "tableHeader": "DARK_GRAY_WHITE_BORDERLESS", "tableBody": "WHITE_DARK_BORDERLESS", "manualCorrections": 3, "styleCorrections": 0 },
+  "headerBackground": "CLEAR_IMPROVEMENT",
+  "headerTextColor": "CLEAR_IMPROVEMENT",
+  "bodyBackground": "CLEAR_IMPROVEMENT",
+  "bodyTextColor": "CLEAR_IMPROVEMENT",
+  "border": "CLEAR_IMPROVEMENT",
+  "alignment": "CLEAR_IMPROVEMENT",
+  "overallVisualFidelity": "CLEAR_IMPROVEMENT",
+  "remainingGeometryDifference": "UNCHANGED_FROM_MVP21"
+}

@@ -1,0 +1,12 @@
+{
+  "differences": [
+    { "category": "ANALYZER_GEOMETRY", "count": 2, "detail": "Balance value and Amount column were initially too narrow." },
+    { "category": "DIM_SCHEMA_LIMIT", "count": 5, "detail": "No cell background, cell text color, vertical alignment, mixed cell style, or border visibility fields." },
+    { "category": "GENERATOR_LIMIT", "count": 1, "detail": "Prototype styling is cloned across all cells, producing a red body instead of a white borderless body." },
+    { "category": "UNSUPPORTED_ELEMENT", "count": 2, "detail": "Balance banner and table-header rectangles cannot be represented independently." }
+  ],
+  "analyzerTextErrors": 0,
+  "analyzerTableErrors": 0,
+  "viewerRenderErrors": 0,
+  "primaryBottleneck": "DIM_SCHEMA_LIMIT_AND_TABLE_STYLE_GENERATOR"
+}

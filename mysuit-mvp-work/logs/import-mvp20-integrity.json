@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "templateIntegrityAssertedByGenerator": true,
+  "groundTruthProjectModified": false,
+  "manualFixturesModified": false,
+  "existingCandidatesPreserved": true,
+  "freezeSha256Unchanged": true,
+  "evidenceProject": "import_mvp20_20260828_141922_dfd7ab",
+  "evidenceProjectPreserved": true
+}

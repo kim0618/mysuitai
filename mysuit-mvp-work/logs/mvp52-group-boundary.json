@@ -1,0 +1,9 @@
+{
+  "groupKey": "grp:financial-all-columns",
+  "sampleHasMultiColumnSpans": false,
+  "attempt": "visual index 0 -> -1",
+  "operationCountBefore": 1,
+  "operationCountAfter": 1,
+  "blocked": true,
+  "message": "검증된 테이블 그룹 경계를 벗어날 수 없습니다."
+}

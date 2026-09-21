@@ -1,0 +1,13 @@
+{
+  "projectName": "import_user_test_20260828_150723_d0d4ee",
+  "formName": "SampleReport_FreeForm",
+  "draft": "user_test_review",
+  "status": 200,
+  "fatalErrors": [],
+  "attached": true,
+  "cells": 210,
+  "columns": 6,
+  "rows": 35,
+  "sourceTableId": "IMPTB0001",
+  "viewerUrl": "http://127.0.0.1:3100/mysuit/UView5/index.jsp?projectName=import_user_test_20260828_150723_d0d4ee&formName=SampleReport_FreeForm"
+}

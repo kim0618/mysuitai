@@ -1,0 +1,323 @@
+{
+  "projectName": "import_mvp22_20260828_145226_034414",
+  "http": 200,
+  "fatalErrors": [],
+  "objects": [
+    {
+      "id": "IMPLB0001",
+      "text": "DIM Style v1.2",
+      "left": 82,
+      "top": 80,
+      "width": 630,
+      "height": 38,
+      "fill": "#333333",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "bold",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "IMPCL0001",
+      "text": "Description",
+      "left": 82,
+      "top": 150,
+      "width": 300,
+      "height": 42,
+      "fill": "#ffffff",
+      "backgroundColor": "#404040",
+      "fontWeight": "600",
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0002",
+      "text": "Quantity",
+      "left": 382,
+      "top": 150,
+      "width": 150,
+      "height": 42,
+      "fill": "#ffffff",
+      "backgroundColor": "#404040",
+      "fontWeight": "600",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0003",
+      "text": "Amount",
+      "left": 532,
+      "top": 150,
+      "width": 180,
+      "height": 42,
+      "fill": "#ffffff",
+      "backgroundColor": "#404040",
+      "fontWeight": "600",
+      "textAlign": "right",
+      "verticalAlign": "middle",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0004",
+      "text": "Consulting",
+      "left": 82,
+      "top": 192,
+      "width": 300,
+      "height": 54,
+      "fill": "#222222",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "normal",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#dddddd",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0005",
+      "text": "2",
+      "left": 382,
+      "top": 192,
+      "width": 150,
+      "height": 54,
+      "fill": "#222222",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "normal",
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#dddddd",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0006",
+      "text": "$200.00",
+      "left": 532,
+      "top": 192,
+      "width": 180,
+      "height": 54,
+      "fill": "#222222",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "normal",
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "borderColors": [
+        "#dddddd",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0007",
+      "text": "Support",
+      "left": 82,
+      "top": 246,
+      "width": 300,
+      "height": 54,
+      "fill": "#222222",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "normal",
+      "textAlign": "left",
+      "verticalAlign": "bottom",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "solid_share"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#dddddd"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0008",
+      "text": "1",
+      "left": 382,
+      "top": 246,
+      "width": 150,
+      "height": 54,
+      "fill": "#222222",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "normal",
+      "textAlign": "center",
+      "verticalAlign": "bottom",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "solid_share"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#dddddd"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "IMPCL0009",
+      "text": "$75.00",
+      "left": 532,
+      "top": 246,
+      "width": 180,
+      "height": 54,
+      "fill": "#222222",
+      "backgroundColor": "#ffffff",
+      "fontWeight": "normal",
+      "textAlign": "right",
+      "verticalAlign": "bottom",
+      "borderTypes": [
+        "none",
+        "none",
+        "none",
+        "solid_share"
+      ],
+      "borderColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#dddddd"
+      ],
+      "borderWidths": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "pdf": {
+    "http": 200,
+    "bytes": 23201,
+    "pageCount": 1,
+    "sha256": "9792e21ba3f97108d084ac4cfddf0489a34f040570651b9ee4608069be12a04c"
+  }
+}

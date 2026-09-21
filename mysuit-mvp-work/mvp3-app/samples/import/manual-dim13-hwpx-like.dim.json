@@ -1,0 +1,494 @@
+{
+  "version": "1.3",
+  "page": {
+    "width": 794,
+    "height": 1123
+  },
+  "assets": [
+    {
+      "id": "asset_png",
+      "fileName": "profile.png",
+      "mimeType": "image/png",
+      "sha256": "aed71814397bf8bea2bfa24cb417dfb5cb6e20634bbfcc3b58a95999bef34144",
+      "size": 183376,
+      "relativePath": "profile.png"
+    },
+    {
+      "id": "asset_gif",
+      "fileName": "image1.gif",
+      "mimeType": "image/gif",
+      "sha256": "1e85ec81b9800b4c443d39caca0d0926089a3ac201120db1ceb45b93789480b8",
+      "size": 34,
+      "relativePath": "image1.gif"
+    }
+  ],
+  "elements": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 82,
+      "y": 35,
+      "width": 630,
+      "height": 45,
+      "text": "인사기록부",
+      "style": {
+        "fontSize": 24,
+        "bold": true,
+        "textAlign": "center"
+      }
+    },
+    {
+      "id": "record",
+      "type": "table",
+      "x": 82,
+      "y": 105,
+      "width": 630,
+      "height": 294,
+      "columns": [
+        {
+          "id": "c0",
+          "width": 105
+        },
+        {
+          "id": "c1",
+          "width": 105
+        },
+        {
+          "id": "c2",
+          "width": 105
+        },
+        {
+          "id": "c3",
+          "width": 105
+        },
+        {
+          "id": "c4",
+          "width": 105
+        },
+        {
+          "id": "c5",
+          "width": 105
+        }
+      ],
+      "rows": [
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_0_0",
+              "row": 0,
+              "col": 0,
+              "rowSpan": 1,
+              "colSpan": 6,
+              "text": "인적사항",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#404040",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_1_0",
+              "row": 1,
+              "col": 0,
+              "rowSpan": 3,
+              "colSpan": 1,
+              "text": "성명",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "backgroundColor": "#E8EEF7",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "cell_1_1",
+              "row": 1,
+              "col": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "text": "한글",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "backgroundColor": "#E8EEF7",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "cell_1_2",
+              "row": 1,
+              "col": 2,
+              "rowSpan": 1,
+              "colSpan": 3,
+              "text": "홍길동",
+              "style": {
+                "textAlign": "left",
+                "verticalAlign": "middle",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "cell_1_5",
+              "row": 1,
+              "col": 5,
+              "rowSpan": 3,
+              "colSpan": 1,
+              "text": "사진",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "backgroundColor": "#E8EEF7",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_2_1",
+              "row": 2,
+              "col": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "text": "영문",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "backgroundColor": "#E8EEF7",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "cell_2_2",
+              "row": 2,
+              "col": 2,
+              "rowSpan": 1,
+              "colSpan": 3,
+              "text": "GIL-DONG HONG",
+              "style": {
+                "textAlign": "left",
+                "verticalAlign": "middle",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_3_1",
+              "row": 3,
+              "col": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "text": "한자",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "backgroundColor": "#E8EEF7",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "cell_3_2",
+              "row": 3,
+              "col": 2,
+              "rowSpan": 1,
+              "colSpan": 3,
+              "text": "洪吉童",
+              "style": {
+                "textAlign": "left",
+                "verticalAlign": "middle",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_4_0",
+              "row": 4,
+              "col": 0,
+              "rowSpan": 1,
+              "colSpan": 6,
+              "text": "개인자격",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#404040",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_5_0",
+              "row": 5,
+              "col": 0,
+              "rowSpan": 2,
+              "colSpan": 3,
+              "text": "근무처 / 근무기간 / 직급",
+              "style": {
+                "bold": true,
+                "textAlign": "center",
+                "verticalAlign": "middle",
+                "backgroundColor": "#E8EEF7",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "cell_5_3",
+              "row": 5,
+              "col": 3,
+              "rowSpan": 1,
+              "colSpan": 3,
+              "text": "MySuit",
+              "style": {
+                "textAlign": "left",
+                "verticalAlign": "middle",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 42,
+          "cells": [
+            {
+              "id": "cell_6_3",
+              "row": 6,
+              "col": 3,
+              "rowSpan": 1,
+              "colSpan": 3,
+              "text": "2024-현재 / Engineer",
+              "style": {
+                "textAlign": "left",
+                "verticalAlign": "middle",
+                "border": {
+                  "top": {
+                    "visible": true
+                  },
+                  "right": {
+                    "visible": true
+                  },
+                  "bottom": {
+                    "visible": true
+                  },
+                  "left": {
+                    "visible": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "type": "image",
+      "x": 620,
+      "y": 155,
+      "width": 75,
+      "height": 105,
+      "source": {
+        "kind": "asset",
+        "ref": "asset_png"
+      },
+      "fit": "contain"
+    },
+    {
+      "id": "gifMark",
+      "type": "image",
+      "x": 620,
+      "y": 280,
+      "width": 40,
+      "height": 40,
+      "source": {
+        "kind": "asset",
+        "ref": "asset_gif"
+      },
+      "fit": "contain"
+    }
+  ]
+}

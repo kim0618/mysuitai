@@ -1,0 +1,12 @@
+{
+  "index": 2,
+  "count": 24,
+  "roles": {
+    "HEADER": 1,
+    "GROUP_HEADER": 3,
+    "DETAIL_TEMPLATE": 17,
+    "SUMMARY": 3
+  },
+  "otherIncluded": 0,
+  "locked": true
+}

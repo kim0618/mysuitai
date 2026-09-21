@@ -1,0 +1,794 @@
+{
+  "version": "1.2",
+  "page": {
+    "width": 794,
+    "height": 1123
+  },
+  "elements": [
+    {
+      "id": "sender_name",
+      "type": "text",
+      "x": 51,
+      "y": 38,
+      "width": 150,
+      "height": 18,
+      "text": "Sammy Maystone",
+      "style": {
+        "fontSize": 13,
+        "bold": true,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "sender_email",
+      "type": "text",
+      "x": 51,
+      "y": 56,
+      "width": 180,
+      "height": 16,
+      "text": "smaystone4@fake.com",
+      "style": {
+        "fontSize": 11,
+        "bold": false,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "invoice_title",
+      "type": "text",
+      "x": 482,
+      "y": 36,
+      "width": 170,
+      "height": 40,
+      "text": "INVOICE",
+      "style": {
+        "fontSize": 32,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "invoice_number",
+      "type": "text",
+      "x": 482,
+      "y": 68,
+      "width": 170,
+      "height": 20,
+      "text": "# invoice_number_1",
+      "style": {
+        "fontSize": 14,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "bill_to_label",
+      "type": "text",
+      "x": 51,
+      "y": 144,
+      "width": 120,
+      "height": 18,
+      "text": "Bill To:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "bill_to_value",
+      "type": "text",
+      "x": 51,
+      "y": 162,
+      "width": 160,
+      "height": 35,
+      "text": "Taylor Riddel\ntriddel9@fake.com",
+      "style": {
+        "fontSize": 12,
+        "bold": true,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "ship_to_label",
+      "type": "text",
+      "x": 192,
+      "y": 144,
+      "width": 120,
+      "height": 18,
+      "text": "Ship To:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "ship_to_value",
+      "type": "text",
+      "x": 192,
+      "y": 162,
+      "width": 160,
+      "height": 35,
+      "text": "Taylor's Store\ntriddel9@fake.com",
+      "style": {
+        "fontSize": 12,
+        "bold": true,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "date_label",
+      "type": "text",
+      "x": 405,
+      "y": 128,
+      "width": 90,
+      "height": 18,
+      "text": "Date:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "date_value",
+      "type": "text",
+      "x": 539,
+      "y": 128,
+      "width": 90,
+      "height": 18,
+      "text": "Jan 1, 2022",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "terms_label",
+      "type": "text",
+      "x": 405,
+      "y": 154,
+      "width": 90,
+      "height": 18,
+      "text": "Payment Terms:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "terms_value",
+      "type": "text",
+      "x": 539,
+      "y": 154,
+      "width": 90,
+      "height": 18,
+      "text": "Net 30 days",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "due_label",
+      "type": "text",
+      "x": 405,
+      "y": 180,
+      "width": 90,
+      "height": 18,
+      "text": "Due Date:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "due_value",
+      "type": "text",
+      "x": 539,
+      "y": 180,
+      "width": 90,
+      "height": 18,
+      "text": "Jan 31, 2022",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "po_label",
+      "type": "text",
+      "x": 405,
+      "y": 206,
+      "width": 90,
+      "height": 18,
+      "text": "PO Number:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "po_value",
+      "type": "text",
+      "x": 520,
+      "y": 206,
+      "width": 109,
+      "height": 18,
+      "text": "po_number_123",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "balance_label",
+      "type": "text",
+      "x": 402,
+      "y": 226,
+      "width": 110,
+      "height": 28,
+      "text": "Balance Due:",
+      "style": {
+        "fontSize": 14,
+        "bold": true,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#F5F5F5"
+      }
+    },
+    {
+      "id": "balance_value",
+      "type": "text",
+      "x": 542,
+      "y": 226,
+      "width": 55,
+      "height": 28,
+      "text": "$127.50",
+      "style": {
+        "fontSize": 14,
+        "bold": true,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#F5F5F5"
+      }
+    },
+    {
+      "id": "line_items",
+      "type": "table",
+      "x": 31,
+      "y": 296,
+      "width": 581,
+      "height": 217,
+      "columns": [
+        {
+          "id": "item",
+          "width": 339
+        },
+        {
+          "id": "quantity",
+          "width": 81
+        },
+        {
+          "id": "rate",
+          "width": 80
+        },
+        {
+          "id": "amount",
+          "width": 81
+        }
+      ],
+      "rows": [
+        {
+          "height": 25,
+          "cells": [
+            {
+              "text": "Item",
+              "style": {
+                "fontSize": 12,
+                "bold": true,
+                "textAlign": "left",
+                "verticalAlign": "middle",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#3A3A3A",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "Quantity",
+              "style": {
+                "fontSize": 12,
+                "bold": true,
+                "textAlign": "right",
+                "verticalAlign": "middle",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#3A3A3A",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "Rate",
+              "style": {
+                "fontSize": 12,
+                "bold": true,
+                "textAlign": "right",
+                "verticalAlign": "middle",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#3A3A3A",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "Amount",
+              "style": {
+                "fontSize": 12,
+                "bold": true,
+                "textAlign": "right",
+                "verticalAlign": "middle",
+                "textColor": "#FFFFFF",
+                "backgroundColor": "#3A3A3A",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 100,
+          "cells": [
+            {
+              "text": "Service A\nDescription: Repair\nNotes: Replaced capacitor\nParts: 1 x cap_a\nTax: 0.2%",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "left",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "12",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "right",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "$10.00",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "right",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "$120.00",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "right",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "height": 92,
+          "cells": [
+            {
+              "text": "Service B\nDescription: Cleaning\nNotes: Removed debris from case\nParts: 2 x shop supplies\nTax: 0.4%",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "left",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "5",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "right",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "$1.50",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "right",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            },
+            {
+              "text": "$7.50",
+              "style": {
+                "fontSize": 11,
+                "bold": false,
+                "textAlign": "right",
+                "verticalAlign": "top",
+                "textColor": "#3A3A3A",
+                "backgroundColor": "#FFFFFF",
+                "border": {
+                  "top": {
+                    "visible": false
+                  },
+                  "right": {
+                    "visible": false
+                  },
+                  "bottom": {
+                    "visible": false
+                  },
+                  "left": {
+                    "visible": false
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subtotal_label",
+      "type": "text",
+      "x": 436,
+      "y": 576,
+      "width": 70,
+      "height": 18,
+      "text": "Subtotal:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "subtotal_value",
+      "type": "text",
+      "x": 553,
+      "y": 576,
+      "width": 42,
+      "height": 18,
+      "text": "$127.50",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "tax_label",
+      "type": "text",
+      "x": 436,
+      "y": 602,
+      "width": 70,
+      "height": 18,
+      "text": "Tax (0%):",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "tax_value",
+      "type": "text",
+      "x": 553,
+      "y": 602,
+      "width": 42,
+      "height": 18,
+      "text": "$0.00",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "total_label",
+      "type": "text",
+      "x": 436,
+      "y": 628,
+      "width": 70,
+      "height": 18,
+      "text": "Total:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "total_value",
+      "type": "text",
+      "x": 553,
+      "y": 628,
+      "width": 42,
+      "height": 18,
+      "text": "$127.50",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "right",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "notes_label",
+      "type": "text",
+      "x": 51,
+      "y": 693,
+      "width": 80,
+      "height": 18,
+      "text": "Notes:",
+      "style": {
+        "fontSize": 12,
+        "bold": false,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#767676",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "notes_value",
+      "type": "text",
+      "x": 51,
+      "y": 713,
+      "width": 430,
+      "height": 22,
+      "text": "All names are fictitious and in no way represent real people or places.",
+      "style": {
+        "fontSize": 11,
+        "bold": false,
+        "textAlign": "left",
+        "verticalAlign": "middle",
+        "textColor": "#323232",
+        "backgroundColor": "#FFFFFF"
+      }
+    }
+  ]
+}

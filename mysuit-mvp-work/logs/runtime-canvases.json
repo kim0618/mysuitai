@@ -1,0 +1,79 @@
+[
+  {
+    "index": 0,
+    "id": "ubiComCanvas",
+    "className": "ubicomCanvas",
+    "width": 300,
+    "height": 150,
+    "clientWidth": 0,
+    "clientHeight": 0,
+    "parentId": "main_canvas",
+    "parentClass": null
+  },
+  {
+    "index": 1,
+    "id": "ubicanvas0",
+    "className": "lower-canvas",
+    "width": 1588,
+    "height": 2246,
+    "clientWidth": 794,
+    "clientHeight": 1123,
+    "parentId": null,
+    "parentClass": "canvas-container"
+  },
+  {
+    "index": 2,
+    "id": null,
+    "className": "upper-canvas ",
+    "width": 1588,
+    "height": 2246,
+    "clientWidth": 794,
+    "clientHeight": 1123,
+    "parentId": null,
+    "parentClass": "canvas-container"
+  },
+  {
+    "index": 3,
+    "id": "signArea",
+    "className": "",
+    "width": 300,
+    "height": 150,
+    "clientWidth": 0,
+    "clientHeight": 0,
+    "parentId": null,
+    "parentClass": null
+  },
+  {
+    "index": 4,
+    "id": "textSignArea",
+    "className": "",
+    "width": 300,
+    "height": 150,
+    "clientWidth": 0,
+    "clientHeight": 0,
+    "parentId": "text-signature-pad-sub",
+    "parentClass": null
+  },
+  {
+    "index": 5,
+    "id": "template-masking",
+    "className": "template-masking",
+    "width": 300,
+    "height": 150,
+    "clientWidth": 0,
+    "clientHeight": 0,
+    "parentId": "maskingTemplateCanvas",
+    "parentClass": "list-tb"
+  },
+  {
+    "index": 6,
+    "id": "template-mirrored",
+    "className": "template-mirrored",
+    "width": 300,
+    "height": 150,
+    "clientWidth": 0,
+    "clientHeight": 0,
+    "parentId": "maskingTemplateCanvas",
+    "parentClass": "list-tb"
+  }
+]

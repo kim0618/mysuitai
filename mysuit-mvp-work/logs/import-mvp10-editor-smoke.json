@@ -1,0 +1,6 @@
+{
+  "status": "LIMITED_NOT_CONNECTED",
+  "importedViewerObjectSelection": "viewer objects are event-capable but standalone UView has no editor UI",
+  "sourceEdit": false,
+  "reason": "Existing Editor client URL, source APIs, history and resolver remain scoped to sample/sample; broad generalization is deferred to MVP 1.2."
+}

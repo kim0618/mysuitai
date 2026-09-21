@@ -1,0 +1,13 @@
+{
+  "status": "VALID",
+  "selected": { "projectName": "sample", "formName": "SampleReport_FreeForm" },
+  "reason": "Only one-page, dataset-free candidate with several top-level static UBLabels",
+  "page": { "count": 1, "width": 794, "height": 1123, "margins": "not declared", "orientation": "portrait inferred from dimensions" },
+  "reportType": "1",
+  "datasets": 0,
+  "bands": [],
+  "objectCollection": "pages[0].items",
+  "templateObjects": { "UBLabel": 5, "UBImage": 1, "UBTable": 1, "Cell": 16 },
+  "prototype": { "id": "LB8872", "className": "UBLabel", "band": "", "binding": false, "formula": false },
+  "importPolicy": "Remove all cloned template page items and insert only cloned static UBLabels"
+}

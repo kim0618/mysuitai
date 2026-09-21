@@ -1,0 +1,21 @@
+{
+  "baseSignature": "60bc932884ce67d4a6d344b1d9ff69324d9ef258756a02c3c9feb90711ae1a9f",
+  "dynamicSignature": "78d1e0c5402f3c7cae9880a2f53096f046dea246358f0a6a139fc50e74389aad",
+  "undoSignature": "60bc932884ce67d4a6d344b1d9ff69324d9ef258756a02c3c9feb90711ae1a9f",
+  "redoSignature": "78d1e0c5402f3c7cae9880a2f53096f046dea246358f0a6a139fc50e74389aad",
+  "undoMatchesBase": true,
+  "redoMatchesDynamic": true,
+  "eventCount": 2,
+  "arrayApplyEventCount": 1,
+  "historyPersistencePass": true,
+  "invalidSnapshotFailClosed": true,
+  "forcedUndoFailureAtomicityPass": true,
+  "forcedRedoFailureAtomicityPass": true,
+  "redoBranchRemovalPass": true,
+  "storage": {
+    "historyBytesAfterThreeTwoEventFixtures": 156652,
+    "activeStructuralReferenceBytes": 1822,
+    "rawUbjfEmbedded": false,
+    "historyLimit": 200
+  }
+}

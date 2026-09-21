@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "strategy": "prototype-clone",
+  "sourcePrototypeId": "TB7451",
+  "generatedTableId": "IMPTB0001",
+  "rows": 4,
+  "columns": 3,
+  "cells": 12,
+  "independentCloneObjects": true,
+  "uniqueCellIds": 12,
+  "staticOnly": true,
+  "serializedAndReparsed": true
+}

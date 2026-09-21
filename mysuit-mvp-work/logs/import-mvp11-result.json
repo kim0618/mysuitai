@@ -1,0 +1,34 @@
+{
+  "status": "A",
+  "dim": {
+    "text": true,
+    "table": true
+  },
+  "tableGenerator": {
+    "strategy": "prototype-clone",
+    "rows": 4,
+    "columns": 3,
+    "cells": 12,
+    "datasetBindings": 0,
+    "formulas": 0
+  },
+  "viewer": {
+    "loaded": true,
+    "fatalErrors": 0,
+    "maxGeometryDelta": 0,
+    "bordersVisible": true
+  },
+  "reload": true,
+  "newContext": true,
+  "pdf": {
+    "status": 200,
+    "bytes": 29269,
+    "pageCount": 1
+  },
+  "editorDiscovery": {
+    "status": "NOT_DISCOVERED_STATIC_MODEL"
+  },
+  "preAiRegression": true,
+  "integrity": true,
+  "evidenceProject": "import_mvp11_20260827_170551_e59e1d"
+}

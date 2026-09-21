@@ -1,0 +1,16 @@
+{
+  "index": 0,
+  "type": "borderLabel",
+  "className": "UBLabel",
+  "id": "LB6417_UPHB2584_ROW0",
+  "itemId": null,
+  "name": null,
+  "text": "  연도별 실적보고서",
+  "left": 367,
+  "top": 100,
+  "width": 425,
+  "height": 68,
+  "selectable": false,
+  "evented": true,
+  "visible": true
+}

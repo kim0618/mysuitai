@@ -1,0 +1,78 @@
+{
+  "baseline": "PRE-AI-v1",
+  "date": "2026-09-17",
+  "operationRegistryCount": 27,
+  "targetTypes": [
+    "OBJECT",
+    "RENDER_INSTANCE",
+    "LOGICAL_COLUMN",
+    "LOGICAL_ROW",
+    "HEADER_ROW",
+    "GROUP_HEADER_ROW",
+    "SUMMARY_ROW",
+    "STATIC_ROW",
+    "RENDERED_DETAIL_ROW",
+    "COMPOSITE_TABLE"
+  ],
+  "stableOperations": [
+    "updateText",
+    "setFontSize",
+    "setFontWeight",
+    "setTextAlign",
+    "resizeObject",
+    "hideObject",
+    "restoreObject",
+    "resizeColumn",
+    "moveColumn",
+    "hideColumn",
+    "restoreColumn",
+    "resizeRow",
+    "hideRow",
+    "restoreRow",
+    "collapseRow",
+    "hideTable",
+    "restoreTable",
+    "collapseTable"
+  ],
+  "limitedOperations": [
+    "moveRenderObject",
+    "moveRenderedRow",
+    "moveTable",
+    "resizeTableWidth"
+  ],
+  "pocOperations": [
+    "addStaticColumn",
+    "addBoundColumn",
+    "removeColumn",
+    "addStaticRow",
+    "removeStaticRow"
+  ],
+  "unsupportedOperations": [
+    "moveRenderedDetailRow",
+    "removeRenderedDetailRow",
+    "collapseRenderedDetailRow",
+    "reorderDataRows",
+    "collapseSummaryRow",
+    "collapseRowSpanDependentRow",
+    "generalCrossBandReflow",
+    "crossGroupColumnMove",
+    "createDataset",
+    "modifySql",
+    "createArbitraryBinding",
+    "rawUbjfWrite",
+    "exportExcel",
+    "exportHwp"
+  ],
+  "tests": {
+    "passedSuites": 7,
+    "failed": 0
+  },
+  "integrity": {
+    "formUbjf": true,
+    "infoXml": true,
+    "userCandidates": true
+  },
+  "multiPageValidated": false,
+  "aiReadyForPlannerPoc": true,
+  "gitBaselinePrepared": false
+}

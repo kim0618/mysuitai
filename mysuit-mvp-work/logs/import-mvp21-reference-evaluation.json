@@ -1,0 +1,12 @@
+{
+  "createdAfterFreeze": true,
+  "referenceType": "MANUAL_OBSERVABLE_IMAGE_ANNOTATION",
+  "texts": { "expectedLogicalRegions": 26, "detected": 26, "contentExact": 26, "detectionAccuracy": 1, "contentAccuracy": 1 },
+  "tables": [{ "expected": 1, "detected": 1, "columns": 4, "rows": 3, "cells": 12, "cellTextExact": 12 }],
+  "tableReferencePixels": { "x": 66, "y": 579, "width": 1244, "height": 425 },
+  "tableReferenceNormalized": { "x": 31, "y": 296, "width": 581, "height": 217 },
+  "tableDim": { "x": 31, "y": 296, "width": 581, "height": 217 },
+  "tableGeometryError": { "x": 0, "y": 0, "width": 0, "height": 0 },
+  "textGeometry": "NOT_MEASURED_NO_INDEPENDENT_CONTAINER_GROUND_TRUTH",
+  "freezeCorrectedFromReference": false
+}

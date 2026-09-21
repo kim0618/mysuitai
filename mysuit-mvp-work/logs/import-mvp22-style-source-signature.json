@@ -1,0 +1,8 @@
+{
+  "projectName": "import_mvp22_20260828_145226_034414",
+  "header": { "fontColor": 16777215, "backgroundColor": 4210752, "fontWeight": "bold", "verticalAlign": "middle", "borderVisible": false },
+  "bodyTop": { "fontColor": 2236962, "backgroundColor": 16777215, "verticalAlign": "top", "sharedBottomBorder": { "color": 14540253, "width": 1 } },
+  "bodyBottom": { "fontColor": 2236962, "backgroundColor": 16777215, "verticalAlign": "bottom", "sharedTopBorder": { "color": 14540253, "width": 1 } },
+  "perCellIndependent": true,
+  "prototypeRedBackgroundLeakage": false
+}

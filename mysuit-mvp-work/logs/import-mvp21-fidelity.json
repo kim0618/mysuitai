@@ -1,0 +1,9 @@
+{
+  "structure": { "rating": "EXCELLENT", "reason": "All 26 logical text regions, one 4x3 table, and all 12 cell texts are present." },
+  "position": { "rating": "GOOD", "reason": "Major invoice blocks retain their source page relationships; minor label spacing differs." },
+  "size": { "rating": "GOOD", "reason": "Table and principal headings are proportionate; two narrow value/amount containers required correction." },
+  "style": { "rating": "POOR", "reason": "The source has only a dark-gray header row and white body, but the table prototype renders every cell red with white text. Gray labels and mixed bold text are also lost." },
+  "unsupported": { "rating": "ACCEPTABLE", "reason": "Two decorative rectangles are omitted; no image, logo, chart, or merged cell is present." },
+  "draftUsability": "USABLE_AFTER_LIMITED_GEOMETRY_CORRECTION",
+  "pixelPerfect": false
+}

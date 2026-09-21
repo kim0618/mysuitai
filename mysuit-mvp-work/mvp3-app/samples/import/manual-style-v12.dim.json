@@ -1,0 +1,31 @@
+{
+  "version": "1.2",
+  "page": { "width": 794, "height": 1123 },
+  "elements": [
+    {
+      "id": "style_title", "type": "text", "x": 82, "y": 80, "width": 630, "height": 38, "text": "DIM Style v1.2",
+      "style": { "fontSize": 20, "bold": true, "textAlign": "center", "verticalAlign": "middle", "textColor": "#333333", "backgroundColor": "#FFFFFF" }
+    },
+    {
+      "id": "style_table", "type": "table", "x": 82, "y": 150, "width": 630, "height": 150,
+      "columns": [{ "id": "description", "width": 300 }, { "id": "quantity", "width": 150 }, { "id": "amount", "width": 180 }],
+      "rows": [
+        { "height": 42, "cells": [
+          { "text": "Description", "style": { "fontSize": 13, "bold": true, "textAlign": "left", "verticalAlign": "middle", "textColor": "#FFFFFF", "backgroundColor": "#404040", "border": { "top": { "visible": false }, "right": { "visible": false }, "bottom": { "visible": false }, "left": { "visible": false } } } },
+          { "text": "Quantity", "style": { "fontSize": 13, "bold": true, "textAlign": "center", "verticalAlign": "middle", "textColor": "#FFFFFF", "backgroundColor": "#404040", "border": { "top": { "visible": false }, "right": { "visible": false }, "bottom": { "visible": false }, "left": { "visible": false } } } },
+          { "text": "Amount", "style": { "fontSize": 13, "bold": true, "textAlign": "right", "verticalAlign": "middle", "textColor": "#FFFFFF", "backgroundColor": "#404040", "border": { "top": { "visible": false }, "right": { "visible": false }, "bottom": { "visible": false }, "left": { "visible": false } } } }
+        ] },
+        { "height": 54, "cells": [
+          { "text": "Consulting", "style": { "fontSize": 12, "bold": false, "textAlign": "left", "verticalAlign": "top", "textColor": "#222222", "backgroundColor": "#FFFFFF", "border": { "top": { "visible": false }, "right": { "visible": false }, "bottom": { "visible": true, "color": "#DDDDDD", "width": 1 }, "left": { "visible": false } } } },
+          { "text": "2", "style": { "fontSize": 12, "bold": false, "textAlign": "center", "verticalAlign": "top", "textColor": "#222222", "backgroundColor": "#FFFFFF", "border": { "top": { "visible": false }, "right": { "visible": false }, "bottom": { "visible": true, "color": "#DDDDDD", "width": 1 }, "left": { "visible": false } } } },
+          { "text": "$200.00", "style": { "fontSize": 12, "bold": false, "textAlign": "right", "verticalAlign": "top", "textColor": "#222222", "backgroundColor": "#FFFFFF", "border": { "top": { "visible": false }, "right": { "visible": false }, "bottom": { "visible": true, "color": "#DDDDDD", "width": 1 }, "left": { "visible": false } } } }
+        ] },
+        { "height": 54, "cells": [
+          { "text": "Support", "style": { "fontSize": 12, "bold": false, "textAlign": "left", "verticalAlign": "bottom", "textColor": "#222222", "backgroundColor": "#FFFFFF", "border": { "top": { "visible": true, "color": "#DDDDDD", "width": 1 }, "right": { "visible": false }, "bottom": { "visible": false }, "left": { "visible": false } } } },
+          { "text": "1", "style": { "fontSize": 12, "bold": false, "textAlign": "center", "verticalAlign": "bottom", "textColor": "#222222", "backgroundColor": "#FFFFFF", "border": { "top": { "visible": true, "color": "#DDDDDD", "width": 1 }, "right": { "visible": false }, "bottom": { "visible": false }, "left": { "visible": false } } } },
+          { "text": "$75.00", "style": { "fontSize": 12, "bold": false, "textAlign": "right", "verticalAlign": "bottom", "textColor": "#222222", "backgroundColor": "#FFFFFF", "border": { "top": { "visible": true, "color": "#DDDDDD", "width": 1 }, "right": { "visible": false }, "bottom": { "visible": false }, "left": { "visible": false } } } }
+        ] }
+      ]
+    }
+  ]
+}

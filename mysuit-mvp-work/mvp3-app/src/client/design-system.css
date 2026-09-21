@@ -1,0 +1,10 @@
+:root{--ui-ink:#1e293b;--ui-muted:#64748b;--ui-line:#e2e8f0;--ui-surface:#fff;--ui-soft:#f8fafc;--ui-accent:#2563eb}
+.easy-guide{background:var(--ui-soft)!important;border-color:var(--ui-line)!important;color:#475569!important}
+.easy-guide b{background:#e9eef5!important;color:#334155!important}
+.easy-guide .guide-detail{border-color:#dbe3ec!important;color:var(--ui-muted)!important}
+.capability-item.allowed{border:1px solid var(--ui-line)!important;background:var(--ui-soft)!important}
+.capability-item.allowed b{color:#334155!important}.capability-item.allowed span{color:var(--ui-muted)!important}
+#context-badge{background:#eef2f7!important;color:#475569!important}
+body[class*="target-"] #context-badge{background:#eaf2ff!important;color:#1d4ed8!important}
+aside>section{box-shadow:0 1px 2px #0f172a08}.context-head{box-shadow:0 2px 8px #0f172a0a}
+button{transition:background .15s,border-color .15s,box-shadow .15s}button:hover:not(:disabled){border-color:#94a3b8;background:#f8fafc}

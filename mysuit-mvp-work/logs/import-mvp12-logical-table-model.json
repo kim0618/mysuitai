@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "tableType": "STATIC_SINGLE",
+  "tableKey": "tbl:static:IMPTB0001",
+  "compositeTableKey": "ctbl:static:IMPTB0001",
+  "sourceTableIds": [
+    "IMPTB0001"
+  ],
+  "sourceTableId": "IMPTB0001",
+  "pageIndex": 0,
+  "x": 82,
+  "y": 165,
+  "width": 630,
+  "height": 160,
+  "columnCount": 3,
+  "rowCount": 4,
+  "cells": [
+    {
+      "sourceCellId": "IMPCL0001",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 0,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 0,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0001",
+      "renderInstanceKey": "p0|c0|src:IMPCL0001|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0002",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 0,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 0,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0002",
+      "renderInstanceKey": "p0|c0|src:IMPCL0002|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0003",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 0,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 0,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0003",
+      "renderInstanceKey": "p0|c0|src:IMPCL0003|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0004",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 1,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 40,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0004",
+      "renderInstanceKey": "p0|c0|src:IMPCL0004|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0005",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 1,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 40,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0005",
+      "renderInstanceKey": "p0|c0|src:IMPCL0005|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0006",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 1,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 40,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0006",
+      "renderInstanceKey": "p0|c0|src:IMPCL0006|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0007",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 2,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 80,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0007",
+      "renderInstanceKey": "p0|c0|src:IMPCL0007|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0008",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 2,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 80,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0008",
+      "renderInstanceKey": "p0|c0|src:IMPCL0008|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0009",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 2,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 80,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0009",
+      "renderInstanceKey": "p0|c0|src:IMPCL0009|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0010",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 3,
+      "columnIndex": 0,
+      "x": 0,
+      "y": 120,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0010",
+      "renderInstanceKey": "p0|c0|src:IMPCL0010|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0011",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 3,
+      "columnIndex": 1,
+      "x": 210,
+      "y": 120,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0011",
+      "renderInstanceKey": "p0|c0|src:IMPCL0011|band:FREEFORM|row:0|idx:{renderIndex}"
+    },
+    {
+      "sourceCellId": "IMPCL0012",
+      "sourceTableId": "IMPTB0001",
+      "rowIndex": 3,
+      "columnIndex": 2,
+      "x": 420,
+      "y": 120,
+      "width": 210,
+      "height": 40,
+      "viewerObjectId": "IMPCL0012",
+      "renderInstanceKey": "p0|c0|src:IMPCL0012|band:FREEFORM|row:0|idx:{renderIndex}"
+    }
+  ],
+  "columns": [
+    {
+      "logicalColumnKey": "tbl:static:IMPTB0001|col:0",
+      "columnIndex": 0,
+      "width": 210,
+      "sourceCellIds": [
+        "IMPCL0001",
+        "IMPCL0004",
+        "IMPCL0007",
+        "IMPCL0010"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0001",
+        "IMPCL0004",
+        "IMPCL0007",
+        "IMPCL0010"
+      ]
+    },
+    {
+      "logicalColumnKey": "tbl:static:IMPTB0001|col:1",
+      "columnIndex": 1,
+      "width": 210,
+      "sourceCellIds": [
+        "IMPCL0002",
+        "IMPCL0005",
+        "IMPCL0008",
+        "IMPCL0011"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0002",
+        "IMPCL0005",
+        "IMPCL0008",
+        "IMPCL0011"
+      ]
+    },
+    {
+      "logicalColumnKey": "tbl:static:IMPTB0001|col:2",
+      "columnIndex": 2,
+      "width": 210,
+      "sourceCellIds": [
+        "IMPCL0003",
+        "IMPCL0006",
+        "IMPCL0009",
+        "IMPCL0012"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0003",
+        "IMPCL0006",
+        "IMPCL0009",
+        "IMPCL0012"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "logicalRowKey": "tbl:static:IMPTB0001|row:0",
+      "rowIndex": 0,
+      "rowRole": "STATIC_ROW",
+      "height": 40,
+      "sourceCellIds": [
+        "IMPCL0001",
+        "IMPCL0002",
+        "IMPCL0003"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0001",
+        "IMPCL0002",
+        "IMPCL0003"
+      ]
+    },
+    {
+      "logicalRowKey": "tbl:static:IMPTB0001|row:1",
+      "rowIndex": 1,
+      "rowRole": "STATIC_ROW",
+      "height": 40,
+      "sourceCellIds": [
+        "IMPCL0004",
+        "IMPCL0005",
+        "IMPCL0006"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0004",
+        "IMPCL0005",
+        "IMPCL0006"
+      ]
+    },
+    {
+      "logicalRowKey": "tbl:static:IMPTB0001|row:2",
+      "rowIndex": 2,
+      "rowRole": "STATIC_ROW",
+      "height": 40,
+      "sourceCellIds": [
+        "IMPCL0007",
+        "IMPCL0008",
+        "IMPCL0009"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0007",
+        "IMPCL0008",
+        "IMPCL0009"
+      ]
+    },
+    {
+      "logicalRowKey": "tbl:static:IMPTB0001|row:3",
+      "rowIndex": 3,
+      "rowRole": "STATIC_ROW",
+      "height": 40,
+      "sourceCellIds": [
+        "IMPCL0010",
+        "IMPCL0011",
+        "IMPCL0012"
+      ],
+      "viewerObjectIds": [
+        "IMPCL0010",
+        "IMPCL0011",
+        "IMPCL0012"
+      ]
+    }
+  ]
+}

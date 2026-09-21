@@ -1,0 +1,21 @@
+{
+  "baseline": "PRE-AI-v1",
+  "completedAt": "2026-09-17T01:25:44.766Z",
+  "suites": {
+    "coreUnit": "PASS",
+    "policyApi": "PASS",
+    "historyAndAdapters": "PASS",
+    "mvp57Direct": "PASS_9_OF_9",
+    "mvp58History": "PASS_7_OF_7",
+    "mvp59Capability": "PASS_7_OF_7",
+    "sourcePdf": "PASS"
+  },
+  "failed": 0,
+  "classifications": {
+    "CRITICAL": 0,
+    "MAJOR": 0,
+    "MINOR": 0,
+    "TEST_DEBT": 0,
+    "KNOWN_LIMITATION": 10
+  }
+}

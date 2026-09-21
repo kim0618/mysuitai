@@ -1,0 +1,15 @@
+module.exports = Object.freeze({
+  DYNAMIC_RUNTIME_ROW_MISMATCH: 'Runtime detail row 수가 JSON array 길이와 다릅니다.',
+  STATIC_FLATTENING_DETECTED: 'JSON row가 source detail template으로 복제되었습니다.',
+  STRUCTURAL_HISTORY_SNAPSHOT_FAILED: 'Structural history snapshot을 만들 수 없습니다.',
+  STRUCTURAL_HISTORY_RESTORE_FAILED: 'Structural history snapshot을 복원할 수 없습니다.',
+  STRUCTURAL_HISTORY_SIGNATURE_MISMATCH: 'Structural history snapshot signature가 일치하지 않습니다.',
+  DYNAMIC_VIEWER_VALIDATION_FAILED: 'UView5 dynamic runtime 검증에 실패했습니다.',
+  DYNAMIC_SOURCE_TARGET_NOT_FOUND: 'Dynamic Source Template을 찾을 수 없습니다.',
+  DYNAMIC_RUNTIME_INSTANCE_NOT_EDITABLE: 'Runtime instance 데이터는 직접 편집할 수 없습니다.',
+  DYNAMIC_TEMPLATE_RESOLUTION_FAILED: 'Runtime instance의 Source Template을 확인할 수 없습니다.',
+  DYNAMIC_COLUMN_PAIRING_FAILED: 'Dynamic Header/Detail column pair가 일치하지 않습니다.',
+  DYNAMIC_EDIT_VALIDATION_FAILED: 'Dynamic Source Edit 검증에 실패했습니다.',
+  DYNAMIC_EDIT_MATERIALIZATION_FAILED: 'Dynamic Source Edit 저장에 실패했습니다.',
+  DYNAMIC_PDF_VALIDATION_FAILED: 'Dynamic PDF 검증에 실패했습니다.',
+});

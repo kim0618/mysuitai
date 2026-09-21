@@ -1,0 +1,6 @@
+{
+  "structureOperationService": {"passed": 4, "failed": 0},
+  "mvp51ColumnEditing": "PASS",
+  "mvp44DirectEditing": "PASS",
+  "fullLegacyUnitSuite": {"passed": 30, "failed": 1, "note": "기존 보존 후보를 0개로 가정하는 테스트만 실패; MVP 5.2 변경과 무관"}
+}

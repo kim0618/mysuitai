@@ -1,0 +1,54 @@
+{
+  "text": {
+    "dimId": "title",
+    "sourceId": "IMPLB0001",
+    "viewerId": "IMPLB0001",
+    "renderInstanceKey": "p0|c0|src:IMPLB0001|band:FREEFORM|row:0|idx:0",
+    "targetType": "OBJECT"
+  },
+  "table": {
+    "dimId": "main_table",
+    "sourceTableId": "IMPTB0001",
+    "logicalTableKey": "tbl:static:IMPTB0001",
+    "compositeTableKey": "ctbl:static:IMPTB0001",
+    "cellIds": [
+      "IMPCL0001",
+      "IMPCL0002",
+      "IMPCL0003",
+      "IMPCL0004",
+      "IMPCL0005",
+      "IMPCL0006",
+      "IMPCL0007",
+      "IMPCL0008",
+      "IMPCL0009",
+      "IMPCL0010",
+      "IMPCL0011",
+      "IMPCL0012"
+    ],
+    "viewerIds": [
+      "IMPCL0001",
+      "IMPCL0002",
+      "IMPCL0003",
+      "IMPCL0004",
+      "IMPCL0005",
+      "IMPCL0006",
+      "IMPCL0007",
+      "IMPCL0008",
+      "IMPCL0009",
+      "IMPCL0010",
+      "IMPCL0011",
+      "IMPCL0012"
+    ],
+    "columnKeys": [
+      "tbl:static:IMPTB0001|col:0",
+      "tbl:static:IMPTB0001|col:1",
+      "tbl:static:IMPTB0001|col:2"
+    ],
+    "rowKeys": [
+      "tbl:static:IMPTB0001|row:0",
+      "tbl:static:IMPTB0001|row:1",
+      "tbl:static:IMPTB0001|row:2",
+      "tbl:static:IMPTB0001|row:3"
+    ]
+  }
+}

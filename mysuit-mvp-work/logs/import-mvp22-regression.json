@@ -1,0 +1,13 @@
+{
+  "dimV10": "PASS",
+  "dimV11": "PASS",
+  "dimV12": "PASS",
+  "importMvp10": "PASS",
+  "importMvp11": "PASS",
+  "importMvp12": "PASS",
+  "styleMapper": "PASS",
+  "preAiBaseline": "PASS",
+  "preAiUnitTests": 31,
+  "preAiMvp59Tests": 18,
+  "preAiAdditionalTests": 24
+}

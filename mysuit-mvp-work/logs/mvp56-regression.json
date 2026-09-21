@@ -1,0 +1,1574 @@
+{
+  "assertions": {
+    "rowRemoved": true,
+    "rowReflow": true,
+    "tableRemoved": true,
+    "footerProtected": true,
+    "paginationStable": true,
+    "restore": true,
+    "complexCollapse": true,
+    "pdfs": true
+  },
+  "restored": {
+    "pageCount": 1,
+    "pages": [
+      {
+        "pageIndex": 0,
+        "objectCount": 180,
+        "objects": [
+          {
+            "id": "LB6417_UPHB2584_ROW0",
+            "top": 100,
+            "left": 367,
+            "width": 425,
+            "height": 68,
+            "text": "  연도별 실적보고서"
+          },
+          {
+            "id": "IMG4979_UPHB2584_ROW0",
+            "top": 50,
+            "left": 39,
+            "width": 287,
+            "height": 100,
+            "text": ""
+          },
+          {
+            "id": "UB5115957_UPHB2584_ROW0",
+            "top": 193,
+            "left": 39,
+            "width": 26,
+            "height": 87,
+            "text": "결\n재"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 65,
+            "width": 75,
+            "height": 32,
+            "text": "대표이사"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 140,
+            "width": 75,
+            "height": 32,
+            "text": "사장"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 215,
+            "width": 75,
+            "height": 32,
+            "text": "부사장"
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 65,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 140,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 215,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5305348_UDHB4114_ROW0",
+            "top": 300,
+            "left": 2,
+            "width": 370,
+            "height": 33,
+            "text": "   IFRS(연결) - 단위 : 억원"
+          },
+          {
+            "id": "UB5302287_UDHB4114_ROW0",
+            "top": 300,
+            "left": 372,
+            "width": 70,
+            "height": 33,
+            "text": "2013"
+          },
+          {
+            "id": "UB5313710_UDHB4114_ROW0",
+            "top": 300,
+            "left": 442,
+            "width": 70,
+            "height": 33,
+            "text": "2014"
+          },
+          {
+            "id": "UB5297739_UDHB4114_ROW0",
+            "top": 300,
+            "left": 512,
+            "width": 70,
+            "height": 33,
+            "text": "2015"
+          },
+          {
+            "id": "UB5337756_UDHB4114_ROW0",
+            "top": 300,
+            "left": 582,
+            "width": 70,
+            "height": 33,
+            "text": "2016"
+          },
+          {
+            "id": "UB5316883_UDHB4114_ROW0",
+            "top": 300,
+            "left": 652,
+            "width": 70,
+            "height": 33,
+            "text": "2017"
+          },
+          {
+            "id": "UB5273553_UDHB4114_ROW0",
+            "top": 300,
+            "left": 722,
+            "width": 70,
+            "height": 33,
+            "text": "2018"
+          },
+          {
+            "id": "UB5622520_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "부분별매출"
+          },
+          {
+            "id": "UB5602336_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5595998_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5634325_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5624437_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5599952_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5596214_grp_0_UGHB7543_ROW0",
+            "top": 333,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB6131219_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    Weight management"
+          },
+          {
+            "id": "UB6131219_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    Tageted ManageMent"
+          },
+          {
+            "id": "UB6131219_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    Energy, Sports and Fitness"
+          },
+          {
+            "id": "UB6131219_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    Outer Nutritio"
+          },
+          {
+            "id": "UB6131219_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    기타"
+          },
+          {
+            "id": "UB6114512_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "18,899"
+          },
+          {
+            "id": "UB6114512_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6114512_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6114512_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "1,414"
+          },
+          {
+            "id": "UB6114512_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "3,152"
+          },
+          {
+            "id": "UB6116306_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6116306_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6116306_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6116306_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "1,414"
+          },
+          {
+            "id": "UB6116306_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "3,152"
+          },
+          {
+            "id": "UB6103460_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "18,899"
+          },
+          {
+            "id": "UB6103460_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6103460_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6103460_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "1,414"
+          },
+          {
+            "id": "UB6103460_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "3,152"
+          },
+          {
+            "id": "UB6143762_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6143762_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6143762_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6143762_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6143762_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "18,899"
+          },
+          {
+            "id": "UB6093171_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "18,899"
+          },
+          {
+            "id": "UB6093171_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6093171_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6093171_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "1,414"
+          },
+          {
+            "id": "UB6093171_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "3,152"
+          },
+          {
+            "id": "UB6132002_grp_0_UDB3195_ROW0",
+            "top": 360,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6132002_grp_0_UDB3195_ROW1",
+            "top": 387,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6132002_grp_0_UDB3195_ROW2",
+            "top": 414,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "2,567"
+          },
+          {
+            "id": "UB6132002_grp_0_UDB3195_ROW3",
+            "top": 441,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "1,414"
+          },
+          {
+            "id": "UB6132002_grp_0_UDB3195_ROW4",
+            "top": 468,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "3,152"
+          },
+          {
+            "id": "UB6199723_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "   YOY"
+          },
+          {
+            "id": "UB6175108_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "33,033"
+          },
+          {
+            "id": "UB6198370_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "16,701"
+          },
+          {
+            "id": "UB6191253_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "33,033"
+          },
+          {
+            "id": "UB6213241_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "42,302"
+          },
+          {
+            "id": "UB6180450_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "33,033"
+          },
+          {
+            "id": "UB6179138_UGHB7543grp_0_dataset_2_ROW0",
+            "top": 495,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "16,701"
+          },
+          {
+            "id": "UB5622520_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "지역별 매출"
+          },
+          {
+            "id": "UB5602336_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5595998_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5634325_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5624437_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5599952_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5596214_grp_1_UGHB7543_ROW0",
+            "top": 522,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB6131219_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    북미"
+          },
+          {
+            "id": "UB6131219_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    멕시코"
+          },
+          {
+            "id": "UB6131219_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    남중아메리카"
+          },
+          {
+            "id": "UB6131219_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    EMEA"
+          },
+          {
+            "id": "UB6131219_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    아시아, 태평양"
+          },
+          {
+            "id": "UB6131219_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    중국"
+          },
+          {
+            "id": "UB6114512_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6114512_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "3,717"
+          },
+          {
+            "id": "UB6114512_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "4,341"
+          },
+          {
+            "id": "UB6114512_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6114512_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "18,899"
+          },
+          {
+            "id": "UB6114512_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "2,048"
+          },
+          {
+            "id": "UB6116306_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6116306_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "3,717"
+          },
+          {
+            "id": "UB6116306_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "4,341"
+          },
+          {
+            "id": "UB6116306_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6116306_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "7,602"
+          },
+          {
+            "id": "UB6116306_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "38,084"
+          },
+          {
+            "id": "UB6103460_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6103460_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "3,717"
+          },
+          {
+            "id": "UB6103460_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "7,602"
+          },
+          {
+            "id": "UB6103460_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6103460_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "7,602"
+          },
+          {
+            "id": "UB6103460_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "2,048"
+          },
+          {
+            "id": "UB6143762_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6143762_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "3,717"
+          },
+          {
+            "id": "UB6143762_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6143762_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6143762_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "7,602"
+          },
+          {
+            "id": "UB6143762_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "2,048"
+          },
+          {
+            "id": "UB6093171_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6093171_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "3,717"
+          },
+          {
+            "id": "UB6093171_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6093171_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6093171_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "4,341"
+          },
+          {
+            "id": "UB6093171_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "2,048"
+          },
+          {
+            "id": "UB6132002_grp_1_UDB3195_ROW0",
+            "top": 549,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "6,834"
+          },
+          {
+            "id": "UB6132002_grp_1_UDB3195_ROW1",
+            "top": 576,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "3,717"
+          },
+          {
+            "id": "UB6132002_grp_1_UDB3195_ROW2",
+            "top": 603,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "4,341"
+          },
+          {
+            "id": "UB6132002_grp_1_UDB3195_ROW3",
+            "top": 630,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "5,866"
+          },
+          {
+            "id": "UB6132002_grp_1_UDB3195_ROW4",
+            "top": 657,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "7,602"
+          },
+          {
+            "id": "UB6132002_grp_1_UDB3195_ROW5",
+            "top": 684,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "2,048"
+          },
+          {
+            "id": "UB6199723_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "   YOY"
+          },
+          {
+            "id": "UB6175108_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "41,705"
+          },
+          {
+            "id": "UB6198370_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "66,444"
+          },
+          {
+            "id": "UB6191253_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "33,669"
+          },
+          {
+            "id": "UB6213241_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "32,901"
+          },
+          {
+            "id": "UB6180450_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "28,672"
+          },
+          {
+            "id": "UB6179138_UGHB7543grp_1_dataset_2_ROW0",
+            "top": 711,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "30,408"
+          },
+          {
+            "id": "UB5622520_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "Average Active Sales Leaders(지역별)"
+          },
+          {
+            "id": "UB5602336_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5595998_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5634325_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5624437_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5599952_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB5596214_grp_2_UGHB7543_ROW0",
+            "top": 738,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": ""
+          },
+          {
+            "id": "UB6131219_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    북미"
+          },
+          {
+            "id": "UB6131219_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    멕시코"
+          },
+          {
+            "id": "UB6131219_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    남중아메리카"
+          },
+          {
+            "id": "UB6131219_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    EMEA"
+          },
+          {
+            "id": "UB6131219_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    아시아, 태평양"
+          },
+          {
+            "id": "UB6131219_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "    중국"
+          },
+          {
+            "id": "UB6114512_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "2,048"
+          },
+          {
+            "id": "UB6114512_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "38,084"
+          },
+          {
+            "id": "UB6114512_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "28,821"
+          },
+          {
+            "id": "UB6114512_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "33,513"
+          },
+          {
+            "id": "UB6114512_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "6,848"
+          },
+          {
+            "id": "UB6114512_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "7,000"
+          },
+          {
+            "id": "UB6116306_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "493,056"
+          },
+          {
+            "id": "UB6116306_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "493,056"
+          },
+          {
+            "id": "UB6116306_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "28,821"
+          },
+          {
+            "id": "UB6116306_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "33,513"
+          },
+          {
+            "id": "UB6116306_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "6,848"
+          },
+          {
+            "id": "UB6116306_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "7,000"
+          },
+          {
+            "id": "UB6103460_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "7,001"
+          },
+          {
+            "id": "UB6103460_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "38,084"
+          },
+          {
+            "id": "UB6103460_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "28,821"
+          },
+          {
+            "id": "UB6103460_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "33,513"
+          },
+          {
+            "id": "UB6103460_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "6,848"
+          },
+          {
+            "id": "UB6103460_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "7,000"
+          },
+          {
+            "id": "UB6143762_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "493,056"
+          },
+          {
+            "id": "UB6143762_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "38,084"
+          },
+          {
+            "id": "UB6143762_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "28,821"
+          },
+          {
+            "id": "UB6143762_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "33,513"
+          },
+          {
+            "id": "UB6143762_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "6,848"
+          },
+          {
+            "id": "UB6143762_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "7,000"
+          },
+          {
+            "id": "UB6093171_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "493,056"
+          },
+          {
+            "id": "UB6093171_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "493,056"
+          },
+          {
+            "id": "UB6093171_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "28,821"
+          },
+          {
+            "id": "UB6093171_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "33,513"
+          },
+          {
+            "id": "UB6093171_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "6,848"
+          },
+          {
+            "id": "UB6093171_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "7,000"
+          },
+          {
+            "id": "UB6132002_grp_2_UDB3195_ROW0",
+            "top": 765,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "493,056"
+          },
+          {
+            "id": "UB6132002_grp_2_UDB3195_ROW1",
+            "top": 792,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "38,084"
+          },
+          {
+            "id": "UB6132002_grp_2_UDB3195_ROW2",
+            "top": 819,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "4,341"
+          },
+          {
+            "id": "UB6132002_grp_2_UDB3195_ROW3",
+            "top": 846,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "33,513"
+          },
+          {
+            "id": "UB6132002_grp_2_UDB3195_ROW4",
+            "top": 873,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "6,848"
+          },
+          {
+            "id": "UB6132002_grp_2_UDB3195_ROW5",
+            "top": 900,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "7,000"
+          },
+          {
+            "id": "UB6199723_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 2,
+            "width": 370,
+            "height": 27,
+            "text": "   YOY"
+          },
+          {
+            "id": "UB6175108_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 372,
+            "width": 70,
+            "height": 27,
+            "text": "116,314"
+          },
+          {
+            "id": "UB6198370_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 442,
+            "width": 70,
+            "height": 27,
+            "text": "1,062,294"
+          },
+          {
+            "id": "UB6191253_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 512,
+            "width": 70,
+            "height": 27,
+            "text": "121,267"
+          },
+          {
+            "id": "UB6213241_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 582,
+            "width": 70,
+            "height": 27,
+            "text": "607,322"
+          },
+          {
+            "id": "UB6180450_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 652,
+            "width": 70,
+            "height": 27,
+            "text": "1,062,294"
+          },
+          {
+            "id": "UB6179138_UGHB7543grp_2_dataset_2_ROW0",
+            "top": 927,
+            "left": 722,
+            "width": 70,
+            "height": 27,
+            "text": "582,842"
+          },
+          {
+            "id": "UB7128552_UPFB9094_ROW0",
+            "top": 1086,
+            "left": 0,
+            "width": 673,
+            "height": 35,
+            "text": "    2026년 08월 11일"
+          },
+          {
+            "id": "UB7175166_UPFB9094_ROW0",
+            "top": 1086,
+            "left": 673,
+            "width": 121,
+            "height": 35,
+            "text": "1/1 페이지    "
+          },
+          {
+            "id": null,
+            "top": 0,
+            "left": 0,
+            "width": 0,
+            "height": 0,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "totalObjects": 180,
+    "renderMs": 3775
+  },
+  "complex": {
+    "pageCount": 1,
+    "pages": [
+      {
+        "pageIndex": 0,
+        "objectCount": 12,
+        "objects": [
+          {
+            "id": "LB6417_UPHB2584_ROW0",
+            "top": 100,
+            "left": 367,
+            "width": 425,
+            "height": 68,
+            "text": "  연도별 실적보고서"
+          },
+          {
+            "id": "IMG4979_UPHB2584_ROW0",
+            "top": 50,
+            "left": 39,
+            "width": 287,
+            "height": 100,
+            "text": ""
+          },
+          {
+            "id": "UB5115957_UPHB2584_ROW0",
+            "top": 193,
+            "left": 39,
+            "width": 26,
+            "height": 87,
+            "text": "결\n재"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 65,
+            "width": 75,
+            "height": 32,
+            "text": "대표이사"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 140,
+            "width": 75,
+            "height": 32,
+            "text": "사장"
+          },
+          {
+            "id": "UB5103966_UPHB2584_ROW0",
+            "top": 193,
+            "left": 215,
+            "width": 75,
+            "height": 32,
+            "text": "부사장"
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 65,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 140,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB5077625_UPHB2584_ROW0",
+            "top": 225,
+            "left": 215,
+            "width": 75,
+            "height": 55,
+            "text": ""
+          },
+          {
+            "id": "UB7128552_UPFB9094_ROW0",
+            "top": 1086,
+            "left": 0,
+            "width": 673,
+            "height": 35,
+            "text": "    2026년 08월 11일"
+          },
+          {
+            "id": "UB7175166_UPFB9094_ROW0",
+            "top": 1086,
+            "left": 673,
+            "width": 121,
+            "height": 35,
+            "text": "1/1 페이지    "
+          },
+          {
+            "id": null,
+            "top": 0,
+            "left": 0,
+            "width": 0,
+            "height": 0,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "totalObjects": 12,
+    "renderMs": 1833
+  }
+}
