@@ -17,7 +17,7 @@ form{gap:12px}
 .inline-note{margin-top:9px;padding:8px 11px}
 .json-card .section-heading{margin-bottom:12px}
 .json-controls{min-height:38px}
-.json-file-row{margin-top:10px;background:#fbfdfc}
+.json-file-row{margin-top:10px;background:var(--studio-primary-softer)}
 .json-file-row .file-type-icon{font-size:10px}
 .json-direct{margin-top:10px}
 .json-direct textarea{height:112px}

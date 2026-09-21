@@ -61,7 +61,8 @@ const server = http.createServer((req,res) => {
   if (pathname.startsWith('/api/')) return routeCandidates(req,res);
   if (pathname.startsWith('/mysuit/') || pathname.startsWith('/MYSUIT/')) return proxy(req,res);
   if (pathname === '/ai-builder/import') { req.url = '/ai-builder/import.html'; return staticFile(req,res); }
-  if (pathname === '/ai-builder') { req.url = '/index.html'; return staticFile(req,res); }
+  // 편집하기 (developer) and 사용자 편집 (user) are two screens over the same editor page and engine.
+  if (pathname === '/ai-builder' || pathname === '/ai-builder/user') { req.url = '/index.html'; return staticFile(req,res); }
   return staticFile(req,res);
 });
 if (require.main === module) server.listen(config.port, config.host, () => console.log(`MVP3 listening on http://${config.host}:${config.port}`));

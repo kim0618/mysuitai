@@ -5,9 +5,10 @@
       .mvp44-ui{position:fixed;z-index:2147483000;font-family:Arial,sans-serif;box-sizing:border-box}
       #mvp44-inline{border:2px solid #0878d1;background:#fff;padding:3px 6px;outline:none;box-shadow:0 3px 12px #0003}
       #mvp44-toolbar[hidden],#mvp44-menu[hidden],#mvp44-inline[hidden]{display:none!important}
-      #mvp44-toolbar{display:flex;gap:3px;align-items:center;background:#172b4d;color:#fff;padding:5px;border-radius:6px;box-shadow:0 4px 14px #0004}
-      #mvp44-toolbar button,#mvp44-toolbar select{font-size:12px;height:28px;border:0;border-radius:4px;background:#fff;color:#172033;padding:2px 7px}
-      #mvp44-toolbar button.active{background:#0b79d0;color:#fff}
+      #mvp44-toolbar{display:flex;gap:4px;align-items:center;background:#fff;color:#1C2733;padding:4px;border:1px solid #E4E9E6;border-radius:8px;box-shadow:0 6px 16px rgba(16,24,40,.12)}
+      #mvp44-toolbar button,#mvp44-toolbar select{font-size:12px;height:28px;border:1px solid transparent;border-radius:6px;background:#fff;color:#1C2733;padding:2px 8px}
+      #mvp44-toolbar button:hover{background:#F3FAF6}
+      #mvp44-toolbar button.active{background:#E8F5EE;border-color:#B9DFCB;color:#087F52}
       #mvp44-menu{display:grid;min-width:150px;background:#fff;border:1px solid #aab6c5;border-radius:6px;padding:4px;box-shadow:0 5px 18px #0004}
       #mvp44-menu button{border:0;background:#fff;text-align:left;padding:7px;font-size:12px}#mvp44-menu button:hover{background:#e8f2ff}
     `;doc.head.appendChild(style);

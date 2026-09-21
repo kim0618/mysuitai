@@ -1,5 +1,17 @@
 (function () {
-  if (location.pathname !== '/ai-builder') return;
+  // One editor page, two screens. 편집하기 (developer / template designer) and 사용자 편집 (end user) share the Viewer,
+  // the operation engine, history and save; the profile only decides which UI layer is shown.
+  const SURFACE={'/ai-builder':'developer','/ai-builder/user':'user'}[location.pathname];
+  if (!SURFACE) return;
+  const PROFILE={
+    developer:{route:'edit',title:'편집하기',tabs:[['ai','채팅'],['direct','직접 편집'],['binding','데이터 연결']],tableModes:true,advanced:true,dataAttach:true,cellLabel:'표 셀',cellSection:'셀 편집',
+      intro:'문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.',placeholder:'서식 수정 요청을 입력하세요',
+      suggestions:{'제목 수정':'문서 제목을 수정해줘','표 열 너비 조정':'두 번째 표의 열 너비를 조정해줘','행 이동':'선택한 행을 아래로 이동해줘','데이터 연결':'JSON 데이터를 연결해줘'},empty:'문서에서 편집할 항목을 선택하세요.'},
+    // The user screen hides data binding, table-structure modes and internal identifiers.
+    user:{route:'user',title:'사용자 편집',tabs:[['ai','채팅'],['direct','직접 편집']],tableModes:false,advanced:false,dataAttach:false,cellLabel:'문구',cellSection:'문구 편집',
+      intro:'원하는 수정 내용을 말씀해 주세요.',placeholder:'수정할 내용을 입력하세요',
+      suggestions:{'제목 수정':'문서 제목을 수정해줘','이미지 교체':'로고 이미지를 교체해줘','표 정리':'표를 보기 좋게 정리해줘','문구 수정':'문구를 자연스럽게 다듬어줘'},empty:'문서에서 수정할 문구나 이미지를 선택하세요.'},
+  }[SURFACE];
   const $ = id => document.getElementById(id), params = new URLSearchParams(location.search), context = window.__formContext;
   const draftId = params.get('layoutDraftId') || (context.origin === 'IMPORTED' ? `import_${context.projectName}_${context.formName}_default`.slice(0,80) : 'layout_sample_default');
   const scope = {layoutDraftId:draftId,projectName:context.projectName,formName:context.formName};
@@ -7,7 +19,8 @@
   // One Builder state: the chat provider, the direct editor and the data tab all read this object.
   const state = {document:null,selection:null,source:null,staticSelection:null,importContext:null,bindingProposal:null,selectedProposalTarget:null,currentBinding:null,datasets:[],savedPreview:null,lastError:null};
   document.body.classList.add('ai-builder');
-  document.title = 'MySuit AI Builder';
+  document.body.dataset.surface = SURFACE;
+  document.title = `${PROFILE.title} · MySuit AI Studio`;
 
   async function api(url, options={}) {
     const response=await fetch(url,{headers:{'content-type':'application/json'},...options}), data=await response.json();
@@ -23,12 +36,12 @@
   const button = (label, onclick, attrs={}) => { const node=element('button',{type:'button',...attrs},label); node.onclick=onclick; return node; };
 
   // ---- Shell: shared Sidebar + TopBar -------------------------------------------------------------
-  AiBuilderSidebar.mount({active:'edit'});
+  AiBuilderSidebar.mount({active:PROFILE.route});
   const header=document.querySelector('body > header'), brand=header.querySelector('.brand');
   header.classList.add('ai-topbar');
-  brand.innerHTML='<span class="ai-breadcrumb">AI Builder<span class="ai-breadcrumb-divider">/</span><b>편집하기</b></span><strong id="builder-document-name">문서 불러오는 중</strong>';
+  brand.innerHTML=`<span class="ai-breadcrumb">AI Studio<span class="ai-breadcrumb-divider">/</span><b>${PROFILE.title}</b></span><strong id="builder-document-name">문서 불러오는 중</strong>`;
   const headerActions=header.querySelector('.header-actions'), legacyActions=[...headerActions.children], historyToolbar=header.querySelector('.history-toolbar');
-  headerActions.innerHTML='<span class="builder-save-state" id="builder-save-state">저장됨</span><button id="builder-save" class="review-primary">저장</button>';
+  headerActions.innerHTML='<span class="builder-save-state" id="builder-save-state">저장됨</span><button id="builder-save" class="studio-primary-button">저장</button>';
   headerActions.prepend(historyToolbar);
   $('history-undo').innerHTML='<span aria-hidden="true">↶</span>'; $('history-redo').innerHTML='<span aria-hidden="true">↷</span>';
   $('history-undo').setAttribute('aria-label','실행 취소'); $('history-redo').setAttribute('aria-label','다시 실행');
@@ -37,7 +50,7 @@
   const aside=document.querySelector('main > aside'), legacySections=[...aside.children];
   const tabs=element('div',{class:'builder-tabs',role:'tablist'}), direct=element('div',{class:'builder-panel builder-direct',role:'tabpanel'}), bindingPanel=element('div',{class:'builder-panel builder-data',role:'tabpanel'}), ai=element('div',{class:'builder-panel builder-chat',role:'tabpanel'});
   const panels={ai,direct,binding:bindingPanel};
-  for (const [key,label] of [['ai','채팅'],['direct','직접 편집'],['binding','데이터 연결']]) { const tab=button(label,()=>selectTab(key),{class:'builder-tab',role:'tab','data-tab':key,'aria-selected':String(key==='ai')}); tabs.append(tab); }
+  for (const [key,label] of PROFILE.tabs) { const tab=button(label,()=>selectTab(key),{class:'builder-tab',role:'tab','data-tab':key,'aria-selected':String(key==='ai')}); tabs.append(tab); }
   // The legacy editor stays mounted (hidden): its inputs, change set and history bridge remain the single write path.
   const legacy=element('div',{class:'builder-legacy',hidden:''}); legacy.append(...legacySections,...legacyActions);
   const inspector=element('div',{id:'builder-inspector'}); direct.append(inspector);
@@ -46,6 +59,7 @@
   const errorBox=element('div',{id:'builder-error',class:'builder-error',role:'alert',hidden:''}); document.body.append(errorBox);
 
   function selectTab(key) {
+    if (!PROFILE.tabs.some(([name])=>name===key)) return;
     for (const [name,panel] of Object.entries(panels)) panel.hidden=name!==key;
     tabs.querySelectorAll('[role=tab]').forEach(tab=>tab.setAttribute('aria-selected',String(tab.dataset.tab===key)));
     // The tab decides the workspace mode; only 직접 편집 enables Viewer editing interaction.
@@ -69,15 +83,17 @@
   // ---- 채팅 ----------------------------------------------------------------------------------------
   ai.innerHTML='<div class="chat-workspace"><div id="chat-conversation" class="chat-conversation" role="log" aria-live="polite"></div><form class="ai-composer"><button class="attach" type="button" aria-label="데이터 연결 열기" title="데이터 연결">＋</button><input aria-label="서식 수정 요청" placeholder="서식 수정 요청을 입력하세요"><button class="chat-send" type="submit" disabled aria-label="전송">전송</button></form></div>';
   const chatInput=ai.querySelector('.ai-composer input'), chatSend=ai.querySelector('.chat-send'), conversation=$('chat-conversation');
-  const SUGGESTIONS={'제목 수정':'문서 제목을 수정해줘','표 열 너비 조정':'두 번째 표의 열 너비를 조정해줘','행 이동':'선택한 행을 아래로 이동해줘','데이터 연결':'JSON 데이터를 연결해줘'};
+  const SUGGESTIONS=PROFILE.suggestions;
+  chatInput.placeholder=PROFILE.placeholder;
   // ChatProvider adapter: a provider receives the message plus the shared Builder state and returns {reply}.
   let chatProvider=null;
   const time=()=>new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});
   function bubble(kind,...content){ const row=element('div',{class:`chat-row ${kind}`}); if(kind==='assistant')row.append(element('span',{class:'chat-avatar','aria-hidden':'true'},'AI')); const node=element('div',{class:`chat-message ${kind}`}); for(const part of content)node.append(typeof part==='string'?element('p',{},part):part); node.append(element('time',{},time())); row.append(node); conversation.append(row); conversation.scrollTop=conversation.scrollHeight; return node; }
   // First AI message: greeting with the current document and compact suggestion chips (they only fill the composer).
-  function greet(){ conversation.replaceChildren(); const chips=element('div',{class:'chat-suggestions'}); for (const [label,prompt] of Object.entries(SUGGESTIONS)) chips.append(button(label,()=>{chatInput.value=prompt;chatInput.dispatchEvent(new Event('input'));chatInput.focus()})); const name=element('b',{id:'chat-document-name'},state.document?.title||'현재 문서'); const intro=element('p'); intro.append('현재 "',name,'" 문서를 보고 있습니다.'); bubble('assistant','안녕하세요.',intro,'문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.',element('small',{class:'chat-suggestions-title'},'추천 작업'),chips); }
+  function greet(){ conversation.replaceChildren(); const chips=element('div',{class:'chat-suggestions'}); for (const [label,prompt] of Object.entries(SUGGESTIONS)) chips.append(button(label,()=>{chatInput.value=prompt;chatInput.dispatchEvent(new Event('input'));chatInput.focus()})); const name=element('b',{id:'chat-document-name'},state.document?.title||'현재 문서'); const intro=element('p'); intro.append('현재 "',name,'" 문서를 보고 있습니다.'); bubble('assistant','안녕하세요.',intro,PROFILE.intro,element('small',{class:'chat-suggestions-title'},'추천 작업'),chips); }
   chatInput.oninput=()=>{chatSend.disabled=!chatInput.value.trim()};
   ai.querySelector('.attach').onclick=()=>{selectTab('binding')};
+  if (!PROFILE.dataAttach) ai.querySelector('.attach').remove();
   ai.querySelector('.ai-composer').onsubmit=async event=>{
     event.preventDefault(); const message=chatInput.value.trim(); if(!message)return;
     bubble('user',message); chatInput.value=''; chatSend.disabled=true;
@@ -112,7 +128,7 @@
 
   // Table selection mode (셀/행/열) for imported tables. Only the editor of the current selection type is shown.
   let tableMode='cell';
-  const hasTables=()=>Boolean(window.__mvp12?.tables?.length);
+  const hasTables=()=>PROFILE.tableModes&&Boolean(window.__mvp12?.tables?.length);
   const MODE_EMPTY={cell:'표에서 편집할 셀을 선택하세요.',row:'표에서 편집할 행을 선택하세요.',column:'표에서 편집할 열을 선택하세요.'};
   function modeSwitch(){return segmented([['cell','셀'],['row','행'],['column','열']],tableMode,setTableMode,{class:'segmented table-mode','aria-label':'표 선택 방식','data-control':'table-mode'})}
   // Single active selection: every transition clears all selection layers first - the object/cell selection and its
@@ -140,21 +156,23 @@
     const kind=source?.sourceClassName, isCell=Boolean(selection&&source&&(kind==='Cell'||/^IMPCL/.test(selection.sourceObjectId||'')));
     if (hasTables()) inspector.append(modeSwitch());
     if (state.staticSelection && !selection) return renderStructureOnly();
-    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},hasTables()?MODE_EMPTY[tableMode]:'문서에서 편집할 항목을 선택하세요.')); return; }
+    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},hasTables()?MODE_EMPTY[tableMode]:PROFILE.empty)); return; }
     const [icon,type]=TYPE[kind]||['◻','요소'], isImage=kind==='UBImage';
     const cellInfo=isCell?window.__mvp12?.selectCell?.(selection.sourceObjectId):null;
-    const name=isImage?selection.sourceObjectId:(current('text')||selection.currentText||'').trim()||selection.sourceObjectId;
-    inspector.append(selectedCard(icon,cellInfo?'표 셀':type,name));
+    const name=isImage?(PROFILE.advanced?selection.sourceObjectId:'문서 이미지'):(current('text')||selection.currentText||'').trim()||(PROFILE.advanced?selection.sourceObjectId:PROFILE.cellLabel);
+    inspector.append(selectedCard(cellInfo&&!PROFILE.tableModes?'T':icon,cellInfo?PROFILE.cellLabel:type,name));
     if (isImage) inspector.append(...imageSections());
     else if (cellInfo) inspector.append(...cellSections());
     else inspector.append(...textSections());
     if (supports('visible')) inspector.append(section('표시',toggle(isImage?'이미지 표시':'표시',current('visible')!==false,value=>setProperty('visible',value),{'data-control':'visible'})));
     const reset=button('이 요소의 변경 되돌리기',()=>mvpDirectBridge.action('resetAll').then(renderInspector),{class:'link-button'});
+    // Source identifiers are developer information; the user screen keeps only the reset action.
+    if (!PROFILE.advanced) { inspector.append(reset); return; }
     const advanced=element('details',{class:'inspector-advanced'});advanced.append(element('summary',{},'고급 설정'),element('p',{},`원본 ID ${selection.sourceObjectId} · ${source.positionConfidence||''}`),reset);
     inspector.append(advanced);
   }
   function cellSections(){
-    const node=section('셀 편집');
+    const node=section(PROFILE.cellSection);
     if (supports('text')) {
       const area=element('textarea',{rows:'2','aria-label':'내용','data-key':'text'});area.value=current('text')??'';
       area.onkeydown=event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();area.blur()}};
@@ -441,10 +459,22 @@
     $('builder-document-name').textContent=data.document.title; if($('chat-document-name'))$('chat-document-name').textContent=data.document.title;
     renderInspector();
   }
+  // 사용자 편집 opens a real document: the one in the URL, else the last one opened in the Studio, else a choice of
+  // recent documents. It never falls back to the built-in sample.
+  async function chooseDocument(){
+    $('viewer').src='about:blank';
+    const pane=document.querySelector('main > section')||document.querySelector('main'),picker=element('div',{class:'studio-document-picker'});
+    picker.append(element('h2',{},'편집할 문서를 선택하세요'),element('p',{},'최근에 만든 문서를 열거나 새 문서를 생성할 수 있습니다.'));
+    const list=element('div',{class:'studio-document-list'});picker.append(list);pane.append(picker);
+    try{const {documents}=await api('/api/ai-builder/recent?limit=8');for(const d of documents){const link=element('a',{class:'studio-document',href:`/ai-builder/user?${new URLSearchParams({projectName:d.projectName,layoutDraftId:d.draftId})}`});link.append(element('b',{},d.title||'문서'),element('small',{},new Date(d.createdAt).toLocaleString('ko-KR')));list.append(link)}if(!documents.length)list.append(element('p',{class:'studio-document-empty'},'아직 만든 문서가 없습니다.'))}catch(error){showError(error)}
+    const create=element('a',{class:'studio-document-create',href:'/ai-builder/import'},'새 문서 만들기');picker.append(create);
+    $('builder-document-name').textContent='문서 선택';
+  }
   greet();
   selectTab('ai');
-  boot().catch(showError);
+  if (SURFACE==='user' && !params.get('projectName')) { const last=AiBuilderSidebar.lastQuery(); if (last) { location.replace(`/ai-builder/user${last}`); return; } chooseDocument(); }
+  else boot().catch(showError);
 
-  window.aiBuilder={selectTab,scope,state,builderState,get selectedObjectId(){return state.selection?.sourceObjectId||null},get savedPreview(){return state.savedPreview},get importContext(){return state.importContext},loadBinding:renderData,
+  window.aiBuilder={surface:SURFACE,selectTab,scope,state,builderState,get selectedObjectId(){return state.selection?.sourceObjectId||null},get savedPreview(){return state.savedPreview},get importContext(){return state.importContext},loadBinding:renderData,
     chat:{setProvider(provider){chatProvider=provider||null},get provider(){return chatProvider}},renderInspector,showError};
 })();

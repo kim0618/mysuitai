@@ -30,6 +30,8 @@
     // 'active' flag is set; drop both so no handle survives when another layer owns the selection.
     const clearNativeSelection=()=>{canvas.discardActiveObject?.();for(const object of canvas.getObjects())if(object.active)object.active=false};
     const host=iframe.ownerDocument.defaultView;
+    // Selected-object outline in the Studio accent colour (read from the Builder theme tokens).
+    const selectionColor=()=>host.getComputedStyle?.(host.document.documentElement).getPropertyValue('--studio-primary').trim()||'#087F52';
     // Magnet: free objects (text, image) snap to page edges/centres and to nearby objects while dragged (not table cells).
     let guides=[];
     const snapObject=(object,left,top)=>{const snap=host.MvpObjectSnap;if(!snap?.enabled)return{left,top,guides:[]};const zoom=canvas.viewportTransform?.[0]||1,page={width:(canvas.getWidth?.()||canvas.width)/zoom,height:(canvas.getHeight?.()||canvas.height)/zoom},tableSelection=host.MvpTableSelection;
@@ -49,7 +51,7 @@
       clearHighlight();
       const ctx=canvas.contextTop;
       if(showChanged)canvas.getObjects().filter(o=>changedIds.has(String(o.id||'').split('_')[0])).forEach((o,index)=>{const r=o.getBoundingRect();ctx.save();ctx.strokeStyle='#00a6d6';ctx.lineWidth=4;ctx.setLineDash?.([7,5]);ctx.strokeRect(r.left-3,r.top-3,r.width+6,r.height+6);ctx.fillStyle='#00a6d6';ctx.font='bold 22px sans-serif';ctx.fillText(String(index+1),r.left+5,r.top+24);ctx.restore()});
-      if(selected){const rect=selected.getBoundingRect();ctx.save();ctx.strokeStyle='#ff4d00';ctx.lineWidth=5;ctx.setLineDash?.([12,7]);ctx.shadowColor='rgba(255,77,0,.35)';ctx.shadowBlur=8;ctx.strokeRect(rect.left-4,rect.top-4,rect.width+8,rect.height+8);ctx.restore()}
+      if(selected){const rect=selected.getBoundingRect();ctx.save();ctx.strokeStyle=selectionColor();ctx.lineWidth=5;ctx.setLineDash?.([12,7]);ctx.shadowColor='rgba(8,127,82,.25)';ctx.shadowBlur=8;ctx.strokeRect(rect.left-4,rect.top-4,rect.width+8,rect.height+8);ctx.restore()}
       drawGuides(ctx);
     };
     const handler=event=>{

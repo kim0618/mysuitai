@@ -59,3 +59,5 @@ mysuit-mvp-work/screenshots/selection-*.png
 mysuit-mvp-work/logs/ai-builder-selection-lifecycle-browser.json
 mysuit-mvp-work/screenshots/interaction-*.png
 mysuit-mvp-work/logs/ai-builder-interaction-3-2-browser.json
+mysuit-mvp-work/screenshots/studio-*.png
+mysuit-mvp-work/logs/ai-studio-ui-browser.json

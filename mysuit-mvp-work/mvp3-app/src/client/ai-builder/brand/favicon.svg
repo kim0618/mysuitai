@@ -1,0 +1,3 @@
+<!-- TEMPORARY fallback favicon for MySuit AI Studio: the existing "M" mark on the Studio primary green.
+     Replace with the approved artwork (see docs/133, Brand asset contract). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#087F52"/><text x="16" y="22.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#fff">M</text></svg>

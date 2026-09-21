@@ -47,10 +47,12 @@ function sourceBinding(parsed, objectId) {
 async function routeAiBuilder(req, res) {
   const url = new URL(req.url, 'http://127.0.0.1');
   try {
+    if (url.pathname === '/api/ai-builder/recent' && req.method === 'GET') return send(res,200,{success:true,documents:importService.recent(Math.min(20,Number(url.searchParams.get('limit'))||8))});
     if (url.pathname === '/api/ai-builder/context' && req.method === 'GET') {
       const query=Object.fromEntries(url.searchParams), context=formContext.resolve(query), form=context.form || path.join(config.projectsRoot,context.projectName,context.formName,'form.ubjf'), parsed=readForm(form), objectId=query.objectId;
       const operation=binding.list(query).filter(item => (item.target?.objectId || item.sourceObjectId) === objectId).at(-1);
-      return send(res,200,{success:true,document:{projectName:context.projectName,formName:context.formName,title:context.metadata?.title || context.formName},importContext:importService.read(context.projectName),datasets:datasetInfo(parsed),binding:operation ? (operation.operation === 'unbindField' ? null : operation.after || operation.binding) : sourceBinding(parsed,objectId)});
+      const importContext=importService.read(context.projectName);
+      return send(res,200,{success:true,document:{projectName:context.projectName,formName:context.formName,title:context.metadata?.title || String(importContext?.document?.displayName||'').replace(/\.[^.]+$/,'') || context.formName},importContext,datasets:datasetInfo(parsed),binding:operation ? (operation.operation === 'unbindField' ? null : operation.after || operation.binding) : sourceBinding(parsed,objectId)});
     }
     if (url.pathname === '/api/ai-builder/import/validate-dim' && req.method === 'POST') {
       const dim=importService.parseDim((await json(req,6*1024*1024)).dim);

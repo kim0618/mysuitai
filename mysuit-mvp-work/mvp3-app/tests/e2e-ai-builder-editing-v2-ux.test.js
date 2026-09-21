@@ -71,7 +71,7 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
 
   // 5-6. Chat: greeting, chips fill the composer, send shows user + honest AI bubble.
   await page.click('[data-tab=ai]');
-  const greeting = await page.evaluate(() => ({ text: document.querySelector('.chat-row.assistant .chat-message').innerText, chips: [...document.querySelectorAll('.chat-suggestions button')].map(x => x.textContent), composerHeight: document.querySelector('.ai-composer').getBoundingClientRect().height, inputHeight: document.querySelector('.ai-composer input').getBoundingClientRect().height, panel: document.querySelector('main>aside').getBoundingClientRect().width, logScrolls: getComputedStyle(document.querySelector('.chat-conversation')).overflowY }));
+  const greeting = await page.evaluate(() => ({ docTitle: window.aiBuilder.state.document?.title, text: document.querySelector('.chat-row.assistant .chat-message').innerText, chips: [...document.querySelectorAll('.chat-suggestions button')].map(x => x.textContent), composerHeight: document.querySelector('.ai-composer').getBoundingClientRect().height, inputHeight: document.querySelector('.ai-composer input').getBoundingClientRect().height, panel: document.querySelector('main>aside').getBoundingClientRect().width, logScrolls: getComputedStyle(document.querySelector('.chat-conversation')).overflowY }));
   await page.click('.chat-suggestions button:nth-child(1)');
   const filled = await page.inputValue('.ai-composer input');
   await page.fill('.ai-composer input', '두 번째 표의 열 너비를 조정해줘');
@@ -79,7 +79,7 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   await until(page, () => document.querySelectorAll('.chat-row').length >= 3);
   const bubbles = await page.evaluate(() => [...document.querySelectorAll('.chat-row')].map(row => ({ kind: row.classList.contains('user') ? 'user' : 'assistant', text: row.querySelector('.chat-message p')?.textContent })));
   await shot(page, 'editing-v2-ux-chat.png');
-  check('chatGreeting', greeting.text.includes('안녕하세요') && greeting.text.includes(`"${project.formName}"`) && greeting.chips.join('|') === '제목 수정|표 열 너비 조정|행 이동|데이터 연결' && greeting.logScrolls === 'auto' && greeting.panel === 380, greeting);
+  check('chatGreeting', greeting.text.includes('안녕하세요') && greeting.text.includes(`"${greeting.docTitle}"`) && greeting.docTitle !== project.formName && greeting.chips.join('|') === '제목 수정|표 열 너비 조정|행 이동|데이터 연결' && greeting.logScrolls === 'auto' && greeting.panel === 380, greeting);
   check('chatComposerCompact', greeting.composerHeight <= 52 && greeting.inputHeight <= 34, greeting);
   check('chatChipFillsComposer', filled === '문서 제목을 수정해줘', { filled });
   check('chatBubbles', bubbles.at(-2)?.kind === 'user' && bubbles.at(-2)?.text === '두 번째 표의 열 너비를 조정해줘' && bubbles.at(-1)?.kind === 'assistant' && bubbles.at(-1)?.text === 'AI 연결이 아직 설정되지 않았습니다.', bubbles);

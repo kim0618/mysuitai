@@ -255,7 +255,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   const createSidebar = await sidebarMetrics(importPage); await importPage.close();
   const same = ['width', 'brand', 'brandOverflow', 'menu', 'menuX', 'menuHeight', 'fontSizes', 'iconSizes', 'activeBackground', 'footer', 'topbar'].filter(key => JSON.stringify(createSidebar[key]) !== JSON.stringify(editSidebar[key]));
   result.sidebar = { create: createSidebar, edit: editSidebar, differences: same };
-  check('sidebarVisualConsistency', !same.length && createSidebar.active === '생성하기' && editSidebar.active === '편집하기' && editSidebar.brandOverflow <= 0 && editSidebar.brand.h === 36 && editSidebar.menu.join('|') === '생성하기|편집하기|내 작업|템플릿|설정', result.sidebar);
+  check('sidebarVisualConsistency', !same.length && createSidebar.active === '생성하기' && editSidebar.active === '편집하기' && editSidebar.brandOverflow <= 0 && editSidebar.brand.h === 36 && editSidebar.menu.join('|') === '생성하기|편집하기|사용자 편집|내 작업|템플릿|설정', result.sidebar);
 
   // ---- Direct JSON input + array binding (DIM project without JSON) --------------------------------------
   await openWorkspace(page, dimProject.builderUrl);
