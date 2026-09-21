@@ -1,5 +1,7 @@
 # MySuit Viewer 검수 편집 MVP
 
+> 다른 PC에서 이어서 작업할 때는 먼저 [SETUP-NEW-PC.md](SETUP-NEW-PC.md)를 확인한다. MYSUIT 웹앱과 `conf/server.xml`은 저장소에 없다.
+
 MVP 1~5.9와 PRE-AI BASELINE v1의 코드, 검증 로그와 문서는 이 WSL 프로젝트 안에만 보관한다.
 
 현재 상태는 [최종 보고서](docs/FINAL-REPORT.md)를 기준으로 한다. MVP 4.2에서 Viewer Render Position Patch는 Fabric 화면과 브라우저 출력에는 반영되지만, MySuit 서버 PDF에는 직접 반영되지 않는 것으로 확인했다.
