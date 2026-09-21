@@ -27,7 +27,7 @@
     ,"test:mvp59": "node --test --test-concurrency=1 tests/operation-registry.test.js tests/capability-service.test.js tests/operation-validator.test.js tests/capability-api.test.js tests/mvp59-artifacts.test.js"
     ,"test:e2e:mvp59": "node tests/e2e-mvp59-capability.test.js"
     ,"test:pre-ai": "bash scripts/run-pre-ai-baseline.sh"
-    ,"test:hwpx": "node --test --test-concurrency=1 tests/hwpx-parser.test.js"
+    ,"test:hwpx": "node --test --test-concurrency=1 tests/hwpx-parser.test.js tests/hwpx-page-geometry.test.js tests/hwpx-geometry-fixtures.test.js"
     ,"import:hwpx": "node scripts/import-hwpx.js"
     ,"test:e2e:upload-ui": "node tests/e2e-ai-builder-upload-ui.test.js"
     ,"test:e2e:upload-refinement": "node tests/e2e-ai-builder-upload-refinement.test.js"

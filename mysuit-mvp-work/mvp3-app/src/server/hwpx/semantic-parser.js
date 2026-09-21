@@ -3,6 +3,7 @@ const path = require('path');
 const { descendants, first, textContent, attr } = require('./xml');
 const { StyleResolver } = require('./style-resolver');
 const { hwpxError } = require('./hwpx-errors');
+const { readPageGeometry, readPageBorder, paragraphBox, placeObject } = require('./page-geometry');
 
 const num = (node, name, fallback = 0) => { const value = Number(attr(node, name)); return Number.isFinite(value) ? value : fallback; };
 const directText = (node) => descendants(node, 't').map(textContent).join('').replace(/\r/g, '');
@@ -37,15 +38,16 @@ function resolveAsset(pkg, ref, manifest) {
   return { id: `asset_${idSafe(ref || path.basename(entry, ext))}`, fileName: path.basename(entry), mimeType, sha256: crypto.createHash('sha256').update(bytes).digest('hex'), size: bytes.length, relativePath: path.basename(entry), packagePath: entry, bytes };
 }
 
-function parseParagraph(node, styles, index, flowY) {
+function parseParagraph(node, styles, index, flowY, box = null) {
   const runs = descendants(node, 'run').filter((run) => paragraphText(run).trim()), text = paragraphText(node); if (!text.trim()) return null;
   const representative = runs[0], charId = attr(representative, 'charPrIDRef', attr(node, 'charPrIDRef')), paraId = attr(node, 'paraPrIDRef');
   const pos = position(node), size = dimensions(node), style = styles.resolve(charId, paraId);
   if (new Set(runs.map((run) => attr(run, 'charPrIDRef')).filter(Boolean)).size > 1) styles.fidelity.push({ object: `paragraph_${index}`, status: 'PARTIAL', reason: 'MULTIPLE_TEXT_RUN_STYLES_REPRESENTATIVE_USED' });
+  if (box) return { id: `paragraph_${index}`, text, x: box.x, y: box.y, width: box.width, height: box.height, style, placement: { mode: 'LINESEG' } };
   return { id: `paragraph_${index}`, text, x: pos.x, y: pos.y || flowY, width: size.width, height: size.height || Math.max(900, style.fontSize * 100), style };
 }
 
-function parseTable(node, styles, index, flowY) {
+function parseTable(node, styles, index, flowY, at = null) {
   try {
     const rowCount = num(node, 'rowCnt'), colCount = num(node, 'colCnt'); if (!(rowCount > 0 && colCount > 0)) throw new Error('invalid rowCnt/colCnt');
     const pos = position(node), declared = dimensions(node), rowHeights = Array(rowCount).fill(0), colWidths = Array(colCount).fill(0), columnConstraints = [], cells = [];
@@ -68,29 +70,46 @@ function parseTable(node, styles, index, flowY) {
     const fallbackWidth = (declared.width || 45000) / colCount, fallbackHeight = (declared.height || rowCount * 2400) / rowCount;
     for (let i = 0; i < colCount; i++) if (!(colWidths[i] > 0)) colWidths[i] = fallbackWidth; for (let i = 0; i < rowCount; i++) if (!(rowHeights[i] > 0)) rowHeights[i] = fallbackHeight;
     if (declared.width > 0 && columnConstraints.length) colWidths.splice(0, colWidths.length, ...solveColumns(colCount, columnConstraints, declared.width));
-    return { id: `table_${index}`, rowCount, colCount, x: pos.x, y: pos.y || flowY, width: declared.width || colWidths.reduce((a, b) => a + b, 0), height: declared.height || rowHeights.reduce((a, b) => a + b, 0), colWidths, rowHeights, cells };
+    return { id: `table_${index}`, rowCount, colCount, x: at ? at.x : pos.x, y: at ? at.y : pos.y || flowY, ...(at ? { placement: at.placement } : {}), width: declared.width || colWidths.reduce((a, b) => a + b, 0), height: declared.height || rowHeights.reduce((a, b) => a + b, 0), colWidths, rowHeights, cells };
   } catch (error) { if (error.code?.startsWith('HWPX_')) throw error; throw hwpxError('HWPX_TABLE_PARSE_FAILED', 'HWPX table을 파싱할 수 없습니다.', { table: index, cause: error.message }); }
 }
 
+function parentMap(root) { const map = new Map(); (function visit(node) { for (const child of node.children || []) { map.set(child, node); visit(child); } })(root); return map; }
+function ancestor(parents, node, local) { for (let current = parents.get(node); current; current = parents.get(current)) if (current.local === local) return current; return null; }
+
+// Top-level tables/pictures resolve to paper-absolute HWPUNIT boxes from hp:pos,
+// in document order so inline objects sharing a line advance a common cursor.
+function anchorObjects(section, page) {
+  const parents = parentMap(section), boxes = new Map(), cursors = new Map(), anchors = new Map();
+  const box = (p) => { if (!boxes.has(p)) boxes.set(p, paragraphBox(p, page)); return boxes.get(p); };
+  for (const node of descendants(section).filter((x) => x.local === 'tbl' || x.local === 'pic')) {
+    if (ancestor(parents, node, 'tbl')) continue;
+    const paragraph = ancestor(parents, node, 'p'); if (paragraph && !cursors.has(paragraph)) cursors.set(paragraph, new Map());
+    const at = placeObject(node, dimensions(node), { page, paragraph, paragraphBox: paragraph ? box(paragraph) : null, inlineCursor: cursors.get(paragraph) || new Map() });
+    if (at) anchors.set(node, at);
+  }
+  return { anchors, box };
+}
+
 function parseHwpxSemantic(pkg) {
-  const styles = new StyleResolver(pkg.header), manifest = manifestItems(pkg), pageNode = pkg.sections.map((name) => first(pkg.xml.get(name), 'pagePr')).find(Boolean);
-  const pageSize = pageNode && (first(pageNode, 'pageSz') || pageNode), page = { width: num(pageSize, 'width', 59528), height: num(pageSize, 'height', 84188) };
-  const paragraphs = [], tables = [], images = [], assets = [], tableMap = new Map(); const assetIds = new Set(); let flowY = 1800;
+  const styles = new StyleResolver(pkg.header), manifest = manifestItems(pkg), pageSection = pkg.sections.map((name) => pkg.xml.get(name)).find((section) => first(section, 'pagePr'));
+  const page = { ...readPageGeometry(first(pageSection, 'pagePr')), pageBorder: readPageBorder(pageSection) };
+  const paragraphs = [], tables = [], images = [], assets = [], tableMap = new Map(); const assetIds = new Set(); let flowY = page.body.y;
   for (const sectionName of pkg.sections) {
-    const section = pkg.xml.get(sectionName), tableNodes = descendants(section, 'tbl'), nestedP = new Set(tableNodes.flatMap((table) => descendants(table, 'p')));
-    for (const p of descendants(section, 'p')) if (!nestedP.has(p)) { const value = parseParagraph(p, styles, paragraphs.length, flowY); if (value) { paragraphs.push(value); flowY = Math.max(flowY, value.y + value.height + 300); } }
-    for (const table of tableNodes) { const value = parseTable(table, styles, tables.length, flowY); tables.push(value); tableMap.set(table, value); flowY = Math.max(flowY, value.y + value.height + 500); }
+    const section = pkg.xml.get(sectionName), tableNodes = descendants(section, 'tbl'), nestedP = new Set(tableNodes.flatMap((table) => descendants(table, 'p'))), { anchors, box } = anchorObjects(section, page);
+    for (const p of descendants(section, 'p')) if (!nestedP.has(p)) { const value = parseParagraph(p, styles, paragraphs.length, flowY, box(p)); if (value) { paragraphs.push(value); flowY = Math.max(flowY, value.y + value.height + 300); } }
+    for (const table of tableNodes) { const value = parseTable(table, styles, tables.length, flowY, anchors.get(table)); tables.push(value); tableMap.set(table, value); flowY = Math.max(flowY, value.y + value.height + 500); }
     for (const pic of descendants(section, 'pic')) {
-      const imageNode = first(pic, 'img'), ref = attr(imageNode, 'binaryItemIDRef', attr(pic, 'binaryItemIDRef')); if (!ref) { styles.fidelity.push({ object: `image_${images.length}`, status: 'UNSUPPORTED', reason: 'IMAGE_REFERENCE_MISSING' }); continue; }
+      const imageNode = first(pic, 'img'), ref = attr(imageNode, 'binaryItemIDRef', attr(pic, 'binaryItemIDRef')); if (!ref) { styles.fidelity.push({ object: `image_${images.length}`, status: 'UNSUPPORTED', reason: 'IMAGE_REFERENCE_MISSING', ...(anchors.has(pic) ? { placement: anchors.get(pic).placement } : {}) }); continue; }
       const asset = resolveAsset(pkg, ref, manifest); if (!assetIds.has(asset.id)) { assets.push(asset); assetIds.add(asset.id); }
-      const pos = position(pic), size = dimensions(pic); let x = pos.x, y = pos.y || flowY;
+      const pos = position(pic), size = dimensions(pic), at = anchors.get(pic); let x = at ? at.x : pos.x, y = at ? at.y : pos.y || flowY;
       const ownerNode = tableNodes.find((table) => descendants(table, 'pic').includes(pic)), owner = tableMap.get(ownerNode);
       if (owner) { const tc = descendants(ownerNode, 'tc').find((cell) => descendants(cell, 'pic').includes(pic)), address = first(tc, 'cellAddr'), span = first(tc, 'cellSpan'), col = num(address, 'colAddr'), row = num(address, 'rowAddr'), colSpan = num(span, 'colSpan', 1), rowSpan = num(span, 'rowSpan', 1), boxWidth = owner.colWidths.slice(col, col + colSpan).reduce((a, b) => a + b, 0), boxHeight = owner.rowHeights.slice(row, row + rowSpan).reduce((a, b) => a + b, 0); x = owner.x + owner.colWidths.slice(0, col).reduce((a, b) => a + b, 0) + Math.max(0, (boxWidth - size.width) / 2) + pos.x; y = owner.y + owner.rowHeights.slice(0, row).reduce((a, b) => a + b, 0) + Math.max(0, (boxHeight - size.height) / 2) + pos.y; }
-      images.push({ id: `image_${images.length}`, assetId: asset.id, x, y, width: size.width || 7200, height: size.height || 9600 });
+      images.push({ id: `image_${images.length}`, assetId: asset.id, x, y, width: size.width || 7200, height: size.height || 9600, ...(at && !owner ? { placement: at.placement } : {}) });
     }
     const unsupported = ['chart', 'ole', 'video', 'audio'].flatMap((kind) => descendants(section, kind).map(() => kind)); for (const kind of unsupported) styles.fidelity.push({ object: kind, status: 'IGNORED_SAFE', reason: 'UNSUPPORTED_OBJECT' });
   }
-  return { version: 'HWPX_SEMANTIC_0.1', page, paragraphs, tables, images, styles: { fidelity: styles.fidelity }, assets };
+  return { version: 'HWPX_SEMANTIC_0.2', page, paragraphs, tables, images, styles: { fidelity: styles.fidelity }, assets };
 }
 
 module.exports = { parseHwpxSemantic, parseTable, parseParagraph, manifestItems, resolveAsset };

@@ -49,3 +49,13 @@ mysuit-mvp-work/mvp3-app/Preview/
 mysuit-mvp-work/mvp3-app/mimetype
 mysuit-mvp-work/mvp3-app/settings.xml
 mysuit-mvp-work/mvp3-app/version.xml
+
+# Real HWPX regression originals (business documents); tests skip when absent
+test-input/hwpx/
+# Evidence produced from the real HWPX originals above
+mysuit-mvp-work/screenshots/structure3-*.png
+mysuit-mvp-work/logs/ai-builder-structure3-browser.json
+mysuit-mvp-work/screenshots/selection-*.png
+mysuit-mvp-work/logs/ai-builder-selection-lifecycle-browser.json
+mysuit-mvp-work/screenshots/interaction-*.png
+mysuit-mvp-work/logs/ai-builder-interaction-3-2-browser.json

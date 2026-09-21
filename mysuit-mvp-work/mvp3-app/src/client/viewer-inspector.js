@@ -26,29 +26,61 @@
     const instanceIdentity=object=>{const parsed=parseViewerObjectId(object.id),renderIndex=canvas.getObjects().indexOf(object),snapshot=snapshots.get(object);return{...parsed,canvasIndex:0,renderIndex,renderInstanceKey:`p0|c0|src:${parsed.sourceObjectId}|band:${parsed.bandId}|row:${parsed.rowIndex}|idx:${renderIndex}`,originalFingerprint:{left:Number(snapshot.left),top:Number(snapshot.top),width:Number(snapshot.width),height:Number(snapshot.height)}}};
     const selectionData=object=>({pageIndex:0,...instanceIdentity(object),className:object.className,currentText:object.text,fontSize:object.fontSize??null,fontWeight:object.fontWeight??'normal',textAlign:object.textAlign??'left',visible:object.visible!==false,left:Number(object.left),top:Number(object.top),width:Number(object.width)*Number(object.scaleX||1),height:Number(object.height)*Number(object.scaleY||1)});
     const clearHighlight=()=>{if(canvas.contextTop&&typeof canvas.clearContext==='function')canvas.clearContext(canvas.contextTop)};
+    // Fabric 1.5 makes the clicked object active on mouse:down and paints its borders/handles for every object whose
+    // 'active' flag is set; drop both so no handle survives when another layer owns the selection.
+    const clearNativeSelection=()=>{canvas.discardActiveObject?.();for(const object of canvas.getObjects())if(object.active)object.active=false};
+    const host=iframe.ownerDocument.defaultView;
+    // Magnet: free objects (text, image) snap to page edges/centres and to nearby objects while dragged (not table cells).
+    let guides=[];
+    const snapObject=(object,left,top)=>{const snap=host.MvpObjectSnap;if(!snap?.enabled)return{left,top,guides:[]};const zoom=canvas.viewportTransform?.[0]||1,page={width:(canvas.getWidth?.()||canvas.width)/zoom,height:(canvas.getHeight?.()||canvas.height)/zoom},tableSelection=host.MvpTableSelection;
+      const others=canvas.getObjects().filter(o=>o!==object&&o.visible!==false&&o.id&&/^IMP(IMG|LB)/.test(o.id)&&!tableSelection?.isTableCell?.(o)).map(o=>({id:o.id,left:Number(o.left),top:Number(o.top),width:Number(o.width)*Number(o.scaleX||1),height:Number(o.height)*Number(o.scaleY||1)})).concat((host.__mvp12?.tables||[]).map(t=>{const l=host.__mvp12.layouts?.[t.sourceTableId]||t;return{id:t.sourceTableId,left:l.x,top:l.y,width:l.width,height:l.height}}));
+      return snap.snap({left,top,width:Number(object.width)*Number(object.scaleX||1),height:Number(object.height)*Number(object.scaleY||1)},{page,others})};
+    const drawGuides=ctx=>{if(!guides.length)return;const vt=canvas.viewportTransform||[1,0,0,1,0,0],w=canvas.getWidth?.()||canvas.width,h=canvas.getHeight?.()||canvas.height;ctx.save();ctx.strokeStyle='#e11d8f';ctx.lineWidth=1;ctx.setLineDash?.([4,3]);for(const g of guides){ctx.beginPath();if(g.axis==='x'){const x=vt[0]*g.at+vt[4];ctx.moveTo(x,0);ctx.lineTo(x,h)}else{const y=vt[3]*g.at+vt[5];ctx.moveTo(0,y);ctx.lineTo(w,y)}ctx.stroke()}ctx.restore()};
+    // Focus-out: a click on blank paper or on the grey area around the page ends the editing selection.
+    const blank=()=>{if(!isReviewEnabled())return;host.dispatchEvent(new host.CustomEvent('mvp:viewer-blank-click'))};
+    // A drag that started in the Viewer keeps receiving mouse events outside it (implicit capture), so 'outside' is
+    // decided by the pointer position against the Viewer viewport.
+    const outsideView=e=>Boolean(e)&&(e.clientX<0||e.clientY<0||e.clientX>win.innerWidth||e.clientY>win.innerHeight);
+    let lastInside=null;
+    const outside=event=>{const target=event.target;if(target?.closest?.('#canvasArea')&&!target.closest('.canvas-container'))blank()};
+    win.document.addEventListener('mousedown',outside);
     const drawHighlight=()=>{
       if(!canvas.contextTop)return;
       clearHighlight();
       const ctx=canvas.contextTop;
       if(showChanged)canvas.getObjects().filter(o=>changedIds.has(String(o.id||'').split('_')[0])).forEach((o,index)=>{const r=o.getBoundingRect();ctx.save();ctx.strokeStyle='#00a6d6';ctx.lineWidth=4;ctx.setLineDash?.([7,5]);ctx.strokeRect(r.left-3,r.top-3,r.width+6,r.height+6);ctx.fillStyle='#00a6d6';ctx.font='bold 22px sans-serif';ctx.fillText(String(index+1),r.left+5,r.top+24);ctx.restore()});
       if(selected){const rect=selected.getBoundingRect();ctx.save();ctx.strokeStyle='#ff4d00';ctx.lineWidth=5;ctx.setLineDash?.([12,7]);ctx.shadowColor='rgba(255,77,0,.35)';ctx.shadowBlur=8;ctx.strokeRect(rect.left-4,rect.top-4,rect.width+8,rect.height+8);ctx.restore()}
+      drawGuides(ctx);
     };
     const handler=event=>{
       if(!isReviewEnabled()||Number(win.__mvpStructureInteractionUntil||0)>Date.now())return;
-      const object=event.target;if(!selectable(object))return;
+      const object=event.target;if(!selectable(object)){blank();return;}
+      // Row/column selection mode of the Builder owns table-cell clicks: no cell selection, text toolbar or Fabric handles.
+      const tableSelection=host.MvpTableSelection;
+      if(tableSelection?.claims?.(object)){selected=null;direct?.clear?.();clearNativeSelection();clearHighlight();tableSelection.intercept(object,event.e);render();host.dispatchEvent(new host.CustomEvent('mvp:clear-object-selection',{detail:{keepTableSelection:true}}));return;}
       const structuralHeader=win.parent.__mvp51?.columns?.some?.(column=>column.some(member=>member.object===object&&member.role==='HEADER'));if(structuralHeader)return;
       selected=object;drawHighlight();
-      if(moveMode){dragStart={left:Number(object.left),top:Number(object.top)};sizeStart={width:Number(object.width),height:Number(object.height),scaleX:Number(object.scaleX||1),scaleY:Number(object.scaleY||1)};pointerStart=canvas.getPointer?.(event.e)||{x:event.e?.offsetX||0,y:event.e?.offsetY||0};moveCallbacks.start?.({object,...dragStart})}
+      // A table cell's position belongs to its table (rows/columns), so a cell never starts a free move.
+      const tableCell=Boolean(tableSelection?.isTableCell?.(object));if(tableCell){object.lockMovementX=true;object.lockMovementY=true;object.hasControls=false;canvas._currentTransform=null;clearNativeSelection()}
+      if(moveMode&&!tableCell){dragStart={left:Number(object.left),top:Number(object.top)};sizeStart={width:Number(object.width),height:Number(object.height),scaleX:Number(object.scaleX||1),scaleY:Number(object.scaleY||1)};pointerStart=canvas.getPointer?.(event.e)||{x:event.e?.offsetX||0,y:event.e?.offsetY||0};moveCallbacks.start?.({object,...dragStart})}
       onSelect(selectionData(object));direct?.select(object,instanceIdentity(object).renderInstanceKey);
     };
     canvas.on('mouse:down',handler);
     canvas.on('after:render',drawHighlight);
     const moving=event=>{const object=event.target;if(!moveMode||!selectable(object))return;if(event.e?.shiftKey){object.set({left:Math.round(object.left/10)*10,top:Math.round(object.top/10)*10});object.setCoords?.()}moveCallbacks.moving?.({object,left:Number(object.left),top:Number(object.top),before:dragStart})};
-    const customMoving=event=>{if(canvas._currentTransform?.action?.includes('scale'))return;if(!moveMode||!dragStart||!pointerStart||!selected)return;const pointer=canvas.getPointer?.(event.e)||{x:event.e?.offsetX||0,y:event.e?.offsetY||0};let left=dragStart.left+(pointer.x-pointerStart.x),top=dragStart.top+(pointer.y-pointerStart.y);if(event.e?.shiftKey){left=Math.round(left/10)*10;top=Math.round(top/10)*10}selected.set({left,top});selected.setCoords?.();render();moveCallbacks.moving?.({object:selected,left,top,before:dragStart})};
-    const modified=event=>{const object=event.target||selected;if(!moveMode||!selectable(object)||!dragStart)return;const scaledWidth=Number(object.width)*Number(object.scaleX||1),scaledHeight=Number(object.height)*Number(object.scaleY||1),resized=sizeStart&&(Math.abs(Number(object.scaleX||1)-sizeStart.scaleX)>.001||Math.abs(Number(object.scaleY||1)-sizeStart.scaleY)>.001);if(resized&&scaledWidth>=5&&scaledWidth<=2000&&scaledHeight>=5&&scaledHeight<=3000){const before={width:sizeStart.width*sizeStart.scaleX,height:sizeStart.height*sizeStart.scaleY},after={width:scaledWidth,height:scaledHeight};object.set({width:scaledWidth,height:scaledHeight,scaleX:1,scaleY:1});dragStart=null;pointerStart=null;sizeStart=null;canvas._currentTransform=null;object.setCoords?.();render();directCallbacks.resize?.({object,before,after});direct?.sync();return}const before=dragStart,after={left:Number(object.left),top:Number(object.top)};dragStart=null;pointerStart=null;sizeStart=null;canvas._currentTransform=null;canvas.discardActiveObject?.();object.setCoords?.();render();moveCallbacks.end?.({object,before,after});direct?.sync()};
-    const mouseup=event=>{if(dragStart)modified({target:event.target||selected})};
-    const windowMouseup=()=>{if(dragStart)modified({target:selected})};
+    const customMoving=event=>{if(canvas._currentTransform?.action?.includes('scale'))return;if(!moveMode||!dragStart||!pointerStart||!selected)return;if(event.e&&event.e.buttons===0){windowMouseup(event.e);return}if(outsideView(event.e)){if(lastInside){selected.set(lastInside);selected.setCoords?.();render()}return}const pointer=canvas.getPointer?.(event.e)||{x:event.e?.offsetX||0,y:event.e?.offsetY||0};let left=dragStart.left+(pointer.x-pointerStart.x),top=dragStart.top+(pointer.y-pointerStart.y);guides=[];if(event.e?.shiftKey){left=Math.round(left/10)*10;top=Math.round(top/10)*10}else{const snapped=snapObject(selected,left,top);left=snapped.left;top=snapped.top;guides=snapped.guides}lastInside={left,top};selected.set({left,top});selected.setCoords?.();render();moveCallbacks.moving?.({object:selected,left,top,before:dragStart})};
+    const modified=event=>{const object=event.target||selected;if(!moveMode||!selectable(object)||!dragStart)return;guides=[];lastInside=null;const scaledWidth=Number(object.width)*Number(object.scaleX||1),scaledHeight=Number(object.height)*Number(object.scaleY||1),resized=sizeStart&&(Math.abs(Number(object.scaleX||1)-sizeStart.scaleX)>.001||Math.abs(Number(object.scaleY||1)-sizeStart.scaleY)>.001);if(resized&&scaledWidth>=5&&scaledWidth<=2000&&scaledHeight>=5&&scaledHeight<=3000){const before={width:sizeStart.width*sizeStart.scaleX,height:sizeStart.height*sizeStart.scaleY},after={width:scaledWidth,height:scaledHeight};object.set({width:scaledWidth,height:scaledHeight,scaleX:1,scaleY:1});dragStart=null;pointerStart=null;sizeStart=null;canvas._currentTransform=null;object.setCoords?.();render();directCallbacks.resize?.({object,before,after});direct?.sync();return}const before=dragStart,after={left:Number(object.left),top:Number(object.top)};dragStart=null;pointerStart=null;sizeStart=null;canvas._currentTransform=null;canvas.discardActiveObject?.();object.setCoords?.();render();moveCallbacks.end?.({object,before,after});direct?.sync()};
+    const mouseup=event=>{if(!dragStart)return;if(outsideView(event.e))return cancelDrag();modified({target:event.target||selected})};
+    // A drag that loses its pointer (the browser window loses focus) is cancelled: the object returns to where the drag
+    // started. Focus moving between the Builder and the Viewer frame (a click into the frame) is not a loss of focus.
+    const blurDrag=()=>setTimeout(()=>{if(!host.document.hasFocus())cancelDrag()});
+    const cancelDrag=()=>{lastInside=null;if(!dragStart)return;if(selected){selected.set({left:dragStart.left,top:dragStart.top});selected.setCoords?.()}dragStart=null;pointerStart=null;sizeStart=null;guides=[];canvas._currentTransform=null;render()};
+    const windowMouseup=event=>{if(dragStart){if(outsideView(event))cancelDrag();else modified({target:selected})}guides=[]};
     canvas.on('object:moving',moving);canvas.on('mouse:move',customMoving);canvas.on('object:modified',modified);canvas.on('mouse:up',mouseup);win.addEventListener('mouseup',windowMouseup);
+    // Releasing over the Builder (right panel, outside the Viewer) cancels the drag like a structural drop outside the
+    // Viewer does; losing focus cancels it too. Either way the drag state never outlives the pointer.
+    const outsideRelease=()=>{if(dragStart)cancelDrag()};
+    host.addEventListener('mouseup',outsideRelease,true);host.addEventListener('blur',blurDrag);win.addEventListener('blur',blurDrag);
     const setPreviews=patches=>{
       for(const [object,values]of snapshots)object.set(values);
       const replaced=new Set();
@@ -66,8 +98,8 @@
     const setRenderPositions=patches=>RenderPositionEditor.apply(canvas,patches,0);
     const setPosition=(id,position,updateSnapshot=false,patch=null)=>{const object=patch?RenderPositionEditor.resolve(canvas,patch,[patch.after,patch.before]):canvas.getObjects().find(value=>value.id===id);if(!object||object.className!=='UBLabel')return false;object.set({left:position.left,top:position.top});if(updateSnapshot){const snapshot=snapshots.get(object);if(snapshot){snapshot.left=position.left;snapshot.top=position.top}}object.setCoords?.();render();return true};
     const nudge=(dx,dy)=>{if(!moveMode||!selected)return null;const before={left:Number(selected.left),top:Number(selected.top)};selected.set({left:before.left+dx,top:before.top+dy});selected.setCoords?.();render();return{object:selected,...instanceIdentity(selected),before,after:{left:Number(selected.left),top:Number(selected.top)}}};
-    direct=iframe.ownerDocument.defaultView.DirectEditor?.attach?.({win,canvas,onProperty:directCallbacks.property,onAction:directCallbacks.action,onSelect:object=>{selected=object;const data=selectionData(object);onSelect(data);return data.renderInstanceKey}});
-    return {objectCount:canvas.getObjects().length,clearSelection:()=>{selected=null;dragStart=null;pointerStart=null;sizeStart=null;canvas.discardActiveObject?.();direct?.clear?.();clearHighlight();render()},detach:()=>{direct?.detach();setMoveMode(false);canvas.off('mouse:down',handler);canvas.off('after:render',drawHighlight);canvas.off('object:moving',moving);canvas.off('mouse:move',customMoving);canvas.off('object:modified',modified);canvas.off('mouse:up',mouseup);win.removeEventListener('mouseup',windowMouseup);selected=null;clearHighlight()},find:id=>canvas.getObjects().find(o=>o.id===id)||null,setChangedHighlights:(ids,enabled)=>{changedIds=new Set(ids);showChanged=enabled;drawHighlight()},setPreviews,setMoveMode,setRenderPositions,setPosition,nudge};
+    direct=iframe.ownerDocument.defaultView.DirectEditor?.attach?.({win,canvas,blocked:object=>Boolean(iframe.ownerDocument.defaultView.MvpTableSelection?.claims?.(object)),onProperty:directCallbacks.property,onAction:directCallbacks.action,onSelect:object=>{selected=object;const data=selectionData(object);onSelect(data);return data.renderInstanceKey}});
+    return {objectCount:canvas.getObjects().length,clearSelection:()=>{selected=null;dragStart=null;pointerStart=null;sizeStart=null;clearNativeSelection();direct?.clear?.();clearHighlight();render()},detach:()=>{direct?.detach();setMoveMode(false);win.document.removeEventListener('mousedown',outside);host.removeEventListener('mouseup',outsideRelease,true);host.removeEventListener('blur',blurDrag);win.removeEventListener('blur',blurDrag);canvas.off('mouse:down',handler);canvas.off('after:render',drawHighlight);canvas.off('object:moving',moving);canvas.off('mouse:move',customMoving);canvas.off('object:modified',modified);canvas.off('mouse:up',mouseup);win.removeEventListener('mouseup',windowMouseup);selected=null;clearHighlight()},find:id=>canvas.getObjects().find(o=>o.id===id)||null,setChangedHighlights:(ids,enabled)=>{changedIds=new Set(ids);showChanged=enabled;drawHighlight()},setPreviews,setMoveMode,setRenderPositions,setPosition,nudge};
   }
   window.MvpViewerInspector={parseViewerObjectId,attach};
 })();

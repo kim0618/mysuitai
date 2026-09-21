@@ -28,8 +28,42 @@ function blocks(state) {
   return [...state.members].filter(([anchor]) => span(anchor, 'rowSpan') > 1 || span(anchor, 'colSpan') > 1).map(([anchor, list]) => { const at = list.map((w) => position(state, w)).filter(Boolean); return { anchor, r0: Math.min(...at.map((p) => p.r)), r1: Math.max(...at.map((p) => p.r)), c0: Math.min(...at.map((p) => p.c)), c1: Math.max(...at.map((p) => p.c)) }; });
 }
 // A permutation of the range [lo,hi] keeps every merge contiguous only if the range is inside the merge or clear of it.
-function assertPermutable(state, axis, lo, hi, message) {
-  for (const b of blocks(state)) { const [a, z] = axis === 'row' ? [b.r0, b.r1] : [b.c0, b.c1]; if (a === z) continue; const inside = lo >= a && hi <= z, clear = hi < a || lo > z; if (!inside && !clear) fail(axis === 'row' ? 'ROWSPAN_DEPENDENCY' : 'COLSPAN_DEPENDENCY', message); }
+// Only merges that span the moved axis matter: a rowSpan never blocks column moves and a colSpan never blocks row moves.
+function permutable(state, axis, lo, hi) {
+  return blocks(state).every((b) => { const [a, z] = axis === 'row' ? [b.r0, b.r1] : [b.c0, b.c1]; return a === z || (lo >= a && hi <= z) || hi < a || lo > z; });
+}
+const MOVE_BLOCKED = { row: '병합된 셀이 나뉘게 되어 이 방향으로 행을 옮길 수 없습니다.', column: '병합된 셀이 나뉘게 되어 이 방향으로 열을 옮길 수 없습니다.' };
+function assertPermutable(state, axis, lo, hi) { if (!permutable(state, axis, lo, hi)) fail(axis === 'row' ? 'ROWSPAN_DEPENDENCY' : 'COLSPAN_DEPENDENCY', MOVE_BLOCKED[axis]); }
+// Which adjacent swaps are structurally possible for each current row/column position.
+function movability(state) {
+  return {
+    rowMoves: state.rows.map((_, p) => ({ up: p > 0 && permutable(state, 'row', p - 1, p), down: p < state.rows.length - 1 && permutable(state, 'row', p, p + 1) })),
+    columnMoves: state.columns.map((_, p) => ({ left: p > 0 && permutable(state, 'column', p - 1, p), right: p < state.columns.length - 1 && permutable(state, 'column', p, p + 1) })),
+  };
+}
+// Logical groups: the smallest runs of rows (or columns) closed under the merges spanning that axis. A group is the
+// unit a user selects and moves; a plain row is its own group, an item whose 순번 spans two lines is one group.
+// A merge covering the whole axis (a title row across every column) stays contiguous under any order, so it groups nothing.
+function groups(state, axis) {
+  const count = axis === 'row' ? state.rows.length : state.columns.length, reach = Array.from({ length: count }, (_, i) => i);
+  for (const b of blocks(state)) { const [a, z] = axis === 'row' ? [b.r0, b.r1] : [b.c0, b.c1]; if (a !== z && !(a === 0 && z === count - 1)) for (let i = a; i <= z; i++) reach[i] = Math.max(reach[i], z); }
+  const out = []; for (let start = 0; start < count;) { let end = reach[start]; for (let i = start; i <= end; i++) end = Math.max(end, reach[i]); out.push([start, end]); start = end + 1; }
+  return out;
+}
+// Moves a set of rows/columns (by stable base index) so the first lands at position 'to' of the final order. The
+// permutation is applied at once and accepted only if every merge still occupies a contiguous run afterwards.
+function moveSet(state, axis, bases, to) {
+  const list = axis === 'row' ? state.rows : state.columns, key = (x) => (axis === 'row' ? x.base : x), picked = new Set(bases);
+  if (!bases.length || picked.size !== bases.length) fail(axis === 'row' ? 'INVALID_ROW_MOVE' : 'INVALID_VISUAL_INDEX', axis === 'row' ? '이동할 행이 올바르지 않습니다.' : '이동할 열이 올바르지 않습니다.');
+  const order = list.map((x, i) => i), moving = order.filter((i) => picked.has(key(list[i]))), rest = order.filter((i) => !picked.has(key(list[i])));
+  if (moving.length !== picked.size) fail(axis === 'row' ? 'INVALID_LOGICAL_ROW' : 'INVALID_COLUMN', axis === 'row' ? 'Row가 없습니다.' : 'Column이 없습니다.');
+  if (!Number.isInteger(to) || to < 0 || to > rest.length) fail(axis === 'row' ? 'INVALID_ROW_MOVE' : 'INVALID_VISUAL_INDEX', axis === 'row' ? '행 이동 위치가 올바르지 않습니다.' : '열 이동 위치가 올바르지 않습니다.');
+  const next = [...rest.slice(0, to), ...moving, ...rest.slice(to)];
+  if (next.every((v, i) => v === i)) fail(axis === 'row' ? 'INVALID_ROW_MOVE' : 'INVALID_VISUAL_INDEX', axis === 'row' ? '행 이동 위치가 올바르지 않습니다.' : '열 이동 위치가 올바르지 않습니다.');
+  if (axis === 'row') { const rows = next.map((i) => state.rows[i]); state.rows.splice(0, state.rows.length, ...rows); }
+  else { const widths = next.map((i) => state.widths[i]), columns = next.map((i) => state.columns[i]); for (const row of state.rows) { const wrappers = next.map((i) => row.wrappers[i]); row.wrappers.splice(0, row.wrappers.length, ...wrappers); } state.widths.splice(0, state.widths.length, ...widths); state.columns.splice(0, state.columns.length, ...columns); }
+  for (const b of blocks(state)) { const members = state.members.get(b.anchor).map((w) => position(state, w)).filter(Boolean), lines = new Set(members.map((p) => (axis === 'row' ? p.r : p.c))), [a, z] = axis === 'row' ? [b.r0, b.r1] : [b.c0, b.c1]; if (z - a + 1 !== lines.size) fail(axis === 'row' ? 'ROWSPAN_DEPENDENCY' : 'COLSPAN_DEPENDENCY', MOVE_BLOCKED[axis]); }
+  reanchor(state);
 }
 // After a permutation inside a merge the anchor must return to the block's top-left position.
 function reanchor(state) {
@@ -44,17 +78,21 @@ function operate(state, op) {
   else if (op.operation === 'hideColumn') { const at = columnAt(state, op.columnIndex); if (anchorsIn(state, column(at), 'colSpan').length) fail('COLSPAN_DEPENDENCY', '병합 셀이 시작되는 열은 숨길 수 없습니다.'); widths[at] = 0; for (const w of column(at)) if (w?.cell) w.cell.visible = false; }
   else if (op.operation === 'moveColumn') {
     const from = columnAt(state, op.columnIndex), to = Number(op.toVisualIndex); if (!Number.isInteger(to) || to < 0 || to >= widths.length || to === from) fail('INVALID_VISUAL_INDEX', '열 이동 위치가 올바르지 않습니다.');
-    assertPermutable(state, 'column', Math.min(from, to), Math.max(from, to), '병합 셀을 가로지르는 열 이동은 할 수 없습니다.');
+    assertPermutable(state, 'column', Math.min(from, to), Math.max(from, to));
     for (const row of rows) { const [w] = row.wrappers.splice(from, 1); row.wrappers.splice(to, 0, w); } const [width] = widths.splice(from, 1); widths.splice(to, 0, width); const [base] = state.columns.splice(from, 1); state.columns.splice(to, 0, base); reanchor(state);
   }
   else if (op.operation === 'resizeRow') { const height = Math.round(op.afterHeight); if (height < 12 || height > 200) fail('INVALID_ROW_HEIGHT', 'Row 높이가 올바르지 않습니다.'); rows[rowAt(state, op.rowIndex)].height = height; }
   else if (op.operation === 'hideRow') { const row = rows[rowAt(state, op.rowIndex)]; if (anchorsIn(state, row.wrappers, 'rowSpan').length) fail('ROWSPAN_DEPENDENCY', '병합 셀이 시작되는 행은 숨길 수 없습니다.'); row.height = 0; for (const w of row.wrappers) if (w?.cell) w.cell.visible = false; }
   else if (op.operation === 'moveRow') {
     const from = rowAt(state, op.rowIndex), to = Number(op.toRowIndex); if (!Number.isInteger(to) || to < 0 || to >= rows.length || to === from) fail('INVALID_ROW_MOVE', '행 이동 위치가 올바르지 않습니다.');
-    if (Array.isArray(op.rowCellIds) && JSON.stringify(rows[from].wrappers.filter((w) => w?.cell && state.owner.get(w) === w).map((w) => w.cell.id).sort()) !== JSON.stringify([...op.rowCellIds].sort())) fail('STATIC_TABLE_IDENTITY_CHANGED', '이동할 행의 Cell identity가 다릅니다.');
-    assertPermutable(state, 'row', Math.min(from, to), Math.max(from, to), '병합 셀을 가로지르는 행 이동은 할 수 없습니다.');
+    // Multi-row merge anchors are pinned to their block's top row (see reanchor), so they are not row identity.
+    const anchorsById = new Map([...state.members.keys()].map((w) => [w.cell.id, w])), own = (ids) => ids.filter((id) => span(anchorsById.get(id), 'rowSpan') === 1).sort();
+    if (Array.isArray(op.rowCellIds) && JSON.stringify(own(rows[from].wrappers.filter((w) => w?.cell && state.owner.get(w) === w).map((w) => w.cell.id))) !== JSON.stringify(own(op.rowCellIds))) fail('STATIC_TABLE_IDENTITY_CHANGED', '이동할 행의 Cell identity가 다릅니다.');
+    assertPermutable(state, 'row', Math.min(from, to), Math.max(from, to));
     const [row] = rows.splice(from, 1); rows.splice(to, 0, row); reanchor(state);
   }
+  else if (op.operation === 'moveRows') moveSet(state, 'row', (op.rowIndexes || []).map(Number), Number(op.toRowIndex));
+  else if (op.operation === 'moveColumns') moveSet(state, 'column', (op.columnIndexes || []).map(Number), Number(op.toVisualIndex));
   else if (op.operation === 'removeRow') {
     if (rows.length <= 1) fail('INVALID_ROW_REMOVE', '마지막 행은 삭제할 수 없습니다.');
     const at = rowAt(state, op.rowIndex), row = rows[at];
@@ -84,13 +122,14 @@ function close(state) {
 function transform(table, operations, sourceTableId) {
   const state = open(table), applied = [];
   for (const op of operations) { if (op.sourceTableId && op.sourceTableId !== sourceTableId) fail('STATIC_TABLE_TARGET_MISMATCH', 'Operation Table identity가 다릅니다.'); operate(state, op); applied.push(op); }
+  const moves = { ...movability(state), rowGroups: groups(state, 'row'), columnGroups: groups(state, 'column') };
   close(state);
-  return { table, applied, removed: state.removed, rowOrder: state.rows.map((row) => row.base), columnOrder: state.columns };
+  return { table, applied, removed: state.removed, rowOrder: state.rows.map((row) => row.base), columnOrder: state.columns, ...moves };
 }
 // In-memory layout used by the editor preview; the same transform produces the saved candidate.
 function layout(sourceTable, operations) {
-  const { table, removed, rowOrder, columnOrder } = transform(JSON.parse(JSON.stringify(sourceTable)), operations, sourceTable.id);
-  return { sourceTableId: table.id, x: table.x, y: table.y, width: table.width, height: table.height, visible: table.visible !== false, rowOrder, columnOrder, rowHeights: table.table.map((row) => row[0].rowHeight), columnWidths: table.table[0].map((w) => w.columnWidth), removedCellIds: [...removed], cells: cellsOf(table).map((w) => ({ id: w.cell.id, x: w.x, y: w.y, width: w.width, height: w.height, visible: table.visible !== false && w.cell.visible !== false && w.width > 0 && w.height > 0 })) };
+  const { table, removed, rowOrder, columnOrder, rowMoves, columnMoves, rowGroups, columnGroups } = transform(JSON.parse(JSON.stringify(sourceTable)), operations, sourceTable.id);
+  return { sourceTableId: table.id, x: table.x, y: table.y, width: table.width, height: table.height, visible: table.visible !== false, rowOrder, columnOrder, rowMoves, columnMoves, rowGroups, columnGroups, rowHeights: table.table.map((row) => row[0].rowHeight), columnWidths: table.table[0].map((w) => w.columnWidth), removedCellIds: [...removed], cells: cellsOf(table).map((w) => ({ id: w.cell.id, x: w.x, y: w.y, width: w.width, height: w.height, visible: table.visible !== false && w.cell.visible !== false && w.width > 0 && w.height > 0 })) };
 }
 function apply({ sourceFormPath, candidateFormPath, sourceTableId, operations }) {
   if (path.resolve(sourceFormPath) === path.resolve(candidateFormPath)) fail('SOURCE_OVERWRITE_BLOCKED', 'Imported Base에는 쓸 수 없습니다.');

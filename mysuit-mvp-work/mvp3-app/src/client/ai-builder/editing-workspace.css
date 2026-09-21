@@ -85,6 +85,21 @@ body.ai-builder{margin:0;height:100vh;overflow:hidden;background:#f4f7f5;color:v
 .structure-section .danger{width:100%;margin-top:7px;border-color:#f1c9c5;color:#b42318}
 .structure-section [data-action$=fit]{margin-top:7px}
 .structure-section .stepper{font-size:15px}
+.table-mode{margin-bottom:14px}
+.table-mode button{height:30px;font-size:12px;font-weight:600}
+.inspector-label{display:block;margin:0 0 5px;color:#5c6d63;font-size:11px}
+.structure-note{margin:6px 0 0;color:#8a5a00;font-size:11px;line-height:1.45}
+/* Structure card: one editor for the current row/column selection, split into clearly separated groups. */
+.structure-section{padding:12px 12px 4px;border:1px solid #e1e9e4;border-radius:9px;background:#fff}
+.structure-section>h3{margin-bottom:4px;font-size:13px}
+.structure-group{margin:0 -12px;padding:12px 12px 14px;border-top:1px solid #eef3f0}
+.structure-group>h4,.danger-zone>h4{margin:0 0 8px;color:#56665d;font-size:11px;font-weight:700;letter-spacing:.02em}
+.structure-group .inspector-field{margin-top:0}
+.structure-group .inspector-toggle{margin:0}
+.structure-hint{margin:7px 0 0;color:#7b8981;font-size:11px;line-height:1.45}
+.danger-zone{margin:4px -12px 8px;padding:12px;border-top:1px solid #f6d7d3;border-radius:0 0 9px 9px;background:#fff8f7}
+.danger-zone>h4{color:#b42318}
+.danger-zone .danger{margin-top:0}
 
 /* 채팅: scrollable message log + bottom composer, inside the unchanged 380px panel */
 .ai-builder .builder-chat{padding:0;overflow:hidden}

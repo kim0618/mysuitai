@@ -9,11 +9,11 @@ const formContext = require('./form-context-service');
 
 const reasons = {
   DATA_REPEAT_ROW: '데이터 반복 행은 구조 편집할 수 없습니다.',
-  ROWSPAN_DEPENDENCY: '병합 셀 의존성이 있어 이 행을 변경할 수 없습니다.',
+  ROWSPAN_DEPENDENCY: '병합된 셀에 걸쳐 있는 행이라 변경할 수 없습니다.',
   SUMMARY_DEPENDENCY: 'Summary 의존성이 있어 공간을 제거할 수 없습니다.',
   RUNTIME_UI_NOT_CONNECTED: '검증 엔진 POC만 있으며 Runtime UI/Store에 연결되지 않았습니다.',
   HIDDEN_COLUMN_OPERATION_NOT_ALLOWED: '숨긴 열은 이동하거나 크기를 바꿀 수 없습니다.',
-  COLSPAN_DEPENDENCY: '병합 셀 의존성이 있어 이 열을 숨길 수 없습니다.',
+  COLSPAN_DEPENDENCY: '병합된 셀에 걸쳐 있는 열이라 숨길 수 없습니다.',
   STATIC_TABLE_ONLY: '가져온 정적 표에서만 지원합니다.',
 };
 
@@ -50,7 +50,8 @@ function getCapabilities(scope, targetType, target) {
       constraints.groupKey = resolved.groupKey;
       constraints.maxTableWidth = 792;
       const hidden = ops.some((x) => x.operation === 'hideColumn' && x.columnIndex === resolved.columnIndex && (!resolved.tableType || x.logicalTableKey === resolved.logicalTableKey));
-      if (hidden && ['resizeColumn','moveColumn'].includes(entry.operation)) { allowed = false; reason = 'HIDDEN_COLUMN_OPERATION_NOT_ALLOWED'; }
+      if (entry.operation === 'moveColumns' && resolved.tableType !== 'STATIC_SINGLE') { allowed = false; reason = 'STATIC_TABLE_ONLY'; }
+      if (hidden && ['resizeColumn','moveColumn','moveColumns'].includes(entry.operation)) { allowed = false; reason = 'HIDDEN_COLUMN_OPERATION_NOT_ALLOWED'; }
       if (resolved.colSpanDependent && ['hideColumn'].includes(entry.operation)) { allowed = false; reason = 'COLSPAN_DEPENDENCY'; }
       if (entry.operation === 'addBoundColumn') {
         allowed = false; reason = 'RUNTIME_UI_NOT_CONNECTED'; constraints.bindingWhitelist = ['dataset_2.col_8'];
@@ -60,11 +61,14 @@ function getCapabilities(scope, targetType, target) {
       const flowCap = resolved.rowRole === 'STATIC_ROW' ? flow.rowHeader : resolved.rowRole === 'HEADER' ? flow.rowHeader : resolved.rowRole === 'SUMMARY' ? flow.rowSummary : resolved.rowRole === 'GROUP_HEADER' ? flow.rowGroupHeader : flow.rowData;
       constraints.reflowScope = flowCap.reflowScope;
       constraints.reflowEvidence = flowCap.reason;
+      if (['moveRow','moveRows'].includes(entry.operation) && resolved.tableType === 'STATIC_SINGLE') constraints.mergeRule = 'MOVE_MUST_NOT_SPLIT_MERGE';
       if (resolved.rowRole === 'RENDERED_DETAIL' && entry.operation !== 'moveRenderedRow') { allowed = false; reason = 'DATA_REPEAT_ROW'; }
       else if (entry.operation === 'moveRenderedRow' && resolved.rowRole !== 'RENDERED_DETAIL') { allowed = false; reason = 'DATA_REPEAT_ROW'; }
       else if (resolved.rowRole === 'SUMMARY' && ['collapseRow','removeStaticRow'].includes(entry.operation)) { allowed = false; reason = 'SUMMARY_DEPENDENCY'; }
-      else if (['moveRow','removeRow'].includes(entry.operation) && resolved.tableType !== 'STATIC_SINGLE') { allowed = false; reason = 'STATIC_TABLE_ONLY'; }
-      else if (resolved.rowSpanDependent && ['collapseRow','removeStaticRow','hideRow','moveRow','removeRow'].includes(entry.operation)) { allowed = false; reason = 'ROWSPAN_DEPENDENCY'; }
+      else if (['moveRow','moveRows','removeRow'].includes(entry.operation) && resolved.tableType !== 'STATIC_SINGLE') { allowed = false; reason = 'STATIC_TABLE_ONLY'; }
+      // Imported static tables validate moveRow against the actual merge ranges (the structure adapter), so a row
+      // inside a merge may still swap with a neighbour that keeps every merge intact.
+      else if (resolved.rowSpanDependent && ['collapseRow','removeStaticRow','hideRow','removeRow',...(resolved.tableType === 'STATIC_SINGLE' ? [] : ['moveRow'])].includes(entry.operation)) { allowed = false; reason = 'ROWSPAN_DEPENDENCY'; }
       else if (entry.operation === 'collapseRow' && !flowCap.canCollapse) { allowed = false; reason = 'CROSS_BAND_REFLOW_UNVERIFIED'; }
     }
     if (resolved.targetType === 'COMPOSITE_TABLE') {

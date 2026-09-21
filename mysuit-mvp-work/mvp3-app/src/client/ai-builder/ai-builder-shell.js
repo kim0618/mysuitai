@@ -110,22 +110,63 @@
   function segmented(options,value,onChange,attrs={}){const wrap=element('div',{class:'segmented',role:'group',...attrs});for(const [key,label] of options){const b=button(label,()=>onChange(key),{'aria-pressed':String(String(key)===String(value)),'data-value':String(key)});wrap.append(b)}return wrap}
   function selectedCard(icon,type,name){const card=element('div',{class:'selected-element'});card.append(element('span',{},icon));const text=element('div');text.append(element('small',{},type),element('strong',{},name||'-'));card.append(text);return card}
 
+  // Table selection mode (셀/행/열) for imported tables. Only the editor of the current selection type is shown.
+  let tableMode='cell';
+  const hasTables=()=>Boolean(window.__mvp12?.tables?.length);
+  const MODE_EMPTY={cell:'표에서 편집할 셀을 선택하세요.',row:'표에서 편집할 행을 선택하세요.',column:'표에서 편집할 열을 선택하세요.'};
+  function modeSwitch(){return segmented([['cell','셀'],['row','행'],['column','열']],tableMode,setTableMode,{class:'segmented table-mode','aria-label':'표 선택 방식','data-control':'table-mode'})}
+  // Single active selection: every transition clears all selection layers first - the object/cell selection and its
+  // text toolbar and Fabric handles (Viewer inspector), the row/column band (table controller) and the panel state.
+  function clearViewerSelection({forget=false}={}){
+    window.dispatchEvent(new CustomEvent('mvp:clear-object-selection'));
+    window.__mvp12?.clearSelection?.(forget);
+    state.selection=null;state.source=null;state.staticSelection=null;
+  }
+  // Focus-out keeps the current 셀/행/열 mode and shows that mode's empty state.
+  function clearDirectSelection(){clearViewerSelection({forget:true});renderInspector()}
+  function setTableMode(next){
+    if(next===tableMode)return;
+    const seed=window.__mvp12?.lastCell;
+    clearViewerSelection();
+    tableMode=window.__mvp12?.setMode?.(next)||next;
+    // The last selected cell seeds the row/column of the new mode; 셀 mode starts without a selection.
+    const t=tableMode!=='cell'&&seed&&window.__mvp12?.tables?.find(x=>x.tableKey===seed.tableKey);
+    if(t){if(tableMode==='row')window.__mvp12.selectRow(seed.rowIndex,t.tableKey);else window.__mvp12.selectColumn(seed.columnIndex,t.tableKey);return}
+    renderInspector();
+  }
   function renderInspector(){
     inspector.replaceChildren();
     const selection=state.selection, source=state.source;
+    const kind=source?.sourceClassName, isCell=Boolean(selection&&source&&(kind==='Cell'||/^IMPCL/.test(selection.sourceObjectId||'')));
+    if (hasTables()) inspector.append(modeSwitch());
     if (state.staticSelection && !selection) return renderStructureOnly();
-    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},'문서에서 편집할 항목을 선택하세요.')); return; }
-    const kind=source.sourceClassName, [icon,type]=TYPE[kind]||['◻','요소'], isImage=kind==='UBImage';
-    const cellInfo=kind==='Cell'||/^IMPCL/.test(selection.sourceObjectId||'')?window.__mvp12?.selectCell?.(selection.sourceObjectId):null;
+    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},hasTables()?MODE_EMPTY[tableMode]:'문서에서 편집할 항목을 선택하세요.')); return; }
+    const [icon,type]=TYPE[kind]||['◻','요소'], isImage=kind==='UBImage';
+    const cellInfo=isCell?window.__mvp12?.selectCell?.(selection.sourceObjectId):null;
     const name=isImage?selection.sourceObjectId:(current('text')||selection.currentText||'').trim()||selection.sourceObjectId;
     inspector.append(selectedCard(icon,cellInfo?'표 셀':type,name));
-    if (cellInfo) inspector.append(rowSection(cellInfo),columnSection(cellInfo));
     if (isImage) inspector.append(...imageSections());
+    else if (cellInfo) inspector.append(...cellSections());
     else inspector.append(...textSections());
     if (supports('visible')) inspector.append(section('표시',toggle(isImage?'이미지 표시':'표시',current('visible')!==false,value=>setProperty('visible',value),{'data-control':'visible'})));
     const reset=button('이 요소의 변경 되돌리기',()=>mvpDirectBridge.action('resetAll').then(renderInspector),{class:'link-button'});
     const advanced=element('details',{class:'inspector-advanced'});advanced.append(element('summary',{},'고급 설정'),element('p',{},`원본 ID ${selection.sourceObjectId} · ${source.positionConfidence||''}`),reset);
     inspector.append(advanced);
+  }
+  function cellSections(){
+    const node=section('셀 편집');
+    if (supports('text')) {
+      const area=element('textarea',{rows:'2','aria-label':'내용','data-key':'text'});area.value=current('text')??'';
+      area.onkeydown=event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();area.blur()}};
+      area.onchange=()=>setProperty('text',area.value);
+      node.append(element('label',{class:'inspector-label'},'내용'),area);
+    }
+    if (supports('fontSize')) node.append(numberField('글자 크기','fontSize',{min:6,max:96}));
+    const toolbar=element('div',{class:'text-tools'});
+    if (supports('fontWeight')) toolbar.append(button('B',()=>setProperty('fontWeight',current('fontWeight')==='bold'?'normal':'bold'),{class:'bold-toggle','aria-pressed':String(current('fontWeight')==='bold'),'aria-label':'굵게'}));
+    if (supports('textAlign')) toolbar.append(segmented([['left','왼쪽'],['center','가운데'],['right','오른쪽']],current('textAlign'),value=>setProperty('textAlign',value),{'aria-label':'가로 정렬'}));
+    if (toolbar.children.length) node.append(toolbar);
+    return [node];
   }
   function textSections(){
     const nodes=[];
@@ -180,45 +221,51 @@
   const saveStructure=async(operation,payload)=>{try{setSaveState('저장 중');await window.__mvp12.save(operation,payload);setSaveState('저장 안 됨');await window.__mvp58?.load?.()}catch(error){showError(error)}finally{renderInspector()}};
   function operationFor(operation,key){return (window.__mvp12?.operations||[]).filter(x=>x.operation===operation&&(x.logicalRowKey===key||x.logicalColumnKey===key)).at(-1)||null}
   async function removeOperation(op){try{await api(`/api/structure-operations/${op.operationId}?${new URLSearchParams(scope)}`,{method:'DELETE'});await window.__mvp12.loadOps();await window.__mvp58?.load?.();setSaveState('저장 안 됨')}catch(error){showError(error)}finally{renderInspector()}}
-  function autoRowHeight(info){const objects=info.row.viewerObjectIds.map(id=>canvasObject(id)).filter(Boolean),ctx=document.createElement('canvas').getContext('2d');let need=12;for(const o of objects){const size=Number(o.fontSize||12);ctx.font=`${o.fontWeight||'normal'} ${size}px sans-serif`;const lines=String(o.text||'').split('\n').reduce((n,line)=>n+Math.max(1,Math.ceil(ctx.measureText(line).width/Math.max(1,Number(o.width)-6))),0);need=Math.max(need,Math.ceil(lines*size*1.35+6))}return Math.min(200,need)}
-  function autoColumnWidth(info){const objects=info.column.viewerObjectIds.map(id=>canvasObject(id)).filter(o=>o&&(info.table.cells.find(c=>c.viewerObjectId===o.id)?.colSpan||1)===1),ctx=document.createElement('canvas').getContext('2d');let need=20;for(const o of objects){const size=Number(o.fontSize||12);ctx.font=`${o.fontWeight||'normal'} ${size}px sans-serif`;for(const line of String(o.text||'').split('\n'))need=Math.max(need,Math.ceil(ctx.measureText(line).width+12))}return Math.min(600,need)}
+  const saveStructureBatch=async(items,label)=>{try{setSaveState('저장 중');await window.__mvp12.saveBatch(items,label);setSaveState('저장 안 됨');await window.__mvp58?.load?.()}catch(error){showError(error)}finally{renderInspector()}};
+  // Auto-fit of one physical row/column, measured from the text of its cells.
+  function fitRow(table,key){const objects=(table.rows.find(r=>r.logicalRowKey===key)?.viewerObjectIds||[]).map(id=>canvasObject(id)).filter(Boolean),ctx=document.createElement('canvas').getContext('2d');let need=12;for(const o of objects){const size=Number(o.fontSize||12);ctx.font=`${o.fontWeight||'normal'} ${size}px sans-serif`;const lines=String(o.text||'').split('\n').reduce((n,line)=>n+Math.max(1,Math.ceil(ctx.measureText(line).width/Math.max(1,Number(o.width)-6))),0);need=Math.max(need,Math.ceil(lines*size*1.35+6))}return Math.min(200,need)}
+  function fitColumn(table,key){const objects=(table.columns.find(c=>c.logicalColumnKey===key)?.viewerObjectIds||[]).map(id=>canvasObject(id)).filter(o=>o&&(table.cells.find(c=>c.viewerObjectId===o.id)?.colSpan||1)===1),ctx=document.createElement('canvas').getContext('2d');let need=20;for(const o of objects){const size=Number(o.fontSize||12);ctx.font=`${o.fontWeight||'normal'} ${size}px sans-serif`;for(const line of String(o.text||'').split('\n'))need=Math.max(need,Math.ceil(ctx.measureText(line).width+12))}return Math.min(600,need)}
   const canvasObject=id=>$('viewer').contentWindow?.canvasModule?.getCanvas?.(0)?.getObjects?.().find(o=>o.id===id);
-  function rowSection(info){
-    const key=info.row.logicalRowKey,position=info.rowPosition,hidden=operationFor('hideRow',key),node=section(`행 편집`);
-    node.classList.add('structure-section');node.dataset.structure='row';
-    node.append(element('p',{class:'structure-meta'},`${info.table.sourceTableId} · 행 ${position+1} / ${info.rowCount}`));
+  const layoutOf=table=>window.__mvp12.layouts?.[table.sourceTableId]||{};
+  function group(title,...children){const node=element('div',{class:'structure-group'});node.append(element('h4',{},title),...children);return node}
+  function dangerZone(...children){const node=element('div',{class:'danger-zone'});node.append(element('h4',{},'위험 작업'),...children);return node}
+  // Row/column editor for the current selection set (one physical track, a merged group, or several tracks).
+  // One card with separate 이동 / 크기 / 표시 / 위험 작업 groups.
+  function structureSection(detail,table){
+    const row=detail.type==='ROW',noun=row?'행':'열',layout=layoutOf(table),keys=detail.keys||[detail.key],axis=row?{order:'rowOrder',sizes:'rowHeights',tracks:'rows',key:'logicalRowKey',index:'rowIndex'}:{order:'columnOrder',sizes:'columnWidths',tracks:'columns',key:'logicalColumnKey',index:'columnIndex'};
+    const positions=keys.map(k=>layout[axis.order].indexOf(table[axis.tracks].find(t=>t[axis.key]===k)[axis.index])).sort((a,b)=>a-b),total=layout[axis.order].length,single=keys.length===1,contiguous=positions.every((p,i)=>!i||p===positions[i-1]+1);
+    const node=section(`${noun} 편집`);node.classList.add('structure-section');node.dataset.structure=row?'row':'column';
+    node.append(element('p',{class:'structure-meta'},single?`현재 ${noun}: ${positions[0]+1} / ${total}`:contiguous?`선택: ${positions[0]+1}–${positions.at(-1)+1}${noun} (${keys.length}개 ${noun}) / ${total}`:`선택: ${keys.length}개 ${noun} / ${total}`));
+    // 이동: the selection moves past the neighbouring group; the same operation the drag handle commits.
+    const prev=window.__mvp12.neighbour(-1),next=window.__mvp12.neighbour(1),columnIndexes=()=>keys.map(k=>table.columns.find(c=>c.logicalColumnKey===k).columnIndex);
+    const moveTo=target=>row?saveStructure('moveRows',{logicalRowKey:keys[0],logicalRowKeys:keys,fromRowIndex:target.a,toRowIndex:target.to}):saveStructure('moveColumns',{logicalColumnKey:keys[0],columnIndexes:columnIndexes(),fromVisualIndex:target.a,toVisualIndex:target.to});
     const move=element('div',{class:'structure-actions'});
-    move.append(button('↑ 위로 이동',()=>saveStructure('moveRow',{logicalRowKey:key,toRowIndex:position-1}),{'data-action':'row-up',...(position<=0?{disabled:''}:{})}),button('↓ 아래로 이동',()=>saveStructure('moveRow',{logicalRowKey:key,toRowIndex:position+1}),{'data-action':'row-down',...(position>=info.rowCount-1?{disabled:''}:{})}));
-    const remove=button('행 삭제',()=>{if(confirm('이 행을 삭제할까요? 실행 취소로 되돌릴 수 있습니다.'))saveStructure('removeRow',{logicalRowKey:key})},{class:'danger','data-action':'row-delete'});
-    const height=numberField('행 높이','row-height',{min:12,max:200,onChange:value=>saveStructure('resizeRow',{logicalRowKey:key,afterHeight:value})});
-    height.querySelector('input').value=String(window.__mvp12.layouts?.[info.table.sourceTableId]?.rowHeights?.[position]??info.row.height);
-    const fit=button('자동 맞춤',()=>saveStructure('resizeRow',{logicalRowKey:key,afterHeight:autoRowHeight(info)}),{'data-action':'row-fit'});
-    node.append(move,remove,height,fit,toggle('행 숨김',Boolean(hidden),value=>value?saveStructure('hideRow',{logicalRowKey:key}):removeOperation(hidden),{'data-control':'row-hide'}));
+    move.append(button(row?'↑ 위로 이동':'← 왼쪽 이동',()=>moveTo(prev),{'data-action':row?'row-up':'column-left',...(prev?{}:{disabled:''})}),button(row?'↓ 아래로 이동':'오른쪽 이동 →',()=>moveTo(next),{'data-action':row?'row-down':'column-right',...(next?{}:{disabled:''})}));
+    const moveNote=!contiguous?element('p',{class:'structure-note','data-note':'split'},`떨어져 있는 ${noun}은 함께 옮길 수 없습니다.`):element('p',{class:'structure-hint'},`${row?'⋮⋮':'⋯'} 손잡이를 끌어서 옮길 수도 있습니다.`);
+    // 크기: every selected track gets the value, recorded as one history step.
+    const sizeKey=row?'afterHeight':'afterWidth',operation=row?'resizeRow':'resizeColumn',apply=(values,label)=>single?saveStructure(operation,{[axis.key]:keys[0],[sizeKey]:values[0]}):saveStructureBatch(keys.map((k,i)=>({operation,[axis.key]:k,[sizeKey]:values[i]})),label);
+    const size=numberField(row?'행 높이':'열 너비',row?'row-height':'column-width',{min:row?12:20,max:row?200:600,onChange:value=>apply(keys.map(()=>value),`${noun} ${keys.length}개 ${row?'높이':'너비'} 변경`)});
+    size.querySelector('input').value=String(layout[axis.sizes]?.[positions[0]]??0);
+    const fit=button('자동 맞춤',()=>apply(keys.map(k=>row?fitRow(table,k):fitColumn(table,k)),`${noun} ${keys.length}개 자동 맞춤`),{'data-action':row?'row-fit':'column-fit'});
+    const groups=[group('이동',move,moveNote),group('크기',size,fit)];
+    // 표시 / 위험 작업 act on exactly one physical track.
+    const hidden=single?operationFor(row?'hideRow':'hideColumn',keys[0]):null;
+    if(single)groups.push(group('표시',toggle(`${noun} 숨김`,Boolean(hidden),value=>value?saveStructure(row?'hideRow':'hideColumn',{[axis.key]:keys[0]}):removeOperation(hidden),{'data-control':row?'row-hide':'column-hide'})));
+    else groups.push(group('표시',element('p',{class:'structure-hint'},`숨김은 ${noun} 하나를 선택했을 때 설정할 수 있습니다.`)));
+    if(row&&single)groups.push(dangerZone(button('행 삭제',()=>{if(confirm('이 행을 삭제할까요? 실행 취소로 되돌릴 수 있습니다.'))saveStructure('removeRow',{logicalRowKey:keys[0]})},{class:'danger','data-action':'row-delete'})));
+    node.append(...groups);
     return node;
   }
-  function columnSection(info){
-    const key=info.column.logicalColumnKey,position=info.columnPosition,hidden=operationFor('hideColumn',key),node=section('열 편집');
-    node.classList.add('structure-section');node.dataset.structure='column';
-    node.append(element('p',{class:'structure-meta'},`${info.table.sourceTableId} · 열 ${position+1} / ${info.columnCount}`));
-    const move=element('div',{class:'structure-actions'});
-    move.append(button('← 왼쪽 이동',()=>saveStructure('moveColumn',{logicalColumnKey:key,toVisualIndex:position-1}),{'data-action':'column-left',...(position<=0?{disabled:''}:{})}),button('오른쪽 이동 →',()=>saveStructure('moveColumn',{logicalColumnKey:key,toVisualIndex:position+1}),{'data-action':'column-right',...(position>=info.columnCount-1?{disabled:''}:{})}));
-    const width=numberField('열 너비','column-width',{min:20,max:600,onChange:value=>saveStructure('resizeColumn',{logicalColumnKey:key,afterWidth:value})});
-    width.querySelector('input').value=String(window.__mvp12.layouts?.[info.table.sourceTableId]?.columnWidths?.[position]??info.column.width);
-    const fit=button('자동 맞춤',()=>saveStructure('resizeColumn',{logicalColumnKey:key,afterWidth:autoColumnWidth(info)}),{'data-action':'column-fit'});
-    node.append(move,width,fit,toggle('열 숨김',Boolean(hidden),value=>value?saveStructure('hideColumn',{logicalColumnKey:key}):removeOperation(hidden),{'data-control':'column-hide'}));
-    return node;
-  }
-  // Row/column picked from the table grips (no cell selected) - imported tables use the same sections;
+  // Row/column picked in 행/열 mode (no cell selected) - imported tables use the structure card;
   // the sample composite form keeps its verified legacy controls.
   function renderStructureOnly(){
     const detail=state.staticSelection, mvp12=window.__mvp12;
     if (mvp12?.tables && detail.tableKey) {
-      const table=mvp12.tables.find(t=>t.tableKey===detail.tableKey), layout=mvp12.layouts[table.sourceTableId];
-      const row=table.rows.find(r=>r.logicalRowKey===detail.key), column=table.columns.find(c=>c.logicalColumnKey===detail.key);
-      const info={table,row:row||table.rows[layout.rowOrder[0]],column:column||table.columns[layout.columnOrder[0]],rowCount:layout.rowOrder.length,columnCount:table.columnCount};
-      info.rowPosition=layout.rowOrder.indexOf(info.row.rowIndex);info.columnPosition=layout.columnOrder.indexOf(info.column.columnIndex);
-      inspector.append(selectedCard(detail.type==='COLUMN'?'↕':detail.type==='ROW'?'▦':'▤',detail.type==='COLUMN'?'표 열':detail.type==='ROW'?'표 행':'표',table.sourceTableId));
-      if (detail.type==='ROW') inspector.append(rowSection(info)); else if (detail.type==='COLUMN') inspector.append(columnSection(info)); else inspector.append(element('p',{class:'structure-meta'},'행이나 셀을 선택하면 행·열을 편집할 수 있습니다.'));
+      const table=mvp12.tables.find(t=>t.tableKey===detail.tableKey);
+      if (!['ROW','COLUMN'].includes(detail.type)) { inspector.append(selectedCard('▤','표','표'),element('p',{class:'structure-meta'},'행이나 셀을 선택하면 행·열을 편집할 수 있습니다.')); return; }
+      // Positions come from the current layout (the selection keys are stable across moves).
+      const noun=detail.type==='ROW'?'행':'열',positions=(detail.keys||[detail.key]).map(k=>(detail.type==='ROW'?mvp12.rowPosition(k):mvp12.columnPosition(k))+1).sort((a,b)=>a-b),contiguous=positions.every((p,i)=>!i||p===positions[i-1]+1),name=positions.length<=1?`${positions[0]}번째 ${noun}`:contiguous?`${positions[0]}–${positions.at(-1)}번째 ${noun}`:`${positions.length}개 ${noun}`;
+      inspector.append(selectedCard(detail.type==='COLUMN'?'↕':'▦',detail.type==='COLUMN'?'표 열':'표 행',name),structureSection(detail,table));
       return;
     }
     inspector.append(selectedCard(detail.type==='COLUMN'?'↕':'▦',detail.type==='COLUMN'?'표 열':'표 행',detail.key));
@@ -235,12 +282,14 @@
 
   window.addEventListener('mysuit-object-selection-resolved',event=>{
     const {render,source}=event.detail;
+    if (state.staticSelection) window.__mvp12?.clearSelection?.();
     state.selection=render; state.source=source; state.staticSelection=null; state.bindingTarget=render.sourceObjectId;
     renderInspector(); renderDataIfVisible();
     window.dispatchEvent(new CustomEvent('ai-builder:selection-changed',{detail:{type:'selectionChanged',targetType:source.targetType||source.sourceClassName,sourceId:source.templateSourceId||source.sourceObjectId,runtimeId:render.viewerObjectId,runtimeInstanceKey:render.renderInstanceKey,rowIndex:render.rowIndex,bandId:render.bandId,page:render.pageIndex||0}}));
   });
   window.addEventListener('mysuit-static-selection',event=>{
     state.selection=null; state.source=null; state.staticSelection=event.detail; renderInspector();
+    if (!event.detail) return;
     window.dispatchEvent(new CustomEvent('ai-builder:selection-changed',{detail:{type:'selectionChanged',targetType:event.detail.type,sourceId:event.detail.key,page:0}}));
   });
   window.addEventListener('mvp:target-selected',event=>{const type=event.detail.targetType==='LOGICAL_ROW'?'ROW':event.detail.targetType==='LOGICAL_COLUMN'?'COLUMN':null;if(type)window.dispatchEvent(new CustomEvent('mysuit-static-selection',{detail:{type,key:event.detail.targetKey,count:1,ids:[]}}))});
@@ -248,6 +297,11 @@
   // Leaving 직접 편집 drops the editing selection (Viewer overlays are cleared by their controllers).
   window.addEventListener('mvp:workspace-mode',event=>{if(!event.detail.leavingDirectEdit)return;state.selection=null;state.source=null;state.staticSelection=null;renderInspector()});
   window.addEventListener('mysuit-static-structure-changed',()=>setSaveState('저장 안 됨'));
+  // A drop from the Viewer drag handle commits through the same structure save as the buttons.
+  window.addEventListener('mysuit-static-drag-drop',event=>saveStructure(event.detail.operation,event.detail.payload));
+  window.addEventListener('mvp:viewer-blank-click',()=>{if(window.MvpWorkspaceMode?.directEdit?.()!==false)clearDirectSelection()});
+  // The imported table model loads after the first render; show the 셀/행/열 switch as soon as it is ready.
+  window.addEventListener('mysuit-static-tables-ready',()=>{if(!state.selection&&!state.staticSelection)renderInspector()});
   new MutationObserver(()=>{setSaveState('저장 안 됨');if(state.source)renderInspector()}).observe($('patch-count'),{childList:true,subtree:true,characterData:true});
 
   // ---- 데이터 연결 ---------------------------------------------------------------------------------

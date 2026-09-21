@@ -19,7 +19,7 @@ async function clickObject(page, id) {
   await page.waitForTimeout(700);
 }
 // Everything the Direct Edit capability can put on screen for a selection.
-const editingUi = page => page.evaluate(() => { const doc = document.querySelector('#viewer').contentDocument, toolbars = [...doc.querySelectorAll('#mvp44-toolbar')]; return { mode: document.body.dataset.workspaceMode, selected: window.aiBuilder.state.selection?.sourceObjectId || null, sourceId: document.querySelector('#source-id').textContent.trim(), grips: doc.querySelectorAll('.mvp12-static-grip').length, toolbar: toolbars.some(t => t.getBoundingClientRect().width > 0 && getComputedStyle(t).display !== 'none' && getComputedStyle(t).visibility !== 'hidden'), movable: document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().filter(o => /^IMPCL/.test(o.id || '') && o.hasControls).length, inspector: document.querySelector('#builder-inspector').innerText.slice(0, 40) }; });
+const editingUi = page => page.evaluate(() => { const doc = document.querySelector('#viewer').contentDocument, toolbars = [...doc.querySelectorAll('#mvp44-toolbar')]; return { mode: document.body.dataset.workspaceMode, selected: window.aiBuilder.state.selection?.sourceObjectId || null, sourceId: document.querySelector('#source-id').textContent.trim(), grips: doc.querySelectorAll('.mvp12-static-grip').length, markers: doc.querySelectorAll('.mvp12-static-marker').length, staticSelection: window.aiBuilder.state.staticSelection?.type || null, toolbar: toolbars.some(t => t.getBoundingClientRect().width > 0 && getComputedStyle(t).display !== 'none' && getComputedStyle(t).visibility !== 'hidden'), movable: document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().filter(o => /^IMPCL/.test(o.id || '') && o.hasControls).length, inspector: document.querySelector('#builder-inspector').innerText.slice(0, 40) }; });
 
 (async () => {
   const response = await fetch(`${base}/api/ai-builder/import`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ document: { name: '인사.hwpx', base64: fs.readFileSync(HWPX).toString('base64') } }) });
@@ -37,13 +37,13 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   await shot(page, 'editing-v2-ux-chat-click.png');
   check('chatModeNoDirectEdit', chatClick.mode === 'chat' && !chatClick.selected && ['\u2014', '-'].includes(chatClick.sourceId) && chatClick.grips === 0 && !chatClick.toolbar && chatClick.movable === 0, chatClick);
 
-  // 2. Direct Edit tab: the same cell selects normally with grips, toolbar and property panel.
+  // 2. Direct Edit tab (셀 mode): the same cell selects normally with toolbar and property panel, no row/column labels.
   await page.click('[data-tab=direct]');
   await clickObject(page, 'IMPCL0078');
   await until(page, () => window.aiBuilder.state.selection?.sourceObjectId === 'IMPCL0078');
   const directClick = await editingUi(page);
   await shot(page, 'editing-v2-ux-direct-click.png');
-  check('directModeSelects', directClick.mode === 'direct-edit' && directClick.selected === 'IMPCL0078' && directClick.grips > 0 && directClick.toolbar && directClick.inspector.includes('표 셀'), directClick);
+  check('directModeSelects', directClick.mode === 'direct-edit' && directClick.selected === 'IMPCL0078' && directClick.grips === 0 && directClick.markers === 0 && directClick.toolbar && directClick.inspector.includes('표 셀'), directClick);
 
   // 3. Selection, then Data Connection: overlays and toolbar disappear, data UI works.
   await page.click('[data-tab=binding]');
@@ -58,14 +58,16 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   // 4. Back to Direct Edit: a new selection works and editing still records history.
   await page.click('[data-tab=direct]');
   const back = await editingUi(page);
+  // 행 mode: the click selects the row of IMPCL0083 instead of the cell.
+  await page.click('#builder-inspector [data-control=table-mode] [data-value=row]');
   await clickObject(page, 'IMPCL0083');
-  await until(page, () => window.aiBuilder.state.selection?.sourceObjectId === 'IMPCL0083');
+  await until(page, () => window.aiBuilder.state.staticSelection?.type === 'ROW' && window.aiBuilder.state.staticSelection.ids.includes('IMPCL0083'));
   const cursor = await page.evaluate(() => window.__mvp58.state.cursor);
   await page.click('#builder-inspector [data-action=row-down]');
   await until(page, cursor => window.__mvp58.state.cursor !== cursor, cursor);
   await until(page, () => window.__mvp12.layouts.IMPTB0003.rowOrder.join() === '0,1,2,4,3,5');
   const again = await editingUi(page);
-  check('directModeReentry', back.inspector.includes('선택하세요') && again.selected === 'IMPCL0083' && again.grips > 0, { back, again });
+  check('directModeReentry', back.inspector.includes('선택하세요') && !again.selected && again.staticSelection === 'ROW' && again.grips === 0 && again.markers === 1 && !again.toolbar, { back, again });
 
   // 5-6. Chat: greeting, chips fill the composer, send shows user + honest AI bubble.
   await page.click('[data-tab=ai]');

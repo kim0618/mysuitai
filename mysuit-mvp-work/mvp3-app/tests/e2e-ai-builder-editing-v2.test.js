@@ -26,6 +26,14 @@ async function clickObject(page, id) {
   await page.mouse.click(point.x, point.y);
   await until(page, id => window.aiBuilder?.state?.selection?.sourceObjectId === id, id);
 }
+// 셀/행/열 selection mode of the Direct Edit panel; in 행/열 mode a cell click selects its row/column.
+async function setMode(page, key) { await page.click(`#builder-inspector [data-control=table-mode] [data-value=${key}]`); await page.waitForTimeout(200); }
+async function clickIn(page, id, type) {
+  const point = await page.evaluate(id => { const frame = document.querySelector('#viewer'), w = frame.contentWindow, object = w.canvasModule.getCanvas(0).getObjects().find(o => o.id === id); if (!object) return null; const r = MvpCoordinateAdapter.canvasRectToScreen(w, w.canvasModule.getCanvas(0), { left: object.left, top: object.top, width: object.width, height: object.height }), f = frame.getBoundingClientRect(); return { x: f.left + r.left + r.width / 2, y: f.top + r.top + r.height / 2 }; }, id);
+  if (!point) throw new Error(`Viewer object not found: ${id}`);
+  await page.mouse.click(point.x, point.y);
+  await until(page, ([id, type]) => window.aiBuilder?.state?.staticSelection?.type === type && window.aiBuilder.state.staticSelection.ids.includes(id), [id, type]);
+}
 const objectState = (page, id) => page.evaluate(id => { const o = document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().find(x => x.id === id); return o ? { left: o.left, top: o.top, width: o.width, height: o.height, visible: o.visible !== false, text: o.text, scaleType: o.scaleType, src: (o._element || o.getElement?.())?.src?.slice(0, 60) } : null; }, id);
 const historyCursor = page => page.evaluate(() => window.__mvp58?.state?.cursor ?? -1);
 async function waitCursor(page, previous) { await until(page, previous => (window.__mvp58?.state?.cursor ?? -1) !== previous, previous); return historyCursor(page); }
@@ -90,14 +98,15 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   cursor = await waitCursor(page, cursor);
   await until(page, () => document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().find(o => o.id === 'IMPCL0078')?.text === '2020-03-01~2024-12-31');
   const fontBefore = (await objectState(page, 'IMPCL0078'));
-  await page.click('#builder-inspector [aria-label="글꼴 크기 늘리기"]'); cursor = await waitCursor(page, cursor);
+  await page.click('#builder-inspector [aria-label="글자 크기 늘리기"]'); cursor = await waitCursor(page, cursor);
   await page.click('#builder-inspector .bold-toggle'); cursor = await waitCursor(page, cursor);
   await page.click('#builder-inspector [aria-label="가로 정렬"] [data-value=left]'); cursor = await waitCursor(page, cursor);
   const styled = await page.evaluate(() => { const o = document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().find(x => x.id === 'IMPCL0078'); return { fontSize: o.fontSize, fontWeight: o.fontWeight, textAlign: o.textAlign }; });
   await shot(page, 'editing-v2-direct-text.png');
-  check('textEdit', textUi.sections.includes('빠른 편집') && textUi.text === '2019-01-01~2019-01-01' && styled.fontWeight === 'bold' && styled.textAlign === 'left' && styled.fontSize === 11, { textUi, styled, fontBefore });
+  check('textEdit', textUi.sections.includes('셀 편집') && textUi.text === '2019-01-01~2019-01-01' && styled.fontWeight === 'bold' && styled.textAlign === 'left' && styled.fontSize === 11, { textUi, styled, fontBefore });
 
   // ---- Direct: table row (IMPTB0003 base row 2 holds IMPCL0078) ---------------------------------------
+  await setMode(page, 'row'); await clickIn(page, 'IMPCL0078', 'ROW');
   const rowBefore = await layoutOf(page, 'IMPTB0003'), topBefore = (await objectState(page, 'IMPCL0078')).top;
   await page.click('#builder-inspector [data-action=row-down]'); cursor = await waitCursor(page, cursor);
   await until(page, () => window.__mvp12.layouts.IMPTB0003.rowOrder.join() === '0,1,3,2,4,5');
@@ -108,10 +117,10 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   const redoneTop = (await objectState(page, 'IMPCL0078')).top;
   check('rowMove', rowBefore.rowOrder.join() === '0,1,2,3,4,5' && movedTop > topBefore && Math.abs(undoneTop - topBefore) < 0.5 && Math.abs(redoneTop - movedTop) < 0.5, { topBefore, movedTop, undoneTop, redoneTop });
   // Height / auto-fit / hide / restore on the same logical row.
-  await clickObject(page, 'IMPCL0078');
+  await clickIn(page, 'IMPCL0078', 'ROW');
   await page.fill('#builder-inspector [data-structure=row] input[type=number]', '30'); await page.press('#builder-inspector [data-structure=row] input[type=number]', 'Enter'); cursor = await waitCursor(page, cursor);
   const heightAfter = (await layoutOf(page, 'IMPTB0003')).rowHeights[3];
-  await clickObject(page, 'IMPCL0078');
+  await clickIn(page, 'IMPCL0078', 'ROW');
   await page.click('#builder-inspector [data-structure=row] [data-control=row-hide]'); cursor = await waitCursor(page, cursor);
   const hidden = await objectState(page, 'IMPCL0078');
   await page.click('#builder-inspector [data-structure=row] [data-control=row-hide]'); cursor = await waitCursor(page, cursor);
@@ -121,7 +130,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   check('rowHide', hidden.visible === false && restored.visible === true, { hidden: hidden.visible, restored: restored.visible });
   // Delete a plain row of 봉사활동 (IMPTB0004), then undo restores and redo deletes again.
   const volunteer = await page.evaluate(() => window.__mvp12.tables.find(t => t.sourceTableId === 'IMPTB0004').rows[3].sourceCellIds);
-  await clickObject(page, volunteer[0]);
+  await clickIn(page, volunteer[0], 'ROW');
   await page.click('#builder-inspector [data-action=row-delete]'); cursor = await waitCursor(page, cursor);
   await until(page, () => window.__mvp12.layouts.IMPTB0004.rowOrder.length === 5);
   const deleted = { order: (await layoutOf(page, 'IMPTB0004')).rowOrder.join(), visible: (await objectState(page, volunteer[0])).visible };
@@ -129,26 +138,27 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   const undeleted = (await objectState(page, volunteer[0])).visible;
   cursor = await redo(page); await until(page, () => window.__mvp12.layouts.IMPTB0004.rowOrder.length === 5);
   check('rowDelete', deleted.order === '0,1,2,4,5' && deleted.visible === false && undeleted === true && (await objectState(page, volunteer[0])).visible === false, { deleted, undeleted });
-  // Rows inside a vertical merge are refused with a user-facing message, and nothing is recorded.
-  await clickObject(page, 'IMPCL0013');
+  // A row inside a vertical merge is selected together with its merge group (IMPCL0013's two lines), and a forced
+  // single-row request that would split the merge is refused by the server without recording anything.
+  await clickIn(page, 'IMPCL0013', 'ROW');
   const beforeRefusal = await historyCursor(page);
-  await page.click('#builder-inspector [data-action=row-down]');
-  await until(page, () => !document.querySelector('#builder-error').hidden);
-  const refusal = await page.evaluate(() => document.querySelector('#builder-error').innerText);
-  check('mergedRowFailClosed', /병합/.test(refusal) && (await historyCursor(page)) === beforeRefusal && !/[A-Z_]{8,}/.test(refusal), { refusal });
-  await page.evaluate(() => { document.querySelector('#builder-error').hidden = true; });
+  const refusalUi = await page.evaluate(() => ({ group: window.aiBuilder.state.staticSelection.keys.length, meta: document.querySelector('#builder-inspector .structure-meta')?.textContent || '' }));
+  const forced = await page.evaluate(async () => { const t = window.__mvp12.tables.find(x => x.rows.some(r => r.sourceCellIds.includes('IMPCL0013'))), row = t.rows.find(r => r.sourceCellIds.includes('IMPCL0013')), s = window.__mvp12.context, at = window.__mvp12.rowPosition(row.logicalRowKey); const r = await fetch('/api/structure-operations', { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ layoutDraftId: new URLSearchParams(location.search).get('layoutDraftId'), projectName: s.projectName, formName: s.formName, operation: 'moveRow', logicalTableKey: t.tableKey, compositeTableKey: t.compositeTableKey, logicalRowKey: row.logicalRowKey, toRowIndex: at - 1 }) }); return { status: r.status, body: await r.json() }; });
+  const refusal = forced.body.message;
+  check('mergedRowFailClosed', refusalUi.group === 2 && /2개 행/.test(refusalUi.meta) && forced.status === 409 && /병합/.test(refusal) && (await historyCursor(page)) === beforeRefusal && !/[A-Z_]{8,}/.test(refusal), { refusalUi, refusal });
 
   // ---- Direct: column ---------------------------------------------------------------------------------
-  await clickObject(page, 'IMPCL0078');
+  await setMode(page, 'column'); await clickIn(page, 'IMPCL0078', 'COLUMN');
   const colLeftBefore = (await objectState(page, 'IMPCL0078')).left;
   await page.click('#builder-inspector [data-action=column-right]'); cursor = await waitCursor(page, cursor);
   await until(page, () => window.__mvp12.layouts.IMPTB0003.columnOrder.join() === '0,2,1,3,4,5');
   const colLeftAfter = (await objectState(page, 'IMPCL0078')).left;
-  await clickObject(page, 'IMPCL0078');
+  await clickIn(page, 'IMPCL0078', 'COLUMN');
   await page.fill('#builder-inspector [data-structure=column] input[type=number]', '150'); await page.press('#builder-inspector [data-structure=column] input[type=number]', 'Enter'); cursor = await waitCursor(page, cursor);
   const colWidth = (await objectState(page, 'IMPCL0078')).width;
-  await clickObject(page, 'IMPCL0078');
+  await clickIn(page, 'IMPCL0078', 'COLUMN');
   await shot(page, 'editing-v2-direct-column.png');
+  await setMode(page, 'cell');
   check('columnMove', colLeftAfter > colLeftBefore, { colLeftBefore, colLeftAfter });
   check('columnResize', colWidth === 150, { colWidth });
 

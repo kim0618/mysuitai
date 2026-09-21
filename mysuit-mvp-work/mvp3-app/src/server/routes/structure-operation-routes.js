@@ -60,7 +60,9 @@ function descriptor(body, current) {
     after = { width: Number(body.afterWidth) };
   } else if (body.operation === "moveColumn") {
     before = {
-      visualIndex: current?.toVisualIndex ?? Number(body.originalVisualIndex),
+      visualIndex: Number.isInteger(Number(body.fromVisualIndex)) && body.fromVisualIndex !== undefined
+        ? Number(body.fromVisualIndex)
+        : current?.toVisualIndex ?? Number(body.originalVisualIndex),
     };
     after = { visualIndex: Number(body.toVisualIndex) };
   } else if (body.operation === "resizeRow") {
@@ -72,6 +74,12 @@ function descriptor(body, current) {
   } else if (body.operation === "moveRow") {
     before = { rowIndex: Number(body.fromRowIndex) };
     after = { rowIndex: Number(body.toRowIndex) };
+  } else if (body.operation === "moveRows") {
+    before = { rowIndex: Number(body.fromRowIndex), count: (body.logicalRowKeys || []).length };
+    after = { rowIndex: Number(body.toRowIndex), count: (body.logicalRowKeys || []).length };
+  } else if (body.operation === "moveColumns") {
+    before = { visualIndex: Number(body.fromVisualIndex), count: (body.columnIndexes || []).length };
+    after = { visualIndex: Number(body.toVisualIndex), count: (body.columnIndexes || []).length };
   } else if (body.operation === "removeRow") {
     before = { present: true };
     after = { present: false };
@@ -101,6 +109,21 @@ async function routeStructureOperations(req, res) {
   try {
     if (pathname === "/api/structure-operations" && req.method === "GET")
       return send(res, 200, { success: true, operations: service.list(query) });
+    // Several structure operations from one user action (a multi-row resize, ...) form ONE history event; a failure
+    // in any of them restores the state captured before the first.
+    if (pathname === "/api/structure-operations/batch" && req.method === "PUT") {
+      const body = await json(req),
+        scope = { layoutDraftId: body.layoutDraftId, projectName: body.projectName, formName: body.formName },
+        items = Array.isArray(body.operations) ? body.operations.map((op) => ({ ...op, ...scope })) : [];
+      if (!items.length || items.length > 50)
+        throw Object.assign(new Error("일괄 편집 요청이 올바르지 않습니다."), { code: "INVALID_REQUEST", status: 400 });
+      const tx = history.transact(
+        scope,
+        { ...descriptor(items[0], null), internalOperations: items.map((x) => x.operation), label: typeof body.label === "string" ? body.label.slice(0, 80) : undefined },
+        () => items.map((item) => { operationValidator.assertValid(operationValidator.fromStructure(item)); return service.upsert(item); }),
+      );
+      return send(res, 200, { success: true, operations: tx.result, historyEvent: tx.event, history: tx.history });
+    }
     if (pathname === "/api/structure-operations" && req.method === "PUT") {
       const body = await json(req);
       if (body.operation === "moveRenderedRow") {
