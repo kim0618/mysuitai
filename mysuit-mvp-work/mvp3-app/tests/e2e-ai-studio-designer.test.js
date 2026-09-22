@@ -36,10 +36,10 @@ async function create(page, file) {
     const url = await create(page, ORDER); result.url = url;
 
     // 1-3. Designer screen: 속성 | 데이터, AI 도우미 drawer instead of a chat tab, tools, preview and save.
-    const layout = await page.evaluate(() => ({ tools: [...document.querySelectorAll('.studio-tools .studio-tool')].map((x) => ({ label: x.getAttribute('aria-label'), disabled: x.disabled, pressed: x.getAttribute('aria-pressed') })), top: [...document.querySelectorAll('body>header .header-actions button')].filter((x) => x.offsetParent).map((x) => x.textContent), chatTab: Boolean(document.querySelector('[data-tab=ai]')), drawerHidden: document.querySelector('.studio-assistant')?.hidden, bands: document.querySelector('#viewer').contentWindow.document.querySelectorAll('.studio-band').length }));
+    const layout = await page.evaluate(() => ({ tools: [...document.querySelectorAll('.studio-tools .studio-tool')].map((x) => ({ label: x.getAttribute('aria-label'), disabled: x.disabled, pressed: x.getAttribute('aria-pressed') })), top: [...document.querySelectorAll('body>header .header-actions button')].filter((x) => x.offsetParent).map((x) => x.textContent.trim() || x.getAttribute('aria-label')), chatTab: Boolean(document.querySelector('[data-tab=ai]')), drawerHidden: document.querySelector('.studio-assistant')?.hidden, bands: document.querySelector('#viewer').contentWindow.document.querySelectorAll('.studio-band').length }));
     const docPanel = await panel(page);
     await shot(page, 'designer-document.png');
-    check('1_2_3_designerLayout', docPanel.tabs.join('|') === '속성|데이터' && docPanel.active === '속성' && !layout.chatTab && layout.drawerHidden === true && layout.top.join('|') === '↶|↷|✦ AI 도우미|미리보기|저장' && layout.tools.map((t) => t.label).join('|') === '선택|밴드 보기|추가 (준비 중)' && layout.tools[2].disabled, { layout, docPanel: docPanel.tabs });
+    check('1_2_3_designerLayout', docPanel.tabs.join('|') === '속성|데이터' && docPanel.active === '속성' && !layout.chatTab && layout.drawerHidden === true && layout.top.join('|') === '실행 취소|다시 실행|✦ AI 도우미|미리보기|저장' && layout.tools.map((t) => t.label).join('|') === '선택|밴드 보기|추가 (준비 중)' && layout.tools[2].disabled, { layout, docPanel: docPanel.tabs });
     // Imported HWPX: free form, no invented bands; the document card says so.
     check('bandsFreeFormImported', layout.bands === 0 && layout.tools[1].disabled && /자유 배치 서식/.test(docPanel.text) && /문서/.test(docPanel.sections.join()), { bands: layout.bands, text: docPanel.text.slice(0, 200) });
 

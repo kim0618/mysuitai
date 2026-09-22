@@ -7,7 +7,8 @@
   // The overlay lives in the Viewer frame, which cannot read the Studio CSS variables; they are read from the Builder page.
   const token = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   // Fills are translucent tints of the accent so the document stays readable underneath.
-  const palette = () => { const primary = token('--studio-primary'); return { line: `color-mix(in srgb, ${primary} 35%, transparent)`, fill: `color-mix(in srgb, ${primary} 3%, transparent)`, selected: primary, selectedFill: `color-mix(in srgb, ${primary} 7%, transparent)`, chip: token('--studio-surface'), text: token('--studio-text'), muted: token('--studio-text-muted') }; };
+  // The label is a small mint chip with green text, so it never competes with the document.
+  const palette = () => { const primary = token('--studio-primary'); return { line: `color-mix(in srgb, ${primary} 30%, transparent)`, fill: `color-mix(in srgb, ${primary} 3%, transparent)`, selected: primary, selectedFill: `color-mix(in srgb, ${primary} 6%, transparent)`, chip: token('--studio-primary-soft'), chipLine: token('--studio-primary-border'), accent: primary, onAccent: token('--studio-surface'), muted: token('--studio-text-muted'), font: token('--studio-font') }; };
   let colors = palette();
   let info = null, frame = null, canvas = null, overlays = [], visible = true, selected = null, loading = null;
   const developer = () => document.body.dataset.surface === 'developer';
@@ -29,16 +30,19 @@
       const chosen = selected === band.id;
       const box = frame.document.createElement('div');
       box.className = `studio-band${chosen ? ' selected' : ''}`; box.dataset.bandId = band.id;
-      Object.assign(box.style, { position: 'fixed', zIndex: 2147482990, left: `${rect.left}px`, top: `${rect.top}px`, width: `${rect.width}px`, height: `${rect.height}px`, boxSizing: 'border-box', border: chosen ? `2px solid ${colors.selected}` : `1px dashed ${colors.line}`, background: chosen ? colors.selectedFill : colors.fill, backgroundClip: 'padding-box', pointerEvents: 'none', borderRadius: '2px' });
+      Object.assign(box.style, { position: 'fixed', zIndex: 2147482990, left: `${rect.left}px`, top: `${rect.top}px`, width: `${rect.width}px`, height: `${rect.height}px`, boxSizing: 'border-box', border: chosen ? `1.5px solid ${colors.selected}` : `1px dashed ${colors.line}`, background: chosen ? colors.selectedFill : colors.fill, backgroundClip: 'padding-box', pointerEvents: 'none', borderRadius: '2px' });
       // The label is the only interactive part, so the band never blocks clicks on the document content.
       const chip = frame.document.createElement('button');
       chip.type = 'button'; chip.className = 'studio-band-label';
       chip.title = `${band.label} · ${band.engine}`;
-      Object.assign(chip.style, { position: 'absolute', top: '-1px', right: '-1px', transform: 'translateY(-100%)', display: 'flex', alignItems: 'baseline', gap: '6px', padding: '2px 8px', border: `1px solid ${chosen ? colors.selected : colors.line}`, borderRadius: '6px 6px 0 0', background: chosen ? colors.selected : colors.chip, color: chosen ? colors.chip : colors.text, font: '600 11px/16px Pretendard,"Noto Sans KR",sans-serif', whiteSpace: 'nowrap', pointerEvents: 'auto', cursor: 'pointer' });
+      Object.assign(chip.style, { position: 'absolute', top: '-1px', right: '-1px', transform: 'translateY(-100%)', display: 'flex', alignItems: 'baseline', gap: '5px', margin: '0', padding: '0 6px', border: `1px solid ${chosen ? colors.selected : colors.chipLine}`, borderBottom: '0', borderRadius: '4px 4px 0 0', background: chosen ? colors.accent : colors.chip, color: chosen ? colors.onAccent : colors.accent, font: `600 10px/15px ${colors.font}`, whiteSpace: 'nowrap', opacity: chosen ? '1' : '.9', pointerEvents: 'auto', cursor: 'pointer' });
       const name = frame.document.createElement('span'); name.textContent = band.label;
       const engine = frame.document.createElement('small'); engine.textContent = band.dataSet ? `${band.engine} · ${band.dataSet}` : band.engine;
-      Object.assign(engine.style, { font: '500 10px/16px Pretendard,sans-serif', color: chosen ? colors.chip : colors.muted });
+      // The engine name stays in the label for tooltips and tests but is shown only for the selected or hovered band.
+      Object.assign(engine.style, { display: chosen ? 'inline' : 'none', font: `500 9px/15px ${colors.font}`, color: chosen ? colors.onAccent : colors.muted });
       chip.append(name, engine);
+      chip.addEventListener('mouseenter', () => { engine.style.display = 'inline'; chip.style.opacity = '1'; });
+      chip.addEventListener('mouseleave', () => { if (!chosen) { engine.style.display = 'none'; chip.style.opacity = '.9'; } });
       chip.addEventListener('mousedown', (event) => event.stopPropagation());
       chip.addEventListener('click', (event) => { event.preventDefault(); event.stopPropagation(); select(band.id); });
       box.append(chip); frame.document.body.appendChild(box); overlays.push(box);

@@ -2,12 +2,12 @@
   "object": {
     "status": 200,
     "bytes": 29907,
-    "sha256": "eda6812a4d414dd2bb173733990e664299c56d22c167a3ddd75818d70def924a"
+    "sha256": "133a7b170086a9262dbe1131a8124e40774ef096ed2a3c45987adbf81562362a"
   },
   "structure": {
     "status": 200,
     "bytes": 29288,
-    "sha256": "8d732836159a9ba9167568ee1f715ebfa296674fb4a17cf80e7c8cfca11d8969"
+    "sha256": "51622df245cb34572f743a47f943ca31ed1933b5c633840019da99af4771acfe"
   },
   "structureFile": "output/import-mvp12-edited.pdf"
 }

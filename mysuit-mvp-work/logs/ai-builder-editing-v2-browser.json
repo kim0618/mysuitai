@@ -3,29 +3,30 @@
     "fixturesWithoutJson": {
       "pass": true,
       "detail": {
-        "hwpx": "import_mvp13_20260921_173926_63d8ce",
-        "dim": "import_mvp11_20260921_173926_5f2e64"
+        "hwpx": "import_mvp13_20260922_092637_243240",
+        "dim": "import_mvp11_20260922_092638_66884c"
       }
     },
     "layout1440": {
       "pass": true,
       "detail": {
-        "sidebar": 184,
-        "panel": 380,
-        "viewer": 876,
+        "sidebar": 196,
+        "panel": 336,
+        "viewer": 878,
         "iframe": "IFRAME",
-        "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_173926_63d8ce&formName=SampleReport_FreeForm",
+        "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260922_092637_243240&formName=SampleReport_FreeForm",
         "tabs": [
-          "채팅",
-          "직접 편집",
-          "데이터 연결"
+          "속성",
+          "데이터"
         ],
-        "active": "채팅",
-        "topbar": 52,
+        "active": "속성",
+        "topbar": 64,
         "topbarControls": [
           "실행 취소",
           "다시 실행",
           "저장 안 됨",
+          "✦ AI 도우미",
+          "미리보기",
           "저장"
         ],
         "pageScroll": 0,
@@ -36,9 +37,8 @@
     "tabOrder": {
       "pass": true,
       "detail": [
-        "채팅",
-        "직접 편집",
-        "데이터 연결"
+        "속성",
+        "데이터"
       ]
     },
     "topbarControls": {
@@ -47,6 +47,8 @@
         "실행 취소",
         "다시 실행",
         "저장 안 됨",
+        "✦ AI 도우미",
+        "미리보기",
         "저장"
       ]
     },
@@ -60,15 +62,15 @@
           "composer": true,
           "send": true,
           "suggestions": [
+            "표 데이터 연결",
+            "반복 데이터",
             "제목 수정",
-            "표 열 너비 조정",
-            "행 이동",
-            "데이터 연결"
+            "열 너비 조정"
           ],
           "placeholder": false,
-          "empty": "안녕하세요.\n\n현재 \"SampleReport_FreeForm\" 문서를 보고 있습니다.\n\n문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.\n\n추천 작업\n제목 수정\n표 열 너비 조정\n행 이동\n데이터 연결\n오후 05:39"
+          "empty": "안녕하세요!\n무엇을 도와드릴까요?\n\n서식 구조, 데이터 연결, 문구 수정을 요청할 수 있습니다.\n\n현재 \"인사\" 문서를 보고 있습니다.\n\n추천 작업\n표 데이터 연결\n반복 데이터\n제목 수정\n열 너비 조정"
         },
-        "suggested": "선택한 행을 아래로 이동해줘",
+        "suggested": "문서 제목을 수정해줘",
         "chatAfter": {
           "user": "제목을 2026년 인사기록부로 바꿔줘",
           "time": true,
@@ -82,10 +84,8 @@
         "textUi": {
           "card": "▦\n표 셀\n2019-01-01~2019-01-01",
           "sections": [
-            "행 편집",
-            "열 편집",
-            "빠른 편집",
-            "크기",
+            "셀 편집",
+            "표",
             "표시"
           ],
           "text": "2019-01-01~2019-01-01"
@@ -96,8 +96,8 @@
           "textAlign": "left"
         },
         "fontBefore": {
-          "left": 119,
-          "top": 408,
+          "left": 147,
+          "top": 441,
           "width": 186,
           "height": 17,
           "visible": true,
@@ -108,10 +108,10 @@
     "rowMove": {
       "pass": true,
       "detail": {
-        "topBefore": 408,
-        "movedTop": 425,
-        "undoneTop": 408,
-        "redoneTop": 425
+        "topBefore": 441,
+        "movedTop": 458,
+        "undoneTop": 441,
+        "redoneTop": 458
       }
     },
     "rowHeight": {
@@ -140,14 +140,18 @@
     "mergedRowFailClosed": {
       "pass": true,
       "detail": {
-        "refusal": "병합 셀 의존성이 있어 이 행을 변경할 수 없습니다.\n×"
+        "refusalUi": {
+          "group": 2,
+          "meta": "선택: 2–3행 (2개 행) / 11"
+        },
+        "refusal": "병합된 셀이 나뉘게 되어 이 방향으로 행을 옮길 수 없습니다."
       }
     },
     "columnMove": {
       "pass": true,
       "detail": {
-        "colLeftBefore": 119,
-        "colLeftAfter": 205
+        "colLeftBefore": 147,
+        "colLeftAfter": 233
       }
     },
     "columnResize": {
@@ -159,11 +163,11 @@
     "imageAdapter": {
       "pass": true,
       "detail": {
-        "card": "▧\n이미지\nIMPIMG0001",
+        "card": "▧\n이미지\n이미지",
         "sections": [
+          "이미지",
           "크기",
           "위치",
-          "이미지",
           "표시"
         ],
         "ratio": true,
@@ -176,8 +180,8 @@
       "pass": true,
       "detail": {
         "imgBefore": {
-          "left": 36,
-          "top": 69,
+          "left": 66,
+          "top": 86,
           "width": 148,
           "height": 39,
           "visible": true,
@@ -190,8 +194,8 @@
       "pass": true,
       "detail": {
         "imgCentered": {
-          "left": 220,
-          "top": 69,
+          "left": 248,
+          "top": 86,
           "width": 296,
           "height": 78,
           "visible": true,
@@ -199,8 +203,8 @@
           "src": "data:image/jpeg;base64,R0lGODlhKgFPAOYAADc1NWdkZLu7vaako+Xk5"
         },
         "tableBounds": {
-          "left": 0,
-          "right": 735
+          "left": 28,
+          "right": 764
         }
       }
     },
@@ -222,7 +226,7 @@
     "tabSwitchKeepsViewer": {
       "pass": true,
       "detail": {
-        "srcBefore": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_173926_63d8ce&formName=SampleReport_FreeForm"
+        "srcBefore": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260922_092637_243240&formName=SampleReport_FreeForm"
       }
     },
     "savePass": {
@@ -236,7 +240,7 @@
         "fontWeight": "bold",
         "colWidth": 86,
         "image": {
-          "x": 220,
+          "x": 248,
           "width": 296,
           "height": 78,
           "scaleType": 1,
@@ -259,13 +263,13 @@
     "dataEmptyState": {
       "pass": true,
       "detail": {
-        "empty": "데이터 연결\n연결된 데이터가 없습니다.\n\nJSON 데이터를 추가하면 문서 항목과 자동으로 연결할 수 있습니다.\n\nJSON 파일 선택\nJSON 직접 입력"
+        "empty": "데이터\n연결된 데이터가 없습니다.\n\nJSON 데이터를 추가하면 문서 항목과 자동으로 연결할 수 있습니다.\n\nJSON 파일 선택\nJSON 직접 입력"
       }
     },
     "workspaceJsonUpload": {
       "pass": true,
       "detail": {
-        "header": "{ }\n데이터\nemployee-227907.json\n4 fields\n변경\n제거",
+        "header": "{ }\n데이터\nemployee-77118.json\n4 fields\n변경\n제거",
         "summary": "1\n자동 연결\n0\n확인 필요\n11\n미연결",
         "rows": 9,
         "auto": 1
@@ -302,7 +306,7 @@
     "workspaceJsonPersistence": {
       "pass": true,
       "detail": {
-        "file": "employee-227907.json",
+        "file": "employee-77118.json",
         "applied": true,
         "rows": "0,1,3,2,4,5"
       }
@@ -310,12 +314,12 @@
     "layout1920": {
       "pass": true,
       "detail": {
-        "sidebar": 184,
-        "panel": 380,
-        "viewer": 1356,
-        "mainHeight": 1028,
+        "sidebar": 248,
+        "panel": 440,
+        "viewer": 1172,
+        "mainHeight": 1016,
         "viewport": 1080,
-        "topbar": 52,
+        "topbar": 64,
         "pageScroll": 0
       }
     },
@@ -323,37 +327,41 @@
       "pass": true,
       "detail": {
         "create": {
-          "width": 184,
+          "width": 196,
           "brand": {
-            "x": 12,
-            "y": 20,
-            "w": 160,
-            "h": 36
+            "x": 10,
+            "y": 22,
+            "w": 175,
+            "h": 40
           },
           "brandOverflow": 0,
           "brandLines": 1,
           "menu": [
             "생성하기",
             "편집하기",
+            "사용자 편집",
             "내 작업",
             "템플릿",
             "설정"
           ],
           "menuX": [
-            12,
-            12,
-            12,
-            12,
-            12
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
           ],
           "menuHeight": [
-            42,
-            42,
-            42,
-            42,
-            42
+            48,
+            48,
+            48,
+            48,
+            48,
+            48
           ],
           "fontSizes": [
+            "14px",
             "14px",
             "14px",
             "14px",
@@ -361,54 +369,59 @@
             "14px"
           ],
           "iconSizes": [
-            "18px",
-            "18px",
-            "18px",
-            "18px",
-            "18px"
+            "14px",
+            "14px",
+            "14px",
+            "14px",
+            "14px",
+            "14px"
           ],
-          "activeBackground": "rgba(255, 255, 255, 0.14)",
+          "activeBackground": "rgb(232, 245, 238)",
           "active": "생성하기",
           "footer": {
-            "x": 12,
-            "y": 846,
-            "w": 160,
-            "h": 40
+            "x": 10,
+            "y": 850,
+            "w": 175,
+            "h": 36
           },
-          "topbar": 52
+          "topbar": 64
         },
         "edit": {
-          "width": 184,
+          "width": 196,
           "brand": {
-            "x": 12,
-            "y": 20,
-            "w": 160,
-            "h": 36
+            "x": 10,
+            "y": 22,
+            "w": 175,
+            "h": 40
           },
           "brandOverflow": 0,
           "brandLines": 1,
           "menu": [
             "생성하기",
             "편집하기",
+            "사용자 편집",
             "내 작업",
             "템플릿",
             "설정"
           ],
           "menuX": [
-            12,
-            12,
-            12,
-            12,
-            12
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
           ],
           "menuHeight": [
-            42,
-            42,
-            42,
-            42,
-            42
+            48,
+            48,
+            48,
+            48,
+            48,
+            48
           ],
           "fontSizes": [
+            "14px",
             "14px",
             "14px",
             "14px",
@@ -416,21 +429,22 @@
             "14px"
           ],
           "iconSizes": [
-            "18px",
-            "18px",
-            "18px",
-            "18px",
-            "18px"
+            "14px",
+            "14px",
+            "14px",
+            "14px",
+            "14px",
+            "14px"
           ],
-          "activeBackground": "rgba(255, 255, 255, 0.14)",
+          "activeBackground": "rgb(232, 245, 238)",
           "active": "편집하기",
           "footer": {
-            "x": 12,
-            "y": 846,
-            "w": 160,
-            "h": 40
+            "x": 10,
+            "y": 850,
+            "w": 175,
+            "h": 36
           },
-          "topbar": 52
+          "topbar": 64
         },
         "differences": []
       }
@@ -478,19 +492,19 @@
       "pass": true,
       "detail": [
         {
-          "file": "import_mvp13_20260921_173926_63d8ce/SampleReport_FreeForm/form.ubjf",
+          "file": "import_mvp13_20260922_092637_243240/SampleReport_FreeForm/form.ubjf",
           "unchanged": true
         },
         {
-          "file": "import_mvp13_20260921_173926_63d8ce/SampleReport_FreeForm/info.xml",
+          "file": "import_mvp13_20260922_092637_243240/SampleReport_FreeForm/info.xml",
           "unchanged": true
         },
         {
-          "file": "import_mvp11_20260921_173926_5f2e64/SampleReport_FreeForm/form.ubjf",
+          "file": "import_mvp11_20260922_092638_66884c/SampleReport_FreeForm/form.ubjf",
           "unchanged": true
         },
         {
-          "file": "import_mvp11_20260921_173926_5f2e64/SampleReport_FreeForm/info.xml",
+          "file": "import_mvp11_20260922_092638_66884c/SampleReport_FreeForm/info.xml",
           "unchanged": true
         }
       ]
@@ -512,22 +526,23 @@
     "editing-v2-data-binding-review.png"
   ],
   "layout1440": {
-    "sidebar": 184,
-    "panel": 380,
-    "viewer": 876,
+    "sidebar": 196,
+    "panel": 336,
+    "viewer": 878,
     "iframe": "IFRAME",
-    "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260921_173926_63d8ce&formName=SampleReport_FreeForm",
+    "iframeSrc": "/mysuit/UView5/index.jsp?projectName=import_mvp13_20260922_092637_243240&formName=SampleReport_FreeForm",
     "tabs": [
-      "채팅",
-      "직접 편집",
-      "데이터 연결"
+      "속성",
+      "데이터"
     ],
-    "active": "채팅",
-    "topbar": 52,
+    "active": "속성",
+    "topbar": 64,
     "topbarControls": [
       "실행 취소",
       "다시 실행",
       "저장 안 됨",
+      "✦ AI 도우미",
+      "미리보기",
       "저장"
     ],
     "pageScroll": 0,
@@ -535,47 +550,51 @@
     "rawCodeVisible": false
   },
   "layout1920": {
-    "sidebar": 184,
-    "panel": 380,
-    "viewer": 1356,
-    "mainHeight": 1028,
+    "sidebar": 248,
+    "panel": 440,
+    "viewer": 1172,
+    "mainHeight": 1016,
     "viewport": 1080,
-    "topbar": 52,
+    "topbar": 64,
     "pageScroll": 0
   },
   "sidebar": {
     "create": {
-      "width": 184,
+      "width": 196,
       "brand": {
-        "x": 12,
-        "y": 20,
-        "w": 160,
-        "h": 36
+        "x": 10,
+        "y": 22,
+        "w": 175,
+        "h": 40
       },
       "brandOverflow": 0,
       "brandLines": 1,
       "menu": [
         "생성하기",
         "편집하기",
+        "사용자 편집",
         "내 작업",
         "템플릿",
         "설정"
       ],
       "menuX": [
-        12,
-        12,
-        12,
-        12,
-        12
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
       ],
       "menuHeight": [
-        42,
-        42,
-        42,
-        42,
-        42
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
       ],
       "fontSizes": [
+        "14px",
         "14px",
         "14px",
         "14px",
@@ -583,54 +602,59 @@
         "14px"
       ],
       "iconSizes": [
-        "18px",
-        "18px",
-        "18px",
-        "18px",
-        "18px"
+        "14px",
+        "14px",
+        "14px",
+        "14px",
+        "14px",
+        "14px"
       ],
-      "activeBackground": "rgba(255, 255, 255, 0.14)",
+      "activeBackground": "rgb(232, 245, 238)",
       "active": "생성하기",
       "footer": {
-        "x": 12,
-        "y": 846,
-        "w": 160,
-        "h": 40
+        "x": 10,
+        "y": 850,
+        "w": 175,
+        "h": 36
       },
-      "topbar": 52
+      "topbar": 64
     },
     "edit": {
-      "width": 184,
+      "width": 196,
       "brand": {
-        "x": 12,
-        "y": 20,
-        "w": 160,
-        "h": 36
+        "x": 10,
+        "y": 22,
+        "w": 175,
+        "h": 40
       },
       "brandOverflow": 0,
       "brandLines": 1,
       "menu": [
         "생성하기",
         "편집하기",
+        "사용자 편집",
         "내 작업",
         "템플릿",
         "설정"
       ],
       "menuX": [
-        12,
-        12,
-        12,
-        12,
-        12
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
       ],
       "menuHeight": [
-        42,
-        42,
-        42,
-        42,
-        42
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
       ],
       "fontSizes": [
+        "14px",
         "14px",
         "14px",
         "14px",
@@ -638,21 +662,22 @@
         "14px"
       ],
       "iconSizes": [
-        "18px",
-        "18px",
-        "18px",
-        "18px",
-        "18px"
+        "14px",
+        "14px",
+        "14px",
+        "14px",
+        "14px",
+        "14px"
       ],
-      "activeBackground": "rgba(255, 255, 255, 0.14)",
+      "activeBackground": "rgb(232, 245, 238)",
       "active": "편집하기",
       "footer": {
-        "x": 12,
-        "y": 846,
-        "w": 160,
-        "h": 40
+        "x": 10,
+        "y": 850,
+        "w": 175,
+        "h": 36
       },
-      "topbar": 52
+      "topbar": 64
     },
     "differences": []
   },

@@ -211,6 +211,23 @@
             "maxTableWidth": 792
           }
         },
+        "moveColumns": {
+          "allowed": false,
+          "reason": "STATIC_TABLE_ONLY",
+          "message": "가져온 정적 표에서만 지원합니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "sameGroupOnly": false,
+            "groupKey": "grp:financial-all-columns",
+            "maxTableWidth": 792
+          }
+        },
         "hideColumn": {
           "allowed": true,
           "constraints": {
@@ -395,6 +412,22 @@
             "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
           }
         },
+        "moveRows": {
+          "allowed": false,
+          "reason": "STATIC_TABLE_ONLY",
+          "message": "가져온 정적 표에서만 지원합니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "CROSS_BAND_VERIFIED",
+            "reflowEvidence": "header-band-height-delta-was-verified-by-mvp54"
+          }
+        },
         "removeRow": {
           "allowed": false,
           "reason": "STATIC_TABLE_ONLY",
@@ -550,6 +583,22 @@
           }
         },
         "moveRow": {
+          "allowed": false,
+          "reason": "DATA_REPEAT_ROW",
+          "message": "데이터 반복 행은 구조 편집할 수 없습니다.",
+          "constraints": {
+            "support": {
+              "viewer": true,
+              "source": true,
+              "pdf": true
+            },
+            "maturity": "STABLE",
+            "candidateMaterialization": "SUPPORTED",
+            "reflowScope": "UNSUPPORTED",
+            "reflowEvidence": "rendered-detail-template"
+          }
+        },
+        "moveRows": {
           "allowed": false,
           "reason": "DATA_REPEAT_ROW",
           "message": "데이터 반복 행은 구조 편집할 수 없습니다.",

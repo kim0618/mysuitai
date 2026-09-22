@@ -81,7 +81,7 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   await until(page, () => document.querySelectorAll('.chat-row').length >= 3);
   const bubbles = await page.evaluate(() => [...document.querySelectorAll('.chat-row')].map(row => ({ kind: row.classList.contains('user') ? 'user' : 'assistant', text: row.querySelector('.chat-message p')?.textContent })));
   await shot(page, 'editing-v2-ux-chat.png');
-  check('chatGreeting', greeting.text.includes('안녕하세요') && greeting.text.includes(`"${greeting.docTitle}"`) && greeting.docTitle !== project.formName && greeting.chips.join('|') === '표 데이터 연결|반복 데이터|제목 수정|열 너비 조정' && greeting.logScrolls === 'auto' && greeting.panel === 380, greeting);
+  check('chatGreeting', greeting.text.includes('안녕하세요') && greeting.text.includes(`"${greeting.docTitle}"`) && greeting.docTitle !== project.formName && greeting.chips.join('|') === '표 데이터 연결|반복 데이터|제목 수정|열 너비 조정' && greeting.logScrolls === 'auto' && greeting.panel === 336, greeting);
   check('chatComposerCompact', greeting.composerHeight <= 52 && greeting.inputHeight <= 34, greeting);
   check('chatChipFillsComposer', filled === '이 표를 items 데이터에 연결해줘', { filled });
   check('chatBubbles', bubbles.at(-2)?.kind === 'user' && bubbles.at(-2)?.text === '두 번째 표의 열 너비를 조정해줘' && bubbles.at(-1)?.kind === 'assistant' && bubbles.at(-1)?.text === 'AI 연결이 아직 설정되지 않았습니다.', bubbles);
@@ -95,7 +95,7 @@ const editingUi = page => page.evaluate(() => { const doc = document.querySelect
   await page.click('.ai-collapse'); await page.waitForTimeout(350);
   const restored = await sidebar();
   check('sidebarIconOnly', expanded.toggleText === '‹' && expanded.title === '메뉴 접기' && !/메뉴 접기/.test(expanded.toggleText), expanded);
-  check('sidebarCollapseExpand', collapsed.width === 64 && collapsed.main === 64 && collapsed.label === '메뉴 펼치기' && restored.width === 184 && restored.main === 184 && restored.footer === expanded.footer && restored.menu === expanded.menu, { expanded, collapsed, restored });
+  check('sidebarCollapseExpand', collapsed.width === 72 && collapsed.main === 72 && collapsed.label === '메뉴 펼치기' && restored.width === 196 && restored.main === 196 && restored.footer === expanded.footer && restored.menu === expanded.menu, { expanded, collapsed, restored });
   check('noPageErrors', result.errors.length === 0, result.errors);
 })().catch(error => { result.fatal = error.stack || String(error); console.error(error); }).finally(async () => {
   if (browser) await browser.close();

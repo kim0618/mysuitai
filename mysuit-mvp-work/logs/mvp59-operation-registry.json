@@ -182,6 +182,20 @@
       ]
     },
     {
+      "operation": "moveColumns",
+      "targetType": "LOGICAL_COLUMN",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "toVisualIndex"
+      ]
+    },
+    {
       "operation": "hideColumn",
       "targetType": "LOGICAL_COLUMN",
       "maturity": "STABLE",
@@ -296,6 +310,20 @@
     },
     {
       "operation": "moveRow",
+      "targetType": "LOGICAL_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      },
+      "candidateMaterialization": "SUPPORTED",
+      "requiredPayload": [
+        "toRowIndex"
+      ]
+    },
+    {
+      "operation": "moveRows",
       "targetType": "LOGICAL_ROW",
       "maturity": "STABLE",
       "support": {

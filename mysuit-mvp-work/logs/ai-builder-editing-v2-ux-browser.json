@@ -3,13 +3,15 @@
     "chatModeNoDirectEdit": {
       "pass": true,
       "detail": {
-        "mode": "chat",
+        "mode": "preview",
         "selected": null,
         "sourceId": "—",
         "grips": 0,
+        "markers": 0,
+        "staticSelection": null,
         "toolbar": false,
         "movable": 0,
-        "inspector": "문서에서 편집할 항목을 선택하세요."
+        "inspector": "셀행열표에서 편집할 셀을 선택하세요.문서에서 텍스트, 표 또는 이미지를 "
       }
     },
     "directModeSelects": {
@@ -18,10 +20,12 @@
         "mode": "direct-edit",
         "selected": "IMPCL0078",
         "sourceId": "IMPCL0078",
-        "grips": 13,
+        "grips": 0,
+        "markers": 0,
+        "staticSelection": null,
         "toolbar": true,
-        "movable": 186,
-        "inspector": "▦\n표 셀\n2019-01-01~2019-01-01\n행 편집\n\nIMPTB0"
+        "movable": 185,
+        "inspector": "셀\n행\n열\n▦\n표 셀\n2019-01-01~2019-01-01\n셀 편집\n내"
       }
     },
     "dataModeClearsSelection": {
@@ -31,9 +35,11 @@
         "selected": null,
         "sourceId": "—",
         "grips": 0,
+        "markers": 0,
+        "staticSelection": null,
         "toolbar": false,
         "movable": 0,
-        "inspector": "문서에서 편집할 항목을 선택하세요."
+        "inspector": "셀행열표에서 편집할 셀을 선택하세요.문서에서 텍스트, 표 또는 이미지를 "
       }
     },
     "dataModeNoDirectEdit": {
@@ -43,9 +49,11 @@
         "selected": null,
         "sourceId": "—",
         "grips": 0,
+        "markers": 0,
+        "staticSelection": null,
         "toolbar": false,
         "movable": 0,
-        "inspector": "문서에서 편집할 항목을 선택하세요."
+        "inspector": "셀행열표에서 편집할 셀을 선택하세요.문서에서 텍스트, 표 또는 이미지를 "
       }
     },
     "directModeReentry": {
@@ -56,57 +64,63 @@
           "selected": null,
           "sourceId": "—",
           "grips": 0,
+          "markers": 0,
+          "staticSelection": null,
           "toolbar": false,
           "movable": 186,
-          "inspector": "문서에서 편집할 항목을 선택하세요."
+          "inspector": "셀\n행\n열\n표에서 편집할 셀을 선택하세요.\n문서에서 텍스트, 표 또는 이"
         },
         "again": {
           "mode": "direct-edit",
-          "selected": "IMPCL0083",
-          "sourceId": "IMPCL0083",
-          "grips": 13,
-          "toolbar": true,
+          "selected": null,
+          "sourceId": "—",
+          "grips": 0,
+          "markers": 1,
+          "staticSelection": "ROW",
+          "toolbar": false,
           "movable": 186,
-          "inspector": "▦\n표 셀\nIMPCL0083\n행 편집\n\nIMPTB0003 · 행 4 / "
+          "inspector": "셀\n행\n열\n▦\n표 행\n5번째 행\n행 편집\n\n현재 행: 5 / 6\n\n이동\n"
         }
       }
     },
     "chatGreeting": {
       "pass": true,
       "detail": {
-        "text": "안녕하세요.\n\n현재 \"SampleReport_FreeForm\" 문서를 보고 있습니다.\n\n문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.\n\n추천 작업\n제목 수정\n표 열 너비 조정\n행 이동\n데이터 연결\n오후 05:39",
+        "docTitle": "인사",
+        "text": "안녕하세요!\n무엇을 도와드릴까요?\n\n서식 구조, 데이터 연결, 문구 수정을 요청할 수 있습니다.\n\n현재 \"인사\" 문서를 보고 있습니다.\n\n추천 작업\n표 데이터 연결\n반복 데이터\n제목 수정\n열 너비 조정",
         "chips": [
+          "표 데이터 연결",
+          "반복 데이터",
           "제목 수정",
-          "표 열 너비 조정",
-          "행 이동",
-          "데이터 연결"
+          "열 너비 조정"
         ],
-        "composerHeight": 51,
+        "composerHeight": 48,
         "inputHeight": 34,
-        "panel": 380,
+        "panel": 336,
         "logScrolls": "auto"
       }
     },
     "chatComposerCompact": {
       "pass": true,
       "detail": {
-        "text": "안녕하세요.\n\n현재 \"SampleReport_FreeForm\" 문서를 보고 있습니다.\n\n문구 수정, 표 편집, 데이터 연결 등을 요청할 수 있습니다.\n\n추천 작업\n제목 수정\n표 열 너비 조정\n행 이동\n데이터 연결\n오후 05:39",
+        "docTitle": "인사",
+        "text": "안녕하세요!\n무엇을 도와드릴까요?\n\n서식 구조, 데이터 연결, 문구 수정을 요청할 수 있습니다.\n\n현재 \"인사\" 문서를 보고 있습니다.\n\n추천 작업\n표 데이터 연결\n반복 데이터\n제목 수정\n열 너비 조정",
         "chips": [
+          "표 데이터 연결",
+          "반복 데이터",
           "제목 수정",
-          "표 열 너비 조정",
-          "행 이동",
-          "데이터 연결"
+          "열 너비 조정"
         ],
-        "composerHeight": 51,
+        "composerHeight": 48,
         "inputHeight": 34,
-        "panel": 380,
+        "panel": 336,
         "logScrolls": "auto"
       }
     },
     "chatChipFillsComposer": {
       "pass": true,
       "detail": {
-        "filled": "문서 제목을 수정해줘"
+        "filled": "이 표를 items 데이터에 연결해줘"
       }
     },
     "chatBubbles": {
@@ -114,7 +128,7 @@
       "detail": [
         {
           "kind": "assistant",
-          "text": "안녕하세요."
+          "text": "안녕하세요!무엇을 도와드릴까요?"
         },
         {
           "kind": "user",
@@ -129,44 +143,44 @@
     "sidebarIconOnly": {
       "pass": true,
       "detail": {
-        "width": 184,
-        "main": 184,
+        "width": 196,
+        "main": 196,
         "toggleText": "‹",
         "title": "메뉴 접기",
         "label": "메뉴 접기",
-        "footer": "{\"x\":12,\"y\":846,\"width\":160,\"height\":40,\"top\":846,\"right\":172,\"bottom\":886,\"left\":12}",
-        "menu": "{\"x\":12,\"y\":83,\"width\":160,\"height\":42,\"top\":83,\"right\":172,\"bottom\":125,\"left\":12},{\"x\":12,\"y\":129,\"width\":160,\"height\":42,\"top\":129,\"right\":172,\"bottom\":171,\"left\":12},{\"x\":12,\"y\":175,\"width\":160,\"height\":42,\"top\":175,\"right\":172,\"bottom\":217,\"left\":12},{\"x\":12,\"y\":221,\"width\":160,\"height\":42,\"top\":221,\"right\":172,\"bottom\":263,\"left\":12},{\"x\":12,\"y\":267,\"width\":160,\"height\":42,\"top\":267,\"right\":172,\"bottom\":309,\"left\":12}"
+        "footer": "{\"x\":10,\"y\":850,\"width\":175,\"height\":36,\"top\":850,\"right\":185,\"bottom\":886,\"left\":10}",
+        "menu": "{\"x\":10,\"y\":135,\"width\":175,\"height\":48,\"top\":135,\"right\":185,\"bottom\":183,\"left\":10},{\"x\":10,\"y\":189,\"width\":175,\"height\":48,\"top\":189,\"right\":185,\"bottom\":237,\"left\":10},{\"x\":10,\"y\":243,\"width\":175,\"height\":48,\"top\":243,\"right\":185,\"bottom\":291,\"left\":10},{\"x\":10,\"y\":297,\"width\":175,\"height\":48,\"top\":297,\"right\":185,\"bottom\":345,\"left\":10},{\"x\":10,\"y\":351,\"width\":175,\"height\":48,\"top\":351,\"right\":185,\"bottom\":399,\"left\":10},{\"x\":10,\"y\":405,\"width\":175,\"height\":48,\"top\":405,\"right\":185,\"bottom\":453,\"left\":10}"
       }
     },
     "sidebarCollapseExpand": {
       "pass": true,
       "detail": {
         "expanded": {
-          "width": 184,
-          "main": 184,
+          "width": 196,
+          "main": 196,
           "toggleText": "‹",
           "title": "메뉴 접기",
           "label": "메뉴 접기",
-          "footer": "{\"x\":12,\"y\":846,\"width\":160,\"height\":40,\"top\":846,\"right\":172,\"bottom\":886,\"left\":12}",
-          "menu": "{\"x\":12,\"y\":83,\"width\":160,\"height\":42,\"top\":83,\"right\":172,\"bottom\":125,\"left\":12},{\"x\":12,\"y\":129,\"width\":160,\"height\":42,\"top\":129,\"right\":172,\"bottom\":171,\"left\":12},{\"x\":12,\"y\":175,\"width\":160,\"height\":42,\"top\":175,\"right\":172,\"bottom\":217,\"left\":12},{\"x\":12,\"y\":221,\"width\":160,\"height\":42,\"top\":221,\"right\":172,\"bottom\":263,\"left\":12},{\"x\":12,\"y\":267,\"width\":160,\"height\":42,\"top\":267,\"right\":172,\"bottom\":309,\"left\":12}"
+          "footer": "{\"x\":10,\"y\":850,\"width\":175,\"height\":36,\"top\":850,\"right\":185,\"bottom\":886,\"left\":10}",
+          "menu": "{\"x\":10,\"y\":135,\"width\":175,\"height\":48,\"top\":135,\"right\":185,\"bottom\":183,\"left\":10},{\"x\":10,\"y\":189,\"width\":175,\"height\":48,\"top\":189,\"right\":185,\"bottom\":237,\"left\":10},{\"x\":10,\"y\":243,\"width\":175,\"height\":48,\"top\":243,\"right\":185,\"bottom\":291,\"left\":10},{\"x\":10,\"y\":297,\"width\":175,\"height\":48,\"top\":297,\"right\":185,\"bottom\":345,\"left\":10},{\"x\":10,\"y\":351,\"width\":175,\"height\":48,\"top\":351,\"right\":185,\"bottom\":399,\"left\":10},{\"x\":10,\"y\":405,\"width\":175,\"height\":48,\"top\":405,\"right\":185,\"bottom\":453,\"left\":10}"
         },
         "collapsed": {
-          "width": 64,
-          "main": 64,
+          "width": 72,
+          "main": 72,
           "toggleText": "‹",
           "title": "메뉴 펼치기",
           "label": "메뉴 펼치기",
-          "footer": "{\"x\":9,\"y\":846,\"width\":46,\"height\":40,\"top\":846,\"right\":55,\"bottom\":886,\"left\":9}",
-          "menu": "{\"x\":9,\"y\":83,\"width\":46,\"height\":42,\"top\":83,\"right\":55,\"bottom\":125,\"left\":9},{\"x\":9,\"y\":129,\"width\":46,\"height\":42,\"top\":129,\"right\":55,\"bottom\":171,\"left\":9},{\"x\":9,\"y\":175,\"width\":46,\"height\":42,\"top\":175,\"right\":55,\"bottom\":217,\"left\":9},{\"x\":9,\"y\":221,\"width\":46,\"height\":42,\"top\":221,\"right\":55,\"bottom\":263,\"left\":9},{\"x\":9,\"y\":267,\"width\":46,\"height\":42,\"top\":267,\"right\":55,\"bottom\":309,\"left\":9}"
+          "footer": "{\"x\":12,\"y\":850,\"width\":47,\"height\":36,\"top\":850,\"right\":59,\"bottom\":886,\"left\":12}",
+          "menu": "{\"x\":12,\"y\":98,\"width\":47,\"height\":48,\"top\":98,\"right\":59,\"bottom\":146,\"left\":12},{\"x\":12,\"y\":152,\"width\":47,\"height\":48,\"top\":152,\"right\":59,\"bottom\":200,\"left\":12},{\"x\":12,\"y\":206,\"width\":47,\"height\":48,\"top\":206,\"right\":59,\"bottom\":254,\"left\":12},{\"x\":12,\"y\":260,\"width\":47,\"height\":48,\"top\":260,\"right\":59,\"bottom\":308,\"left\":12},{\"x\":12,\"y\":314,\"width\":47,\"height\":48,\"top\":314,\"right\":59,\"bottom\":362,\"left\":12},{\"x\":12,\"y\":368,\"width\":47,\"height\":48,\"top\":368,\"right\":59,\"bottom\":416,\"left\":12}"
         },
         "restored": {
-          "width": 184,
-          "main": 184,
+          "width": 196,
+          "main": 196,
           "toggleText": "‹",
           "title": "메뉴 접기",
           "label": "메뉴 접기",
-          "footer": "{\"x\":12,\"y\":846,\"width\":160,\"height\":40,\"top\":846,\"right\":172,\"bottom\":886,\"left\":12}",
-          "menu": "{\"x\":12,\"y\":83,\"width\":160,\"height\":42,\"top\":83,\"right\":172,\"bottom\":125,\"left\":12},{\"x\":12,\"y\":129,\"width\":160,\"height\":42,\"top\":129,\"right\":172,\"bottom\":171,\"left\":12},{\"x\":12,\"y\":175,\"width\":160,\"height\":42,\"top\":175,\"right\":172,\"bottom\":217,\"left\":12},{\"x\":12,\"y\":221,\"width\":160,\"height\":42,\"top\":221,\"right\":172,\"bottom\":263,\"left\":12},{\"x\":12,\"y\":267,\"width\":160,\"height\":42,\"top\":267,\"right\":172,\"bottom\":309,\"left\":12}"
+          "footer": "{\"x\":10,\"y\":850,\"width\":175,\"height\":36,\"top\":850,\"right\":185,\"bottom\":886,\"left\":10}",
+          "menu": "{\"x\":10,\"y\":135,\"width\":175,\"height\":48,\"top\":135,\"right\":185,\"bottom\":183,\"left\":10},{\"x\":10,\"y\":189,\"width\":175,\"height\":48,\"top\":189,\"right\":185,\"bottom\":237,\"left\":10},{\"x\":10,\"y\":243,\"width\":175,\"height\":48,\"top\":243,\"right\":185,\"bottom\":291,\"left\":10},{\"x\":10,\"y\":297,\"width\":175,\"height\":48,\"top\":297,\"right\":185,\"bottom\":345,\"left\":10},{\"x\":10,\"y\":351,\"width\":175,\"height\":48,\"top\":351,\"right\":185,\"bottom\":399,\"left\":10},{\"x\":10,\"y\":405,\"width\":175,\"height\":48,\"top\":405,\"right\":185,\"bottom\":453,\"left\":10}"
         }
       }
     },

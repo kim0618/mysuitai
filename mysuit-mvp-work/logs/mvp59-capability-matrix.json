@@ -173,6 +173,19 @@
     {
       "targetType": "LOGICAL_COLUMN",
       "targetKey": "tbl:financial-7col|col:2",
+      "operation": "moveColumns",
+      "allowed": false,
+      "reason": "STATIC_TABLE_ONLY",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_COLUMN",
+      "targetKey": "tbl:financial-7col|col:2",
       "operation": "hideColumn",
       "allowed": true,
       "reason": null,
@@ -303,6 +316,19 @@
     {
       "targetType": "LOGICAL_ROW",
       "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
+      "operation": "moveRows",
+      "allowed": false,
+      "reason": "STATIC_TABLE_ONLY",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:UDHB4114|rendered-row:0",
       "operation": "removeRow",
       "allowed": false,
       "reason": "STATIC_TABLE_ONLY",
@@ -408,6 +434,19 @@
       "targetType": "LOGICAL_ROW",
       "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
       "operation": "moveRow",
+      "allowed": false,
+      "reason": "DATA_REPEAT_ROW",
+      "maturity": "STABLE",
+      "support": {
+        "viewer": true,
+        "source": true,
+        "pdf": true
+      }
+    },
+    {
+      "targetType": "LOGICAL_ROW",
+      "targetKey": "tbl:financial-7col|band:grp_0_UDB3195|rendered-row:0",
+      "operation": "moveRows",
       "allowed": false,
       "reason": "DATA_REPEAT_ROW",
       "maturity": "STABLE",

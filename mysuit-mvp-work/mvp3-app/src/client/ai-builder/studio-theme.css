@@ -1,16 +1,19 @@
-/* MySuit AI Studio theme tokens: white base, green as the accent.
-   Every Studio screen (생성하기, 편집하기, 사용자 편집) reads colours, radii, spacing and control sizes from here.
-   The Viewer's document rendering is not themed. */
+/* MySuit AI Studio theme tokens: white base, green as the accent (visual reference: ss.png, docs/135).
+   Every Studio screen (생성하기, 편집하기, 사용자 편집) reads colours, radii, spacing, type and layout sizes from here.
+   Component stylesheets use these tokens instead of their own hex values. The Viewer's document rendering is not themed. */
 :root{
   /* Accent. #087F52 keeps white text at ~5:1 and reads at ~4.6:1 on the mint surface (WCAG AA). */
   --studio-primary:#087F52;
   --studio-primary-hover:#066B45;
+  --studio-primary-strong:#05593A;
   --studio-primary-soft:#E8F5EE;
   --studio-primary-softer:#F3FAF6;
   --studio-primary-border:#B9DFCB;
+  --studio-primary-tint:#D5EEE1;
   --studio-focus:rgba(8,127,82,.22);
   /* Neutrals */
   --studio-bg:#F5F7F6;
+  --studio-canvas:#EEF2F0;
   --studio-surface:#FFFFFF;
   --studio-surface-muted:#FAFBFA;
   --studio-border:#E4E9E6;
@@ -24,13 +27,37 @@
   --studio-danger-soft:#FFF6F5;
   --studio-danger-border:#F3CBC6;
   --studio-warning:#8A5A00;
-  /* Shape and rhythm: 8/12/16/24 spacing, one radius scale, one control height. */
-  --studio-space-1:4px;--studio-space-2:8px;--studio-space-3:12px;--studio-space-4:16px;--studio-space-5:24px;
-  --studio-radius-sm:6px;--studio-radius:8px;--studio-radius-lg:12px;
+  --studio-warning-soft:#FFF7E6;
+  /* Spacing 4/8/12/16/20/24 */
+  --studio-space-1:4px;--studio-space-2:8px;--studio-space-3:12px;--studio-space-4:16px;--studio-space-45:20px;--studio-space-5:24px;
+  /* Radius: controls 8-10, cards 12, large panels 14 */
+  --studio-radius-sm:6px;--studio-radius:8px;--studio-radius-md:10px;--studio-radius-lg:12px;--studio-radius-xl:14px;
   --studio-control-height:34px;
+  /* Shadows stay very light: a hairline for cards, a soft lift for floating panels. */
   --studio-shadow:0 1px 2px rgba(16,24,40,.04);
-  --studio-font:"Pretendard","Noto Sans KR",Arial,sans-serif;
+  --studio-shadow-card:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.03);
+  --studio-shadow-float:0 8px 24px rgba(16,24,40,.08);
+  --studio-shadow-page:0 1px 3px rgba(16,24,40,.08),0 4px 16px rgba(16,24,40,.05);
+  --studio-shadow-primary:0 1px 2px rgba(8,127,82,.22); /* lift under solid green buttons and the active tab */
+  --studio-shadow-knob:0 1px 2px rgba(16,24,40,.12);  /* switch knob, pressed pill */
+  /* Type: Pretendard when installed, then the platform Korean UI fonts. Layout never depends on the metrics of one font. */
+  --studio-font:"Pretendard","Pretendard Variable","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","Segoe UI",system-ui,sans-serif;
+  --studio-text-title:18px;   /* document / page title */
+  --studio-text-section:13px; /* card and section titles */
+  --studio-text-body:13px;
+  --studio-text-caption:12px;
+  --studio-text-small:11px;
+  /* Studio layout */
+  --studio-sidebar-width:236px;
+  --studio-sidebar-collapsed:72px;
+  --studio-topbar-height:64px;
+  --studio-panel-width:400px;
+  --studio-gutter:16px;
   /* Brand asset slots (see docs/133). Empty until the approved artwork is added. */
   --studio-logo-mark:none;
   --studio-logo-full:none;
 }
+/* ≤1440 (e.g. 1366): the Viewer keeps ~800px, enough for an A4 page at 100% (UView5 does not fit to width). */
+@media(max-width:1440px){:root{--studio-sidebar-width:196px;--studio-panel-width:336px;--studio-gutter:10px}}
+/* Wide screens: the panel grows toward the reference proportion (about a quarter of the width). */
+@media(min-width:1680px){:root{--studio-sidebar-width:248px;--studio-panel-width:440px;--studio-gutter:20px}}

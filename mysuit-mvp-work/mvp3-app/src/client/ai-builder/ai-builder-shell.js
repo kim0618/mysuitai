@@ -7,11 +7,13 @@
     // Developer / template designer: 속성 and 데이터 are the main panels; the AI assistant is a drawer beside them.
     developer:{route:'edit',title:'편집하기',tabs:[['direct','속성'],['binding','데이터']],defaultTab:'direct',designer:true,assistant:true,tableModes:true,advanced:true,dataAttach:true,cellLabel:'표 셀',cellSection:'셀 편집',
       intro:'서식 구조, 데이터 연결, 문구 수정을 요청할 수 있습니다.',placeholder:'서식 작업을 요청하세요',
-      suggestions:{'표 데이터 연결':'이 표를 items 데이터에 연결해줘','반복 데이터':'이 영역을 반복 데이터로 바꿔줘','제목 수정':'문서 제목을 수정해줘','열 너비 조정':'두 번째 표의 열 너비를 조정해줘'},empty:'캔버스에서 요소를 선택하면 속성이 표시됩니다.'},
+      suggestions:{'표 데이터 연결':['이 표를 items 데이터에 연결해줘','link'],'반복 데이터':['이 영역을 반복 데이터로 바꿔줘','repeat'],'제목 수정':['문서 제목을 수정해줘','pencil'],'열 너비 조정':['두 번째 표의 열 너비를 조정해줘','columns']},hint:'예) 이 표를 items 데이터에 연결해줘',
+      empty:'캔버스에서 요소를 선택하면 속성이 표시됩니다.',emptyHelp:'문서에서 텍스트, 표 또는 이미지를 클릭하면 속성을 수정할 수 있습니다.'},
     // The user screen hides data binding, table-structure modes and internal identifiers.
     user:{route:'user',title:'사용자 편집',tabs:[['ai','채팅'],['direct','직접 편집']],defaultTab:'ai',designer:false,assistant:false,tableModes:false,advanced:false,dataAttach:false,cellLabel:'문구',cellSection:'문구 편집',
-      intro:'원하는 수정 내용을 말씀해 주세요.',placeholder:'수정할 내용을 입력하세요',
-      suggestions:{'제목 수정':'문서 제목을 수정해줘','이미지 교체':'로고 이미지를 교체해줘','표 정리':'표를 보기 좋게 정리해줘','문구 수정':'문구를 자연스럽게 다듬어줘'},empty:'문서에서 수정할 문구나 이미지를 선택하세요.'},
+      intro:'문서를 더 멋지게 수정해드릴 수 있어요. 원하는 수정 내용을 말씀해 주세요.',placeholder:'원하는 내용을 자연어로 입력해 주세요.',
+      suggestions:{'제목을 수정해줘':['문서 제목을 수정해줘','pencil'],'로고 이미지를 바꿔줘':['로고 이미지를 교체해줘','image'],'표를 보기 좋게 정리해줘':['표를 보기 좋게 정리해줘','list']},hint:'예) 표의 스타일을 더 깔끔하게 해줘',quickEdit:true,
+      empty:'문서에서 수정할 문구나 이미지를 선택하세요.',emptyHelp:'문구나 이미지를 클릭하면 바로 수정할 수 있어요.'},
   }[SURFACE];
   const $ = id => document.getElementById(id), params = new URLSearchParams(location.search), context = window.__formContext;
   const draftId = params.get('layoutDraftId') || (context.origin === 'IMPORTED' ? `import_${context.projectName}_${context.formName}_default`.slice(0,80) : 'layout_sample_default');
@@ -40,11 +42,13 @@
   AiBuilderSidebar.mount({active:PROFILE.route});
   const header=document.querySelector('body > header'), brand=header.querySelector('.brand');
   header.classList.add('ai-topbar');
-  brand.innerHTML=`<span class="ai-breadcrumb">AI Studio<span class="ai-breadcrumb-divider">/</span><b>${PROFILE.title}</b></span><strong id="builder-document-name">문서 불러오는 중</strong>`;
+  const ICON={undo:'<path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/>',redo:'<path d="M15 14l5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h3"/>',cloud:'<path d="M7 18a5 5 0 0 1-.9-9.9A6 6 0 0 1 17.7 9 4.5 4.5 0 0 1 17.5 18z" fill="currentColor" stroke="none"/><path d="M9.5 13l2 2 3.5-3.5" stroke="#fff"/>',save:'<path d="M5 3h11l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a1 1 0 0 1 1-2z"/><path d="M8 3v5h7V3M8 21v-6h8v6"/>',cursor:'<path d="M5 3l5.5 15 2.2-6.3L19 9.5z"/>',layers:'<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',plus:'<path d="M12 5v14M5 12h14"/>'};
+  const icon=name=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[name]}</svg>`;
+  brand.innerHTML=`<div class="studio-doc-heading"><strong id="builder-document-name">문서 불러오는 중</strong><div class="ai-breadcrumb">AI Studio<i aria-hidden="true">›</i><b>${PROFILE.title}</b></div></div>`;
   const headerActions=header.querySelector('.header-actions'), legacyActions=[...headerActions.children], historyToolbar=header.querySelector('.history-toolbar');
-  headerActions.innerHTML='<span class="builder-save-state" id="builder-save-state">저장됨</span>'+(PROFILE.designer?'<button id="studio-assistant-toggle" class="studio-secondary-button" type="button" data-action="ai-assistant" aria-pressed="false">✦ AI 도우미</button><button id="studio-preview" class="studio-secondary-button" type="button" data-action="preview" aria-pressed="false">미리보기</button>':'')+'<button id="builder-save" class="studio-primary-button">저장</button>';
+  headerActions.innerHTML=`<span class="studio-save-status" id="studio-save-status" data-tone="ok"><span class="studio-save-icon">${icon('cloud')}</span><span class="builder-save-state" id="builder-save-state">저장됨</span></span>`+(PROFILE.designer?'<button id="studio-assistant-toggle" class="studio-secondary-button" type="button" data-action="ai-assistant" aria-pressed="false"><span class="studio-spark" aria-hidden="true">✦</span> AI 도우미</button><button id="studio-preview" class="studio-secondary-button" type="button" data-action="preview" aria-pressed="false">미리보기</button>':'')+`<button id="builder-save" class="studio-primary-button">${icon('save')}저장</button>`;
   headerActions.prepend(historyToolbar);
-  $('history-undo').innerHTML='<span aria-hidden="true">↶</span>'; $('history-redo').innerHTML='<span aria-hidden="true">↷</span>';
+  $('history-undo').innerHTML=icon('undo'); $('history-redo').innerHTML=icon('redo');
   $('history-undo').setAttribute('aria-label','실행 취소'); $('history-redo').setAttribute('aria-label','다시 실행');
 
   // ---- Right panel: 채팅 | 직접 편집 | 데이터 연결 --------------------------------------------------
@@ -78,9 +82,10 @@
   // Designer tools beside the canvas: only what the engine supports is active.
   if (PROFILE.designer) {
     const tools=element('div',{class:'studio-tools',role:'toolbar','aria-label':'디자이너 도구'});
-    tools.append(button('↖',()=>{},{class:'studio-tool','aria-label':'선택',title:'선택','aria-pressed':'true','data-tool':'select'}));
-    const bandsTool=button('▤',()=>{const next=!window.MvpDesignerBands?.visible;window.MvpDesignerBands?.setVisible(next);bandsTool.setAttribute('aria-pressed',String(next))},{class:'studio-tool','aria-label':'밴드 보기',title:'밴드 보기','aria-pressed':'true','data-tool':'bands'});
-    const add=button('+',()=>{},{class:'studio-tool','aria-label':'추가 (준비 중)',title:'텍스트·이미지·표 추가는 준비 중입니다.','data-tool':'add'});add.disabled=true;
+    tools.append(button('',()=>{},{class:'studio-tool','aria-label':'선택',title:'선택','aria-pressed':'true','data-tool':'select'}));
+    const bandsTool=button('',()=>{const next=!window.MvpDesignerBands?.visible;window.MvpDesignerBands?.setVisible(next);bandsTool.setAttribute('aria-pressed',String(next))},{class:'studio-tool','aria-label':'밴드 보기',title:'밴드 보기','aria-pressed':'true','data-tool':'bands'});
+    const add=button('',()=>{},{class:'studio-tool','aria-label':'추가 (준비 중)',title:'텍스트·이미지·표 추가는 준비 중입니다.','data-tool':'add'});add.disabled=true;
+    tools.firstChild.innerHTML=icon('cursor');bandsTool.innerHTML=icon('layers');add.innerHTML=icon('plus');
     tools.append(bandsTool,element('span',{class:'studio-tool-divider','aria-hidden':'true'}),add);
     (document.querySelector('main > section')||document.querySelector('main')).append(tools);
     window.addEventListener('studio-bands-loaded',event=>{const has=Boolean(event.detail?.bands?.length);bandsTool.disabled=!has;bandsTool.title=has?'밴드 보기':'이 문서는 밴드 없이 자유 배치된 서식입니다.';if(!state.selection&&!state.staticSelection)renderInspector()});
@@ -97,7 +102,7 @@
     MvpWorkspaceMode.set({ai:'chat',direct:'direct-edit',binding:'data-binding'}[key]);
     if (key==='binding') renderData().catch(showError);
   }
-  function setSaveState(text,bad=false) { const node=$('builder-save-state'); node.textContent=text; node.classList.toggle('bad',bad); }
+  function setSaveState(text,bad=false) { const node=$('builder-save-state'); node.textContent=text; node.classList.toggle('bad',bad); $('studio-save-status').dataset.tone=bad?'bad':/중$/.test(text)?'busy':/안 됨/.test(text)?'dirty':'ok'; }
   const FRIENDLY={IMPORT_TEMPLATE_INVALID:'서식을 불러오는 중 문제가 발생했습니다.',FORM_PARSE_FAILED:'서식을 불러오는 중 문제가 발생했습니다.',SOURCE_PROJECT_NOT_FOUND:'서식을 불러오는 중 문제가 발생했습니다.',INVALID_JSON:'JSON 형식이 올바르지 않습니다.'};
   // Users see a plain message; raw codes and contract text are only revealed behind 자세히 보기 in debug mode.
   function showError(error) {
@@ -112,16 +117,22 @@
   window.addEventListener('unhandledrejection',event=>{if(event.reason?.code)showError(event.reason)});
 
   // ---- 채팅 ----------------------------------------------------------------------------------------
-  ai.innerHTML='<div class="chat-workspace"><div id="chat-conversation" class="chat-conversation" role="log" aria-live="polite"></div><form class="ai-composer"><button class="attach" type="button" aria-label="데이터 연결 열기" title="데이터 연결">＋</button><input aria-label="서식 수정 요청" placeholder="서식 수정 요청을 입력하세요"><button class="chat-send" type="submit" disabled aria-label="전송">전송</button></form></div>';
+  ai.innerHTML='<div class="chat-workspace"><div id="chat-conversation" class="chat-conversation" role="log" aria-live="polite"></div><form class="ai-composer"><button class="attach" type="button" aria-label="데이터 연결 열기" title="데이터 연결">＋</button><input aria-label="서식 수정 요청" placeholder="서식 수정 요청을 입력하세요"><button class="chat-send" type="submit" disabled aria-label="전송">전송</button></form><p class="chat-hint"></p></div>';
   const chatInput=ai.querySelector('.ai-composer input'), chatSend=ai.querySelector('.chat-send'), conversation=$('chat-conversation');
   const SUGGESTIONS=PROFILE.suggestions;
-  chatInput.placeholder=PROFILE.placeholder;
+  chatInput.placeholder=PROFILE.placeholder; ai.querySelector('.chat-hint').textContent=PROFILE.hint;
+  if (PROFILE.quickEdit) {
+    const quick=element('section',{class:'quick-edit','aria-label':'직접 편집'}),grid=element('div',{class:'quick-edit-grid'});
+    for (const [label,name] of [['텍스트 수정','text'],['이미지 교체','image'],['보이기/숨기기','eye'],['이동 / 크기','move']]) grid.append(button(label,()=>selectTab('direct'),{'data-icon':name}));
+    quick.append(element('h3',{},'직접 편집으로 빠르게 수정하기'),element('p',{},'선택한 요소를 직접 수정할 수 있어요.'),grid);
+    ai.append(element('div',{class:'chat-or'},'또는'),quick);
+  }
   // ChatProvider adapter: a provider receives the message plus the shared Builder state and returns {reply}.
   let chatProvider=null;
   const time=()=>new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});
   function bubble(kind,...content){ const row=element('div',{class:`chat-row ${kind}`}); if(kind==='assistant')row.append(element('span',{class:'chat-avatar','aria-hidden':'true'},'AI')); const node=element('div',{class:`chat-message ${kind}`}); for(const part of content)node.append(typeof part==='string'?element('p',{},part):part); node.append(element('time',{},time())); row.append(node); conversation.append(row); conversation.scrollTop=conversation.scrollHeight; return node; }
   // First AI message: greeting with the current document and compact suggestion chips (they only fill the composer).
-  function greet(){ conversation.replaceChildren(); const chips=element('div',{class:'chat-suggestions'}); for (const [label,prompt] of Object.entries(SUGGESTIONS)) chips.append(button(label,()=>{chatInput.value=prompt;chatInput.dispatchEvent(new Event('input'));chatInput.focus()})); const name=element('b',{id:'chat-document-name'},state.document?.title||'현재 문서'); const intro=element('p'); intro.append('현재 "',name,'" 문서를 보고 있습니다.'); bubble('assistant','안녕하세요.',intro,PROFILE.intro,element('small',{class:'chat-suggestions-title'},'추천 작업'),chips); }
+  function greet(){ conversation.replaceChildren(); const chips=element('div',{class:'chat-suggestions'}); for (const [label,[prompt,name]] of Object.entries(SUGGESTIONS)) chips.append(button(label,()=>{chatInput.value=prompt;chatInput.dispatchEvent(new Event('input'));chatInput.focus()},{'data-icon':name})); const doc=element('b',{id:'chat-document-name'},state.document?.title||'현재 문서'); const docLine=element('p'); docLine.append('현재 "',doc,'" 문서를 보고 있습니다.'); const hello=element('p');hello.append('안녕하세요!',element('br'),'무엇을 도와드릴까요?'); bubble('assistant',hello,PROFILE.intro,docLine,element('small',{class:'chat-suggestions-title'},'추천 작업'),chips).parentElement.classList.add('chat-intro'); }
   chatInput.oninput=()=>{chatSend.disabled=!chatInput.value.trim()};
   ai.querySelector('.attach').onclick=()=>{selectTab('binding')};
   if (!PROFILE.dataAttach) ai.querySelector('.attach').remove();
@@ -155,6 +166,8 @@
   }
   function toggle(label,checked,onChange,attrs={}){const wrap=element('label',{class:'inspector-toggle',...attrs}),input=element('input',{type:'checkbox',role:'switch'});input.checked=checked;input.onchange=()=>onChange(input.checked);wrap.append(element('span',{},label),input,element('i',{'aria-hidden':'true'}));return wrap}
   function segmented(options,value,onChange,attrs={}){const wrap=element('div',{class:'segmented',role:'group',...attrs});for(const [key,label] of options){const b=button(label,()=>onChange(key),{'aria-pressed':String(String(key)===String(value)),'data-value':String(key)});wrap.append(b)}return wrap}
+  function emptyState(title,help){const node=element('div',{class:'inspector-empty'},title);if(help)node.append(element('small',{},help));return node}
+  function quickGuide(){const list=element('ul',{class:'quick-guide','aria-label':'편집할 수 있는 항목'});for(const [label,help,name] of [['텍스트 수정','문구·글자 크기·정렬','text'],['이미지 교체','새 이미지로 바꾸기','image'],['보이기/숨기기','요소 표시 여부','eye'],['이동 / 크기','위치와 크기 조정','move']]){const item=element('li',{'data-icon':name}),text=element('span');text.append(element('b',{},label),element('small',{},help));item.append(text);list.append(item)}return list}
   function selectedCard(icon,type,name){const card=element('div',{class:'selected-element'});card.append(element('span',{},icon));const text=element('div');text.append(element('small',{},type),element('strong',{},name||'-'));card.append(text);return card}
 
   // Table selection mode (셀/행/열) for imported tables. Only the editor of the current selection type is shown.
@@ -189,7 +202,7 @@
     if (PROFILE.designer && state.bandSelection && !selection && !state.staticSelection) return renderBand(state.bandSelection);
     if (hasTables()) inspector.append(modeSwitch());
     if (state.staticSelection && !selection) return renderStructureOnly();
-    if (!selection || !source) { inspector.append(element('div',{class:'inspector-empty'},hasTables()?MODE_EMPTY[tableMode]:PROFILE.empty)); if (PROFILE.designer) inspector.append(documentSections()); return; }
+    if (!selection || !source) { inspector.append(emptyState(hasTables()?MODE_EMPTY[tableMode]:PROFILE.empty,PROFILE.emptyHelp)); if (PROFILE.designer) inspector.append(documentSections()); else inspector.append(quickGuide()); return; }
     const [icon,type]=TYPE[kind]||['◻','요소'], isImage=kind==='UBImage';
     const cellInfo=isCell?window.__mvp12?.selectCell?.(selection.sourceObjectId):null;
     // Internal identifiers stay in 고급 설정; the card shows what the user sees.
@@ -454,7 +467,7 @@
   function jsonInputs(onRegistered){
     const box=element('div',{class:'json-inputs'}),actions=element('div',{class:'data-actions'}),status=element('small',{id:'workspace-json-status',class:'inspector-status'});
     const pick=element('label',{class:'json-file-button'}),file=element('input',{id:'workspace-json-file',type:'file',accept:'application/json,.json'});pick.append(document.createTextNode('JSON 파일 선택'),file);
-    const editor=element('div',{id:'workspace-json-editor',hidden:''}),area=element('textarea',{'aria-label':'JSON 직접 입력',spellcheck:'false',placeholder:'{\n  "name": "홍길동"\n}'}),use=button('데이터 사용',()=>registerJson(area.value,null,status).then(onRegistered,()=>{}),{class:'ai-primary primary','data-action':'json-use'});
+    const editor=element('div',{id:'workspace-json-editor',hidden:''}),area=element('textarea',{'aria-label':'JSON 직접 입력',spellcheck:'false',placeholder:'{\n  "name": "홍길동"\n}'}),use=button('데이터 사용',()=>registerJson(area.value,null,status).then(onRegistered,()=>{}),{class:'ai-primary','data-action':'json-use'});
     editor.append(area,use);
     actions.append(pick,button('JSON 직접 입력',()=>{editor.hidden=!editor.hidden;if(!editor.hidden)area.focus()},{id:'workspace-json-direct'}));
     file.onchange=async()=>{const chosen=file.files[0];if(!chosen)return;await registerJson(await chosen.text(),chosen.name,status).then(onRegistered,()=>{});file.value=''};
@@ -501,12 +514,12 @@
     const schema=state.importContext?.jsonSchema||[],list=element('ul',{});
     if (schema.length) {
       for (const item of schema.filter(x=>x.path!=='$'&&!(x.isArrayItem&&!x.isLeaf)).slice(0,60)) {
-        const depth=item.path.replace(/\[\]/g,'').split('.').length-2,li=element('li',{class:item.isLeaf?'leaf':'group','data-path':item.path});
-        li.style.paddingLeft=`${depth*14}px`;li.append(element('span',{},item.isLeaf?item.key:`▾ ${item.key}${item.type==='array'?'[]':''}`));if(item.isLeaf)li.append(element('small',{},item.type));list.append(li);
+        const depth=item.path.replace(/\[\]/g,'').split('.').length-2,li=element('li',{class:item.isLeaf?'leaf':`group${item.type==='array'?' array':''}`,'data-path':item.path});
+        li.style.paddingLeft=`${depth*14}px`;li.append(element('span',{},item.isLeaf?item.key:`${item.key}${item.type==='array'?'[]':''}`));if(item.isLeaf)li.append(element('small',{},item.type));list.append(li);
       }
     } else {
       const datasets=window.MvpDesignerBands?.info?.datasets?.length?window.MvpDesignerBands.info.datasets:(state.datasets||[]).map(d=>({id:d.id,columns:d.columns}));
-      for (const d of datasets) { const li=element('li',{class:'group'});li.append(element('span',{},`▾ ${d.name||d.id}`));list.append(li);for(const c of (d.columns||[]).slice(0,20)){const leaf=element('li',{class:'leaf'});leaf.style.paddingLeft='14px';leaf.append(element('span',{},c));list.append(leaf)} }
+      for (const d of datasets) { const li=element('li',{class:'group'});li.append(element('span',{},d.name||d.id));list.append(li);for(const c of (d.columns||[]).slice(0,20)){const leaf=element('li',{class:'leaf'});leaf.style.paddingLeft='14px';leaf.append(element('span',{},c));list.append(leaf)} }
     }
     if (list.children.length) node.append(list); else node.append(element('p',{class:'structure-hint'},'연결된 데이터가 없습니다.'));
     return node;
@@ -514,7 +527,7 @@
   // 자동 바인딩: applies the analyzer/proposal result as it stands (no LLM); the review below stays editable.
   function autoBindingBar(){
     const bar=element('div',{class:'auto-binding'}),rows=(state.bindingProposal?.proposals||[]).filter(x=>x.targetId);
-    const run=button('자동 바인딩',applyProposals,{class:'ai-primary primary','data-action':'auto-binding'});run.disabled=!rows.some(x=>x.selectedPath);
+    const run=button('자동 바인딩',applyProposals,{class:'ai-primary','data-action':'auto-binding'});run.disabled=!rows.some(x=>x.selectedPath);
     bar.append(run,element('small',{},`자동 ${state.bindingProposal?.summary?.auto||0}건 · 확인 필요 ${state.bindingProposal?.summary?.review||0}건`));
     return bar;
   }
@@ -540,7 +553,7 @@
       detail.append(field,element('div',{class:'proposal-sample'},`샘플 값  ${sample}`));
       body.append(detail);
     }
-    const actions=element('div',{class:'builder-actions'}), apply=button(state.bindingProposal?.appliedAt?'연결 다시 적용':'연결 적용',applyProposals,{class:'ai-primary primary','data-action':'binding-apply'});
+    const actions=element('div',{class:'builder-actions'}), apply=button(state.bindingProposal?.appliedAt?'연결 다시 적용':'연결 적용',applyProposals,{class:'ai-primary','data-action':'binding-apply'});
     apply.disabled=!rows.some(x=>x.selectedPath); actions.append(apply); body.append(actions);
     renderArrayReview(body);
   }
@@ -559,7 +572,7 @@
         select.onchange=async()=>{try{const data=await api('/api/ai-builder/array-proposals/select',{method:'PUT',body:JSON.stringify({...scope,tableId:row.tableId,arrayPath:row.arrayPath,columnIndex:column.columnIndex,jsonPath:select.value})});state.bindingProposal=data.proposal;renderProposalReview()}catch(error){showError(error)}};
         line.append(element('span',{},column.label),select,element('em',{},statusLabel[column.status]||column.status)); card.append(line);
       }
-      const apply=button(row.appliedAt?'반복 데이터 연결 다시 적용':'반복 데이터 연결 적용',()=>applyArrayProposal(row),{class:'ai-primary primary array-apply','data-action':'array-apply'});
+      const apply=button(row.appliedAt?'반복 데이터 연결 다시 적용':'반복 데이터 연결 적용',()=>applyArrayProposal(row),{class:'ai-primary array-apply','data-action':'array-apply'});
       apply.disabled=row.columns.some(x=>!x.jsonPath||x.status==='UNBOUND'); card.append(apply); section.append(card);
     }
     body.append(section);
@@ -572,9 +585,13 @@
   // accent; the document rendering (canvas) is untouched.
   function themeViewer(){
     const doc=$('viewer')?.contentDocument; if(!doc?.head||doc.getElementById('studio-viewer-chrome'))return;
-    const css=getComputedStyle(document.documentElement),primary=css.getPropertyValue('--studio-primary').trim(),soft=`color-mix(in srgb, ${primary} 14%, transparent)`;
+    const css=getComputedStyle(document.documentElement),token=name=>css.getPropertyValue(name).trim(),primary=token('--studio-primary'),soft=`color-mix(in srgb, ${primary} 14%, transparent)`;
     const style=doc.createElement('style');style.id='studio-viewer-chrome';
+    // Toolbar: white with a hairline; stage: the neutral workspace tone so the white page reads as a page.
     style.textContent=`:root{--viewer-btn-active:${soft};--font-point:${primary};--bg-point:${primary};--viewer-themeB-icon-point:${primary}}`+
+      `#wrap{background-color:${token('--studio-canvas')}}`+
+      `.edit-tool-wrap.pc-edit-tool-wrap{background-color:${token('--studio-surface')};border-bottom-color:${token('--studio-border')}}`+
+      `.viewer .edit-tool-wrap .btn{border-radius:8px}`+
       `.viewer .edit-tool-wrap .btn:hover{background-color:color-mix(in srgb, ${primary} 8%, transparent)}`+
       `.bottom-panel .nav-tabs.tool-tabs>li.active>button::after{background-color:${primary}!important}`+
       `ul.color-select>li>button.active,ul.border-select>li>button.active{border-color:${primary}!important}`+

@@ -69,7 +69,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   // ---- Shell / layout -------------------------------------------------------------------------------
   const layout = await page.evaluate(() => ({ sidebar: document.querySelector('.ai-sidebar').getBoundingClientRect().width, panel: document.querySelector('main>aside').getBoundingClientRect().width, viewer: document.querySelector('.viewer-pane').getBoundingClientRect().width, iframe: document.querySelector('#viewer').tagName, iframeSrc: document.querySelector('#viewer').getAttribute('src'), tabs: [...document.querySelectorAll('.builder-tab')].map(x => x.textContent), active: document.querySelector('.builder-tab[aria-selected=true]').textContent, topbar: document.querySelector('body>header').getBoundingClientRect().height, topbarControls: [...document.querySelectorAll('body>header button, body>header .builder-save-state')].filter(x => x.offsetParent).map(x => x.getAttribute('aria-label') || x.textContent.trim()), pageScroll: document.scrollingElement.scrollHeight - innerHeight, viewerToolbarsOutside: [...document.querySelectorAll('.viewer-pane>nav')].filter(x => getComputedStyle(x).display !== 'none').length, rawCodeVisible: /[A-Z_]{6,}:/.test(document.body.innerText) }));
   result.layout1440 = layout;
-  check('layout1440', layout.sidebar === 184 && layout.panel === 380 && layout.viewer === 1440 - 184 - 380 && layout.iframe === 'IFRAME' && layout.topbar >= 48 && layout.topbar <= 52 && layout.pageScroll <= 0 && layout.viewerToolbarsOutside === 0, layout);
+  check('layout1440', layout.sidebar === 196 && layout.panel === 336 && layout.viewer === 1440 - 196 - 336 - 3 * 10 && layout.iframe === 'IFRAME' && layout.topbar === 64 && layout.pageScroll <= 0 && layout.viewerToolbarsOutside === 0, layout);
   check('tabOrder', layout.tabs.join('|') === '속성|데이터' && layout.active === '속성', layout.tabs);
   check('topbarControls', JSON.stringify(layout.topbarControls) === JSON.stringify(['실행 취소', '다시 실행', layout.topbarControls[2], '✦ AI 도우미', '미리보기', '저장']) && !/도움말|MS/.test(layout.topbarControls.join()), layout.topbarControls);
   check('noRawErrorCode', !layout.rawCodeVisible);
@@ -252,7 +252,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   await page.setViewportSize({ width: 1920, height: 1080 }); await page.waitForTimeout(300);
   const wide = await page.evaluate(() => ({ sidebar: document.querySelector('.ai-sidebar').getBoundingClientRect().width, panel: document.querySelector('main>aside').getBoundingClientRect().width, viewer: document.querySelector('.viewer-pane').getBoundingClientRect().width, mainHeight: document.querySelector('main').getBoundingClientRect().height, viewport: innerHeight, topbar: document.querySelector('body>header').getBoundingClientRect().height, pageScroll: document.scrollingElement.scrollHeight - innerHeight }));
   result.layout1920 = wide;
-  check('layout1920', wide.sidebar === 184 && wide.panel === 380 && wide.viewer === 1920 - 184 - 380 && wide.mainHeight === wide.viewport - wide.topbar && wide.pageScroll <= 0, wide);
+  check('layout1920', wide.sidebar === 248 && wide.panel === 440 && wide.viewer === 1920 - 248 - 440 - 3 * 20 && wide.mainHeight === wide.viewport - wide.topbar && wide.pageScroll <= 0, wide);
   await page.setViewportSize({ width: 1440, height: 900 });
 
   // ---- Sidebar visual consistency: 생성하기 vs 편집하기 ----------------------------------------------------
@@ -260,7 +260,7 @@ const sidebarMetrics = page => page.evaluate(() => { const q = s => document.que
   const createSidebar = await sidebarMetrics(importPage); await importPage.close();
   const same = ['width', 'brand', 'brandOverflow', 'menu', 'menuX', 'menuHeight', 'fontSizes', 'iconSizes', 'activeBackground', 'footer', 'topbar'].filter(key => JSON.stringify(createSidebar[key]) !== JSON.stringify(editSidebar[key]));
   result.sidebar = { create: createSidebar, edit: editSidebar, differences: same };
-  check('sidebarVisualConsistency', !same.length && createSidebar.active === '생성하기' && editSidebar.active === '편집하기' && editSidebar.brandOverflow <= 0 && editSidebar.brand.h === 36 && editSidebar.menu.join('|') === '생성하기|편집하기|사용자 편집|내 작업|템플릿|설정', result.sidebar);
+  check('sidebarVisualConsistency', !same.length && createSidebar.active === '생성하기' && editSidebar.active === '편집하기' && editSidebar.brandOverflow <= 0 && editSidebar.brand.h === 40 && editSidebar.menu.join('|') === '생성하기|편집하기|사용자 편집|내 작업|템플릿|설정', result.sidebar);
 
   // ---- Direct JSON input + array binding (DIM project without JSON) --------------------------------------
   await openWorkspace(page, dimProject.builderUrl);

@@ -58,7 +58,7 @@ const panelText = (page) => page.evaluate(() => document.querySelector('main > a
     await until(page, () => [...document.querySelectorAll('.chat-message.assistant')].at(-1)?.textContent.includes('AI 연결이 아직 설정되지 않았습니다.'));
     await shot(page, 'studio-user-chat.png');
     check('6_7_userTabsNoData', userTabs.join('|') === '채팅|직접 편집' && !(await page.$('[data-tab=binding]')) && !chat.attach, { userTabs, chat });
-    check('8_userChat', /원하는 수정 내용을 말씀해 주세요/.test(chat.text) && chat.chips.join('|') === '제목 수정|이미지 교체|표 정리|문구 수정' && chat.placeholder === '수정할 내용을 입력하세요', chat);
+    check('8_userChat', /원하는 수정 내용을 말씀해 주세요/.test(chat.text) && chat.chips.join('|') === '제목을 수정해줘|로고 이미지를 바꿔줘|표를 보기 좋게 정리해줘' && chat.placeholder === '원하는 내용을 자연어로 입력해 주세요.', chat);
     // 직접 편집: simple text/image editing, no structure modes, no developer terms or identifiers.
     await page.click('[data-tab=direct]'); await page.waitForTimeout(400);
     const empty = await panelText(page);
@@ -81,9 +81,9 @@ const panelText = (page) => page.evaluate(() => document.querySelector('main > a
     const seenInDeveloper = await page.evaluate(() => document.querySelector('#viewer').contentWindow.canvasModule.getCanvas(0).getObjects().some((o) => o.text === '구 매 발 주 서'));
     check('10_sharedCoreUndoRedoSave', seenInDeveloper, { seenInDeveloper });
 
-    // 12. White + Green: white sidebar/topbar/panel, mint active item, green primary button and active tab.
-    const theme = { sidebar: await rgb(page, '.ai-sidebar', 'backgroundColor'), topbar: await rgb(page, 'body > header', 'backgroundColor'), panel: await rgb(page, 'main > aside', 'backgroundColor'), active: await rgb(page, '.ai-nav-item.active', 'backgroundColor'), activeText: await rgb(page, '.ai-nav-item.active', 'color'), save: await rgb(page, '#builder-save', 'backgroundColor'), tab: await rgb(page, '.builder-tab[aria-selected=true]', 'color'), canvasBg: await rgb(page, 'body.ai-builder', 'backgroundColor') };
-    check('12_whiteGreenTheme', theme.sidebar === 'rgb(255, 255, 255)' && theme.topbar === 'rgb(255, 255, 255)' && theme.panel === 'rgb(255, 255, 255)' && theme.active === 'rgb(232, 245, 238)' && theme.activeText === 'rgb(8, 127, 82)' && theme.save === 'rgb(8, 127, 82)' && theme.tab === 'rgb(8, 127, 82)' && theme.canvasBg === 'rgb(245, 247, 246)', theme);
+    // 12. White + Green: white sidebar/topbar/panel, mint active item, green primary button and a solid green active tab with white text.
+    const theme = { sidebar: await rgb(page, '.ai-sidebar', 'backgroundColor'), topbar: await rgb(page, 'body > header', 'backgroundColor'), panel: await rgb(page, 'main > aside', 'backgroundColor'), active: await rgb(page, '.ai-nav-item.active', 'backgroundColor'), activeText: await rgb(page, '.ai-nav-item.active', 'color'), save: await rgb(page, '#builder-save', 'backgroundColor'), tab: await rgb(page, '.builder-tab[aria-selected=true]', 'backgroundColor'), tabText: await rgb(page, '.builder-tab[aria-selected=true]', 'color'), canvasBg: await rgb(page, 'body.ai-builder', 'backgroundColor') };
+    check('12_whiteGreenTheme', theme.sidebar === 'rgb(255, 255, 255)' && theme.topbar === 'rgb(255, 255, 255)' && theme.panel === 'rgb(255, 255, 255)' && theme.active === 'rgb(232, 245, 238)' && theme.activeText === 'rgb(8, 127, 82)' && theme.save === 'rgb(8, 127, 82)' && theme.tab === 'rgb(8, 127, 82)' && theme.tabText === 'rgb(255, 255, 255)' && theme.canvasBg === 'rgb(245, 247, 246)', theme);
 
     // No document chosen yet: 사용자 편집 offers recent documents instead of the built-in sample.
     const fresh = await browser.newContext({ viewport: { width: 1600, height: 1000 } }), p2 = await fresh.newPage();
